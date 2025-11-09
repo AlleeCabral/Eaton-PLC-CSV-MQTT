@@ -1,0 +1,11 @@
+#System_VisuInputs#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemBase#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+VisuElemsDateTime Interfaces, * (Intern)
+#VisuFPlot
+#CmpVisuHandler
+#Standard
+#StringUtils
+Visu Interfaces, * (System)
+#SysTimeRtc
+#CmpLog
+#SysTimeCore

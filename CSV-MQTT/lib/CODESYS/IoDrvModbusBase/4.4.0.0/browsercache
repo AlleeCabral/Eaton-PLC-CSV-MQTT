@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IoDrvModbusBase, 4.4.0.0 (CODESYS)">
+  <Node Name="ModbusSerialSlaveBase" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e0e2a46d-7b82-497b-bec9-cc734ae72a9b}">
+    <Node Name="xReqError" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{68c4f0f1-dadf-4e6b-ad38-bf8509224874}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="{attribute 'hide'}" ObjectGUID="{9cc7cc5a-88fb-4849-bb4e-1ea886f43669}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="{attribute 'hide'}" ObjectGUID="{d3336665-091f-4221-b673-93fdba6a0a33}" />
+    </Node>
+    <Node Name="xOldTrigger" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{14bc8632-c3ae-4571-8a6e-ab41be7e4186}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="{attribute 'hide'}" ObjectGUID="{996024e2-00a8-499f-bcc1-ab1750ee8e18}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="{attribute 'hide'}" ObjectGUID="{57554bea-e136-4ec4-bc09-d0772cdfc4bf}" />
+    </Node>
+    <Node Name="xOldReset" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{61194de8-07db-4ce3-b35e-54d7802d0da6}" />
+    <Node Name="xOldAck" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{304cd729-5507-49f3-846a-16870fdb3f0f}" />
+    <Node Name="xInternalError" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{39c3d4c2-4228-4141-9dae-a80060bd4a19}" />
+    <Node Name="pSlaveInitValues" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{27cc11d7-f904-44bf-b1b4-50711d8dc296}" />
+    <Node Name="pSlaveConn" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e02a6a16-24ea-486b-a47c-95fe2e04022e}" />
+    <Node Name="GetNextInitValue" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{09207bf5-583e-4ed4-9466-5276ea948325}" />
+  </Node>
+  <Node Name="MB_SlaveParameter" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0635f2de-3b47-48ac-b98d-bb39dd85342c}" />
+  <Node Name="MB_MasterParameter" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a9aa3f12-5bf3-4fc3-bb66-32f0da3b0800}" />
+  <Node Name="MBConstants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{cfd95135-c560-4203-8d0e-9cb29c9d8243}" />
+  <Node Name="MBFunctionCode" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3688aec7-45aa-4b8f-ad91-35e3312e573a}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

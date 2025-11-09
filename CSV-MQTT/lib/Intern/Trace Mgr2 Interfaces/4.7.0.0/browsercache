@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="Trace Mgr2 Interfaces, 4.7.0.0 (Intern)">
+  <Node Name="VisuStructTraceGradientColor" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Obsolete, for compatibility only&#xD;&#xA; This structure contains the data for gradient color" ObjectGUID="{9cd3b802-a22c-4ea1-a679-5471f1901c91}" />
+  <Node Name="TraceMgrItfsConstants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1351b007-0d13-4802-be49-32e072374d92}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{2afc5b6a-aef0-4f8f-b0c9-d72fe4983e57}" />
+  <Node Name="ITraceMgrPacketSupportsSlowdownFactor" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Optional interface that can be implemented by an ITraceMgrPacket when &#xD;&#xA; the measurement slowdown factor feature is supported." ObjectGUID="{96d5b00f-2f95-402c-9046-cdd6fe90fe49}">
+    <Node Name="MeasureSlowdownFactor" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{42a5dcdf-9f2a-4953-ad55-e4d049d14350}" />
+  </Node>
+  <Node Name="ETraceGradientType" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Gradient painting type" ObjectGUID="{6e738be6-08e3-4a70-83cb-72d0899e4d4f}" />
+</Library>

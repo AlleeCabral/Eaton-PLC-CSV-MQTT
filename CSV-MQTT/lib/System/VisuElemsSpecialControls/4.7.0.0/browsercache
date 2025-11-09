@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="VisuElemsSpecialControls, 4.7.0.0 (System)">
+  <Node Name="VisuStructWaitingFlowerClientSpecificData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4b7333a6-9021-4b1b-86c0-1f43268fe351}" />
+  <Node Name="VisuStructWaitingCubeClientSpecificData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a7b8e1f1-0214-45ca-b6d6-bec4edf8fe7e}" />
+  <Node Name="VisuStructRectangularElementUtilBaseClientSpecificData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3f274222-7054-4041-9bd9-25bd1e61b99c}" />
+  <Node Name="VisuStructElemBaseClientSpecificData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{50649378-871f-4b5e-a69a-1ae6031741b0}" />
+  <Node Name="Bibliotheksverwalter" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{c89a0744-a32d-4906-a5ff-fac770770cf7}" />
+</Library>

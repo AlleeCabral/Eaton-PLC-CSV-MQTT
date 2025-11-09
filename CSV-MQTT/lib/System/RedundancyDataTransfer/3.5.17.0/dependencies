@@ -1,0 +1,11 @@
+#CAA Types
+#CAA FB Factory
+#NetBaseSrv
+#Standard
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#SysMem
+#StringUtils
+#CmpLog
+#CmpSettings
+#SysSem

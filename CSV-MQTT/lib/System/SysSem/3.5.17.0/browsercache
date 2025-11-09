@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SysSem, 3.5.17.0 (System)">
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{9107060c-3bbb-4224-8468-aa70247f7ea9}" />
+</Library>

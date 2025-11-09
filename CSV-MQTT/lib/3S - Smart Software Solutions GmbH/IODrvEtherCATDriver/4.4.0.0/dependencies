@@ -1,0 +1,24 @@
+#CmpLog
+#Standard
+#IoDrvBase
+#Component Manager
+#SysMem
+#SysCpuHandling
+#CmpBinTagUtilIec
+#CmpSrv
+#Rts Service Handler
+#CmpSettings
+#CAA Device Diagnosis
+#CAA Types
+#CmpEventMgr
+Base Interfaces, * (System)
+#CmpIecTask
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#EtherCATStackLibrary
+#CmpSchedule
+#IoStandard
+IoDriver2 Interfaces, * (System)
+IoDriver Parameter Interfaces, * (System)
+#SysTimeCore
+#SysTimeRtc

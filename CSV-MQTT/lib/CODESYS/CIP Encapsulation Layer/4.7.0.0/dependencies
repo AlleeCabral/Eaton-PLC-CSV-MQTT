@@ -1,0 +1,13 @@
+#CAA NetBaseSrv
+#CAA Types
+#Standard
+#CmpLog
+#CAA MemBlockMan
+#SysMem
+#SysCpuHandling
+#SysSocket
+#CAA Callback
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#SysTimeCore
+#CBML

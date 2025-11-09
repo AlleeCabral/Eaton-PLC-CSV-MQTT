@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SM3_Drive_ETC_Staubli_uniVAL, 4.12.0.0 (3S - Smart Software Solutions GmbH)">
+  <Node Name="inputs" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{92a89a8f-be6f-471c-8144-b4c826bb768a}" />
+  <Node Name="Output" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{0d878078-dfce-4cb1-8e7d-9fda471d4dba}" />
+  <Node Name="state machine" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{fd497c9e-4546-41dd-b44e-d256cafe80e7}" />
+  <Node Name="Mapping" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{05508ecb-b4f7-4880-a9a2-162fb6b65f0c}" />
+  <Node Name="Config" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{ab39380c-d47c-4362-b2cf-baf072a50463}" />
+  <Node Name="SMC_STAUBLI_UNIVAL_VERSION" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{390988b4-68c8-4cdb-bc31-4c4f83700bcc}" />
+  <Node Name="SM3_Drive_ETC_Staubli_uniVAL" TypeGUID="{a56744ff-693f-4597-95f9-0e1c529fffc2}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6b1b7760-04fd-447c-8ad3-39d6f00b02c2}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{a659d606-dc3a-460b-b64e-eadcb60e249c}" />
+  <Node Name="AXIS_REF_ETC_STAUBLI_UNIVAL_ConfigurationPhase" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e1561c16-626d-4316-a7b4-a2a1d92bd4f9}">
+    <Node Name="prv_Start" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{56843876-9c87-4813-84a8-2d29e6447a8b}" />
+    <Node Name="prv_CyclicAction" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{832c1e9e-ffbe-4ee8-a8e0-67fd23747796}" />
+    <Node Name="prv_Abort" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{71c07dfd-939d-47a5-904c-10b65098fb65}" />
+  </Node>
+  <Node Name="AXIS_REF_ETC_STAUBLI_UNIVAL" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b632c791-1672-44a9-84a3-1baa81583695}">
+    <Node Name="ReadAndProcessSpecificInput" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{68ee0851-7d65-41d0-a860-b425e368a429}" />
+    <Node Name="PrepareAndWriteSpecificOutput" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8a74b5a3-edee-4276-8710-168e841be2bf}" />
+    <Node Name="DriveStateMachine" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{df710b7c-d245-4e70-9419-563aca621f8b}" />
+    <Node Name="CommunicationStateMachine" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{dab7fc8b-04d0-4ddd-a055-641882c4d6cb}" />
+    <Node Name="GetStandardConfigParams" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3ab5ba6a-8295-412d-8b6e-34c22c9a5b78}" />
+    <Node Name="DriverVersion" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{fd185dca-103b-4c7a-9af4-3fba53cabf9a}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d57a6f21-99f2-41df-b020-f47a63833977}" />
+    </Node>
+    <Node Name="DriverName" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2ed07e48-c797-4ed2-8529-0f46ae1cd1cd}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{5ca353dd-e9dd-40a4-8a84-f937891a330d}" />
+    </Node>
+    <Node Name="Calibrated" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d9b47e9e-35ca-404c-8831-92fef8ed3091}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a5c66bf9-31b2-4f00-84c5-d050d60313e6}" />
+    </Node>
+  </Node>
+  <Node Name="00000000-0000-0000-0000-000000000000|C:\d\06_devices\CODESYS SoftMotion\EtherCAT_Staubli_uniVAL\4.12.0.0 draft\SM3_Drive_ETC_Staubli_uniVAL.pdf" TypeGUID="{9001d745-b9c5-4d77-90b7-b29c3f77a23b}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{0a6845c0-ba6a-48ad-ab98-efe2920e86c6}" />
+</Library>

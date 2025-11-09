@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="VisuElemMeter, 4.7.0.0 (System)">
+  <Node Name="VisuStructMeterAdditionalElementClientData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Struct, currently only needed by the meter. For additional element client data." ObjectGUID="{d56c5b3e-9605-4676-82c8-f5986a145a10}" />
+  <Node Name="VisuStructElementClientDataExtended" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f2d9febc-e909-4c2d-b254-29bb35540cd8}" />
+  <Node Name="VisuStructElementClientData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c51157f0-10fc-45fa-9afa-da3020a9e463}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{bfaf3bcd-a41c-4592-a940-fd833f647065}" />
+</Library>

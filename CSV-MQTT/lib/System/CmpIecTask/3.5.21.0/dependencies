@@ -1,0 +1,5 @@
+#CmpApp
+SysTypes2 Interfaces, * (System)
+#CmpSettings
+CmpErrors2 Interfaces, * (System)
+#Standard

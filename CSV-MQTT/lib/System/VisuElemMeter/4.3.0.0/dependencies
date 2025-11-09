@@ -1,0 +1,9 @@
+#Standard
+#CmpBitmapPool
+#CmpDynamicText
+#CmpVisuHandler
+#CmpLog
+#System_VisuElems#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemBase#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+Data Server Interfaces, * (System)
+Unit Conversion Interfaces, * (Intern)

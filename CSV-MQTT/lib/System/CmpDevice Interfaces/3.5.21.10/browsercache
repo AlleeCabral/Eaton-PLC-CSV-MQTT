@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpDevice Interfaces, 3.5.21.10 (System)">
+  <Node Name="EventIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f44bc3fa-ca1b-492d-b3fe-fe20151edda3}" />
+  <Node Name="AuditLogConstants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4a18712e-ab71-40d6-9125-f5816463147f}" />
+  <Node Name="AuditInfoIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" | Audit log info IDs for CmpDevice" ObjectGUID="{61a71296-3b39-4b4c-9e67-cea520fcd5cc}" />
+  <Node Name="AUDITPARAM_CDS_Server_Login" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Structure used as parameter in AuditLogDetails for authentication-related login audit events when IDs&#xD;&#xA; such as AUDIT_INFOID_CDS_Server_Authentication_Failure or AUDIT_INFOID_CDS_Server_Login are used." ObjectGUID="{9c2fb8cb-5fee-4ea4-9661-acda1f961508}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

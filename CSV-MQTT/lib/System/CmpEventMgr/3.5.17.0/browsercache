@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpEventMgr, 3.5.17.0 (System)">
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{33b35257-3526-4f6e-b54f-fe14ac34c595}" />
+</Library>

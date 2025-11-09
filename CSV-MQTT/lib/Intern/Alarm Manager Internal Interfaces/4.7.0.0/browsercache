@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="Alarm Manager Internal Interfaces, 4.7.0.0 (Intern)">
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{2afc5b6a-aef0-4f8f-b0c9-d72fe4983e57}" />
+  <Node Name="IAlarmMetaObjectStubResetter" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This interface is an optional extension of IAlarmMetaObjectStub*.&#xD;&#xA; It can be used to reset possibly stored alarm / alarm group references. " ObjectGUID="{be203b8c-96cb-4d3e-9641-f15f370e2a75}">
+    <Node Name="ResetAlarmAndAlarmGroup" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Resets possible formerly stored references to an alarm and an alarmgroup." ObjectGUID="{80fcb98a-1d5f-463d-a1b3-256d26d7c5e0}" />
+  </Node>
+  <Node Name="IAlarmMetaObjectStub6" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f9205e22-1679-4a86-b551-02b5c4a4516c}">
+    <Node Name="UserIdAck" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a1858859-fbc9-4a9c-8bb1-71bd5ce4b723}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{706b5b7d-2605-44e2-ad7d-b5797efda494}" />
+    </Node>
+    <Node Name="SetAcknowledgeWithComment" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Acknowledges the corresponding alarm with a comment the IAlarmMetaObjectStub6 instance represents" ObjectGUID="{48684461-831f-4388-97ff-f7fff2c90618}" />
+    <Node Name="CommentAck" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{83b3670e-98cc-4404-afaa-d76fa43e9fd1}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d789a892-37a7-4129-8264-93e552199de8}" />
+    </Node>
+    <Node Name="AlarmCommentWaitingConfirm" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{24e0d80b-a57c-49de-870f-80e9fca852ad}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a7ce9d29-8fd9-4657-99b3-42b69532727c}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f214e6b3-f77a-49d9-ac5d-36781d555e51}" />
+    </Node>
+    <Node Name="AlarmCommentNormal" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7c2f7fe2-9353-41db-aa05-c13eb81fb856}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8d8d33ea-c317-44f1-8663-b8962dc15b45}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{40a2a1c1-fe1e-4693-8260-36dc9dc7e22d}" />
+    </Node>
+    <Node Name="AlarmCommentActiveAck" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{24d409f1-6889-4724-b883-169586fb30bd}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c47bfbca-e8cd-446c-9073-aa364a5f9bc9}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{20fe0276-6d96-4ac4-ad60-878915a9770f}" />
+    </Node>
+    <Node Name="AlarmCommentActive" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b839e3c9-fd7e-4887-9d06-44332a452223}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4127c823-cc8b-44d5-abcd-e0a2d0f83cda}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2676d74d-0c9b-4ce6-9285-fca5f51b377c}" />
+    </Node>
+  </Node>
+  <Node Name="IAlarmMetaObjectStub5" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1bbef0ec-821f-4adf-b652-2507b81a4809}">
+    <Node Name="OffsetLast" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{948f1753-c038-4fbf-939a-6e7334cbe2a8}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{74c6250a-f1aa-437f-968b-359036f91922}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bb5511e2-b251-46c2-8e55-e2dce5cf7df6}" />
+    </Node>
+    <Node Name="OffsetInactive" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0e67ff72-3c06-47e2-957b-c942423f5467}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{21a36d30-4259-4e77-9785-fde01095a682}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{128a12b3-79e0-4b2e-8714-2f8799c4acb2}" />
+    </Node>
+    <Node Name="OffsetActive" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c31f5aa0-1713-4d18-85ab-20068f4c73db}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8920c0d2-23bb-47ed-a13e-f7f842566047}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{54166812-aafd-4e71-b501-081e65e179e2}" />
+    </Node>
+    <Node Name="OffsetAcknowledge" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b22a35c0-7758-46b4-920d-494831094eb8}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{80aec4cf-801d-4efd-8d35-464c86d1df89}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{dfd1d8f5-42c6-4f62-94bf-edb4cfb097ba}" />
+    </Node>
+  </Node>
+  <Node Name="IAlarmAdditionalLatchVariables2" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{848e5e78-aa03-4bb9-9c16-9159b3763b55}">
+    <Node Name="SetLatchVariablesAddress" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Dinamically set the pointer to the latch variable to use&#xD;&#xA; Use to set in the alarm FB the address of the latch variables to use, in case of&#xD;&#xA; not set by code generation.&#xD;&#xA; For internal use" ObjectGUID="{838cb974-7e26-4572-b09b-4ccb40212637}" />
+    <Node Name="GetLatchVariablesAddress" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Get the pointer to the latch variable used in case of dynamic set&#xD;&#xA; For internal use" ObjectGUID="{bc3e957d-c5eb-46a5-a18a-fa38391894ae}" />
+  </Node>
+  <Node Name="IAlarmAdditionalLatchVariables" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f943968b-fd0f-4ba5-a3bf-500be5a37214}">
+    <Node Name="SetLatchVarValue" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Sets an ITypedValue instance, describing the current value of an optional latch variable.&#xD;&#xA; This method is an enhancement/a replacement of methods IAlarm2.SetLatchVar1Value and&#xD;&#xA; IAlarm2.SetLatchVar2Value." ObjectGUID="{e8bef41f-0e45-47ac-b9fc-d0dcbbae8aec}" />
+    <Node Name="GetLatchVarValue" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Returns a ITypedValue instance, describing the current value of an optional latch variable.&#xD;&#xA; This method is an enhancement/a replacement of methods IAlarm.GetLatchVar1Value and&#xD;&#xA; IAlarm.GetLatchVar2Value." ObjectGUID="{71cc27c7-e6e2-4f6b-8bea-e550ff60f4b3}" />
+    <Node Name="GetCountLatchVariables" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Returns the number of latch variables" ObjectGUID="{edbb6adf-55d2-43ae-89cc-4a8ada0e250f}" />
+  </Node>
+  <Node Name="AlarmToAcknowledge" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e62274d2-c604-4e32-8b31-185375551698}" />
+  <Node Name="AlarmComment" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This structure represents an alarm comment entry with its user id." ObjectGUID="{454e3684-63e8-4211-b5c3-bd597842ff90}" />
+</Library>

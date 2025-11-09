@@ -1,0 +1,15 @@
+#SM3_Basic
+#SM3_Drive_CiA_DSP402
+#SM3_Drive_ETC_DS402_CyclicSync
+#Standard
+#Rts Service Handler
+#CmpBinTagUtilIec
+SysTypes2 Interfaces, * (System)
+#CmpSrv
+CmpErrors2 Interfaces, * (System)
+#CmpLog
+#SysMem
+#IoStandard
+#CAA Types
+#IODrvEtherCAT
+#SM3_ETC_ITF

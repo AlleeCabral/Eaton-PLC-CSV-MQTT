@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CAA FB Factory, 3.5.19.0 (CAA Technical Workgroup)">
+  <Node Name="IInstance" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{46176711-18b3-41b7-ab91-109a51b9eeec}">
+    <Node Name="prvPrevInst" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{084334c3-31db-4bb2-842f-a3484fe8339a}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" itfPrev " ObjectGUID="{95389362-a328-47e5-a521-88bb64a95434}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" itfPrev " ObjectGUID="{9d43d2e0-0054-4602-943a-14b412d25e93}" />
+    </Node>
+    <Node Name="prvNextInst" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bef87068-027a-460a-8f54-fe328fc7a913}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" itfNext " ObjectGUID="{4faafba5-db84-4db1-b59a-1aaf2442af95}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" itfNext " ObjectGUID="{551a66c9-f8a8-440c-b7e0-c1e44edaca40}" />
+    </Node>
+    <Node Name="prvInstRetain" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{48f7d24c-33a4-43ff-909b-fb6d72b549e2}" />
+    <Node Name="prvInstRelease" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ba8172f2-6d8b-4dc7-8193-ce24b0e6a661}" />
+    <Node Name="prvInstInit" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{69c8ff73-0ded-4d2f-ad99-0637a4f0e489}" />
+    <Node Name="prvInstFactory" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{42fc77d4-7cfc-41f9-879a-4ab03bf06afa}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" itfFactory " ObjectGUID="{fc36e42b-a79c-43de-bf0d-e516f6a75861}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" itfFactory " ObjectGUID="{e4ccfad4-f5e6-4eed-884f-793520ff4384}" />
+    </Node>
+    <Node Name="Dispose" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7afdacee-4b01-429c-a409-0c5f63d6a357}" />
+  </Node>
+  <Node Name="IFactory" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1d22479b-f76e-46d5-9a51-6967bc1bccbc}">
+    <Node Name="prvRemoveInst" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c8a7c92b-735e-4204-b6d6-8e3d0826a297}" />
+    <Node Name="prvInstSize" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{50c7af8b-01e7-4e0c-8c62-4385e102bc2e}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Is called by ``prvMemAlloc``. Should Implemented like :code:`prvInstSize := sizeof(CustomFB)`&#xD;&#xA; szInst " ObjectGUID="{ed7997ca-742b-4a2e-aab8-d3c19eebcbc7}" />
+    </Node>
+    <Node Name="prvInstPoolSize" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{88468998-4614-40e5-8b13-42b4e67b7e18}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Is called by ``prvMemAlloc``, if ``prvPoolAdr`` returns not ``CAA.gc_pNULL``.&#xD;&#xA; it should be implementet like :code:`prvPoolSize := sizeof(abyPoolMemory)`&#xD;&#xA; szPool " ObjectGUID="{2ed815c0-e596-4343-80e2-36a3d0ed6a57}" />
+    </Node>
+    <Node Name="prvInstPoolExtendsFactor" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{415ef87f-3244-455a-8d9b-593993dd65d7}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Is called by ``prvMemAlloc``, to determine the amout of memory growing (``MBM.PoolExtendH``)&#xD;&#xA; usiFactor " ObjectGUID="{1230be8d-dcd9-40be-adfc-bca3e7d9a9e9}" />
+    </Node>
+    <Node Name="prvInstPoolAdr" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c6aaf6a4-de21-4136-9c2d-1b18a6ec1937}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Is called by ``prvMemAlloc``, to determine the Methode of allocation. (``MBM.PoolCreateH`` or ``MBM.PoolCreateP``)&#xD;&#xA; If the return value is ``CAA.gc_pNULL`` then ``MBM.PoolCreateH`` is used.&#xD;&#xA; If the return value is not equal ``CAA.gc_pNULL`` this value is used as a basis for ``MBM.PoolCreateP``&#xD;&#xA; pPool " ObjectGUID="{80020dfc-5ce8-4173-8277-e7a5e723b4be}" />
+    </Node>
+    <Node Name="prvInstInit" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{183a6ec8-9106-4941-acd4-1e0a63620b58}" />
+    <Node Name="prvInstCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7b749719-f439-4724-8400-2baf0d9a0872}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Is called by ``prvMemAlloc``, if ``prvPoolAdr`` returns ``CAA.gc_pNULL``&#xD;&#xA; ctInst " ObjectGUID="{e9766000-0bbe-4563-b601-f7d93b01115b}" />
+    </Node>
+    <Node Name="prvInsertInst" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e3466efb-5b74-4222-b1d9-c841fbe164e1}" />
+    <Node Name="prvGetInstPointer" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0550e23c-4a4d-4105-b50f-21974e0763f0}" />
+    <Node Name="prvFreeInstMem" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{169e0bee-ae36-4781-8e82-0bd5390bf3f7}" />
+    <Node Name="prvAllocInstMem" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c4579e1d-47bb-4aa8-ae39-32f5ad7fe4df}" />
+  </Node>
+  <Node Name="IData" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{76320fbc-f5cc-4864-b323-9d6bc2648770}">
+    <Node Name="prvCheckDataInst" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{222f50c3-b638-403f-86f4-57feaa6d3129}" />
+  </Node>
+  <Node Name="InstanceData" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{6dc548ca-2b94-4d5d-b4e5-c740cfd88f4e}">
+    <Node Name="prvCheckDataInst" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9bfc7008-c11c-426e-9252-190a513dbbef}" />
+  </Node>
+  <Node Name="InstanceBase" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" This function block implements the necessary basic functionality for a function block instance.&#xD;&#xA;&#xD;&#xA; * Initialization&#xD;&#xA;&#xD;&#xA;   - InstInit&#xD;&#xA;&#xD;&#xA; * Reverence counter management&#xD;&#xA;&#xD;&#xA;   - InstRetain&#xD;&#xA;   - InstRelease&#xD;&#xA;   - Dispose&#xD;&#xA; &#xD;&#xA; * List support for handling a group of function block instances.&#xD;&#xA;&#xD;&#xA;   - InstFactory (List Head)&#xD;&#xA;   - NextInst&#xD;&#xA;   - PrevInst" ObjectGUID="{0e31f7aa-814b-4b63-a4fa-712b7e35bb6c}">
+    <Node Name="prvPrevInst" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2a565995-a99c-440b-9cd7-e28adf3f9efa}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d067fc62-474a-48ab-83f6-4369ef6d46eb}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9979981c-e280-499f-a428-aaff175a565e}" />
+    </Node>
+    <Node Name="prvNextInst" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{72720c16-0a5a-4585-8daf-5dc883468805}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{56609d53-4164-4ac8-a0fa-a0b0fc810ac8}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{58227c5a-9f09-476f-813c-0b30be3b1d70}" />
+    </Node>
+    <Node Name="prvInstRetain" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ad9cdd7e-057b-44af-85de-e2c3bb3b3b38}" />
+    <Node Name="prvInstRelease" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d1111b61-1318-40e4-92f6-c9d9e85eec61}" />
+    <Node Name="prvInstInit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{35cd2bca-648f-42a7-89b8-b84899b6d1f6}" />
+    <Node Name="prvInstFactory" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0a3e6ea3-2b77-4ea2-95e2-281696e0b76e}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3cd286b9-ee40-471a-9989-0a3adf9c52b4}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{937b96c1-56a3-451c-ade9-1b2c25c8a850}" />
+    </Node>
+    <Node Name="Dispose" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{aeb68e5b-e7b9-4053-bbfc-6476647c719d}" />
+  </Node>
+  <Node Name="FactoryBase" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="{attribute 'hide_all_locals'}&#xD;&#xA; This function block implements the neccecary basic functionality for a function block factory.&#xD;&#xA;&#xD;&#xA; * Memory allocator&#xD;&#xA;&#xD;&#xA;   - AllocInstMem&#xD;&#xA;   - FreeInstMem&#xD;&#xA;&#xD;&#xA;   The allocator use the following properies as parameters.&#xD;&#xA;&#xD;&#xA;   - InstSize reports the memory consumtion of the related function block instance.&#xD;&#xA;   - InstPoolAdr, InstPoolSize =&gt; The instance pool is initialized with a static memory area.&#xD;&#xA;   - InstCout, InstPoolSize =&gt; The instance pool is initilaized with a memory area from the heap.&#xD;&#xA;   - InstPoolExtendsFactor =&gt; The instance pool can be extended dynamically with memeory areas from the heap.&#xD;&#xA;&#xD;&#xA; * List management for handling the group of produces function block instances.&#xD;&#xA;&#xD;&#xA;   - InsertInst&#xD;&#xA;   - RemoveInst" ObjectGUID="{5650326d-4e14-4ed5-b344-1ecb77d30654}">
+    <Node Name="prvInstSize" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b96193c0-d94a-4543-bdeb-ef7b6986d0f1}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" szInst " ObjectGUID="{9e2a71be-7399-4161-b145-694c14ba063a}" />
+    </Node>
+    <Node Name="prvInstPoolSize" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{930cd370-7f70-43e4-b560-7881f65de77e}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" szPool " ObjectGUID="{96604e9d-c4f7-45bd-8acb-134ca54025e4}" />
+    </Node>
+    <Node Name="prvInstPoolExtendsFactor" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{17ffe1d4-3fc1-4111-86f6-92e4880b7bde}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{243c4871-9f2e-4857-8ec0-90893599f2e3}" />
+    </Node>
+    <Node Name="prvInstPoolAdr" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5e575ad7-954f-4343-b944-890b8992334a}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" pPool " ObjectGUID="{52121b08-f1dc-4488-a27a-9c8e8c0fb186}" />
+    </Node>
+    <Node Name="prvInstInit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{45c1513c-b7bb-44ad-81bc-9077f4087f92}" />
+    <Node Name="prvInstCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{15764002-2ad1-40f2-bad6-b9448aab0e35}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" ctInst " ObjectGUID="{c9dc9efa-f527-4c33-8e63-a5cfcbb17c0a}" />
+    </Node>
+    <Node Name="FB_INIT" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{549b2103-324d-41f4-8e47-317bf447a5fc}" />
+    <Node Name="FB_EXIT" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{60b01567-7911-4aef-a244-251c1308957b}" />
+  </Node>
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{51143f6f-f495-4b65-9105-e3aac974b826}" />
+  <Node Name="ERROR" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f13851e4-c15c-4448-a3cc-5ae43fe11b73}" />
+</Library>

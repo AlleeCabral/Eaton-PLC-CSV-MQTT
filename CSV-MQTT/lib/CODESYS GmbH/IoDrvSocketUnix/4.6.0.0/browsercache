@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IoDrvSocketUnix, 4.6.0.0 (CODESYS GmbH)">
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{a7e26ac9-db48-49fe-aa83-383500dfd8c2}" />
+  <Node Name="IoDrvSocketUnix" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{48d36c4c-7155-4abf-b8c3-2721b7391e36}">
+    <Node Name="IoDrvGetModuleDiagnosis" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c22383bb-51a6-443b-a987-8facbb246302}" />
+  </Node>
+</Library>

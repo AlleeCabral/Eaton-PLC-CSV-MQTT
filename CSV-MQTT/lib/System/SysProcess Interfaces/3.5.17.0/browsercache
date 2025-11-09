@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SysProcess Interfaces, 3.5.17.0 (System)">
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+  <Node Name="Global_Constants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" &lt;category&gt;Process creation flags&lt;/category&gt;&#xD;&#xA; &lt;description&gt;&lt;p&gt;A combination of these flags can specify the startup of a process&lt;/p&gt;&lt;/description&gt;" ObjectGUID="{601d3be3-34e8-414f-9fa6-2b4a285f72e4}" />
+</Library>

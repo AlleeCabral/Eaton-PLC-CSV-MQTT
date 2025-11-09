@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="RedundancyDataTransfer, 4.1.0.0 (System)">
+  <Node Name="RdtProtStructResPh" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Redundancy Data Transfer Protocol &#xD;&#xA;   Result phase header" ObjectGUID="{1de36d5c-4ba4-4d59-b561-ff927ac8145f}" />
+  <Node Name="RdtProtStructConnection" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Redundancy Data Transfer Protocol &#xD;&#xA;   Structure that contains the connection data" ObjectGUID="{1c47068e-93c7-45d8-b4ba-9d5f2210724f}" />
+  <Node Name="RdtProtStructCommPh" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Redundancy Data Transfer Protocol &#xD;&#xA;   Command phase header" ObjectGUID="{9a0cec9b-732e-4368-b49e-69f06ddd8510}" />
+  <Node Name="RdtInitStructServerTCP" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Structurce for TCP server initialization" ObjectGUID="{08ae1696-0345-4383-8bdb-62972865ae2b}" />
+  <Node Name="RdtInitStructClientTCP" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Structurce for TCP client initialization" ObjectGUID="{6c1830fd-4163-4c7c-91e4-acf9189ec8fb}" />
+  <Node Name="IServerCommand" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Interface to handle the commands arriving on the server side" ObjectGUID="{a440e056-cc2d-44ef-afba-4ebafadce550}">
+    <Node Name="Exec" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Elaboration of a command in Server side: command is elaborated and next send the answer to client" ObjectGUID="{d2cf4ce2-3221-4761-967b-4e270dea7b4c}" />
+  </Node>
+  <Node Name="IRdtProtServer" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Interface for Redundancy Data Transfer Server" ObjectGUID="{fd306989-5ef1-482b-bad0-b87cdb110b35}">
+    <Node Name="RegisterCommand" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" It registers the interface to handle the command arrive in the server " ObjectGUID="{afe6194e-7e62-488f-a1e5-c5dc6e88bfb6}" />
+  </Node>
+  <Node Name="IRdtProtClient" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Interface for Redundancy Data Transfer Client" ObjectGUID="{5328ea8b-9181-48c5-a79d-a84d91f742bf}">
+    <Node Name="ExecCommand" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Execution of a command in Client side: command is sent to server" ObjectGUID="{0b6fa892-79ef-434d-8a4b-c370760927f3}" />
+  </Node>
+  <Node Name="IRdtProt" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Interface for Redundancy Data Transfer protocol" ObjectGUID="{cb566d79-51f8-49ca-b34c-55bc3b3cdae7}">
+    <Node Name="TrsTimeout" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8b8c210b-7172-4456-817c-c6083bb66202}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Transmission timeout" ObjectGUID="{5c576b15-26ab-47f5-9a58-25b385d88269}" />
+    </Node>
+    <Node Name="SetNewCertificate" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Set the new certificate to use" ObjectGUID="{3ba240a9-7ed6-4ea1-ac86-129630239ed0}" />
+    <Node Name="RcvTimeout" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ba275614-fbe0-468a-bd34-edf9ff0c78d8}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Receiving timeout" ObjectGUID="{2dcdfe89-79e8-4d28-a558-252ba072a4c2}" />
+    </Node>
+    <Node Name="Port" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b34ed94a-2fec-4ae2-b65d-e8ae41e59efe}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8a684bc1-269a-4c5a-b9c4-69d77166034e}" />
+    </Node>
+    <Node Name="IPAddress" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f6d6fea7-c759-4ae7-91b7-a8a30f3001bc}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bc97a90a-6c8a-4742-9387-7cfebb76fe7b}" />
+    </Node>
+    <Node Name="ErrorCode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3c84b5a9-5361-42cf-b70a-eb132789cab3}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{689ee4ce-0825-43dd-8052-8892c8673982}" />
+    </Node>
+    <Node Name="Error" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1ab401ed-95de-4cf7-b113-4dcab21c8758}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Error condition reached" ObjectGUID="{f0120941-13ae-4f3e-9b7b-7f583d75482f}" />
+    </Node>
+    <Node Name="Enable" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{078a3e73-f4b3-48e0-bce0-322828e15e3d}">
+      <Node Name="Set" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Enable/Disabled (Aborts/resets) the object operation" ObjectGUID="{1d5d8d37-4bfa-4145-9100-b914eed488e8}" />
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Enable/Disabled (Aborts/resets) the object operation" ObjectGUID="{178d37ea-2099-477c-8ec9-7d45eb270f26}" />
+    </Node>
+    <Node Name="CyclicCall" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Client cyclic call " ObjectGUID="{2e0b200e-ffdb-4595-85dd-af822a478b0d}" />
+    <Node Name="Busy" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ab7e506d-7001-44c0-8072-5d4122bc39dd}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Operation is running" ObjectGUID="{3d03b5f1-73b7-4715-a30a-ef6d06d9bb0a}" />
+    </Node>
+    <Node Name="Active" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{eab5d228-420f-4c0c-bcaf-754f37023cc8}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Object is active" ObjectGUID="{3a42176d-6a32-4024-a804-57347197ae18}" />
+    </Node>
+  </Node>
+  <Node Name="LogManager" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Log something" ObjectGUID="{a49e23b8-a66f-4a14-a927-254cfda52df9}" />
+  <Node Name="GetUnitTestStatus" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{480e6144-9576-43ee-afbc-c2e30fab0d6a}" />
+  <Node Name="EnumUnitTest" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8426a46b-f7e9-4977-93a1-587b04097eda}" />
+  <Node Name="Allocator" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Allocator for dynamic piece of memory" ObjectGUID="{6746d3ab-03d2-463b-bb07-9ab808d3fa47}">
+    <Node Name="FreeBytes" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3a414b7b-8ea9-43da-904e-288cb2e4d8a6}" />
+    <Node Name="AllocTCPConnection" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e0b1b234-c3c0-4ff2-9576-1bc48f82cc5e}" />
+    <Node Name="AllocBytes" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Bytes allocation" ObjectGUID="{bee891fa-69eb-4a49-b6d0-f7ad679c0be6}" />
+  </Node>
+  <Node Name="RDT_Server" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Server FB that encapsulates NBS.TCP activities in Redundancy Data Transfer&#xD;&#xA;&#xD;&#xA; Sets up a server over the ip and port specified in &quot;ipAddress&quot; and &quot;uiPort&quot; in &quot;Initialize&quot; method. &#xD;&#xA; A server can handle several connections. &#xD;&#xA; The output &quot;itfServer&quot; of this function block can be used to establish a &#xD;&#xA; connection via |TCP_Connection|." ObjectGUID="{9a9c4d5f-d6f3-48d9-80ee-1db643fce6ff}">
+    <Node Name="prvFlushRec" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Flush receiving data" ObjectGUID="{02989fc8-f95e-4f10-ba1e-6df315dfcc60}" />
+    <Node Name="prvEnlargeTrsBuffer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{4dc00ee8-c942-425c-94e2-639a1b30bb34}" />
+    <Node Name="prvEnlargeRecBuffer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{88d3d5c1-29d0-40d7-b26f-4df88a6d2f78}" />
+    <Node Name="SetNewCertificate" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Set the new certificate to use" ObjectGUID="{7d141a7c-39a7-49b5-8a7c-9b4dbd4e5cfc}" />
+    <Node Name="RegisterCommand" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" It registers the interface to handle the command arrive in the server " ObjectGUID="{72792c2a-9ec8-4bc8-9830-3510542b9973}" />
+    <Node Name="ErrorCode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{18fbebe6-471a-4d9e-bb94-654af765f52d}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d3970290-5443-45a2-b51d-99154c8944fa}" />
+    </Node>
+    <Node Name="Error" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ca0cd221-e505-49e5-8167-02a15df317b1}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Error condition reached" ObjectGUID="{041e6e78-c543-431a-ab82-46328c4e83f3}" />
+    </Node>
+    <Node Name="Enable" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0545c831-51bc-4411-8736-7bcab8eb81d6}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{1592bf7e-e1a6-462d-b110-2f25b032e7b8}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3652b3eb-6b13-4b2a-bbab-6649260ba26b}" />
+    </Node>
+    <Node Name="CyclicCall" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Server cyclic call " ObjectGUID="{0b72a006-c232-4403-a04d-87404e459361}" />
+    <Node Name="Create" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" It creates and initializes the object Server" ObjectGUID="{6663b4b2-6192-406f-b234-6797b5923db2}" />
+    <Node Name="Busy" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3b597713-04ad-42b5-8a8a-48a3a1c7a1f7}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Operation is running" ObjectGUID="{f245d78f-af0a-4fa5-a9d6-400dddd0f889}" />
+    </Node>
+    <Node Name="Active" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f967f016-4e2f-4972-a866-cad3546232f4}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{841aef63-b322-4b05-bfdc-273f2f9d57f9}" />
+    </Node>
+    <Node Name="TrsAnswer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" It handles a complete transmisstion of an Answer" ObjectGUID="{323e4e07-9448-4f34-bc3a-21be1ee65608}" />
+    <Node Name="RcvData" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" It receives data following a command from a client" ObjectGUID="{7a3ae5a7-adf3-4166-aed7-27cd41aa325e}" />
+    <Node Name="RcvCommand" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" It receives a command from a client" ObjectGUID="{5ee132e0-193e-43bd-8af9-d93880a68d14}" />
+    <Node Name="FB_exit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="FB_Exit must be implemented explicitly. If there is an implementation, then the&#xD;&#xA;method is called before the controller removes the code of the function block instance&#xD;&#xA;(implicit call). The return value is not evaluated." ObjectGUID="{d0582706-51f9-4fdd-a476-4993255124f6}" />
+  </Node>
+  <Node Name="RDT_ERROR" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{614dd554-aa1a-4bb4-bb04-d2fb65b11571}" />
+  <Node Name="RDT_Client" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Client FB that encapsulates NBS.TCP activities in Redundancy Data Transfer&#xD;&#xA; &#xD;&#xA; To connect to a TCP Server at the endpoint defined with &quot;ipAddress&quot; and &quot;uiPort&quot; in &quot;Initialize&quot; method &#xD;&#xA; the input &quot;xEnable&quot; should set to &quot;TRUE&quot;. &#xD;&#xA; While setup the connection &quot;xBusy&quot; is &quot;TRUE&quot; but &quot;xActive&quot; is &quot;FALSE&quot;. &#xD;&#xA; After the connection is established &quot;xActive&quot; and &quot;xBusy&quot; are &quot;TRUE&quot; &#xD;&#xA; and the &quot;itfConnection&quot; output is valid. &#xD;&#xA; After closing the connection from the server side &#xD;&#xA; &quot;xActive&quot; becomes &quot;FALSE&quot;&quot;, &quot;itfConnection&quot; becomes invalid and  &#xD;&#xA; &quot;xDone&quot; becomes &quot;TRUE&quot;." ObjectGUID="{2b053d85-5fff-44f7-84ab-68db9d4b53ee}">
+    <Node Name="prvFlushRec" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Flush receiving data" ObjectGUID="{efebcc20-3eb7-4d32-9860-eedc8fcddd92}" />
+    <Node Name="prvEnlargeTrsBuffer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c2cd8f97-9f07-4d6e-b6a1-62b8afe49172}" />
+    <Node Name="ConnectionTimeout" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e518a08e-b33b-4c00-b5c9-ff408cf09311}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Timeout after which the connection setup aborts with active ``xError``." ObjectGUID="{fa5a7488-1f85-469e-84ba-4bf51fe0565d}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Timeout after which the connection setup aborts with active ``xError``." ObjectGUID="{36e85d97-61e6-49df-ba2f-1504cffe23e5}" />
+    </Node>
+    <Node Name="SetNewCertificate" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Set the new certificate to use" ObjectGUID="{47717ee0-055a-44da-8122-fd267c502037}" />
+    <Node Name="ExecCommand" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Execution of a command in Client side: command is sent to server" ObjectGUID="{84cc25c0-50a1-457e-bca2-654e977f7966}" />
+    <Node Name="ErrorCode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d8e172cc-5ebd-4d62-9cfc-5ceb53fc5683}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{6bd270fb-3f4f-499e-aa64-b910d451beef}" />
+    </Node>
+    <Node Name="Error" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{737f1ec6-3520-419e-93ec-57ff05a45f4d}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Error condition reached" ObjectGUID="{4732f79c-7eb2-4a2d-b390-5245879703b3}" />
+    </Node>
+    <Node Name="Enable" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{170587f2-2639-4996-ba40-b8c85c352139}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{fbb25e68-6b20-4663-b441-686b929d6e0b}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8a875955-d8dc-4c13-bb07-6bc731d4b460}" />
+    </Node>
+    <Node Name="CyclicCall" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Client cyclic call " ObjectGUID="{37b8366c-bb37-4489-a51c-4bd4c2560d79}" />
+    <Node Name="Create" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" It creates and initializes the object Client" ObjectGUID="{b9150dad-1688-4415-8eca-6c2c7beba845}" />
+    <Node Name="Busy" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e2c75da2-e510-4158-bc05-515c4637a213}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Operation is running" ObjectGUID="{762fac87-7398-48cd-b147-ed4fe1072d59}" />
+    </Node>
+    <Node Name="Active" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b20c4917-e37d-4ed1-a92e-d2f778b7d25a}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Connection is established" ObjectGUID="{5ebe2e01-b9ed-4a14-936a-32823cf03d09}" />
+    </Node>
+    <Node Name="TrsMessage" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" It handles a complete transmisstion of a message" ObjectGUID="{54f314bd-f2ae-4d91-bb18-214ad7b9dd7b}" />
+    <Node Name="ItfConnection" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{950ac608-bcdf-493e-a841-18abdf4b8278}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{76ef135d-1349-4d42-b180-62e2a6ecdd29}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{84b878c2-4aad-48a0-b9ab-ed03e3f6f387}" />
+    </Node>
+    <Node Name="FB_exit" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="FB_Exit must be implemented explicitly. If there is an implementation, then the&#xD;&#xA;method is called before the controller removes the code of the function block instance&#xD;&#xA;(implicit call). The return value is not evaluated." ObjectGUID="{39f8f843-f9e6-40b4-8627-de0e64b3479b}" />
+  </Node>
+  <Node Name="RDT_CONST" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Redundancy Protocol&#xD;&#xA;   Common constant value" ObjectGUID="{0b590516-613f-48a2-af52-a4461d7c7be6}" />
+  <Node Name="RDT_Base" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Base FB for TCP activities in Redundancy Data Transfer" ObjectGUID="{57d989c0-bebe-4ffd-8c58-a423eff05c14}">
+    <Node Name="TrsTimeout" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3687f3ac-24f4-4bc8-adaf-7d4b11b83df8}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Transmission timeout" ObjectGUID="{f3dd4601-edc9-46ed-9fb2-987c1ba2cc14}" />
+    </Node>
+    <Node Name="RcvTimeout" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{670a17a8-5eac-4d07-82f2-4af79aca5948}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Receiving timeout" ObjectGUID="{3ff16048-e673-442a-9cda-7c908d40cfab}" />
+    </Node>
+    <Node Name="Port" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7dc55afb-e733-4165-8081-c1ad31321209}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ab9dbc7b-7c1b-4b1f-9fbc-04563c266882}" />
+    </Node>
+    <Node Name="IPAddress" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4a68f26f-aa95-40c1-b3d0-85efc6b34587}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{0542b075-5645-4426-afca-4739571cfb2a}" />
+    </Node>
+    <Node Name="SetTLSContext" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Sets all the data neccessary to handle encrypted tcp connections " ObjectGUID="{9c143914-2537-4b2e-a7d6-ac32c754c483}" />
+    <Node Name="SendBytes" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" It sends a buffer of data to an active conncection" ObjectGUID="{0bb1bb10-8e0f-4389-8002-c7d94a65026a}" />
+    <Node Name="ReceiveBytes" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" It receives data from an active conncection" ObjectGUID="{64c71445-ebbd-4b0d-bc5b-dc17d11996ac}" />
+    <Node Name="FlushRec" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Flush receiving data" ObjectGUID="{f7ab81ca-dff8-40e5-b6dd-7e33a63b3150}" />
+  </Node>
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

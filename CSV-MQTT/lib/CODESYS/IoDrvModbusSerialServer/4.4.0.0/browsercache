@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IoDrvModbusSerialServer, 4.4.0.0 (CODESYS)">
+  <Node Name="ModbusServer" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{882cd9fc-19ca-4e6f-a0a4-90247e18c190}">
+    <Node Name="IsComPortValid" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e4680085-a1ff-4002-b09e-213f491e1ff7}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b8019e26-cfa4-4ee8-acca-e242b493dbcd}" />
+    </Node>
+  </Node>
+  <Node Name="ModbusSerialDeviceDiag" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="An instance of this function block  function block is generated for each serial Modbus Server device in the device tree." ObjectGUID="{1bdd8c7d-5bd1-4e56-81e9-a38bde5cba7e}">
+    <Node Name="UpdateUnitID" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" | Update the configured address of the Modbus Server.&#xD;&#xA; | Only possible if server is disabled (see xEnable Input)." ObjectGUID="{e162a137-cae8-436b-ac6b-5e8516ba06d9}" />
+    <Node Name="UpdateComPortSettings" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" | Update the configured Com-Port settings of the Modbus Server.&#xD;&#xA; | Only possible if server is disabled (see xEnable Input)." ObjectGUID="{e94468fe-c9c2-421f-b46a-3f9fc2ee7b37}" />
+  </Node>
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{a7e26ac9-db48-49fe-aa83-383500dfd8c2}" />
+  <Node Name="IoDrvModbusSerialSlave" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="An instance of this function block is generated for each serial Modbus Server device in the device tree." ObjectGUID="{48d36c4c-7155-4abf-b8c3-2721b7391e36}">
+    <Node Name="UpdateUnitID" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" | Update the configured address of the Modbus Server.&#xD;&#xA; | Only possible if server is disabled (see xEnable Input)." ObjectGUID="{032ef543-09a3-4e31-b784-151816a346f9}" />
+    <Node Name="UpdateComPortSettings" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" | Update the configured Com-Port settings of the Modbus Server.&#xD;&#xA; | Only possible if server is disabled (see xEnable Input)." ObjectGUID="{ef5c9f1d-4345-44d4-aab3-055d009488a1}" />
+  </Node>
+  <Node Name="GVL" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{abf98027-4834-44d8-bece-5ae0560a9b11}" />
+</Library>

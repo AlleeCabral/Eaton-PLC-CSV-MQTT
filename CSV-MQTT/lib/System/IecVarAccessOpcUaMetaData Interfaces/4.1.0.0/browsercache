@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IecVarAccessOpcUaMetaData Interfaces, 4.1.0.0 (System)">
+  <Node Name="NodeMetadata" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{98c527c2-3d70-4303-86b8-7ae2c9763a44}" />
+  <Node Name="InformationModelMetaData" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{74280b4d-f4b3-4e4d-8d23-9c1926c360b9}" />
+  <Node Name="DataTypeMetaData" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{82277589-598b-4d3a-b7e6-8a6a22c3e0a1}" />
+  <Node Name="VarAccUaNamespaceFragment" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1e4136eb-9e81-4cfa-8d8d-48e78d29371a}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+  <Node Name="InterfaceIds" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" !!! Attention !!!&#xD;&#xA; When defining new interface IDs, check libraries using this one for ID collisions.&#xD;&#xA; good candidates are the Collections_Itfs and the SymbolicVarsBase libraries, where&#xD;&#xA; we actually already have collisions.&#xD;&#xA; The ITFID_IIecVarAccessX additionally have to be registered in the file&#xD;&#xA; svn://server04/CodesysSpV3/trunk/CodesysSpV3/Components/CmpItf.h as they&#xD;&#xA; are called by the runtime." ObjectGUID="{690812de-0c9b-458d-9428-b9c43409c083}" />
+  <Node Name="IIecVarAccessOpcUaMetaData" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{28f5447e-3e1f-4ee8-b9a8-79238f8fa3f3}">
+    <Node Name="VarAccGetUATypeDefinition" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{400146d3-47ef-49e8-a64c-e81956d80984}" />
+    <Node Name="VarAccGetUAParentReferenceType" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{484edc2a-0a3f-4a99-8101-a406333b8073}" />
+    <Node Name="VarAccGetUANodeClass" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{288a3186-a264-4d1f-afc3-754a4208454e}" />
+    <Node Name="VarAccGetUAMethodArguments" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8fc6df06-583d-4d85-9c5b-0f050d0112ee}" />
+    <Node Name="VarAccGetUAEventNotifier" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{11a8be7e-97e1-45f1-be4d-c4829155175c}" />
+    <Node Name="VarAccGetUAEntryPoint" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3cce1561-90aa-4e02-9b20-209ba60be408}" />
+    <Node Name="VarAccGetUADisplayName" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{49df5f1c-850d-400b-ac98-961b371e274a}" />
+    <Node Name="VarAccGetUADescription" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{5ddefaae-bd38-4e66-b26b-cf82e3b17fbe}" />
+    <Node Name="VarAccGetUABrowseName" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8acc47d9-9259-4828-a574-4e409c6ed401}" />
+    <Node Name="VarAccGetUANamespace" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b14c0d58-d553-4c37-9010-c30473f4186e}" />
+    <Node Name="VarAccGetUAInformationModel" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b446c436-aab7-425e-be3b-941dd0c3d67f}" />
+    <Node Name="VarAccGetUAEntryPoints" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2d968833-99b8-4063-8478-1b6aee95f7f4}" />
+    <Node Name="VarAccGetUATypeParentReferenceType" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d0d138ae-58f2-4e2c-aa8f-40af0ec3ce45}" />
+    <Node Name="VarAccGetUATypeParentNode" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4e022471-e76c-48b6-8a68-bb39e9e28c1b}" />
+    <Node Name="VarAccGetUATypeIsWellKnown" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b35c9750-2b88-42d5-bfb4-0fd6a1a69172}" />
+    <Node Name="VarAccGetUATypeEncodingId" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f7ec4ff7-8ec1-499f-8b35-da5a7a9bdc66}" />
+    <Node Name="VarAccGetUATypeDataTypeId" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{fc86715a-9d1b-400c-b6b8-028db2c49149}" />
+  </Node>
+</Library>

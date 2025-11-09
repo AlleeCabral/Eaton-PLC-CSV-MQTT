@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="Alarm Manager Interfaces, 4.5.0.0 (Intern)">
+  <Node Name="TIMESTAMP" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" A type similar to SysTimeCore.SYSTIME, that is a signed type in contrast to the&#xD;&#xA; unsigned type SysTimeCore.SYSTIME. This signed type avoids warning during the IEC&#xD;&#xA; code conversion (because the IEC type ULINT doesn't have an exact counterpart in&#xD;&#xA; in java). The signed type can be used without any problems because using the 63&#xD;&#xA; bits of the LINT value allows us to represents dates up to the year 30000." ObjectGUID="{85209ef6-36a0-49ce-9d33-844288eb25f2}" />
+  <Node Name="StructFilteringName" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This structure is used to pass the name of remote device and the name of 'alarm group/alarm class' to filter on." ObjectGUID="{c56d971f-2c9f-4d6a-b9c0-6da22229b193}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{2afc5b6a-aef0-4f8f-b0c9-d72fe4983e57}" />
+  <Node Name="ALARM_ID" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This type represents the alarm IDs within an alarm group" ObjectGUID="{654335ef-d3c4-4ba5-8d0d-a3867d34ffef}" />
+</Library>

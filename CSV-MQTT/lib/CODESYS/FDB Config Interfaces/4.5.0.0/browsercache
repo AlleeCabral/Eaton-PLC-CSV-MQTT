@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="FDB Config Interfaces, 4.5.0.0 (CODESYS)">
+  <Node Name="IFDBConfig" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{77dfd583-28dd-4588-812d-cb6eaf204434}">
+    <Node Name="SetPortStateReq" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6df67320-3c4e-4302-992e-fab5a2ee3c75}" />
+    <Node Name="InitFDB" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{13ba7a81-de74-4404-a1ba-3358af26c50b}" />
+    <Node Name="EgressFilter" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" set/clear MAC egress filter on specified port" ObjectGUID="{d3ab0c5a-58f5-49be-ab41-7277cd4f90ad}" />
+    <Node Name="ClearLocalFDB" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3f33c2ab-0021-4072-a4fa-c0ddfb5621b5}" />
+    <Node Name="ClearFDB" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{47907720-4092-4fc0-9afa-33c28ef233f1}" />
+    <Node Name="AddMACFDB" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2ac95cd1-cb4b-425f-855b-2988ba81bc9a}" />
+  </Node>
+  <Node Name="MRC_PortState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4914e0ea-e9c6-48f7-807f-6928067efb91}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpCrypto Interfaces, 3.5.18.0 (System)">
+  <Node Name="RtsKdfParameter" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b7fcd6ee-b7da-41e6-9fd8-3df7b96c3c4a}" />
+  <Node Name="RtsCryptoKeyStorage" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Storage of a crypto key." ObjectGUID="{535a62f9-e8be-4d5f-a844-fa5cc3861de4}" />
+  <Node Name="RtsScryptParameter" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0c9e2192-a3ea-4c7b-b911-a0bcace9486c}" />
+  <Node Name="RtsCryptoKey" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" A cryptographic key." ObjectGUID="{78e99207-8874-4d66-a3c0-81dfb942b9e7}" />
+  <Node Name="RtsByteString" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This a representation of a byte string." ObjectGUID="{0988c2be-940c-43de-97df-0970302bb6bc}" />
+  <Node Name="RtsCryptoType" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{42ec874e-3d60-4164-93ac-1e8c52200462}" />
+  <Node Name="RtsCryptoKeyType" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{02c00b82-f71d-4300-82e4-d3fa228346e1}" />
+  <Node Name="RtsCryptoID" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{04813c8a-c284-4c2e-b6a3-f375ba41e92d}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

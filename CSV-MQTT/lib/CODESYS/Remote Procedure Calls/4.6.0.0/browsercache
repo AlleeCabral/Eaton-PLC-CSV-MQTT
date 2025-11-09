@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="Remote Procedure Calls, 4.6.0.0 (CODESYS)">
+  <Node Name="UUIDGenerator" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a9e9bb37-1f07-4743-87f8-b1d86f7efece}">
+    <Node Name="CreateUUID" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b735ec33-bca0-40a6-834f-7c7848cc53fb}" />
+  </Node>
+  <Node Name="CLRequestState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e1c515a9-fc59-4d0f-86a4-b3e8658b9aa7}" />
+  <Node Name="CLClientState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{26fad335-ed76-4ba8-affe-3188175cad94}" />
+  <Node Name="UUID" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{aaeddd0a-3a50-43bb-a471-ead001c23f2b}" />
+  <Node Name="RemoteProcedureCall" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e6487492-ad29-4059-91a5-66dec5dd9568}" />
+  <Node Name="RPCDataRepresentation" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3f80ef02-859b-4acd-98de-dbec0ddeb913}" />
+  <Node Name="InterfaceVersion" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b40f0a7a-e277-416d-9d54-fcbb56805d59}" />
+  <Node Name="DataRepresentation" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f34cf428-00c6-4213-acb1-45ffaac59560}" />
+  <Node Name="CLServerOptions" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{81c2e7c8-65df-4bc5-8e4b-d2b69af0ef4e}" />
+  <Node Name="CLClientOptions" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{fcf2a206-c63f-4e09-b3d7-88986feb0fdc}" />
+  <Node Name="IRPCProviderCallback" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c517d19d-85a2-48be-afcd-138b9dab9ff7}">
+    <Node Name="RequestCallback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" 	This method has to be called after performing the request by the IRPCProvider.&#xD;&#xA;	It can contain response data and a reject status, if this request could not be performed. " ObjectGUID="{f65dbb0f-89cb-4680-9b9a-9a9ae470b70f}" />
+    <Node Name="GetActivityUUID" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0ff49359-9eb8-4cc1-ac93-f30685398932}" />
+  </Node>
+  <Node Name="IRPCProvider" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" 	Implement this interface to offer a rpc at server side.&#xD;&#xA;	Call CLServer.RegisterIRPCProvider() to register your interface at the server.&#xD;&#xA;	Each IRPCProvider has to define an ObjectUUID and an InterfaceUUID and make them available through the corresponding properties. " ObjectGUID="{bf85ab3e-f553-4ecb-8dc7-80ab4a0d3be2}">
+    <Node Name="Request" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" 	This method is called by the server, if a client has sent a request to the Object- and InterfaceUUID of this IRPCProvider.&#xD;&#xA;	After processing this request the itfCallback.RequestCallback() has to be called in any case. You can indicate an error by setting the eRejectStatus " ObjectGUID="{c0a61573-3bc9-4d4c-bb02-161cf13fbe1d}" />
+    <Node Name="ObjectUUID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1c5dafb4-cef3-4f75-a324-ecec7a50fac4}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6a5a2b0e-b341-423f-a596-df0a4a52db1f}" />
+    </Node>
+    <Node Name="InterfaceUUID" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{edccb359-aee8-466d-8c65-b460e33d4aa7}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{48c12e3b-7727-4777-a688-325d5ba4b18f}" />
+    </Node>
+    <Node Name="Cancel" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" 	This method is called by the server, if a client has sent a cancel to the Object- and InterfaceUUID of this IRPCProvider.&#xD;&#xA;	itfCallback.RequestCallback() shouldn't to be called after receiving this Cancel(). " ObjectGUID="{32aec405-0b44-4184-b99b-7e7711d85657}" />
+  </Node>
+  <Node Name="IRPCCLClientCallback" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6d61b237-b00f-43b8-bdb9-87c378373c46}">
+    <Node Name="InvokeCallback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c2aa1747-31eb-4d47-92bf-98c8923c717a}" />
+    <Node Name="CancelCallback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9fa62450-266d-4215-a286-30435b6df7ea}" />
+  </Node>
+  <Node Name="IRPCCLClient" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{70c30478-900c-4f13-a6e9-e47219ef6dfd}">
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{de4a9b71-7fa9-4117-acc7-073d3785d79d}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e07aa84f-5e91-4a4e-b52a-4d30c08e1738}" />
+    </Node>
+    <Node Name="StartSession" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{73bb937a-fa4e-4f17-9af7-323fe15ebbf1}" />
+    <Node Name="Session" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9e64ca49-a189-41e2-9f3a-fe63909c6329}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d458982c-fc80-43d5-b834-93b53f6c3e7c}" />
+    </Node>
+    <Node Name="RequestState" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{440dfd0f-faf6-4ee6-970f-2e82447c6191}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{dc1ddbf3-e5a7-4fd2-ac4d-0a8a50a17e6a}" />
+    </Node>
+    <Node Name="Invoke" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f6e3340d-748e-46b5-aafc-25e82bcb4bca}" />
+    <Node Name="Init" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d7dbb232-cff1-4039-9105-081966edb8a3}" />
+    <Node Name="FaultStatus" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e800827e-209d-4a20-9732-70e7089fdb20}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a09e67eb-7c18-4549-8c4d-ef34533ebf89}" />
+    </Node>
+    <Node Name="EndSession" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e52fa52f-b6f6-4770-bfe3-e55c83d55cab}" />
+    <Node Name="CommStatus" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4bf43628-741e-403b-9284-b53b20f423c1}">
+      <Node Name="Get" TypeGUID="{28747452-a93d-4b34-8d05-d2c6018edd7d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d2118720-287a-43f9-a648-c1f73042373f}" />
+    </Node>
+    <Node Name="Cancel" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" 	Cancels the pending request. The Server is notified that it has no longer to operate this request.&#xD;&#xA;	CancelCallback returns the result. " ObjectGUID="{11d7f1cb-7825-4d1d-9a6d-1e52b2ce24cf}" />
+    <Node Name="Abort" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" 	This method should be called if the Client is in CommFail or Fault state. &#xD;&#xA;	It aborts all Client operations immediately without notifying the server.&#xD;&#xA;	CARE: During a pending request the Cancel-Method should be used to terminate the request first! " ObjectGUID="{fe83ae06-eb06-4596-b366-c20441e9d650}" />
+  </Node>
+  <Node Name="Settings" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Possible settings for the rpc stack. " ObjectGUID="{cd51317e-3db2-44da-bb88-6b22ca144fe3}" />
+  <Node Name="RemoteProcedureCalls" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" 	List of available RPCs of the CLServer FB.&#xD;&#xA;	All results are returned in Intel Byte Order (= little Endian) " ObjectGUID="{61a71296-3b39-4b4c-9e67-cea520fcd5cc}" />
+  <Node Name="Constants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{355e2d93-8bfa-4a03-9557-ab8609b30f86}" />
+  <Node Name="UUID_COMPARE" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{5fd2bdb0-a6f9-4476-a08b-76b7a8e6df57}" />
+  <Node Name="CLServer" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" | Server offers RPC to the network.&#xD;&#xA; | How to use the CLServer:&#xD;&#xA; | CLServer instances need to be called cyclically.&#xD;&#xA;&#xD;&#xA; 1. OPTIONAL: Set Properties (InterfaceIP, EndPointMapperPort, Annotation)&#xD;&#xA; 2. Call Init()&#xD;&#xA; 3. Register IRPCProvider (up to 8) --&gt; See IRPCProvider Interface for documentation of &quot;how to offer a rpc&quot;&#xD;&#xA; 4. Error occurred: Abort() and continue with step 1.)&#xD;&#xA;&#xD;&#xA; The CLServer offers a couple of RPC from the scratch. See |RemoteProcedureCalls|.&#xD;&#xA;" ObjectGUID="{e85c9a4e-4a09-4631-9104-7b43d3abe895}">
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2e2c5052-3c3c-4c26-9bb8-5a22241a532c}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{5e3f319f-e9ba-43bc-b143-1c3fed54a459}" />
+    </Node>
+    <Node Name="ResponseState" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7ad54c1c-4136-4ec4-8a7f-eab13dc38565}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d7d90b26-a64c-4cb2-a0b1-ef9c0a7e547d}" />
+    </Node>
+    <Node Name="InterfaceIP" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e623420a-2d8f-4f6d-bfa0-dc03232bcb22}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9b251b74-03ec-476d-945f-a5a56df68211}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3fed7b24-6ab9-40a7-8e8b-ecadde5ad557}" />
+    </Node>
+    <Node Name="EndPointMapperPort" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{308ca1f5-47a3-4f04-99dd-a8861626379f}" />
+    <Node Name="Annotation" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e7075913-f8e8-4315-b17f-629848b85ab1}" />
+    <Node Name="ResendResponse" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{05ad0077-4823-48d6-9135-020c6c677f05}" />
+    <Node Name="RequestIsQueued" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{483b7eff-b14b-409c-ab3d-2c27d11697ce}" />
+    <Node Name="RefreshRecvBuffer" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9f3ec9be-b1bb-4f26-9e6f-8d0f7d5648f0}" />
+    <Node Name="LogError" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{22a25ae7-bf1e-4a3c-acff-a43616dff846}" />
+    <Node Name="GetRPCProvider" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{7f3d5a94-fc30-442a-98ad-68ac8fa3772a}" />
+    <Node Name="CheckPDU" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a2f52a3b-3504-4980-81f8-706df41bc45d}" />
+    <Node Name="CancelCnf" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8a3cd0e0-76ce-49f8-abe8-18af61b4b52b}" />
+    <Node Name="UnregisterIRPCProvider" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ffb2df42-95d0-4c50-8cdb-a723526788fd}" />
+    <Node Name="SetSourcePortRange" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3687bb22-a498-4cb3-8ffa-33b8c90918eb}" />
+    <Node Name="RegisterIRPCProvider" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{6fdb4a93-327f-4593-8079-17f2c4dce4ba}" />
+    <Node Name="Init" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{eb65037a-e36c-4c9b-a189-72efca0b7ddf}" />
+    <Node Name="GetResolutionByActivityID" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{541e690d-dd28-4907-b1b9-39c4a0690422}" />
+    <Node Name="Abort" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8bf02fab-386c-4227-b398-c936684f1151}" />
+  </Node>
+  <Node Name="CLClient" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="	The CLClient calls RPCs offered by a server.&#xD;&#xA;	How to use the CLClient:&#xD;&#xA;	CLClient instances need to be called cyclically.&#xD;&#xA;&#xD;&#xA;		1. Call Init()&#xD;&#xA;&#xD;&#xA;		2. Call StartSession()&#xD;&#xA;&#xD;&#xA;		3. Check CommState, FaultStatus and State for indication of an Error: Call Abort() and continue with step 2&#xD;&#xA;&#xD;&#xA;		4. As soon as State has moved to WORKING, Invoke() can be called.&#xD;&#xA; &#xD;&#xA;			4.1 As long as the InvokeCallback was not called the RPC may be canceled with Cancel().&#xD;&#xA;&#xD;&#xA;			4.2 If a Cancel() was performed, the client will do a CancelCallback() after the server has acknowledged the cancel.&#xD;&#xA;&#xD;&#xA;		5. After the client has received the response from the server InvokeCallback() is called.&#xD;&#xA;&#xD;&#xA;		6. Continue with step 3&#xD;&#xA; &#xD;&#xA;	FINALLY: Call EndSession()" ObjectGUID="{200411f4-bda9-4273-a8fb-fd5cea628213}">
+    <Node Name="InterfaceIP" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e63c6676-fae5-4524-a669-061bbed80701}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{6c88e81f-e9b7-4606-867c-9ae79e12801e}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f56bebca-2c5f-42b7-8275-1c189be27b89}" />
+    </Node>
+    <Node Name="Reject" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{6228e6bc-df20-4b51-a3ec-f2329f8f8d0c}" />
+    <Node Name="NotifySequenceNumber" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f99c5a4d-f08d-4fa1-b619-5756f5afaa19}" />
+    <Node Name="NoCall" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" is called by the ping client, if a nocall PDU was received and a request is still running. &#xD;&#xA;this leads to a resend of the request." ObjectGUID="{eb734aee-8b62-467f-905d-c5b540e6746c}" />
+    <Node Name="LogError" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2fdfc0fe-8d0b-4477-b786-e4020cbf1ce5}" />
+    <Node Name="InvokeCnf" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{596eb2af-7354-43f5-a7e6-cc56568907e5}" />
+    <Node Name="Fault" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{cc2ac191-4968-4420-b63c-0f8428728dc7}" />
+    <Node Name="Connect" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{771b2317-6e00-4da9-96b9-5d1da833a2da}" />
+    <Node Name="CommFail" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{013fbb6f-84ed-480a-9286-19a80e1cfd89}" />
+    <Node Name="CancelCnf" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3c84d691-bfbd-4391-a99f-29caf175d8da}" />
+    <Node Name="State" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c0910392-9bb2-47ef-b3a2-3ef0a1f69011}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{4718d279-6eee-4724-861a-745c1422e114}" />
+    </Node>
+    <Node Name="StartSession" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d64ae561-04f6-400c-b2d2-b45ed5761fc9}" />
+    <Node Name="Session" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{743fa1fa-f5d3-4f7f-b513-740833f84a92}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a777a01b-7fc3-4610-bfc3-ce280a37cd02}" />
+    </Node>
+    <Node Name="RequestState" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{08b180be-f082-4359-be50-53872c5499b1}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c3a58103-f7c5-44a7-b38d-c17429540703}" />
+    </Node>
+    <Node Name="Invoke" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{7cb4dbee-a698-4d99-b2f3-49ed674cb6be}" />
+    <Node Name="Init" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2b7328d9-2d2b-4411-a37c-bb8ec5b201c2}" />
+    <Node Name="FaultStatus" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e474b41a-4b1b-4b3c-abf1-9b5ce4dc7752}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{99addcd1-b0fb-4663-afd0-6a6d6c64cfa7}" />
+    </Node>
+    <Node Name="EndSession" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a392de95-948e-4bc0-8627-46b38275bba2}" />
+    <Node Name="CommStatus" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{fb72fbe0-45d4-4b8c-bb11-c4b775ecd69d}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c739cda8-584e-4354-b40e-228e671aa68c}" />
+    </Node>
+    <Node Name="Cancel" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" 	Cancels the pending request. The Server is notified that it has no longer to operate this request.&#xD;&#xA;	CancelCallback returns the result. " ObjectGUID="{3d51a5d6-0998-414c-9629-1fe71484d65e}" />
+    <Node Name="Abort" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" 	This method should be called if the Client is in CommFail or Fault state. &#xD;&#xA;	It aborts all Client operations immediately without notifying the server.&#xD;&#xA;	CARE: During a pending request the Cancel-Method should be used to terminate the request first! " ObjectGUID="{e417ec24-46ce-4eeb-addf-a1bd7f5e419f}" />
+    <Node Name="SetSourcePortRange" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8d8507ca-f844-408d-be31-2d8f95ec89a1}" />
+  </Node>
+  <Node Name="SysTargetOperationNumber" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a0411ad4-7484-46eb-8929-6b6504601ae7}" />
+  <Node Name="RPCNCARejectStatus" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{206d4846-258a-4b04-be9b-556db5cdab67}" />
+  <Node Name="NCAPDUFaultStatus" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" DCE RPC Spec. page 672 Table E-3 " ObjectGUID="{5eedf313-8b89-400d-b411-6721e2d9b0a6}" />
+  <Node Name="FaultStatus" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" DCE RPC Spec. page 672 Table E-3 " ObjectGUID="{0f26c4ba-0ef1-4a24-bc7a-03025cc7d7b9}" />
+  <Node Name="ERROR" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f13851e4-c15c-4448-a3cc-5ae43fe11b73}" />
+  <Node Name="CommStatus" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f4eafa9a-1af1-4f6e-ad0a-2191856a57d4}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

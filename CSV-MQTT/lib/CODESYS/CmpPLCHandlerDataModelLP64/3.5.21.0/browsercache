@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpPLCHandlerDataModelLP64, 3.5.21.0 (CODESYS)">
+  <Node Name="VariableValue" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Instances of this structure represent the value and status information for a single variable&#xD;&#xA;&#xD;&#xA; .. note:: In fact this structure is the same than PlcVarValue from the PLCHandler SDK" ObjectGUID="{e467d9ae-a31a-45e3-881c-3c9293e43944}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

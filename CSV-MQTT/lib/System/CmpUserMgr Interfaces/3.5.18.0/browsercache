@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpUserMgr Interfaces, 3.5.18.0 (System)">
+  <Node Name="UserMgrValue" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{43fe9aa6-78f8-4f90-97c0-40f64d253efb}" />
+  <Node Name="UserMgrTypeClass" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3e925e29-f49a-4f6c-bc96-ef832ed57dea}" />
+  <Node Name="UserMgrCredentials_Type" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{dd5632eb-2d86-4326-b549-35315d3ffff3}" />
+  <Node Name="UserMgrCacheValue" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d537b003-0015-4cd6-81bf-d0efa9a4529e}" />
+  <Node Name="EVTPARAM_CmpUserMgrDatabaseChanged" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{feb68d2d-621a-400d-8553-e631ba08148d}" />
+  <Node Name="UserMgrCredentials_Store" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c0ef5777-03ec-4d5f-ab4b-ddf357083003}" />
+  <Node Name="UserMgrCredentials_Password" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1ba5df5d-8230-4cc8-aaf9-18001a7cf19b}" />
+  <Node Name="UserMgrCredentials" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6d23c89b-240d-4945-b5ef-685255a13aed}" />
+  <Node Name="Properties" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" | Properties&#xD;&#xA; | Properties for a user. Use as bit-mask." ObjectGUID="{a292d31e-b9fe-41aa-9d4d-f00056f6398c}" />
+  <Node Name="EventIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9118bf33-b677-4c6c-ab3e-1e27160de1de}" />
+  <Node Name="Constants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" | User rights&#xD;&#xA; | Defined rights that can fully control the access to an object" ObjectGUID="{61a71296-3b39-4b4c-9e67-cea520fcd5cc}" />
+  <Node Name="Types" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{ba6a1e93-e8fc-46ef-82e9-47fbe444227a}" />
+  <Node Name="Structs" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{3b61bc9e-52a0-4ca4-bff5-b14728cecf93}" />
+  <Node Name="GlobalConstants" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{c7dbe0db-e4b7-4ad4-a8e9-a965e037c1d2}" />
+  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
+  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+  <Node Name="CmpUserMgr" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{b9741afd-ccd3-4994-99f4-7d8a942952f6}" />
+</Library>

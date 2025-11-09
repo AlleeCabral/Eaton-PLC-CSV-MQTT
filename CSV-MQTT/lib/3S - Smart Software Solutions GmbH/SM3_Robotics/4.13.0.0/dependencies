@@ -1,0 +1,34 @@
+#SM3_Basic
+#SysTarget
+#3SLicense#97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b
+#SM3_Shared
+#CmpLog
+#Standard
+#SM3_RBase
+#SM3_Transformation
+#CmpIecTask
+SysTypes2 Interfaces, * (System)
+#System_VisuElems#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemMeter#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsSpecialControls#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsWinControls#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemTextEditor#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemTrace#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuNativeControl#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsAlarm#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemCamDisplayer#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElem3DPath#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsDateTime#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#system_visuinputs#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#SM3_RCP
+#SM3_TrajectoryGeneration
+#SoftMotion_AddRamps
+#SM3_Error
+#SM3_Ramps
+#CmpApp
+#FloatingPointUtils
+SysTime, 3.5.5.0 (System)
+#SM3_CPKernelDefaults
+#SM3_CommonPublic
+#SysMem
+#SM3_Dynamics

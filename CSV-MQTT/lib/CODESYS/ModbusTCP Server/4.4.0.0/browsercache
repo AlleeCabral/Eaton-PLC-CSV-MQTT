@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="ModbusTCP Server, 4.4.0.0 (CODESYS)">
+  <Node Name="ModbusServer" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="&#xD;&#xA;Tis function block processes up to 16 parallel client connection requests by Modbus TCP. &#xD;&#xA;" ObjectGUID="{882cd9fc-19ca-4e6f-a0a4-90247e18c190}" />
+  <Node Name="GVL" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1b377c61-e4e4-424a-8c4f-723505e0fe49}" />
+  <Node Name="Bibliotheksverwalter" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{54a085be-c4e2-47ff-a1ab-b1a7f9f15dae}" />
+</Library>

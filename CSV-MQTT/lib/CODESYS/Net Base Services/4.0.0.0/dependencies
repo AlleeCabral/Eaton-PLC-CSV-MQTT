@@ -1,0 +1,19 @@
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+#CmpIecTask
+#CmpApp
+#SysCpuHandling
+#SysEvent
+#SysMem
+#Component Manager
+#SysSem
+#CmpTls
+#CmpX509Cert
+#CmpEventMgr
+#SysSocket2
+#CmpAsyncMgr
+#CmpSchedule
+#SysSocket Implementation
+SysSocket Interfaces, * (System)
+#MemoryBlockManager
+#CBML

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SysShm, 3.5.17.0 (System)">
+  <Node Name="Bibliotheksverwalter" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8b49a4a4-cada-4e29-aa6a-58dcdb9c38e8}" />
+</Library>

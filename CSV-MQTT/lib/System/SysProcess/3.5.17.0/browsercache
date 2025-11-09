@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SysProcess, 3.5.17.0 (System)">
+  <Node Name="Bibliotheksverwalter" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{3d24fcd4-5523-4979-85d6-6a9948cbbbe9}" />
+</Library>

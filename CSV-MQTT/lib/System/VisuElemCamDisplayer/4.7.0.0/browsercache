@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="VisuElemCamDisplayer, 4.7.0.0 (System)">
+  <Node Name="Math_Globals" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ff0609e2-2278-4215-8251-a290505b6c0b}" />
+  <Node Name="Parameters" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{4c04becd-9592-42c8-8004-16d495af2757}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{bfaf3bcd-a41c-4592-a940-fd833f647065}" />
+</Library>

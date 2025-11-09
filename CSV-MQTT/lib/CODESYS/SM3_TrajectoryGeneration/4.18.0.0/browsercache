@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SM3_TrajectoryGeneration, 4.18.0.0 (CODESYS)">
+  <Node Name="SMC_TG_Solution_ProfileStub" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{31be5369-1620-4a91-8b9f-82f188e1cb1d}" />
+  <Node Name="SMC_TG_SolutionType" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7c3666ea-79a7-4034-a367-977e060d5948}" />
+  <Node Name="SMC_TG_SolutionStandardProfile" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{939bdecc-4404-4dd2-a8f2-1ffa6dfb195b}" />
+  <Node Name="SMC_TG_SolutionSpecialProfile" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b337c5eb-3057-4426-a4bf-c87291076483}" />
+  <Node Name="SMC_TG_SolutionInterval" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{18d74fcc-b8f6-4634-8080-9c4dea0a4a3b}" />
+  <Node Name="SMC_TG_SolutionData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d92882a0-0a64-4122-b267-3be741473a08}" />
+  <Node Name="SMC_TG_Solution" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{37522581-7321-4359-97df-d087904421fa}" />
+  <Node Name="SMC_TG_StdProfileStub" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6b93c452-0146-432f-885d-aee67651d52c}" />
+  <Node Name="SMC_TG_ProfileList" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f3e71f4f-39cf-46e7-a7b6-bca943500842}" />
+  <Node Name="SMC_TG_JerkPhase" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f8303450-3675-4ddf-be05-b74006bf9fb4}" />
+  <Node Name="SMC_InterpolateableProfile_To_Phases" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{4857ba69-bf50-407f-a5bc-59cc2ebd589b}" />
+  <Node Name="SMC_Track1DReferenceSignal" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" A filter that respects the given bounds and tracks a reference signal." ObjectGUID="{a0299521-c394-4f0c-af13-63725164dfea}" />
+  <Node Name="Dyn_Epsilons" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{ef2b0133-f2e7-4bb6-9aab-8d320b4ee839}" />
+  <Node Name="SMC_TG_InterpolateableProfile" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2c7d9a90-a0ce-4027-9d2d-05314d9d86ff}">
+    <Node Name="Reset" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d8d03fa7-04ad-40e7-a066-59c1039a600d}" />
+    <Node Name="Profile_VA_1" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="second part of trajectory-calculation without distance&#xD;&#xA;calculates ramp and writes:&#xD;&#xA;fRamp2Dur&#xD;&#xA;bRamp2IsOnePhase&#xD;&#xA;(fRamp2Jerk)&#xD;&#xA;ramp2&#xD;&#xA;fQAfterRamp2&#xD;&#xA;fVAfterRamp2&#xD;&#xA;fQAfterCorrEnd&#xD;&#xA;fV1" ObjectGUID="{f3b51004-d685-4a89-88d8-1846e0f5b59a}" />
+    <Node Name="Profile_ATo0" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{1d742ab4-f682-4d63-a340-21a6cb5c0a27}" />
+    <Node Name="Interpolate" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ff10ace7-bb2a-4542-8716-361940f64f72}" />
+    <Node Name="Extrapolate" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Like Interpolate, but can also handle negative time values,&#xD;&#xA; and time values &gt; duration." ObjectGUID="{d8613747-3e4a-489a-9f4e-0e7d7cccd96b}" />
+    <Node Name="Duration" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{5196122e-c527-41d4-b9d8-596b6eb2e3dd}" />
+  </Node>
+  <Node Name="GVL" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2905717c-cf45-466f-9d9e-2ca67942cd5c}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="SysSocket2 Interfaces, 3.5.17.0 (System)">
+  <Node Name="SysSocket2_Type" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{be8632e0-d5cb-4e2c-9314-9751c4bda83d}" />
+  <Node Name="SysSocket2_TlsSockets" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{0c769d95-7864-4d65-860f-5e688bf80737}" />
+  <Node Name="SysSocket2_StdSockets" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f7bb3466-7cd2-4cd5-95a1-7b732289a7f0}" />
+  <Node Name="SysSocket2_SpecificParameter" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2d7d4a18-2d8a-4922-bf0e-2477cb61cbf0}" />
+  <Node Name="SysSocket2_Parameter" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This structure represents the parameters to create a specific socket type&#xD;&#xA; Set the parameterType to your desired socket type. By now Std or TLS sockets&#xD;&#xA; are available.&#xD;&#xA; The specifica member contains the parameters needed to create this socket type" ObjectGUID="{181f8f8d-c7f1-4a45-b388-786579c4a98e}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

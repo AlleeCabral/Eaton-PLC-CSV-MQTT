@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CANbus, 3.5.17.0 (3S - Smart Software Solutions GmbH)">
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{78c132aa-b6f6-46e6-bd52-25428989030a}" />
+</Library>

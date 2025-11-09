@@ -1,0 +1,31 @@
+#Standard
+#CmpApp
+#TraceMgrUtils
+#FloatingPointUtils
+#CAA Storage
+#CAA Storage Imp
+#SysTimeCore
+#SysTask
+#SysMem
+#Rts Service Handler
+#CmpSrv
+#CmpBinTagUtilIec
+#CAA Types
+#Collections
+#SysTimeRtc
+#CmpLog
+#StringUtils
+#SysFile
+#SysSem
+#CmpTraceMgr
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+#Standard64
+#CmpEventMgr
+#ElementCollections
+#CAA FB Factory
+Base Interfaces, * (System)
+#CmpIecTask
+#SysCpuHandling
+Trace Mgr2 Interfaces, * (Intern)
+#VisuShared

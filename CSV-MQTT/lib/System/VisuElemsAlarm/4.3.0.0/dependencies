@@ -1,0 +1,23 @@
+#CmpLog
+#CmpVisuHandler
+#CmpBitmapPool
+#CmpDynamicText
+#Standard
+#StringUtils
+#SysTimeCore
+#System_VisuElems#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemsWinControls#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemBase#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+Base Interfaces, * (System)
+Data Server Interfaces, * (System)
+Alarm Manager Internal Interfaces, * (Intern)
+SysTypes2 Interfaces, * (System)
+Datasources Interfaces, * (3S - Smart Software Solutions GmbH)
+#CDSV3ProtocolUtils
+CmpErrors2 Interfaces, * (System)
+#SysMem
+#SysSem
+Alarm Manager Interfaces, * (Intern)
+#AlarmManager
+#SysTimeRtc
+#System_VisuInputs#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae

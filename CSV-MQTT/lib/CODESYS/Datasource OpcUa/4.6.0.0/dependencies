@@ -1,0 +1,15 @@
+Datasources Interfaces, * (3S - Smart Software Solutions GmbH)
+#SysMem
+CmpErrors2 Interfaces, * (System)
+#Component Manager
+#CmpLog
+#Standard
+SysTypes2 Interfaces, * (System)
+#StringUtils
+Base Interfaces, * (System)
+#NetBaseSrv
+#CBML
+#CmpX509Cert
+CmpOPCUAClient, 3.5.17.0 (System)
+CmpOPCUAStack, 3.5.17.0 (System)
+#SysSocket

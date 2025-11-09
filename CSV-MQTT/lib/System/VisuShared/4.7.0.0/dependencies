@@ -1,0 +1,12 @@
+#CmpApp
+#CmpIecTask
+SysTypes2 Interfaces, * (System)
+#StringUtils
+#Collections
+#CmpLog
+#Standard
+#CmpEventMgr Implementation
+CmpEventMgr Interfaces, * (System)
+#CmpDynamicText
+CmpErrors2 Interfaces, * (System)
+#SysCpuHandling

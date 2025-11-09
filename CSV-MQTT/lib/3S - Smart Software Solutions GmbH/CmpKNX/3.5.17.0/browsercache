@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpKNX, 3.5.17.0 (3S - Smart Software Solutions GmbH)">
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{345db92d-b029-4d43-abea-5cf6d1e6a581}" />
+</Library>

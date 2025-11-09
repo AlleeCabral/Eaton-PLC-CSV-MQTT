@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpVisuHandler, 3.5.19.0 (System)">
+  <Node Name="Visu_ClientTagData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{affc6412-233e-4e1c-8518-cb754cca6e96}" />
+  <Node Name="VisuStructPoint" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This type is used also within the runtime system under the name RTS_Point, &#xD;&#xA; defined in SysGraphicBase.h&#xD;&#xA; Structure can be used also from end users (Polygon dynamic array)" ObjectGUID="{7ff07baf-0903-47c1-b96a-3eb0a9d4fae4}" />
+  <Node Name="VisuEnumClientTag" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{927720ea-be7b-491d-ba5f-aff698d57b03}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{4cafae9d-985a-4004-9370-17b349ed8ec4}" />
+</Library>

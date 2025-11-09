@@ -1,0 +1,14 @@
+#Profinet
+#ProfinetCommon
+#CommFB
+#SysSocket
+#SysFile
+#SysMem
+#Standard
+SysTypes2 Interfaces, * (System)
+IoDrvEthernet Interfaces, * (3S - Smart Software Solutions GmbH)
+#SysCpuHandling
+#CmpEventMgr
+CmpErrors2 Interfaces, * (System)
+#SysTarget
+#CmpSettings

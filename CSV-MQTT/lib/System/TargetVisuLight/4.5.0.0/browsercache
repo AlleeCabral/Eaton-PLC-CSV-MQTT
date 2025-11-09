@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="TargetVisuLight, 4.5.0.0 (System)">
+  <Node Name="DrawText" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a9d88666-a254-4c7f-ad3f-c19ed607d9f2}" />
+  <Node Name="DrawRect" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{28397f62-2f46-456f-90c2-93d83be2392f}" />
+  <Node Name="DrawPolygon" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{dbd8271d-47bd-4a3e-bf02-07d9985dde0a}" />
+  <Node Name="DrawBitmapByIndex" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{16ec67fa-3505-40eb-8ed1-796860eb6276}" />
+  <Node Name="DrawBitmapByID" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{bdf54c1e-387f-4314-afe7-934670ff737a}" />
+  <Node Name="SubPoints" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{38d82633-c746-49ce-89fe-d30fd20db01c}" />
+  <Node Name="SetSimpleRectangle" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{57654ba3-b357-434d-a69d-47a6aaf34196}" />
+  <Node Name="SetPaintRectangle" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f99b04f9-2063-4e39-821d-1e03d659ba3a}" />
+  <Node Name="PushTransformation" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ac611730-253e-4426-b8ec-ece7c1e89045}" />
+  <Node Name="PopTransformation" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{64381b9b-b9cb-4e9e-82ff-4564f6a755f1}" />
+  <Node Name="OffsetPoints" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a210f92a-b3e5-47f7-94c3-596edb1be8a6}" />
+  <Node Name="LogMessage" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{a02a7f57-670d-40a6-a56f-df4578757781}" />
+  <Node Name="BitmapProcessing" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{0c058134-a2ef-4c73-95f1-8a34b7b280f0}">
+    <Node Name="FindBitmapIndexByID" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9efa9bf4-a6c4-4768-8e19-ca9116ef0f3c}" />
+  </Node>
+  <Node Name="BitmapEntry" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{35d89195-d23f-41af-826f-d538f7c4b4aa}" />
+  <Node Name="PrintfW" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" This function performs a &quot;formatted printing&quot; of the value &lt;pValue&gt; points to.&#xD;&#xA; It is only used internally to have the possibility for the converted code to&#xD;&#xA; provide an external implementaion." ObjectGUID="{5f6bcef6-121f-4f62-b0e0-11e200da5bd1}" />
+  <Node Name="Printf" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" This function performs a &quot;formatted printing&quot; of the value &lt;pValue&gt; points to.&#xD;&#xA; It is only used internally to have the possibility for the converted code to&#xD;&#xA; provide an external implementaion." ObjectGUID="{ba8d48f4-b190-46c7-be6b-9336508c391c}" />
+  <Node Name="FormatDateTime" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" This function performs a formated date and time string." ObjectGUID="{506fafbd-8600-4efd-83a0-493b94ac9dc6}" />
+  <Node Name="ScalePoint" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{b1899bd9-8f9b-4515-bc5b-a53f7f610140}" />
+  <Node Name="RotatePoint" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{4670daa9-877c-46e6-b2dc-12a111ed23b7}" />
+  <Node Name="PointArrayCalcSurroundingSimpleRect" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c2f96998-7c5f-423e-8676-6945eeda5440}" />
+  <Node Name="MoveRelative" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{aeffab01-5623-4770-abef-c29d1c2e6ed6}">
+    <Node Name="Execute" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ce991ac4-8aa1-4aa8-aa76-4ff58fff6004}" />
+  </Node>
+  <Node Name="MoveAbsoluteData" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f6fdf85e-506e-4b55-801e-994f292e4a4e}" />
+  <Node Name="MoveAbsolute" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{186a0f2f-4135-4211-88cf-4f2f27260b25}">
+    <Node Name="Execute" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{15568404-2223-4971-9e75-1fb2d4177730}" />
+  </Node>
+  <Node Name="Deg2Rad" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{eedc1363-dc1b-43c1-8298-493979349942}" />
+  <Node Name="CalculateCenter" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{178ff009-1f4d-450c-836c-003a4552c981}" />
+  <Node Name="AddPoints" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{7ca90483-6346-4887-96a7-1a51bc6492a1}" />
+  <Node Name="ITargetVisuLight" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{37a2b58e-a603-4c92-a481-0dbcf5fcff34}">
+    <Node Name="Paint" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b6849884-dfc5-4650-999c-558abce1d08c}" />
+    <Node Name="Initialize" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{28c8e7e3-8d2d-4c16-829b-a55ae9606c5c}" />
+  </Node>
+  <Node Name="TVL_ErrorCodes" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3405c267-7831-45c6-a43c-0c99f6d2c751}" />
+  <Node Name="TVL_Constant" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8c63f9a0-3fec-4104-b9d1-434099995e8b}" />
+  <Node Name="TVL" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3a06bd57-d569-410f-9b2d-6d949a78ea32}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{bfaf3bcd-a41c-4592-a940-fd833f647065}" />
+  <Node Name="GVL_WSTRING" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{fd39a38a-2111-4a5a-80b6-15c12e16f840}" />
+  <Node Name="GVL_STRING" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{000e7fc7-4899-4fdb-906e-dbce811f9ffc}" />
+</Library>

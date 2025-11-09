@@ -1,0 +1,9 @@
+#CmpVisuHandler
+#Standard
+#CmpBitmapPool
+#CmpDynamicText
+#CmpLog
+Visu Interfaces, * (System)
+Datasources Interfaces, * (3S - Smart Software Solutions GmbH)
+#System_VisuElemBase#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuInputs#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae

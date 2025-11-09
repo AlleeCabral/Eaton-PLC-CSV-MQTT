@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IoDrvCIFXEthernetIP, 4.6.0.0 (CODESYS)">
+  <Node Name="RemoteAdapter_Diag" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{4f152a86-3b80-4362-8522-11466c5d1837}">
+    <Node Name="SiblingNodeCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e21518f2-ef34-4e63-a1dd-cd0011b15e68}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the number of sibling (same level) nodes" ObjectGUID="{cbf6855d-ce4a-47dd-80a6-bacb84047cba}" />
+    </Node>
+    <Node Name="ParentNode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8bed60b6-98dd-4ef8-bc24-6ea0f17b5ea1}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the parent node or zero if already the root node is reached" ObjectGUID="{e6987b7b-480a-426e-ab46-59b4c58825b2}" />
+    </Node>
+    <Node Name="NextSiblingNode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{851b6132-3a85-4634-ba0f-4c8547656732}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" returns the next sibling node at the same level&#xD;&#xA; used for step through all nodes" ObjectGUID="{2eb65f8c-22df-496e-bb7f-1084b534c9f6}" />
+    </Node>
+    <Node Name="IsRootNode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9ddd50ca-0d0f-4d59-bbaa-c8cab8995540}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" returns true, if the current node is the root (plc) node, otherwise false" ObjectGUID="{be83ca9e-abc2-49e0-867e-5472ac36e215}" />
+    </Node>
+    <Node Name="Index" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bf15a4b4-d0c3-43dd-bd09-1b9531f281a1}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{4f7f7ac1-59e2-4bd1-ad9a-67ee3a83764d}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d0a103bd-5c9a-4de2-8752-bc1151181eb0}" />
+    </Node>
+    <Node Name="GetChild" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{e273b71d-e032-4ac4-9b3a-fe1b286c7e0f}" />
+    <Node Name="FirstChildNode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e08798eb-1fb1-4d5f-8c9d-29b71459d1ac}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the first child node below the current one" ObjectGUID="{eac191f0-c876-4638-9628-883a27a096de}" />
+    </Node>
+    <Node Name="Enable" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{86572922-d122-4929-bc32-9e552dd50a81}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" | Set: This property is used for enabling/disabling a node. Changes will take effect after doing a Reconfigure.&#xD;&#xA; | Get: Returns Enable AND Parent.Enable" ObjectGUID="{ae93e037-6cda-4a76-90df-f4b55e92d901}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" | Set: This property is used for enabling/disabling a node. Changes will take effect after doing a Reconfigure.&#xD;&#xA; | Get: Returns Enable AND Parent.Enable" ObjectGUID="{6db9a4b2-de95-4ba1-804a-aca71a70da3f}" />
+    </Node>
+    <Node Name="Connector" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{964777ed-9efc-4c5f-a6c3-0ff09cdc6df2}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{cb80e4e9-8ebf-401f-b9f9-a44e040e899e}" />
+    </Node>
+    <Node Name="ChildNodeCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{50387bd0-6272-4ddc-9929-39ef535770c7}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the number of childs below the current node" ObjectGUID="{e5b07bdf-c476-4184-b6f1-0926ad50386f}" />
+    </Node>
+    <Node Name="GetDeviceState" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the state of the device; if device state is ERROR further information can be read by GetDeviceError" ObjectGUID="{d9e0fc77-3dc2-4f05-a621-34fb98c2e355}" />
+    <Node Name="GetDeviceInfo" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the device information of the current node" ObjectGUID="{874dfcd1-d612-4ecf-b6df-f815c7d8bbe5}" />
+  </Node>
+  <Node Name="IoDrvCIFXEthernetIP_Diag" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f8f4cb47-bb7d-473a-9b49-61c31309e901}">
+    <Node Name="SiblingIRP" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1f1a49cf-7feb-42fc-bd73-5de256ffe5ad}" />
+    <Node Name="ReconfigureActive" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2a776964-0513-4bb3-8598-596281ae1a0a}" />
+    <Node Name="SiblingNodeCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{25ea278a-2834-40ae-a934-a4d8bf6eed3e}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the number of sibling (same level) nodes" ObjectGUID="{028e7de4-19d5-453d-90e5-d86ecfe35624}" />
+    </Node>
+    <Node Name="ParentNode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{7f5f9402-3583-4f00-830c-e61701aa02c7}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the parent node or zero if already the root node is reached" ObjectGUID="{d75ad2ff-b7ee-48f3-8f1c-3e2eb9ee46e8}" />
+    </Node>
+    <Node Name="NextSiblingNode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{281feaf2-f1f1-49f2-b102-f4252c9caacb}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" returns the next sibling node at the same level&#xD;&#xA; used for step through all nodes" ObjectGUID="{12ba7fd8-ac36-4c07-ac0b-c8716bc537bc}" />
+    </Node>
+    <Node Name="IsRootNode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{363d71df-d5f2-4f1f-9276-1a86367751ae}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" returns true, if the current node is the root (plc) node, otherwise false" ObjectGUID="{69f22620-ab1a-4f52-9696-7646c6213b8b}" />
+    </Node>
+    <Node Name="Index" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{bb0c3263-9dff-41f1-bf4f-242d5a1a0d86}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{822992a4-3a4f-4d41-b473-b4312ccaf483}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{ba2b56db-893c-4dab-add7-ba5c40cb5bc7}" />
+    </Node>
+    <Node Name="GetChild" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{41ceb705-8dfe-46ac-ac2f-cca90f41dfc0}" />
+    <Node Name="FirstChildNode" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{e6e26ce0-67f9-4c87-b62d-a33cfc6c9711}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the first child node below the current one" ObjectGUID="{1a366c6a-271b-416f-9fea-90c69c0dc5bd}" />
+    </Node>
+    <Node Name="Enable" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d97c0bc9-622d-43e2-8664-73a8d17f0b07}">
+      <Node Name="Set" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" | Set: This property is used for enabling/disabling a node. Changes will take effect after doing a Reconfigure.&#xD;&#xA; | Get: Returns Enable AND Parent.Enable" ObjectGUID="{5d65f5be-15da-4ec7-bf4f-1c4d144d41ce}" />
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" | Set: This property is used for enabling/disabling a node. Changes will take effect after doing a Reconfigure.&#xD;&#xA; | Get: Returns Enable AND Parent.Enable" ObjectGUID="{acbba457-fa6f-4a86-aad5-0cb2fb403241}" />
+    </Node>
+    <Node Name="Connector" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{eb6cfb93-1dc0-4204-9dc3-0d2a85ae026e}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d69211ff-d6bb-44ef-af23-a74a88f84344}" />
+    </Node>
+    <Node Name="ChildNodeCount" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b651273c-e922-4e63-ac9d-62d4508fc44d}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the number of childs below the current node" ObjectGUID="{e84e1e22-17e1-4ac7-a9ec-828dedda4d66}" />
+    </Node>
+    <Node Name="GetDeviceState" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the state of the device; if device state is ERROR further information can be read by GetDeviceError" ObjectGUID="{7b7aefe5-d02b-4817-bf86-f05077070dea}" />
+    <Node Name="GetDeviceInfo" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the device information of the current node" ObjectGUID="{586020c7-996f-4181-b2e9-3f20d431547e}" />
+    <Node Name="GetBusState" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the bus state of the current node; if device state is ERROR further information can be read by DED.GetBusError functionblock. " ObjectGUID="{c8381930-5e7b-433a-b292-f594786ff4f2}" />
+    <Node Name="GetBusInfo" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Returns the bus information of the current node" ObjectGUID="{d2cc3946-dc38-43d6-bc33-588c7913d49a}" />
+  </Node>
+  <Node Name="IPSTRING_TO_UDINT" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{af1013e7-fcbe-40fa-bdb5-3628dc8879d7}" />
+  <Node Name="AddLogger" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{fc561d9c-2a03-4f78-93c8-f5f16d56c3bf}" />
+  <Node Name="RemoteAdapter" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{35af4770-8c28-4ee5-a48e-1e497c99ad75}">
+    <Node Name="SetupIOMapping" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{23a13282-267e-4ed6-9d0e-56330d8a5f5c}" />
+    <Node Name="SetConnectionIndex" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="This method goes through all connections and I/O channels and sets dwDriverSpecific to its corresponding connection index.&#xD;&#xA;A call to this method is only need if an old configuration is used (_xCompatibilityMode = TRUE).&#xD;&#xA;In newer config versions dwDriverspecific is already set by configurator." ObjectGUID="{4af1564c-2750-4e60-a4ec-228d627711f4}" />
+    <Node Name="SetupStructuredIOMapping" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{5a5bc929-5243-434c-a491-3310f0628be9}" />
+    <Node Name="GetConnectionIoSize" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{34b28c77-74eb-4f09-99c0-20c996690c7d}" />
+    <Node Name="GetConnection" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c23299ec-9318-4fdb-a281-329d42c3df64}" />
+    <Node Name="IPAddress" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b48470e4-bfa8-4d5d-9930-39ff3f3cb282}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{371bc41c-be0b-476e-9354-542728b5cff6}" />
+    </Node>
+    <Node Name="CIFXRemoteAdapterHandle" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{a5e53367-0e0f-43bd-943e-35da0030f05b}" />
+    <Node Name="RegisterCIFXDevice" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{acdc75ec-6025-4fbe-bcb9-000baf40ca62}" />
+    <Node Name="Initialize" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{19baba1d-e983-4a3a-a043-883146a69f0d}" />
+    <Node Name="UpdateConfigurationNull" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{c4dac77e-bfdb-45ad-a4af-2483240e4870}" />
+    <Node Name="IoDrvStartBusCycle" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{98a93b76-3d56-4cc7-8e7f-90d8f9e635e0}" />
+    <Node Name="UpdateDiagnosis" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{fe98809f-5f76-41d9-9d00-974a43d3d332}" />
+    <Node Name="SetDiagAvailable" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8a10145a-2c64-4a76-93d0-3fc1d4c08a81}" />
+    <Node Name="SetDemoMode" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{9af898bb-e6f5-49f5-af8b-887eec47bcf3}" />
+    <Node Name="SendDiagnosisRequest" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{82b5385a-69de-4bad-9aeb-03fb76f22b0d}" />
+    <Node Name="ReceiveDiagnosis" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{0a7ac8da-b40a-4e4b-97d0-9f1bc83aef0f}" />
+  </Node>
+  <Node Name="IoDrvCIFXEthernetIP" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f933751e-8e64-44c3-8f16-c8cf4df7d285}">
+    <Node Name="LoadRemoteAdapters" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{fd8872a9-4a26-40ba-a96e-bda812a67764}" />
+    <Node Name="InitializeRessources" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{839d960c-1813-4ed6-b9d2-ac87cb5d734d}" />
+    <Node Name="GetConnectionHandle" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment="Returns a unique connection handle" ObjectGUID="{a096e9bb-326e-475b-970b-fedc1b742c3b}" />
+    <Node Name="UserParameterAlreadTriedToSet" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{288fb4a5-90b6-4aeb-8e9e-c65598ae7988}" />
+    <Node Name="GetRemoteAdapter" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{df355519-89fb-4d2e-b47e-ddacd9c3a605}" />
+    <Node Name="GetNextRemoteAdapter" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{692e6c91-7fcc-4935-a294-daba384031e8}" />
+    <Node Name="IoDrvStartBusCycle" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{2403e3f1-263b-45d8-9047-43bbe0fbb4ec}" />
+    <Node Name="pCIFXPacketPool" TypeGUID="{5a3b8626-d3e9-4f37-98b5-66420063d91e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{278b5a07-9e7e-45f0-bcbf-09336fdc55a0}">
+      <Node Name="Get" TypeGUID="{792f2eb6-721e-4e64-ba20-bc98351056db}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{94a56534-a082-4729-a722-99976e84ddc7}" />
+    </Node>
+  </Node>
+  <Node Name="NetXErrorCodes" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{36cbacd9-15bd-4bb6-a288-e6cc15d95cb6}" />
+  <Node Name="CIPGeneralErrorCodes" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2ae9d3ba-fa15-48ac-9fb9-519b1775c9c1}" />
+  <Node Name="Bibliotheksverwalter" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{de6adcfd-5ab0-4f46-a0f0-d6c1f938e279}" />
+</Library>

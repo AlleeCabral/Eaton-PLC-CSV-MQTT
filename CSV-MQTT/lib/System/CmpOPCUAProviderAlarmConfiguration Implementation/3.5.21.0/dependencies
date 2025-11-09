@@ -1,0 +1,7 @@
+#CmpApp
+SysTypes2 Interfaces, * (System)
+#Standard
+CmpOPCUAProviderAlarmConfiguration Interfaces, * (System)
+CmpOPCUAStack Interfaces, * (System)
+CmpOPCUAServer Interfaces, * (System)
+#AlarmManager

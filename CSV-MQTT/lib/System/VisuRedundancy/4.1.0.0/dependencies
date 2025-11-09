@@ -1,0 +1,28 @@
+#CAA Types
+#CAA FB Factory
+#Standard
+SysTypes2 Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+SysSocket Interfaces, * (System)
+#VisuUtils
+#SysMem
+#System_VisuElemBase#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#SysSocket
+#StringUtils
+#Redundancy
+#CmpLog
+#CmpSettings
+#SysSem
+#RedundancyDataTransfer
+#CmpVisuHandler
+#SysTimeRtc
+#ElementCollections
+Datasources Interfaces, * (3S - Smart Software Solutions GmbH)
+CmpEventMgr Interfaces, * (System)
+#CmpEventMgr Implementation
+#SysFile
+#SysDir
+#Component Manager
+#CmpX509Cert
+SysTime, 3.5.17.0 (System)
+#CmpApp

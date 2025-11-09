@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpAuditLog Interfaces, 3.5.21.10 (System)">
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+  <Node Name="EventIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Event IDs and parameter IDs of the logger" ObjectGUID="{c05ed28a-a842-436f-a6ca-b91d38ad5cbc}" />
+  <Node Name="EVTPARAM_CmpAuditLogAdd" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Event parameter structure. See EventIDs.EVT_LogAdd for details." ObjectGUID="{18ea2f9e-7a8f-4b1e-a1a2-8fb27b63d18d}" />
+  <Node Name="AuditLogSessionTypes" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Data type indicator for SessionIDEntry" ObjectGUID="{f9db9412-35f2-4caf-8cd4-e68e875ef024}" />
+  <Node Name="AuditLogSessionIDEntry" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" | Tagged union to interpret the type and content of the session ID for the audit log message.&#xD;&#xA; | Can either be a uint32 value, a string or nothing for AUDIT_LOG_SESSION_TYPE_SYSTEM." ObjectGUID="{474071a9-7cb6-4ae3-a1b4-97c17505add1}" />
+  <Node Name="AuditLogSessionID" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Session ID as UINT (e.g., for the CDS protocol) or as a string for other protocols" ObjectGUID="{4cd1a489-c300-490d-8090-5ea496dd62c0}" />
+  <Node Name="AuditLogDetails" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Base audit log details" ObjectGUID="{7cf341a6-3e23-4cab-be65-fe245d00d87e}" />
+</Library>

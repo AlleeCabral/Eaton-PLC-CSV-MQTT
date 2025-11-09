@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="3S CANopenStackUnsafe, 4.3.0.0 (CODESYS)">
+  <Node Name="CANopenManagerUnsafe" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{f6403dae-d0e4-41ac-815c-b9f910d35567}">
+    <Node Name="GenerateSequenceError" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{8e6965a7-046f-462a-8104-4bf031852e98}" />
+  </Node>
+  <Node Name="CANRemoteDeviceUnsafe" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{d28ae017-3ced-4b34-9b1b-9e0224d1b8e4}">
+    <Node Name="HasTxCOBID" TypeGUID="{f8a58466-d7f6-439f-bbb8-d4600e41d099}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{96ee3829-d383-47e6-bff9-70d1d486c8f5}" />
+  </Node>
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{66a93f86-8092-4c47-b0fb-e539f4819a3d}" />
+</Library>

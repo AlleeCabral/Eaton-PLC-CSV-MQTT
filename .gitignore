@@ -1,0 +1,24 @@
+﻿# CODESYS compiled files
+*.compiled
+*.compileinfo
+*.library
+
+# Backup files
+*.bak
+*~
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+
+# Credentials (important!)
+CSV-MQTT/hivemq/credentials
+
+# User-specific settings
+*.suo
+*.user

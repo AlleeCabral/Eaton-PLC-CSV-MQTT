@@ -1,0 +1,4 @@
+SysTypes2 Interfaces, * (System)
+CmpOPCUAServer Interfaces, * (System)
+CmpOPCUAStack Interfaces, * (System)
+IecVarAccess3 Interfaces, * (System)

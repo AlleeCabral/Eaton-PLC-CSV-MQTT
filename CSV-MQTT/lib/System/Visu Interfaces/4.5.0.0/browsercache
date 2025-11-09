@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="Visu Interfaces, 4.5.0.0 (System)">
+  <Node Name="IVisuGlobalClientManager3" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" the interface of the global client manager can be used to register &#xD;&#xA; globally visualization clients of all types which become a zero based&#xD;&#xA; unique client id" ObjectGUID="{c7f015f7-7dd2-4dfb-86b4-e702894ea762}">
+    <Node Name="UnregisterClient" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This method can be used to unregister a client (iGlobalClientID must be &lt;&gt; VISU_INVALID_ID)." ObjectGUID="{2c940f5d-321a-44e1-9efe-efa076b7b5f7}" />
+  </Node>
+  <Node Name="IVisuGlobalClientManager2" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" the interface of the global client manager can be used to register &#xD;&#xA; globally visualization clients of all types which become a zero based&#xD;&#xA; unique client id" ObjectGUID="{5bcd7b2b-06c6-48f8-b8f9-ce0cb6397d4e}">
+    <Node Name="AddGlobalClientManagerListener" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Adds an IGlobalClientManagerListener instance that will be notified when a client is created or destroyed. &#xD;&#xA; Returns TRUE if the IGlobalClientManagerListener instance could be added successfully. " ObjectGUID="{39d7cc54-7df2-4900-9833-6a77c2b7f823}" />
+  </Node>
+  <Node Name="IGlobalClientManagerListener" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This interface must be implemented by function blocks, that want to be notified&#xD;&#xA; if a client is created or destroyed." ObjectGUID="{3437c805-4b8b-41f5-9f67-e355a311ab3e}">
+    <Node Name="ClientDestroyed" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Notification, that a client has been destroyed" ObjectGUID="{c1ab1339-10c7-4aeb-b5ff-267e2ed8be3d}" />
+    <Node Name="ClientCreated" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Notification, that a client has been created." ObjectGUID="{d62aa6bb-d69a-4a58-bedb-eb3b72913935}" />
+  </Node>
+</Library>

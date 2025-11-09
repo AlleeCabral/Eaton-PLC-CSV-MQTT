@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="IecTypes, 3.5.1.0 (System)">
+  <Node Name="XWORD" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9b66cf17-b888-46d9-b75c-57aa9c2dadbd}" />
+</Library>

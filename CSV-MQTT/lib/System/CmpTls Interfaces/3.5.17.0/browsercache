@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpTls Interfaces, 3.5.17.0 (System)">
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+  <Node Name="IVerifyCertCallback" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{aab0d327-a456-4e45-95a4-0223de0dcc3f}">
+    <Node Name="VerifyCertCallback" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This function is called to allow futher checks on the peers certificate. Return ERR_CERT_OK if the certificate&#xD;&#xA; is trustworthy. If not return any (expect ERR_CERT_OK) of the error codes found at CmpX509Cert.ERRORS " ObjectGUID="{43b05c3f-6c58-4243-b452-2ea200f8163e}" />
+  </Node>
+  <Node Name="ERRORS" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{71a7f65c-b47a-48ba-bbf6-d41d7e0a8659}" />
+  <Node Name="CmpTlsMethod" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2269dc83-5061-4376-8b77-a405b93baaf1}" />
+  <Node Name="CmpTlsConstants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{8c0a5ba0-3949-4939-b078-59333b8fb099}" />
+</Library>

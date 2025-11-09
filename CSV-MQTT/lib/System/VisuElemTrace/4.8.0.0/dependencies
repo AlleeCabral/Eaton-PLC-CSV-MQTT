@@ -1,0 +1,29 @@
+#System_VisuInputs#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#System_VisuElemBase#2717eb6a-dd07-4c66-8d8d-cacebd7b18ae
+#Standard
+#Collections
+#CmpTraceMgr
+#FloatingPointUtils
+#StringUtils
+#SysTimeCore
+#SysTimeRtc
+#CmpVisuHandler
+#CmpDynamicText
+VisuElemsDateTime Interfaces, * (Intern)
+#VisuTrendStorageAccess
+#CAA Storage
+#SysMem
+#SysFile
+#CAA Types
+#CAA Storage Imp
+Visu Interfaces, * (System)
+CmpErrors2 Interfaces, * (System)
+SysTypes2 Interfaces, * (System)
+Datasources Interfaces, * (3S - Smart Software Solutions GmbH)
+Base Interfaces, * (System)
+#CmpBitmapPool
+#CmpIecTask
+#SysSem
+Trace Mgr2 Interfaces, * (Intern)
+#VisuFPlot
+#TraceMgrUtils

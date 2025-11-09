@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="Redundancy Interfaces, 3.5.21.0 (System)">
+  <Node Name="SYNC_INFO" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3b09d49a-6878-49b7-b17f-124afaf6e889}" />
+  <Node Name="RedundancyState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Redundancy state information " ObjectGUID="{34d23d00-cc37-4ff6-ba73-475deba094b9}" />
+  <Node Name="STATE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Redundancy state " ObjectGUID="{7677c576-f0b0-4e1f-b512-60b7e6de318d}" />
+  <Node Name="PLC_IDENT" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Identification of the PLC, independent from active or passive plc state. " ObjectGUID="{2d562bc4-fa43-4d03-aba4-575c4003409c}" />
+  <Node Name="ERROR" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{f13851e4-c15c-4448-a3cc-5ae43fe11b73}" />
+  <Node Name="AREA_TYPE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" &#xD;&#xA;* Redundancy area type - to synchronize data from active to passive side, configure it as AREA_INPUT with DataSyncAlways=0 for one-time synchronization,&#xD;&#xA;* as AREA_CYCLIC_INPUT for cyclic synchronization, or use both configurations if both synchronization types are required. By default all possible &#xD;&#xA;* areas are registered as AREA_INPUT - see registered areas in the redundancy configuration.&#xD;&#xA;" ObjectGUID="{c4937f46-6cc0-4a1b-9c83-fa706fca8d95}" />
+  <Node Name="RdcyAcyclicState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" State of the acyclic data transfer module " ObjectGUID="{45564892-8c78-4cab-b044-054c9132386f}" />
+  <Node Name="EventIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1ea03ed6-13d9-49f2-aa69-98851b1e933c}" />
+  <Node Name="EVTPARAM_CmpRdcyAcyclicRecv" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b409d341-6d01-48c2-8c6c-de2590edaa3a}" />
+  <Node Name="EVTPARAM_CmpRdcyAcyclicReadiness" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{b105d31e-07d4-4815-a283-a84f4934fc37}" />
+  <Node Name="Constants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{efc06473-e0f7-46cc-9106-9bfa95125386}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>

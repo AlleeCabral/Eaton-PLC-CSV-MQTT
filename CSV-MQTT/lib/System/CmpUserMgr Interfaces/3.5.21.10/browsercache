@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Library Name="CmpUserMgr Interfaces, 3.5.21.10 (System)">
+  <Node Name="UserMgrValue" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{43fe9aa6-78f8-4f90-97c0-40f64d253efb}" />
+  <Node Name="UserMgrTypeClass" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3e925e29-f49a-4f6c-bc96-ef832ed57dea}" />
+  <Node Name="UserMgrCredentials_Type" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{dd5632eb-2d86-4326-b549-35315d3ffff3}" />
+  <Node Name="UserMgrCacheValue" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{d537b003-0015-4cd6-81bf-d0efa9a4529e}" />
+  <Node Name="EVTPARAM_CmpUserMgrPasswordValidity" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{2d4a6c1c-d04c-45fd-bad8-d7860414427b}" />
+  <Node Name="EVTPARAM_CmpUserMgrDatabaseChanged" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{feb68d2d-621a-400d-8553-e631ba08148d}" />
+  <Node Name="UserMgrCredentials_Store" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{c0ef5777-03ec-4d5f-ab4b-ddf357083003}" />
+  <Node Name="UserMgrCredentials_Password" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1ba5df5d-8230-4cc8-aaf9-18001a7cf19b}" />
+  <Node Name="UserMgrCredentials" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{6d23c89b-240d-4945-b5ef-685255a13aed}" />
+  <Node Name="Properties" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" | Properties&#xD;&#xA; | Properties for a user. Use as bit-mask." ObjectGUID="{a292d31e-b9fe-41aa-9d4d-f00056f6398c}" />
+  <Node Name="EventIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{9118bf33-b677-4c6c-ab3e-1e27160de1de}" />
+  <Node Name="Constants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" | User rights&#xD;&#xA; | Defined rights that can fully control the access to an object" ObjectGUID="{61a71296-3b39-4b4c-9e67-cea520fcd5cc}" />
+  <Node Name="AuditInfoIDs" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" | Audit log info IDs for the CmpUserMgr" ObjectGUID="{bda21920-0750-4954-888c-c48b044348f0}" />
+  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
+</Library>
