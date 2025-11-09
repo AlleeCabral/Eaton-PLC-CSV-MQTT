@@ -20,7 +20,9 @@ desktop.ini
 CSV-MQTT/hivemq/credentials
 
 # Library folder (CODESYS libraries catalog)
-CSV-MQTT/lib/
+# Exclude entire lib folder except INDEX.md
+CSV-MQTT/lib/*
+!CSV-MQTT/lib/INDEX.md
 
 # User-specific settings
 *.suo
