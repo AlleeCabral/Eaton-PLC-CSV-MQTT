@@ -1,5 +1,0 @@
-#SysShm
-#SysMem
-CmpErrors2 Interfaces, * (System)
-#IoStandard
-SysTypes2 Interfaces, * (System)

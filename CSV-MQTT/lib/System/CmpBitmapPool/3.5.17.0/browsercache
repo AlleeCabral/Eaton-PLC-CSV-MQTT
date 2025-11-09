@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Library Name="CmpBitmapPool, 3.5.17.0 (System)">
-  <Node Name="Gestore libreria" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{3b9aada6-56bf-4085-9270-0a921d6e8307}" />
-  <Node Name="BmpPoolUnRegister" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{3cd88e6c-a523-49fc-8ce1-3d5013baa765}" />
-  <Node Name="BmpPoolRegister" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{81419da6-4d52-4d99-806c-f8e599dcca66}" />
-  <Node Name="BmpPoolEnd" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{37ddff91-e8ca-4c0a-ad4e-0897a071a29e}" />
-  <Node Name="BmpPoolBegin" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" ObjectGUID="{0155cbe5-219d-4e31-8298-59d279af3fbe}" />
-</Library>

@@ -1,8 +1,0 @@
-#CommFB
-#SysMem
-#SysFile
-#CmpLog
-#Standard
-#Component Manager
-CmpErrors2 Interfaces, * (System)
-SysTypes2 Interfaces, * (System)

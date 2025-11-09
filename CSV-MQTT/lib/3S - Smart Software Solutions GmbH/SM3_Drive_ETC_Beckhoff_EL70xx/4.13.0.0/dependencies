@@ -1,7 +1,0 @@
-#SM3_Basic
-#SM3_Drive_ETC
-SysTypes2 Interfaces, * (System)
-CmpErrors2 Interfaces, * (System)
-#IoStandard
-#SM3_Shared
-#SysMem

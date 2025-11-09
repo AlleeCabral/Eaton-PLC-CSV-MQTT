@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Library Name="SM3_CommonPublic, 4.7.0.0 (3S - Smart Software Solutions GmbH)">
-  <Node Name="SMC_Movement_Id" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" The identifier of a movement.&#xD;&#xA; A movement will never receive a 0 identifier.&#xD;&#xA; Each movement of an axis group will receive a unique identifier.&#xD;&#xA; (Except when overflow occurs, after at least 2^64 movements.) " ObjectGUID="{ee29f8eb-5c18-433d-ae41-b39007b5a7c6}" />
-  <Node Name="MC_BUFFER_MODE" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" The buffer mode describes how a motion command is inserted&#xD;&#xA; into the queue of commanded motions." ObjectGUID="{a69b4905-69e6-49c7-995c-fba7e8bbc3f3}" />
-  <Node Name="SM3_CommonPublic" TypeGUID="{738bea1e-99bb-4f04-90bb-a7a567e74e3a}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{2d2ee1b4-746d-4d49-a54e-599b24f5e40d}" />
-  <Node Name="Project Settings" TypeGUID="{8753fe6f-4a22-4320-8103-e553c4fc8e04}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{6470a90f-b7cb-43ac-9ae5-94b2338b4573}" />
-  <Node Name="Project Information" TypeGUID="{085afe48-c5d8-4ea5-ab0d-b35701fa6009}" EmbeddedTypeGUIDs="" ProvidesLanguageModel="false" ObjectGUID="{11c0fc3a-9bcf-4dd8-ac38-efb93363e521}" />
-</Library>

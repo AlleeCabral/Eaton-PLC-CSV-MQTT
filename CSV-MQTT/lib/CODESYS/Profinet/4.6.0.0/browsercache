@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Library Name="Profinet, 4.6.0.0 (CODESYS)">
-  <Node Name="MAUType" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{eac918cb-68e7-457c-9e0f-924912af2c05}" />
-  <Node Name="LinkState_Link" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{3b26071d-7bd2-43b3-a09a-e2c33155de96}" />
-  <Node Name="ProfinetConstants" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{891cacd1-0fb1-4e81-829a-8c97ef6f5e4b}" />
-  <Node Name="DeviceState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{16f2d57e-c9c8-4606-9999-abece78e82a0}" />
-  <Node Name="ControllerState" TypeGUID="{2db5746d-d284-4425-9f7f-2663a34b0ebc}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{1976c481-c75c-44c9-a75d-16f8aebbf96b}" />
-  <Node Name="Bibliotheksverwalter" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{9d8498d0-330b-44cb-b0f5-fb3831b77416}" />
-</Library>

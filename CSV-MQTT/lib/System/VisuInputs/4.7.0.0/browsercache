@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Library Name="VisuInputs, 4.7.0.0 (System)">
-  <Node Name="VisuInput_CheckUpdateElementStatePossible_DependingOnCurrentInput" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" Checks, if the element has an unfinished tap input event.&#xD;&#xA; Returns true, if element state can be updated, because input handling is done.&#xD;&#xA; An element should not be switched invisible or deactive, if tap event is not finished.&#xD;&#xA; Therefore, we delay the change of the element state." ObjectGUID="{4788cd6b-ebd1-4f86-85cf-16ec6e549601}" />
-  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{953e5623-dc6a-4cb9-a23f-36db791364d1}" />
-</Library>

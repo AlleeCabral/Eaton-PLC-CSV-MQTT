@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Library Name="VisuUserMgmtDialogs, 4.5.0.0 (System)">
-  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{3614e9c4-4c32-4456-9123-b1aa90a5335b}" />
-  <Node Name="GVL_CONST" TypeGUID="{ffbfa93a-b94d-45fc-a329-229860183b1d}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" ObjectGUID="{05aede2f-06af-4074-8e4e-22f4ea3cfbc0}" />
-</Library>

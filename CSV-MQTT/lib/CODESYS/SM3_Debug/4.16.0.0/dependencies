@@ -1,8 +1,0 @@
-#SM3_Basic
-#SM3_CNC
-#Standard
-SysTypes2 Interfaces, * (System)
-#SysFile
-#SysMem
-CmpErrors2 Interfaces, * (System)
-#FloatingPointUtils

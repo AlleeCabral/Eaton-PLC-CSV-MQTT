@@ -1,5 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Library Name="CompatibleAlarmManagerToOpcUaConnector, 4.6.0.0 (CODESYS)">
-  <Node Name="SetCustomMapping" TypeGUID="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94};{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Comment=" This functions is used to setup the custom mapping interface." ObjectGUID="{a63b38de-335a-47d6-b541-94a489f72c7c}" />
-  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{8c1463b5-02f2-427d-bd06-9e39d42fcbff}" />
-</Library>

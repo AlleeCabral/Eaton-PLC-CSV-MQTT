@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Library Name="VisuElemsDateTime Interfaces, 4.6.0.0 (Intern)">
-  <Node Name="Library Manager" TypeGUID="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" EmbeddedTypeGUIDs="" ObjectGUID="{2afc5b6a-aef0-4f8f-b0c9-d72fe4983e57}" />
-  <Node Name="IDateRangeSelectorExtensions" TypeGUID="{6654496c-404d-479a-aad2-8551054e5f1e}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" This interface provides additional functions for the DateRangeSelector that the trend element can use." ObjectGUID="{cda58201-82ef-44d8-9698-3c8d53d7c1f2}">
-    <Node Name="SetCurrentRangeFromTo" TypeGUID="{f89f7675-27f1-46b3-8abb-b7da8e774ffd}" EmbeddedTypeGUIDs="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Comment=" Sets the date/time range directly" ObjectGUID="{c3451fef-83af-4d7b-8040-8fe6f760ce21}" />
-  </Node>
-</Library>

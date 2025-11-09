@@ -1,5 +1,0 @@
-#SysSocket
-#CmpLog
-#Standard
-CmpErrors2 Interfaces, * (System)
-SysTypes2 Interfaces, * (System)

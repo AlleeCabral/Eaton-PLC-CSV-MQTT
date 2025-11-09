@@ -19,6 +19,9 @@ desktop.ini
 # Credentials (important!)
 CSV-MQTT/hivemq/credentials
 
+# Library folder (CODESYS libraries catalog)
+CSV-MQTT/lib/
+
 # User-specific settings
 *.suo
 *.user

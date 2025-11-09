@@ -1,7 +1,0 @@
-#SysTarget
-#SysMem
-SysTypes2 Interfaces, * (System)
-#Standard
-#CmpLog
-CmpErrors2 Interfaces, * (System)
-#SysSocket

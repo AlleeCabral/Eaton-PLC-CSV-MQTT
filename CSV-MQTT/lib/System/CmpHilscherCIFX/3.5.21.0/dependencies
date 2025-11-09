@@ -1,7 +1,0 @@
-#Standard
-SysTypes2 Interfaces, * (System)
-CmpErrors2 Interfaces, * (System)
-#CAA Types
-#IoStandard
-IoDriver Interfaces, * (System)
-#CmpEventMgr
