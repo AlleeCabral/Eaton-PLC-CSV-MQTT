@@ -92,7 +92,8 @@ CASE eMainState OF
         IF fbCSVReader.xDone THEN
             fbCSVReader.xEnable := FALSE; // Stop reader
             sSystemStatus := CONCAT('CSV complete. Total rows: ', INT_TO_STRING(iRowsProcessed));
-            tonReadCycle(IN := FALSE); // Restart cycle timer
+            tonReadCycle(IN := FALSE); // Reset timer
+            tonReadCycle(IN := TRUE, PT := tReadInterval); // Restart timer for next cycle
         END_IF;
         
         // Check for CSV error
@@ -141,4 +142,3 @@ CASE eMainState OF
         
 END_CASE;
 
-END_PROGRAM

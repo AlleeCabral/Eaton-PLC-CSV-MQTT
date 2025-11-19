@@ -18,7 +18,7 @@ VAR
     eState : (IDLE, OPEN_FILE, READ_FILE, PARSE_LINES, CLOSE_FILE, ERROR) := IDLE;
     
     // File operation variables
-    hFile      : RTS_IEC_HANDLE := RTS_INVALID_HANDLE; // File handle
+    hFile      : DWORD := 16#FFFFFFFF; // File handle (using DWORD instead of RTS_IEC_HANDLE)
     sBuffer    : STRING(4096);   // Buffer for file content
     udiReadSize : UDINT;         // Actual bytes read
     diResult   : DINT;           // Function return values
@@ -44,9 +44,9 @@ IF NOT xEnable AND xEnableOld THEN
     iLineStart := 1;
     iLineCount := 0;
     bHeaderSkipped := FALSE;
-    IF hFile <> RTS_INVALID_HANDLE THEN
+    IF hFile <> 16#FFFFFFFF THEN
         diResult := SysFileClose(hFile := hFile);
-        hFile := RTS_INVALID_HANDLE;
+        hFile := 16#FFFFFFFF;
     END_IF;
 END_IF;
 xEnableOld := xEnable;
@@ -68,11 +68,11 @@ CASE eState OF
     
     OPEN_FILE:
         // Open file using SysFile function (not FB)
-        hFile := SysFileOpen(szFile := sFilePath, am := AM_READ, pResult := ADR(diResult));
-        IF hFile <> RTS_INVALID_HANDLE THEN
+        hFile := SysFileOpen(szFile := sFilePath, am := 16#0001, pResult := ADR(diResult));
+        IF hFile <> 16#FFFFFFFF THEN
             eState := READ_FILE;
         ELSE
-            eError := DWORD_TO_DWORD(diResult);
+            eError := DINT_TO_DWORD(diResult);
             xError := TRUE;
             eState := ERROR;
         END_IF;
@@ -84,14 +84,15 @@ CASE eState OF
         IF diResult = 0 THEN
             eState := PARSE_LINES;
         ELSE
-            eError := DWORD_TO_DWORD(diResult);
+            eError := DINT_TO_DWORD(diResult);
             xError := TRUE;
             eState := CLOSE_FILE;
         END_IF;
     
     PARSE_LINES:
         // Extract next line from buffer
-        IF F_GetNextLine(sBuffer, iLineStart, sCurrentLine, iLineEnd) THEN
+        IF F_GetNextLine(sBuffer := sBuffer, iStartPos := iLineStart, 
+                        sLine => sCurrentLine, iEndPos => iLineEnd) THEN
             iLineStart := iLineEnd + 1;
             iLineCount := iLineCount + 1;
             
@@ -109,9 +110,9 @@ CASE eState OF
         END_IF;
     
     CLOSE_FILE:
-        IF hFile <> RTS_INVALID_HANDLE THEN
+        IF hFile <> 16#FFFFFFFF THEN
             diResult := SysFileClose(hFile := hFile);
-            hFile := RTS_INVALID_HANDLE;
+            hFile := 16#FFFFFFFF;
         END_IF;
         xDone := TRUE;
         xBusy := FALSE;
@@ -119,10 +120,12 @@ CASE eState OF
     
     ERROR:
         xBusy := FALSE;
-        IF hFile <> RTS_INVALID_HANDLE THEN
+        IF hFile <> 16#FFFFFFFF THEN
             diResult := SysFileClose(hFile := hFile);
-            hFile := RTS_INVALID_HANDLE;
+            hFile := 16#FFFFFFFF;
         END_IF;
         eState := IDLE;
         
 END_CASE;
+
+END_FUNCTION_BLOCK

@@ -7,9 +7,6 @@ END_VAR
 VAR_IN_OUT
     sJson : STRING(2048);      // Output JSON string
 END_VAR
-VAR
-    i : INT;
-END_VAR
 
 // Build JSON manually since library functions may vary
 sJson := '{';
@@ -33,4 +30,3 @@ sJson := CONCAT(sJson, '}');
 
 F_BuildJsonFromRow := TRUE;
 
-END_FUNCTION

@@ -32,4 +32,3 @@ END_CASE;
 
 F_AssignField := TRUE;
 
-END_FUNCTION

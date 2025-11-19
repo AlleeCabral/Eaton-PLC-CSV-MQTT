@@ -60,4 +60,3 @@ ELSE
     F_GetNextLine := FALSE;
 END_IF;
 
-END_FUNCTION

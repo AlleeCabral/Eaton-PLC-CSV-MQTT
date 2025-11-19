@@ -51,4 +51,3 @@ END_IF;
 
 F_ParseCSVLine := result;
 
-END_FUNCTION
