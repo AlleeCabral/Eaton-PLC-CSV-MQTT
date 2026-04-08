@@ -1,0 +1,208 @@
+[
+    {
+        "id": "beda9bcb4da87098",
+        "type": "inject",
+        "z": "b434fc50fd536c1d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 2960,
+        "y": 220,
+        "wires": [
+            [
+                "2a4208100fd6a11b"
+            ]
+        ]
+    },
+    {
+        "id": "2a4208100fd6a11b",
+        "type": "function",
+        "z": "b434fc50fd536c1d",
+        "name": "Device Tree",
+        "func": "const now = Date.now();\nconst gwId = '58188762-ff91-4f56-9cb4-89345b19b954';\n\nmsg = {\n    'topic': 'telemetry',\n    'payload':  {\"d\":{\n    \"d\": gwId,         // required, represents the device instance UUID. You should persist this UUID on the device. It should never change.\n    \"profile\":\"99cef6da-e5de-490a-b886-3caca5e426cf\",   // required, represents the device profile UUID. You must register this device profile in advance.\n    \"name\": \"Senegal\",                             // required, represents the display name of this device.                                 // optional, free text                         // optional, free text\n    \"ds\":[                                              // Optional, represents the child devices.\n      {\n        \"d\":\"17272566-5e53-4f19-80a8-bafabbcb2ed6\",\n        \"profile\":\"45a2846a-b90e-4dca-9c82-579e04c381e9\",\n        \"name\": \"Complete_Machine\"\n      }\n    ]\n  }\n},\n    'properties': [\n        {\n        'key': 'a', 'value': 'DeviceTree'},\n        {\n          'key': 'p', 'value': gwId\n        }\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3290,
+        "y": 220,
+        "wires": [
+            [
+                "f87ac667aa36a1cd"
+            ]
+        ]
+    },
+    {
+        "id": "d854c61621773e4a",
+        "type": "inject",
+        "z": "b434fc50fd536c1d",
+        "name": "Trigger telemetry",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 3010,
+        "y": 420,
+        "wires": [
+            [
+                "1a5b8f1e65bc7060"
+            ]
+        ]
+    },
+    {
+        "id": "1a5b8f1e65bc7060",
+        "type": "function",
+        "z": "b434fc50fd536c1d",
+        "name": "Trends - Filteration",
+        "func": "const now = Math.floor(Date.now() / 1000) - (1000);\n\nmsg = {\n    'topic': 'telemetry',\n    'payload': { \"trends\": [\n{ \"c\": \"10466739\", \"t\": now, \"v\": global.get(\"_11_Auto_Manual\") },\n{ \"c\": \"10466742\", \"t\": now, \"v\": global.get(\"_12_Eco\") },\n{ \"c\": \"10466745\", \"t\": now, \"v\": global.get(\"_13_Float_Switch\") },\n{ \"c\": \"10466747\", \"t\": now, \"v\": global.get(\"_14_Conductivity_Switch\") },\n{ \"c\": \"10466749\", \"t\": now, \"v\": global.get(\"_15_Pressurre_Alarm\") },\n{ \"c\": \"10466751\", \"t\": now, \"v\": global.get(\"_16_Comp_Run\") },\n{ \"c\": \"10466753\", \"t\": now, \"v\": global.get(\"_17_Evap_Run\") },\n{ \"c\": \"10466755\", \"t\": now, \"v\": global.get(\"_18_Pump_Run\") },\n{ \"c\": \"10466757\", \"t\": now, \"v\": global.get(\"_19_IceMachine_Run\") },\n{ \"c\": \"10466759\", \"t\": now, \"v\": global.get(\"_20_Fan_1_Alarm\") },\n{ \"c\": \"10466761\", \"t\": now, \"v\": global.get(\"_21_Fan_2_Alarm\") },\n{ \"c\": \"10466762\", \"t\": now, \"v\": global.get(\"_22_Evap_Motor_Alarm\") },\n{ \"c\": \"10466763\", \"t\": now, \"v\": global.get(\"_23_Comp_Alarm\") },\n{ \"c\": \"10466764\", \"t\": now, \"v\": global.get(\"_24_Borhole_Float_Switch\") },\n{ \"c\": \"10466765\", \"t\": now, \"v\": global.get(\"_25_Tank_High_Level\") },\n{ \"c\": \"10466766\", \"t\": now, \"v\": global.get(\"_26_Tank_Low_Level\") },\n{ \"c\": \"10466767\", \"t\": now, \"v\": global.get(\"_27_Grid_is_ON\") },\n{ \"c\": \"10466768\", \"t\": now, \"v\": global.get(\"_28_Alarm_Lid\") },\n{ \"c\": \"10466769\", \"t\": now, \"v\": global.get(\"_29_Alarm_Inlet_Valve_Water\") },\n{ \"c\": \"10466770\", \"t\": now, \"v\": global.get(\"_30_Alarm_Drain_Valve\") },\n{ \"c\": \"10466771\", \"t\": now, \"v\": global.get(\"_31_Alarm_DPS\") },\n{ \"c\": \"10466772\", \"t\": now, \"v\": global.get(\"_32_Alarm_Fan_1\") },\n{ \"c\": \"10466773\", \"t\": now, \"v\": global.get(\"_33_Alarm_Fan_2\") },\n{ \"c\": \"10466774\", \"t\": now, \"v\": global.get(\"_34_Alarm_Evap\") },\n{ \"c\": \"10466775\", \"t\": now, \"v\": global.get(\"_35_Alarm_Comp\") },\n{ \"c\": \"10466776\", \"t\": now, \"v\": global.get(\"_36_Alarm_Inverter_A\") },\n{ \"c\": \"10466777\", \"t\": now, \"v\": global.get(\"_37_Alarm_Inverter_B\") },\n{ \"c\": \"10466778\", \"t\": now, \"v\": global.get(\"_38_Alarm_Inverter_C\") },\n{ \"c\": \"10466779\", \"t\": now, \"v\": global.get(\"_39_Alarm_Tank\") },\n{ \"c\": \"10466780\", \"t\": now, \"v\": global.get(\"_40_Alarm_Well_Level\") },\n{ \"c\": \"10466781\", \"t\": now, \"v\": global.get(\"_41_Alarm_Evap_Rotation\") },\n{ \"c\": \"10466782\", \"t\": now, \"v\": global.get(\"_42_Alarm_Inverter_1_Over_Temperature\") },\n{ \"c\": \"10466783\", \"t\": now, \"v\": global.get(\"_43_Alarm_Inverter_2_Over_Temperature\") },\n{ \"c\": \"10466784\", \"t\": now, \"v\": global.get(\"_44_Alarm_Inverter_3_Over_Temperature\") },\n{ \"c\": \"10466785\", \"t\": now, \"v\": global.get(\"_50_Solar_Power\") },\n{ \"c\": \"10466786\", \"t\": now, \"v\": global.get(\"_51_Grid_Power\") },\n{ \"c\": \"10466787\", \"t\": now, \"v\": global.get(\"_52_Total_Power\") },\n{ \"c\": \"10466788\", \"t\": now, \"v\": global.get(\"_53_Evap_Power\") },\n{ \"c\": \"10466790\", \"t\": now, \"v\": global.get(\"_54_Comp_Power\") },\n{ \"c\": \"10466793\", \"t\": now, \"v\": global.get(\"_55_Pump_Power\") },\n{ \"c\": \"10466794\", \"t\": now, \"v\": global.get(\"_56_Machine_Capacity\") },\n{ \"c\": \"10466797\", \"t\": now, \"v\": global.get(\"_57_Machine_Grid_Percentage\") },\n{ \"c\": \"10466798\", \"t\": now, \"v\": global.get(\"_58_Machine_Solar_Percentage\") },\n{ \"c\": \"10466799\", \"t\": now, \"v\": global.get(\"_59_Alarm\") },\n{ \"c\": \"10466801\", \"t\": now, \"v\": global.get(\"_60_Total_Current\") },\n{ \"c\": \"10466802\", \"t\": now, \"v\": global.get(\"_61_DC_Voltage_Evap\") },\n{ \"c\": \"10466804\", \"t\": now, \"v\": global.get(\"_62_DC_Voltage_Comp\") },\n{ \"c\": \"10466806\", \"t\": now, \"v\": global.get(\"_63_DC_Voltage_Pump\") },\n{ \"c\": \"10466809\", \"t\": now, \"v\": global.get(\"_64_Temperature_Inverter_Evap\") },\n{ \"c\": \"10466811\", \"t\": now, \"v\": global.get(\"_65_Temperature_Inverte_Comp\") },\n{ \"c\": \"10466813\", \"t\": now, \"v\": global.get(\"_66_Temperature_Inverter_Pump\") },\n{ \"c\": \"10466814\", \"t\": now, \"v\": global.get(\"_67_Frequency_Inverter_Evap\") },\n{ \"c\": \"10466816\", \"t\": now, \"v\": global.get(\"_68_Frequency_Inverter_Comp\") },\n{ \"c\": \"10466818\", \"t\": now, \"v\": global.get(\"_69_Frequency_Inverter_Pump\") },\n{ \"c\": \"10466820\", \"t\": now, \"v\": global.get(\"_70_Current_Inverter_Evap\") },\n{ \"c\": \"10466822\", \"t\": now, \"v\": global.get(\"_71_Current_Inverter_Comp\") },\n{ \"c\": \"10466824\", \"t\": now, \"v\": global.get(\"_72_Current_Inverter_Pump\") },\n{ \"c\": \"10466827\", \"t\": now, \"v\": global.get(\"_73_Solar_Power_KWh_Total\") },\n{ \"c\": \"10466829\", \"t\": now, \"v\": global.get(\"_74_Solar_Power_KWh_This_Hour\") },\n{ \"c\": \"10466831\", \"t\": now, \"v\": global.get(\"_75_Solar_Power_KWh_Today\") },\n{ \"c\": \"10466833\", \"t\": now, \"v\": global.get(\"_76_Solar_Power_KWh_This_Month\") },\n{ \"c\": \"10466835\", \"t\": now, \"v\": global.get(\"_77_Grid_Power_KWh_Total\") },\n{ \"c\": \"10466836\", \"t\": now, \"v\": global.get(\"_78_Grid_Power_KWh_This_Hour\") },\n{ \"c\": \"10466838\", \"t\": now, \"v\": global.get(\"_79_Grid_Power_KWh_Today\") },\n{ \"c\": \"10466840\", \"t\": now, \"v\": global.get(\"_80_Grid_Power_KWh_This_Month\") },\n{ \"c\": \"10466842\", \"t\": now, \"v\": global.get(\"_81_Output_Power_KWh_Total\") },\n{ \"c\": \"10466844\", \"t\": now, \"v\": global.get(\"_82_Output_Power_KWh_This_Hour\") },\n{ \"c\": \"10466846\", \"t\": now, \"v\": global.get(\"_83_Output_Power_KWh_Today\") },\n{ \"c\": \"10466848\", \"t\": now, \"v\": global.get(\"_84_Output_Power_KWh_This_Month\") },\n{ \"c\": \"10466849\", \"t\": now, \"v\": global.get(\"_85_Current_Hour\") },\n{ \"c\": \"10466850\", \"t\": now, \"v\": global.get(\"_86_Current_Day\") },\n{ \"c\": \"10466851\", \"t\": now, \"v\": global.get(\"_87_Current_Month\") },\n{ \"c\": \"10466852\", \"t\": now, \"v\": global.get(\"_88_Current_Year\") },\n{ \"c\": \"10467105\", \"t\": now, \"v\": global.get(\"_90_Water_M3_This_Hour\") },\n{ \"c\": \"10467106\", \"t\": now, \"v\": global.get(\"_92_Water_M3_This_Month\") },\n{ \"c\": \"10467107\", \"t\": now, \"v\": global.get(\"_91_Water_M3_Today\") },\n{ \"c\": \"10467108\", \"t\": now, \"v\": global.get(\"_89_Water_M3_Total\") }]},\n    'properties': [\n        {\n        'key': 'a', 'value': 'Trends'},\n        {\n            'key': 'p', 'value': '17272566-5e53-4f19-80a8-bafabbcb2ed6'\n        }\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3350,
+        "y": 420,
+        "wires": [
+            [
+                "f87ac667aa36a1cd",
+                "eaa4310e817e7f19"
+            ]
+        ]
+    },
+    {
+        "id": "35466fef0164e1ed",
+        "type": "debug",
+        "z": "b434fc50fd536c1d",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3760,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5ef8433916ec42e1",
+        "type": "trigger",
+        "z": "b434fc50fd536c1d",
+        "name": "",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "250",
+        "extend": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 2960,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "19c6cee653b374b3",
+        "type": "function",
+        "z": "b434fc50fd536c1d",
+        "name": "mains_on",
+        "func": "mains_on = parseInt(msg.payload.value)\nglobal.set(\"mains_on\", mains_on);\nreturn msg;\n\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 3100,
+        "y": 580,
+        "wires": [
+            [
+                "35466fef0164e1ed"
+            ]
+        ]
+    },
+    {
+        "id": "f87ac667aa36a1cd",
+        "type": "azureiotdevice",
+        "z": "b434fc50fd536c1d",
+        "deviceid": "58188762-ff91-4f56-9cb4-89345b19b954",
+        "pnpModelid": "",
+        "connectiontype": "constr",
+        "authenticationmethod": "sas",
+        "iothub": "iot-etnblc-rm-ext-prd-weu-p01.azure-devices.net",
+        "isIotcentral": false,
+        "scopeid": "",
+        "enrollmenttype": "group",
+        "saskey": "c6KVu4cdfGGLQGusz7nwI/C1QD8N223ElSSgWAqvKDU=",
+        "certname": "",
+        "keyname": "",
+        "passphrase": "",
+        "protocol": "mqtt",
+        "retryInterval": 10,
+        "methods": [],
+        "DPSpayload": "",
+        "gatewayHostname": "",
+        "caname": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "x": 3870,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eaa4310e817e7f19",
+        "type": "debug",
+        "z": "b434fc50fd536c1d",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 3560,
+        "y": 580,
+        "wires": []
+    }
+]

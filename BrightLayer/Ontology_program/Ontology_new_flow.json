@@ -1,0 +1,208 @@
+[
+  {
+    "id": "beda9bcb4da87098",
+    "type": "inject",
+    "z": "b434fc50fd536c1d",
+    "name": "",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": false,
+    "onceDelay": 0.1,
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 2960,
+    "y": 220,
+    "wires": [
+      [
+        "2a4208100fd6a11b"
+      ]
+    ]
+  },
+  {
+    "id": "2a4208100fd6a11b",
+    "type": "function",
+    "z": "b434fc50fd536c1d",
+    "name": "Device Tree",
+    "func": "const now = Date.now();\nconst gwId = '58188762-ff91-4f56-9cb4-89345b19b954';\n\nmsg = {\n    'topic': 'telemetry',\n    'payload':  {\"d\":{\n    \"d\": gwId,         // required, represents the device instance UUID. You should persist this UUID on the device. It should never change.\n    \"profile\":\"99cef6da-e5de-490a-b886-3caca5e426cf\",   // required, represents the device profile UUID. You must register this device profile in advance.\n    \"name\": \"Senegal\",                             // required, represents the display name of this device.                                 // optional, free text                         // optional, free text\n    \"ds\":[                                              // Optional, represents the child devices.\n      {\n        \"d\":\"17272566-5e53-4f19-80a8-bafabbcb2ed6\",\n        \"profile\":\"45a2846a-b90e-4dca-9c82-579e04c381e9\",\n        \"name\": \"Complete_Machine\"\n      }\n    ]\n  }\n},\n    'properties': [\n        {\n        'key': 'a', 'value': 'DeviceTree'},\n        {\n          'key': 'p', 'value': gwId\n        }\n    ]\n}\nreturn msg;",
+    "outputs": 1,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 3290,
+    "y": 220,
+    "wires": [
+      [
+        "f87ac667aa36a1cd"
+      ]
+    ]
+  },
+  {
+    "id": "d854c61621773e4a",
+    "type": "inject",
+    "z": "b434fc50fd536c1d",
+    "name": "Trigger telemetry",
+    "props": [
+      {
+        "p": "payload"
+      },
+      {
+        "p": "topic",
+        "vt": "str"
+      }
+    ],
+    "repeat": "300",
+    "crontab": "",
+    "once": false,
+    "onceDelay": "5",
+    "topic": "",
+    "payload": "",
+    "payloadType": "date",
+    "x": 3010,
+    "y": 420,
+    "wires": [
+      [
+        "1a5b8f1e65bc7060"
+      ]
+    ]
+  },
+  {
+    "id": "1a5b8f1e65bc7060",
+    "type": "function",
+    "z": "b434fc50fd536c1d",
+    "name": "Trends - Filteration",
+    "func": "const now = Math.floor(Date.now() / 1000);\n\n// Auto-generated from ontology firmware[0].parameters[*].tagId\nconst trends = [\n  {c: '10462371', t: now, v: global.get('10462371') || 0}, // totalwater_in\n  {c: '10462372', t: now, v: global.get('10462372') || 0}, // totalwater_pro\n  {c: '10462379', t: now, v: global.get('10462379') || 0}, // freq_drv1\n  {c: '10462380', t: now, v: global.get('10462380') || 0}, // freq_drv2\n  {c: '10462381', t: now, v: global.get('10462381') || 0}, // freq_drv3\n  {c: '10466785', t: now, v: global.get('10466785') || 0}, // _50_Solar_Power\n  {c: '10466786', t: now, v: global.get('10466786') || 0}, // _51_Grid_Power\n  {c: '10466787', t: now, v: global.get('10466787') || 0}, // _52_Total_Power\n  {c: '10466788', t: now, v: global.get('10466788') || 0}, // _53_Evap_Power\n  {c: '10466789', t: now, v: global.get('10466789') || 0}, // _53_Pump_Power\n  {c: '10466790', t: now, v: global.get('10466790') || 0}, // _54_Comp_Power\n  {c: '10466791', t: now, v: global.get('10466791') || 0}, // _54_Machine_Capacity\n  {c: '10466792', t: now, v: global.get('10466792') || 0}, // _55_Machine_Grid_Percentage\n  {c: '10466793', t: now, v: global.get('10466793') || 0}, // _55_Pump_Power\n  {c: '10466795', t: now, v: global.get('10466795') || 0}, // _56_Machine_Solar_Percentage\n  {c: '10466799', t: now, v: global.get('10466799') || 0}, // _59_DC_Voltage\n  {c: '10466801', t: now, v: global.get('10466801') || 0}, // _60_Total_Current\n  {c: '10466802', t: now, v: global.get('10466802') || 0}, // _61_DC_Voltage_Evap\n  {c: '10466803', t: now, v: global.get('10466803') || 0}, // _61_Pump_Current\n  {c: '10466804', t: now, v: global.get('10466804') || 0}, // _62_DC_Voltage_Comp\n  {c: '10466806', t: now, v: global.get('10466806') || 0}, // _63_DC_Voltage_Pump\n  {c: '10466807', t: now, v: global.get('10466807') || 0}, // _63_Solar_Power_KWh_This_Hour\n  {c: '10466808', t: now, v: global.get('10466808') || 0}, // _64_Solar_Power_KWh_Today\n  {c: '10466809', t: now, v: global.get('10466809') || 0}, // _64_Temperature_Inverter_Evap\n  {c: '10466810', t: now, v: global.get('10466810') || 0}, // _65_Solar_Power_KWh_This_Month\n  {c: '10466811', t: now, v: global.get('10466811') || 0}, // _65_Temperature_Inverte_Comp\n  {c: '10466812', t: now, v: global.get('10466812') || 0}, // _66_Grid_Power_KWh_Total\n  {c: '10466814', t: now, v: global.get('10466814') || 0}, // _67_Frequency_Inverter_Evap\n  {c: '10466815', t: now, v: global.get('10466815') || 0}, // _67_Grid_Power_KWh_This_Hour\n  {c: '10466816', t: now, v: global.get('10466816') || 0}, // _68_Frequency_Inverter_Comp\n  {c: '10466817', t: now, v: global.get('10466817') || 0}, // _68_Grid_Power_KWh_Today\n  {c: '10466819', t: now, v: global.get('10466819') || 0}, // _69_Grid_Power_KWh_This_Month\n  {c: '10466820', t: now, v: global.get('10466820') || 0}, // _70_Current_Inverter_Evap\n  {c: '10466822', t: now, v: global.get('10466822') || 0}, // _71_Current_Inverter_Comp\n  {c: '10466823', t: now, v: global.get('10466823') || 0}, // _71_Output_Power_KWh_This_Hour\n  {c: '10466825', t: now, v: global.get('10466825') || 0}, // _72_Output_Power_KWh_Today\n  {c: '10466826', t: now, v: global.get('10466826') || 0}, // _73_Output_Power_KWh_This_Month\n  {c: '10466837', t: now, v: global.get('10466837') || 0}, // _78_Total_Run_Time\n  {c: '10466839', t: now, v: global.get('10466839') || 0}, // _79_UV_Lamp_Run_Time\n  {c: '10466841', t: now, v: global.get('10466841') || 0}, // _80_Water_M3_Total\n  {c: '10466843', t: now, v: global.get('10466843') || 0}, // _81_Water_M3_This_Hour\n  {c: '10466845', t: now, v: global.get('10466845') || 0}, // _82_Water_M3_Today\n  {c: '10466847', t: now, v: global.get('10466847') || 0}, // _83_Water_M3_Per_This_Month\n  {c: '10466907', t: now, v: global.get('10466907') || 0}, // BoosterPower\n  {c: '10466934', t: now, v: global.get('10466934') || 0}, // CurrentInverterBooster\n  {c: '10466935', t: now, v: global.get('10466935') || 0}, // CurrentInverterFeed\n  {c: '10466943', t: now, v: global.get('10466943') || 0}, // DCVoltageBooster\n  {c: '10466944', t: now, v: global.get('10466944') || 0}, // DCVoltageFeed\n  {c: '10466945', t: now, v: global.get('10466945') || 0}, // DCVoltagePump\n  {c: '10466950', t: now, v: global.get('10466950') || 0}, // EC_Value\n  {c: '10466957', t: now, v: global.get('10466957') || 0}, // Feed_Kwh\n  {c: '10466958', t: now, v: global.get('10466958') || 0}, // Feed_TotalRUN\n  {c: '10466959', t: now, v: global.get('10466959') || 0}, // FeedPower\n  {c: '10466974', t: now, v: global.get('10466974') || 0}, // Frequenz_Inv4\n  {c: '10467005', t: now, v: global.get('10467005') || 0}, // Permeat\n  {c: '10467008', t: now, v: global.get('10467008') || 0}, // Ph_Tank1\n  {c: '10467009', t: now, v: global.get('10467009') || 0}, // Ph_Tank2\n  {c: '10467011', t: now, v: global.get('10467011') || 0}, // PremeateWaterM3ThisHour\n  {c: '10467012', t: now, v: global.get('10467012') || 0}, // PremeateWaterM3ThisMonth\n  {c: '10467013', t: now, v: global.get('10467013') || 0}, // PremeateWaterM3Today\n  {c: '10467015', t: now, v: global.get('10467015') || 0}, // Pressure\n  {c: '10467017', t: now, v: global.get('10467017') || 0}, // Pump_Current\n  {c: '10467022', t: now, v: global.get('10467022') || 0}, // RawWaterM3ThisHour\n  {c: '10467023', t: now, v: global.get('10467023') || 0}, // RawWaterM3ThisMonth\n  {c: '10467024', t: now, v: global.get('10467024') || 0}, // RawWaterM3Today\n  {c: '10467025', t: now, v: global.get('10467025') || 0}, // RawWaterM3Total\n  {c: '10467037', t: now, v: global.get('10467037') || 0}, // Solar_Power_KWh_Total\n  {c: '10467049', t: now, v: global.get('10467049') || 0}, // Temp_Drv1\n  {c: '10467050', t: now, v: global.get('10467050') || 0}, // Temp_Drv2\n  {c: '10467051', t: now, v: global.get('10467051') || 0}, // Temp_Drv3\n  {c: '10467052', t: now, v: global.get('10467052') || 0}, // Temperature_Inverter_Comp\n  {c: '10467053', t: now, v: global.get('10467053') || 0}, // Temperature_Inverter_Evap\n  {c: '10467054', t: now, v: global.get('10467054') || 0}, // Temperature_Inverter_Pump\n  {c: '10467055', t: now, v: global.get('10467055') || 0}, // TemperatureInverterBooster\n  {c: '10467056', t: now, v: global.get('10467056') || 0}, // TemperatureInverterFeed\n  {c: '10467063', t: now, v: global.get('10467063') || 0}, // TotalWater_Recovery\n  {c: '10467064', t: now, v: global.get('10467064') || 0}, // TotalWater_Sold\n  {c: '10467065', t: now, v: global.get('10467065') || 0}, // UV_inside_lifetime\n  {c: '10467066', t: now, v: global.get('10467066') || 0}, // UV_inside_switching_operations\n  {c: '10467067', t: now, v: global.get('10467067') || 0}, // UV_Lamp_Run_Time\n  {c: '10467068', t: now, v: global.get('10467068') || 0}, // UV_outside_lifetime\n  {c: '10467071', t: now, v: global.get('10467071') || 0}, // UVin_Betriebsstunden\n  {c: '10467077', t: now, v: global.get('10467077') || 0}, // UVo_switching\n  {c: '10467079', t: now, v: global.get('10467079') || 0}, // UVo_workhours\n  {c: '10467095', t: now, v: global.get('10467095') || 0}, // Voltage_Drv1\n  {c: '10467096', t: now, v: global.get('10467096') || 0}, // Voltage_Drv2\n  {c: '10467097', t: now, v: global.get('10467097') || 0}, // Voltage_Drv3\n  {c: '10467098', t: now, v: global.get('10467098') || 0}, // Voltage_Drv4\n  {c: '10467100', t: now, v: global.get('10467100') || 0}, // Wasser_permeat\n  {c: '10467104', t: now, v: global.get('10467104') || 0}, // Water_M3_Per_This_Month\n  {c: '10467105', t: now, v: global.get('10467105') || 0}, // Water_M3_This_Hour\n  {c: '10467113', t: now, v: global.get('10467113') || 0}, // Water_Today_sold\n  {c: '10467120', t: now, v: global.get('10467120') || 0}, // WaterToday_recov\n  {c: '10472589', t: now, v: global.get('10472589') || 0}, // _11__Auto_Manual\n  {c: '10472590', t: now, v: global.get('10472590') || 0}, // _12__Eco\n  {c: '10472591', t: now, v: global.get('10472591') || 0}, // _12C_Eco\n  {c: '10472592', t: now, v: global.get('10472592') || 0}, // _13__Float_Switch\n  {c: '10472593', t: now, v: global.get('10472593') || 0}, // _14__Borhole_Float_Switch\n  {c: '10472594', t: now, v: global.get('10472594') || 0}, // _15__Grid_is_On\n  {c: '10472595', t: now, v: global.get('10472595') || 0}, // _16__Alarm_Well_Water\n  {c: '10472596', t: now, v: global.get('10472596') || 0}, // _16__Comp_Run\n  {c: '10472597', t: now, v: global.get('10472597') || 0}, // _17__Evap_Run\n  {c: '10472598', t: now, v: global.get('10472598') || 0}, // _18__Alarm_Inverter\n  {c: '10472599', t: now, v: global.get('10472599') || 0}, // _18__Pump_Run\n  {c: '10472600', t: now, v: global.get('10472600') || 0}, // _20__Alarm_UV_Lamp\n  {c: '10472601', t: now, v: global.get('10472601') || 0}, // _20__Fan_1_Alarm\n  {c: '10472602', t: now, v: global.get('10472602') || 0}, // _21__Alarm_6_Water_Meter\n  {c: '10472603', t: now, v: global.get('10472603') || 0}, // _22__Evap_Motor_Alarm\n  {c: '10472604', t: now, v: global.get('10472604') || 0}, // _23__Comp_Alarm\n  {c: '10472605', t: now, v: global.get('10472605') || 0}, // _25__Tank_High_Level\n  {c: '10472606', t: now, v: global.get('10472606') || 0}, // _28__Alarm_Lid\n  {c: '10472607', t: now, v: global.get('10472607') || 0}, // _29__Alarm_Inlet_Valve_Water\n  {c: '10472608', t: now, v: global.get('10472608') || 0}, // _30__Alarm_Drain_Valve\n  {c: '10472609', t: now, v: global.get('10472609') || 0}, // _31__Alarm_DPS\n  {c: '10472610', t: now, v: global.get('10472610') || 0}, // _36__Alarm_Inverter_A\n  {c: '10472611', t: now, v: global.get('10472611') || 0}, // _39__Alarm_Tank\n  {c: '10472612', t: now, v: global.get('10472612') || 0}, // _Alarm_High_Pressure\n  {c: '10472613', t: now, v: global.get('10472613') || 0}, // _Alarm_Inverter_A\n  {c: '10472614', t: now, v: global.get('10472614') || 0}, // _Alarm_Inverter_B\n  {c: '10472615', t: now, v: global.get('10472615') || 0}, // _Alarm_Inverter_C\n  {c: '10472616', t: now, v: global.get('10472616') || 0}, // _Alarm_Well_Level\n  {c: '10472617', t: now, v: global.get('10472617') || 0}, // _AlarmAntiScalant\n  {c: '10472618', t: now, v: global.get('10472618') || 0}, // _AlarmBoosterInverterTemperature\n  {c: '10472619', t: now, v: global.get('10472619') || 0}, // _AlarmFeedInverterTemperature\n  {c: '10472620', t: now, v: global.get('10472620') || 0}, // _AlarmFlowMeter\n  {c: '10472621', t: now, v: global.get('10472621') || 0}, // _AlarmHighTDS\n  {c: '10472622', t: now, v: global.get('10472622') || 0}, // _AlarmRaw_Tank_Alarm\n  {c: '10472623', t: now, v: global.get('10472623') || 0}, // _AlarmUnstableVoltage\n  {c: '10472624', t: now, v: global.get('10472624') || 0}, // _AlarmUVInLamp\n  {c: '10472625', t: now, v: global.get('10472625') || 0}, // _AlarmUVOutLamp\n  {c: '10472626', t: now, v: global.get('10472626') || 0}, // _AlarmValve1\n  {c: '10472627', t: now, v: global.get('10472627') || 0}, // _AlarmValve2\n  {c: '10472628', t: now, v: global.get('10472628') || 0}, // _AlarmValve3\n  {c: '10472629', t: now, v: global.get('10472629') || 0}, // _AlarmValve4\n  {c: '10472630', t: now, v: global.get('10472630') || 0}, // _AlarmValve5\n  {c: '10472631', t: now, v: global.get('10472631') || 0}, // _Anti_pump\n  {c: '10472632', t: now, v: global.get('10472632') || 0}, // _BackwashSwitch\n  {c: '10472633', t: now, v: global.get('10472633') || 0}, // _BackwashSwitchC\n  {c: '10472634', t: now, v: global.get('10472634') || 0}, // _CIP_tankempty\n  {c: '10472635', t: now, v: global.get('10472635') || 0}, // _CIP_tankfull\n  {c: '10472636', t: now, v: global.get('10472636') || 0}, // _CIPSwitch\n  {c: '10472637', t: now, v: global.get('10472637') || 0}, // _CIPSwitchC\n  {c: '10472638', t: now, v: global.get('10472638') || 0}, // _Ctrl_Uvin\n  {c: '10472639', t: now, v: global.get('10472639') || 0}, // _ctrl_Uvout\n  {c: '10472640', t: now, v: global.get('10472640') || 0}, // _Datum_Backwash_Done\n  {c: '10472641', t: now, v: global.get('10472641') || 0}, // _Datum_CIP_Done\n  {c: '10473768', t: now, v: global.get('10473768') || 0}, // Dosing_Pump_Alarm\n  {c: '10473769', t: now, v: global.get('10473769') || 0}, // DriveError_Drv1\n  {c: '10473770', t: now, v: global.get('10473770') || 0}, // DriveError_Drv2\n  {c: '10473771', t: now, v: global.get('10473771') || 0}, // DriveError_Drv3\n  {c: '10473772', t: now, v: global.get('10473772') || 0}, // IceMachine_Run, _19_IceMachine_Run\n  {c: '10473773', t: now, v: global.get('10473773') || 0}, // Machine_Mode_Backwash\n  {c: '10473774', t: now, v: global.get('10473774') || 0}, // Machine_Mode_Bohrhole\n  {c: '10473775', t: now, v: global.get('10473775') || 0}, // Machine_Mode_CIP\n  {c: '10473776', t: now, v: global.get('10473776') || 0}, // Machine_Mode_Filling\n  {c: '10473777', t: now, v: global.get('10473777') || 0}, // Machine_Mode_Flush\n  {c: '10473778', t: now, v: global.get('10473778') || 0}, // Machine_Mode_Pro\n  {c: '10473779', t: now, v: global.get('10473779') || 0}, // MachineRun\n  {c: '10473780', t: now, v: global.get('10473780') || 0}, // mains_on\n  {c: '10473781', t: now, v: global.get('10473781') || 0}, // Permtank_toplvl\n  {c: '10473782', t: now, v: global.get('10473782') || 0}, // Ph_Alarm\n  {c: '10473783', t: now, v: global.get('10473783') || 0}, // PremeateTank\n  {c: '10473784', t: now, v: global.get('10473784') || 0}, // Rawtank_lowlvl\n  {c: '10473785', t: now, v: global.get('10473785') || 0}, // Rawtank_toplvl\n  {c: '10473786', t: now, v: global.get('10473786') || 0}, // SC_ctrl1\n  {c: '10473787', t: now, v: global.get('10473787') || 0}, // SC_ctrl2\n  {c: '10473788', t: now, v: global.get('10473788') || 0}, // SC_Sw\n  {c: '10473789', t: now, v: global.get('10473789') || 0}, // SCBW1_ok\n  {c: '10473790', t: now, v: global.get('10473790') || 0}, // SCBW2_ok\n  {c: '10473791', t: now, v: global.get('10473791') || 0}, // Switch_P1_BohrholeSwitch\n  {c: '10473792', t: now, v: global.get('10473792') || 0}, // Switch_P2_FeedSwitch\n  {c: '10473793', t: now, v: global.get('10473793') || 0}, // Switch_P3_BoosterSwitch\n  {c: '10473794', t: now, v: global.get('10473794') || 0}, // Switch_P4\n  {c: '10473795', t: now, v: global.get('10473795') || 0}, // UVo_Watersensor\n  {c: '10473796', t: now, v: global.get('10473796') || 0}, // Valves_bw\n  {c: '10473797', t: now, v: global.get('10473797') || 0}, // valves_cip\n  {c: '10473798', t: now, v: global.get('10473798') || 0}, // Valves_CIP_position\n  {c: '10473799', t: now, v: global.get('10473799') || 0}, // valves_filling\n  {c: '10473800', t: now, v: global.get('10473800') || 0}, // Valves_Filling_position\n  {c: '10473801', t: now, v: global.get('10473801') || 0}, // valves_flush\n  {c: '10473802', t: now, v: global.get('10473802') || 0}, // Valves_Flush_position\n  {c: '10473803', t: now, v: global.get('10473803') || 0}, // Valves_Position_pro\n  {c: '10473804', t: now, v: global.get('10473804') || 0}, // Waterflowing\n];\n\nmsg.topic = 'telemetry';\nmsg.payload = { trends };\n\nreturn msg;",
+    "outputs": 1,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 3350,
+    "y": 420,
+    "wires": [
+      [
+        "f87ac667aa36a1cd",
+        "eaa4310e817e7f19"
+      ]
+    ]
+  },
+  {
+    "id": "35466fef0164e1ed",
+    "type": "debug",
+    "z": "b434fc50fd536c1d",
+    "name": "debug 12",
+    "active": false,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 3760,
+    "y": 500,
+    "wires": []
+  },
+  {
+    "id": "5ef8433916ec42e1",
+    "type": "trigger",
+    "z": "b434fc50fd536c1d",
+    "name": "",
+    "op1": "1",
+    "op2": "0",
+    "op1type": "str",
+    "op2type": "str",
+    "duration": "250",
+    "extend": false,
+    "units": "ms",
+    "reset": "",
+    "bytopic": "all",
+    "topic": "topic",
+    "outputs": 1,
+    "x": 2960,
+    "y": 320,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "19c6cee653b374b3",
+    "type": "function",
+    "z": "b434fc50fd536c1d",
+    "name": "mains_on",
+    "func": "mains_on = parseInt(msg.payload.value)\nglobal.set(\"mains_on\", mains_on);\nreturn msg;\n\n",
+    "outputs": 1,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 3100,
+    "y": 580,
+    "wires": [
+      [
+        "35466fef0164e1ed"
+      ]
+    ]
+  },
+  {
+    "id": "f87ac667aa36a1cd",
+    "type": "azureiotdevice",
+    "z": "b434fc50fd536c1d",
+    "deviceid": "58188762-ff91-4f56-9cb4-89345b19b954",
+    "pnpModelid": "",
+    "connectiontype": "constr",
+    "authenticationmethod": "sas",
+    "iothub": "iot-etnblc-rm-ext-prd-weu-p01.azure-devices.net",
+    "isIotcentral": false,
+    "scopeid": "",
+    "enrollmenttype": "group",
+    "saskey": "c6KVu4cdfGGLQGusz7nwI/C1QD8N223ElSSgWAqvKDU=",
+    "certname": "",
+    "keyname": "",
+    "passphrase": "",
+    "protocol": "mqtt",
+    "retryInterval": 10,
+    "methods": [],
+    "DPSpayload": "",
+    "gatewayHostname": "",
+    "caname": "",
+    "cert": "",
+    "key": "",
+    "ca": "",
+    "x": 3870,
+    "y": 420,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "eaa4310e817e7f19",
+    "type": "debug",
+    "z": "b434fc50fd536c1d",
+    "name": "debug 13",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 3560,
+    "y": 580,
+    "wires": []
+  }
+]
