@@ -1,0 +1,22 @@
+Type;Name;Data Type
+Field;Water_Today_in;integer
+Field;Leitfaehigkeit;float
+Field;Systemdruck;float
+Field;Frequenz_Inv1;integer
+Field;Frequenz_Inv2;integer
+Field;Frequenz_Inv3;integer
+Field;Water_in;float
+Field;Water_produced;float
+Field;Water_sold;float
+Field;UVin_Betriebsstunden;float
+Field;Wasser_eingang;float
+Field;Wasser_permeat;float
+Field;Wasser_verkauft;integer
+Field;Water_Today_prod;integer
+Field;Water_Today_sold;integer
+Field;WaterToday_in;float
+Field;WaterToday_prod;float
+Field;WaterToday_sold;float
+Field;Wassereingang;float
+Field;Permeat;float
+Field;Verkauftes_Wasser;integer

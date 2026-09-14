@@ -1,0 +1,380 @@
+﻿timestamp,message,severityLevel
+"2026-08-23T10:32:40.5224185Z","Job host stopped",1
+"2026-08-23T10:32:40.5223115Z","Stopping JobHost",1
+"2026-08-23T10:32:40.5131121Z","Language Worker Process exited. Pid=64.",3
+"2026-08-23T10:32:40.2341782Z","Call to StopAsync complete, registered listeners are now stopped",1
+"2026-08-23T10:32:40.2334753Z","Calling StopAsync on the registered listeners",1
+"2026-08-23T10:32:40.2333211Z","DrainMode mode enabled",1
+"2026-08-23T10:32:21.8323793Z","Host Status: {
+  ""id"": ""c2f1928ffdfd22c4b9de42c35286a490"",
+  ""state"": ""Running"",
+  ""version"": ""4.1053.200.26403"",
+  ""versionDetails"": ""4.1053.200+424a9c319351f13d9e1b5c16bb18a02f82870058"",
+  ""platformVersion"": """",
+  ""instanceId"": ""0--fab719c0-e62a-4974-bf9a-7a603b5e1119"",
+  ""computerName"": """",
+  ""processUptime"": 225589,
+  ""functionAppContentEditingState"": ""NotAllowed"",
+  ""extensionBundle"": {
+    ""id"": ""Microsoft.Azure.Functions.ExtensionBundle"",
+    ""version"": ""4.38.1""
+  }
+}",1
+"2026-08-23T10:32:18.2276012Z","Host Status: {
+  ""id"": ""c2f1928ffdfd22c4b9de42c35286a490"",
+  ""state"": ""Running"",
+  ""version"": ""4.1053.200.26403"",
+  ""versionDetails"": ""4.1053.200+424a9c319351f13d9e1b5c16bb18a02f82870058"",
+  ""platformVersion"": """",
+  ""instanceId"": ""0--fab719c0-e62a-4974-bf9a-7a603b5e1119"",
+  ""computerName"": """",
+  ""processUptime"": 221984,
+  ""functionAppContentEditingState"": ""NotAllowed"",
+  ""extensionBundle"": {
+    ""id"": ""Microsoft.Azure.Functions.ExtensionBundle"",
+    ""version"": ""4.38.1""
+  }
+}",1
+"2026-08-23T10:32:17.9685876Z","Host Status: {
+  ""id"": ""c2f1928ffdfd22c4b9de42c35286a490"",
+  ""state"": ""Running"",
+  ""version"": ""4.1053.200.26403"",
+  ""versionDetails"": ""4.1053.200+424a9c319351f13d9e1b5c16bb18a02f82870058"",
+  ""platformVersion"": """",
+  ""instanceId"": ""0--fab719c0-e62a-4974-bf9a-7a603b5e1119"",
+  ""computerName"": """",
+  ""processUptime"": 221724,
+  ""functionAppContentEditingState"": ""NotAllowed"",
+  ""extensionBundle"": {
+    ""id"": ""Microsoft.Azure.Functions.ExtensionBundle"",
+    ""version"": ""4.38.1""
+  }
+}",1
+"2026-08-23T10:31:15.5329142Z","Host Status: {
+  ""id"": ""c2f1928ffdfd22c4b9de42c35286a490"",
+  ""state"": ""Running"",
+  ""version"": ""4.1053.200.26403"",
+  ""versionDetails"": ""4.1053.200+424a9c319351f13d9e1b5c16bb18a02f82870058"",
+  ""platformVersion"": """",
+  ""instanceId"": ""0--fab719c0-e62a-4974-bf9a-7a603b5e1119"",
+  ""computerName"": """",
+  ""processUptime"": 159289,
+  ""functionAppContentEditingState"": ""NotAllowed"",
+  ""extensionBundle"": {
+    ""id"": ""Microsoft.Azure.Functions.ExtensionBundle"",
+    ""version"": ""4.38.1""
+  }
+}",1
+"2026-08-23T10:30:40.3824806Z","0 functions loaded",1
+"2026-08-23T10:30:40.3824337Z","0 functions found (Custom)",1
+"2026-08-23T10:30:40.3820561Z","Reading functions metadata (Custom)",1
+"2026-08-23T10:30:40.3819286Z","Loading functions metadata",1
+"2026-08-23T10:30:40.3813855Z","0 functions loaded",1
+"2026-08-23T10:30:40.381308Z","0 functions found (Custom)",1
+"2026-08-23T10:30:40.380958Z","Reading functions metadata (Custom)",1
+"2026-08-23T10:30:40.3807255Z","Loading functions metadata",1
+"2026-08-23T10:30:15.395438Z","Host lock lease acquired by instance ID '0000000000000000000000006C64629F'.",1
+"2026-08-23T10:30:10.8356002Z","[Kudu-SyncTriggerStep] completed.",1
+"2026-08-23T10:30:10.4217213Z","0 functions loaded",1
+"2026-08-23T10:30:10.4216202Z","0 functions found (Custom)",1
+"2026-08-23T10:30:10.4213503Z","Reading functions metadata (Custom)",1
+"2026-08-23T10:30:10.4209321Z","Loading functions metadata",1
+"2026-08-23T10:30:10.4124221Z","ConcurrencyOptions
+{
+  ""DynamicConcurrencyEnabled"": false,
+  ""MaximumFunctionConcurrency"": 500,
+  ""CPUThreshold"": 0.8,
+  ""SnapshotPersistenceEnabled"": true
+}",1
+"2026-08-23T10:30:10.4068693Z","HttpOptions
+{
+  ""DynamicThrottlesEnabled"": false,
+  ""EnableChunkedRequestBinding"": false,
+  ""MaxConcurrentRequests"": -1,
+  ""MaxOutstandingRequests"": -1,
+  ""RoutePrefix"": ""api""
+}",1
+"2026-08-23T10:30:10.40413Z","0 functions loaded",1
+"2026-08-23T10:30:10.4035307Z","0 functions found (Custom)",1
+"2026-08-23T10:30:10.4034051Z","Reading functions metadata (Custom)",1
+"2026-08-23T10:30:10.4030128Z","Loading functions metadata",1
+"2026-08-23T10:30:10.3848557Z","Worker failed to index functions",3
+"2026-08-23T10:30:10.3774012Z","Error: No module named 'src', Cannot find module. Please check the requirements.txt file for the missing module. For more info, please refer the troubleshooting guide: https://aka.ms/functions-modulenotfound. Current sys.path: ['/tmp/functions/standby/wwwroot', '/home/site/wwwroot/.python_packages/lib/site-packages', '/azure-functions-host/workers/python/3.11/LINUX/X64', '/usr/local/lib/python311.zip', '/usr/local/lib/python3.11', '/usr/local/lib/python3.11/lib-dynload', '/usr/local/lib/python3.11/site-packages']
+Traceback (most recent call last):
+  File ""/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/utils/wrappers.py"", line 44, in call
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File ""/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/loader.py"", line 251, in index_function_app
+    imported_module = importlib.import_module(module_name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/usr/local/lib/python3.11/importlib/__init__.py"", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""<frozen importlib._bootstrap>"", line 1204, in _gcd_import
+  File ""<frozen importlib._bootstrap>"", line 1176, in _find_and_load
+  File ""<frozen importlib._bootstrap>"", line 1147, in _find_and_load_unlocked
+  File ""<frozen importlib._bootstrap>"", line 690, in _load_unlocked
+  File ""<frozen importlib._bootstrap_external>"", line 940, in exec_module
+  File ""<frozen importlib._bootstrap>"", line 241, in _call_with_frames_removed
+  File ""/home/site/wwwroot/function_app.py"", line 6, in <module>
+    from src.modules import cleanup_cycles as cleanup_cycles_module
+ModuleNotFoundError: No module named 'src'",3
+"2026-08-23T10:30:10.3773825Z","Error in index_function_app. Sys Path: ['/tmp/functions/standby/wwwroot', '/home/site/wwwroot/.python_packages/lib/site-packages', '/azure-functions-host/workers/python/3.11/LINUX/X64', '/usr/local/lib/python311.zip', '/usr/local/lib/python3.11', '/usr/local/lib/python3.11/lib-dynload', '/usr/local/lib/python3.11/site-packages'], Sys Module: {'sys': <module 'sys' (built-in)>, 'builtins': <module 'builtins' (built-in)>, '_frozen_importlib': <module '_frozen_importlib' (frozen)>, '_imp': <module '_imp' (built-in)>, '_thread': <module '_thread' (built-in)>, '_warnings': <module '_warnings' (built-in)>, '_weakref': <module '_weakref' (built-in)>, '_io': <module '_io' (built-in)>, 'marshal': <module 'marshal' (built-in)>, 'posix': <module 'posix' (built-in)>, '_frozen_importlib_external': <module '_frozen_importlib_external' (frozen)>, 'time': <module 'time' (built-in)>, 'zipimport': <module 'zipimport' (frozen)>, '_codecs': <module '_codecs' (built-in)>, 'codecs': <module 'codecs' (frozen)>, 'encodings.aliases': <module 'encodings.aliases' from '/usr/local/lib/python3.11/encodings/aliases.py'>, 'encodings': <module 'encodings' from '/usr/local/lib/python3.11/encodings/__init__.py'>, 'encodings.utf_8': <module 'encodings.utf_8' from '/usr/local/lib/python3.11/encodings/utf_8.py'>, '_signal': <module '_signal' (built-in)>, '_abc': <module '_abc' (built-in)>, 'abc': <module 'abc' (frozen)>, 'io': <module 'io' (frozen)>, '__main__': <module 'azure_functions_worker.__main__' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/__main__.py'>, '_stat': <module '_stat' (built-in)>, 'stat': <module 'stat' (frozen)>, '_collections_abc': <module '_collections_abc' (frozen)>, 'genericpath': <module 'genericpath' (frozen)>, 'posixpath': <module 'posixpath' (frozen)>, 'os.path': <module 'posixpath' (frozen)>, 'os': <module 'os' (frozen)>, '_sitebuiltins': <module '_sitebuiltins' (frozen)>, '_distutils_hack': <module '_distutils_hack' from '/usr/local/lib/python3.11/site-packages/_distutils_hack/__init__.py'>, 'site': <module 'site' (frozen)>, 'importlib._bootstrap': <module '_frozen_importlib' (frozen)>, 'importlib._bootstrap_external': <module '_frozen_importlib_external' (frozen)>, 'warnings': <module 'warnings' from '/usr/local/lib/python3.11/warnings.py'>, 'importlib': <module 'importlib' from '/usr/local/lib/python3.11/importlib/__init__.py'>, 'importlib.machinery': <module 'importlib.machinery' (frozen)>, 'importlib._abc': <module 'importlib._abc' from '/usr/local/lib/python3.11/importlib/_abc.py'>, 'itertools': <module 'itertools' (built-in)>, 'keyword': <module 'keyword' from '/usr/local/lib/python3.11/keyword.py'>, '_operator': <module '_operator' (built-in)>, 'operator': <module 'operator' from '/usr/local/lib/python3.11/operator.py'>, 'reprlib': <module 'reprlib' from '/usr/local/lib/python3.11/reprlib.py'>, '_collections': <module '_collections' (built-in)>, 'collections': <module 'collections' from '/usr/local/lib/python3.11/collections/__init__.py'>, 'types': <module 'types' from '/usr/local/lib/python3.11/types.py'>, '_functools': <module '_functools' (built-in)>, 'functools': <module 'functools' from '/usr/local/lib/python3.11/functools.py'>, 'contextlib': <module 'contextlib' from '/usr/local/lib/python3.11/contextlib.py'>, '_weakrefset': <module '_weakrefset' from '/usr/local/lib/python3.11/_weakrefset.py'>, 'threading': <module 'threading' from '/usr/local/lib/python3.11/threading.py'>, 'importlib.util': <module 'importlib.util' (frozen)>, 'runpy': <module 'runpy' (frozen)>, 'enum': <module 'enum' from '/usr/local/lib/python3.11/enum.py'>, '_sre': <module '_sre' (built-in)>, 're._constants': <module 're._constants' from '/usr/local/lib/python3.11/re/_constants.py'>, 're._parser': <module 're._parser' from '/usr/local/lib/python3.11/re/_parser.py'>, 're._casefix': <module 're._casefix' from '/usr/local/lib/python3.11/re/_casefix.py'>, 're._compiler': <module 're._compiler' from '/usr/local/lib/python3.11/re/_compiler.py'>, 'copyreg': <module 'copyreg' from '/usr/local/lib/python3.11/copyreg.py'>, 're': <module 're' from '/usr/local/lib/python3.11/re/__init__.py'>, 'google': <module 'google' (<_frozen_importlib_external.NamespaceLoader object at 0x7dda4fbb81d0>)>, 'azure_functions_worker': <module 'azure_functions_worker' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/__init__.py'>, 'gettext': <module 'gettext' from '/usr/local/lib/python3.11/gettext.py'>, 'argparse': <module 'argparse' from '/usr/local/lib/python3.11/argparse.py'>, 'azure_functions_worker.main': <module 'azure_functions_worker.main' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/main.py'>, 'azure_functions_worker.utils': <module 'azure_functions_worker.utils' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/utils/__init__.py'>, '_ast': <module '_ast' (built-in)>, 'ast': <module 'ast' from '/usr/local/lib/python3.11/ast.py'>, '_opcode': <module '_opcode' from '/usr/local/lib/python3.11/lib-dynload/_opcode.cpython-311-x86_64-linux-gnu.so'>, 'opcode': <module 'opcode' from '/usr/local/lib/python3.11/opcode.py'>, 'dis': <module 'dis' from '/usr/local/lib/python3.11/dis.py'>, 'collections.abc': <module 'collections.abc' from '/usr/local/lib/python3.11/collections/abc.py'>, 'token': <module 'token' from '/usr/local/lib/python3.11/token.py'>, 'tokenize': <module 'tokenize' from '/usr/local/lib/python3.11/tokenize.py'>, 'linecache': <module 'linecache' from '/usr/local/lib/python3.11/linecache.py'>, 'inspect': <module 'inspect' from '/usr/local/lib/python3.11/inspect.py'>, '_typing': <module '_typing' from '/usr/local/lib/python3.11/lib-dynload/_typing.cpython-311-x86_64-linux-gnu.so'>, 'typing.io': <class 'typing.io'>, 'typing.re': <class 'typing.re'>, 'typing': <module 'typing' from '/usr/local/lib/python3.11/typing.py'>, 'math': <module 'math' from '/usr/local/lib/python3.11/lib-dynload/math.cpython-311-x86_64-linux-gnu.so'>, '_datetime': <module '_datetime' from '/usr/local/lib/python3.11/lib-dynload/_datetime.cpython-311-x86_64-linux-gnu.so'>, 'datetime': <module 'datetime' from '/usr/local/lib/python3.11/datetime.py'>, 'azure_functions_worker.constants': <module 'azure_functions_worker.constants' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/constants.py'>, 'textwrap': <module 'textwrap' from '/usr/local/lib/python3.11/textwrap.py'>, 'traceback': <module 'traceback' from '/usr/local/lib/python3.11/traceback.py'>, 'weakref': <module 'weakref' from '/usr/local/lib/python3.11/weakref.py'>, '_string': <module '_string' (built-in)>, 'string': <module 'string' from '/usr/local/lib/python3.11/string.py'>, 'atexit': <module 'atexit' (built-in)>, 'logging': <module 'logging' from '/usr/local/lib/python3.11/logging/__init__.py'>, '_socket': <module '_socket' from '/usr/local/lib/python3.11/lib-dynload/_socket.cpython-311-x86_64-linux-gnu.so'>, 'select': <module 'select' from '/usr/local/lib/python3.11/lib-dynload/select.cpython-311-x86_64-linux-gnu.so'>, 'selectors': <module 'selectors' from '/usr/local/lib/python3.11/selectors.py'>, 'errno': <module 'errno' (built-in)>, 'array': <module 'array' from '/usr/local/lib/python3.11/lib-dynload/array.cpython-311-x86_64-linux-gnu.so'>, 'socket': <module 'socket' from '/usr/local/lib/python3.11/socket.py'>, '_struct': <module '_struct' from '/usr/local/lib/python3.11/lib-dynload/_struct.cpython-311-x86_64-linux-gnu.so'>, 'struct': <module 'struct' from '/usr/local/lib/python3.11/struct.py'>, '_compat_pickle': <module '_compat_pickle' from '/usr/local/lib/python3.11/_compat_pickle.py'>, '_pickle': <module '_pickle' from '/usr/local/lib/python3.11/lib-dynload/_pickle.cpython-311-x86_64-linux-gnu.so'>, 'pickle': <module 'pickle' from '/usr/local/lib/python3.11/pickle.py'>, '_heapq': <module '_heapq' from '/usr/local/lib/python3.11/lib-dynload/_heapq.cpython-311-x86_64-linux-gnu.so'>, 'heapq': <module 'heapq' from '/usr/local/lib/python3.11/heapq.py'>, '_queue': <module '_queue' from '/usr/local/lib/python3.11/lib-dynload/_queue.cpython-311-x86_64-linux-gnu.so'>, 'queue': <module 'queue' from '/usr/local/lib/python3.11/queue.py'>, 'copy': <module 'copy' from '/usr/local/lib/python3.11/copy.py'>, 'logging.handlers': <module 'logging.handlers' from '/usr/local/lib/python3.11/logging/handlers.py'>, 'azure_functions_worker.logging': <module 'azure_functions_worker.logging' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/logging.py'>, 'azure_functions_worker.utils.common': <module 'azure_functions_worker.utils.common' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/utils/common.py'>, 'azure_functions_worker.utils.tracing': <module 'azure_functions_worker.utils.tracing' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/utils/tracing.py'>, 'azure_functions_worker.utils.wrappers': <module 'azure_functions_worker.utils.wrappers' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/utils/wrappers.py'>, 'azure_functions_worker.utils.dependency': <module 'azure_functions_worker.utils.dependency' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/utils/dependency.py'>, 'concurrent': <module 'concurrent' from '/usr/local/lib/python3.11/concurrent/__init__.py'>, 'concurrent.futures._base': <module 'concurrent.futures._base' from '/usr/local/lib/python3.11/concurrent/futures/_base.py'>, 'concurrent.futures': <module 'concurrent.futures' from '/usr/local/lib/python3.11/concurrent/futures/__init__.py'>, '_locale': <module '_locale' (built-in)>, 'locale': <module 'locale' from '/usr/local/lib/python3.11/locale.py'>, 'signal': <module 'signal' from '/usr/local/lib/python3.11/signal.py'>, 'fcntl': <module 'fcntl' from '/usr/local/lib/python3.11/lib-dynload/fcntl.cpython-311-x86_64-linux-gnu.so'>, '_posixsubprocess': <module '_posixsubprocess' from '/usr/local/lib/python3.11/lib-dynload/_posixsubprocess.cpython-311-x86_64-linux-gnu.so'>, 'subprocess': <module 'subprocess' from '/usr/local/lib/python3.11/subprocess.py'>, '_ssl': <module '_ssl' from '/usr/local/lib/python3.11/lib-dynload/_ssl.cpython-311-x86_64-linux-gnu.so'>, 'binascii': <module 'binascii' from '/usr/local/lib/python3.11/lib-dynload/binascii.cpython-311-x86_64-linux-gnu.so'>, 'base64': <module 'base64' from '/usr/local/lib/python3.11/base64.py'>, 'ssl': <module 'ssl' from '/usr/local/lib/python3.11/ssl.py'>, 'asyncio.constants': <module 'asyncio.constants' from '/usr/local/lib/python3.11/asyncio/constants.py'>, 'asyncio.coroutines': <module 'asyncio.coroutines' from '/usr/local/lib/python3.11/asyncio/coroutines.py'>, '_contextvars': <module '_contextvars' from '/usr/local/lib/python3.11/lib-dynload/_contextvars.cpython-311-x86_64-linux-gnu.so'>, 'contextvars': <module 'contextvars' from '/usr/local/lib/python3.11/contextvars.py'>, 'asyncio.format_helpers': <module 'asyncio.format_helpers' from '/usr/local/lib/python3.11/asyncio/format_helpers.py'>, 'asyncio.base_futures': <module 'asyncio.base_futures' from '/usr/local/lib/python3.11/asyncio/base_futures.py'>, 'asyncio.exceptions': <module 'asyncio.exceptions' from '/usr/local/lib/python3.11/asyncio/exceptions.py'>, 'asyncio.base_tasks': <module 'asyncio.base_tasks' from '/usr/local/lib/python3.11/asyncio/base_tasks.py'>, '_asyncio': <module '_asyncio' from '/usr/local/lib/python3.11/lib-dynload/_asyncio.cpython-311-x86_64-linux-gnu.so'>, 'asyncio.events': <module 'asyncio.events' from '/usr/local/lib/python3.11/asyncio/events.py'>, 'asyncio.futures': <module 'asyncio.futures' from '/usr/local/lib/python3.11/asyncio/futures.py'>, 'asyncio.protocols': <module 'asyncio.protocols' from '/usr/local/lib/python3.11/asyncio/protocols.py'>, 'asyncio.transports': <module 'asyncio.transports' from '/usr/local/lib/python3.11/asyncio/transports.py'>, 'asyncio.log': <module 'asyncio.log' from '/usr/local/lib/python3.11/asyncio/log.py'>, 'asyncio.sslproto': <module 'asyncio.sslproto' from '/usr/local/lib/python3.11/asyncio/sslproto.py'>, 'asyncio.mixins': <module 'asyncio.mixins' from '/usr/local/lib/python3.11/asyncio/mixins.py'>, 'asyncio.tasks': <module 'asyncio.tasks' from '/usr/local/lib/python3.11/asyncio/tasks.py'>, 'asyncio.locks': <module 'asyncio.locks' from '/usr/local/lib/python3.11/asyncio/locks.py'>, 'asyncio.staggered': <module 'asyncio.staggered' from '/usr/local/lib/python3.11/asyncio/staggered.py'>, 'asyncio.trsock': <module 'asyncio.trsock' from '/usr/local/lib/python3.11/asyncio/trsock.py'>, 'asyncio.base_events': <module 'asyncio.base_events' from '/usr/local/lib/python3.11/asyncio/base_events.py'>, 'asyncio.runners': <module 'asyncio.runners' from '/usr/local/lib/python3.11/asyncio/runners.py'>, 'asyncio.queues': <module 'asyncio.queues' from '/usr/local/lib/python3.11/asyncio/queues.py'>, 'asyncio.streams': <module 'asyncio.streams' from '/usr/local/lib/python3.11/asyncio/streams.py'>, 'asyncio.subprocess': <module 'asyncio.subprocess' from '/usr/local/lib/python3.11/asyncio/subprocess.py'>, 'asyncio.taskgroups': <module 'asyncio.taskgroups' from '/usr/local/lib/python3.11/asyncio/taskgroups.py'>, 'asyncio.timeouts': <module 'asyncio.timeouts' from '/usr/local/lib/python3.11/asyncio/timeouts.py'>, 'asyncio.threads': <module 'asyncio.threads' from '/usr/local/lib/python3.11/asyncio/threads.py'>, 'asyncio.base_subprocess': <module 'asyncio.base_subprocess' from '/usr/local/lib/python3.11/asyncio/base_subprocess.py'>, 'asyncio.selector_events': <module 'asyncio.selector_events' from '/usr/local/lib/python3.11/asyncio/selector_events.py'>, 'asyncio.unix_events': <module 'asyncio.unix_events' from '/usr/local/lib/python3.11/asyncio/unix_events.py'>, 'asyncio': <module 'asyncio' from '/usr/local/lib/python3.11/asyncio/__init__.py'>, 'fnmatch': <module 'fnmatch' from '/usr/local/lib/python3.11/fnmatch.py'>, 'zlib': <module 'zlib' from '/usr/local/lib/python3.11/lib-dynload/zlib.cpython-311-x86_64-linux-gnu.so'>, '_compression': <module '_compression' from '/usr/local/lib/python3.11/_compression.py'>, '_bz2': <module '_bz2' from '/usr/local/lib/python3.11/lib-dynload/_bz2.cpython-311-x86_64-linux-gnu.so'>, 'bz2': <module 'bz2' from '/usr/local/lib/python3.11/bz2.py'>, '_lzma': <module '_lzma' from '/usr/local/lib/python3.11/lib-dynload/_lzma.cpython-311-x86_64-linux-gnu.so'>, 'lzma': <module 'lzma' from '/usr/local/lib/python3.11/lzma.py'>, 'shutil': <module 'shutil' from '/usr/local/lib/python3.11/shutil.py'>, 'azure_functions_worker.dispatcher': <module 'azure_functions_worker.dispatcher' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/dispatcher.py'>, 'platform': <module 'platform' from '/usr/local/lib/python3.11/platform.py'>, '__future__': <module '__future__' from '/usr/local/lib/python3.11/__future__.py'>, 'grpc._cython': <module 'grpc._cython' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/_cython/__init__.py'>, 'cython_runtime': <module 'cython_runtime'>, '_cython_3_0_11': <module '_cython_3_0_11'>, 'grpc._typing': <module 'grpc._typing' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/_typing.py'>, 'grpc._observability': <module 'grpc._observability' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/_observability.py'>, 'pkgutil': <module 'pkgutil' from '/usr/local/lib/python3.11/pkgutil.py'>, 'grpc._cython.cygrpc': <module 'grpc._cython.cygrpc' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/_cython/cygrpc.cpython-311-x86_64-linux-gnu.so'>, 'grpc._compression': <module 'grpc._compression' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/_compression.py'>, 'grpc._runtime_protos': <module 'grpc._runtime_protos' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/_runtime_protos.py'>, 'grpc._grpcio_metadata': <module 'grpc._grpcio_metadata' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/_grpcio_metadata.py'>, 'grpc.aio._metadata': <module 'grpc.aio._metadata' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_metadata.py'>, 'grpc.aio._typing': <module 'grpc.aio._typing' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_typing.py'>, 'grpc.aio._base_call': <module 'grpc.aio._base_call' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_base_call.py'>, 'grpc.aio._base_channel': <module 'grpc.aio._base_channel' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_base_channel.py'>, 'grpc.aio._base_server': <module 'grpc.aio._base_server' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_base_server.py'>, 'grpc._common': <module 'grpc._common' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/_common.py'>, 'grpc.aio._call': <module 'grpc.aio._call' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_call.py'>, 'grpc.aio._utils': <module 'grpc.aio._utils' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_utils.py'>, 'grpc.aio._interceptor': <module 'grpc.aio._interceptor' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_interceptor.py'>, 'grpc.aio._channel': <module 'grpc.aio._channel' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_channel.py'>, 'grpc.aio._server': <module 'grpc.aio._server' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/_server.py'>, 'grpc.aio': <module 'grpc.aio' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/aio/__init__.py'>, 'grpc': <module 'grpc' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/__init__.py'>, 'dataclasses': <module 'dataclasses' from '/usr/local/lib/python3.11/dataclasses.py'>, 'azure_functions_worker.bindings.rpcexception': <module 'azure_functions_worker.bindings.rpcexception' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/rpcexception.py'>, 'azure_functions_worker.bindings.retrycontext': <module 'azure_functions_worker.bindings.retrycontext' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/retrycontext.py'>, 'azure_functions_worker.bindings.tracecontext': <module 'azure_functions_worker.bindings.tracecontext' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/tracecontext.py'>, 'azure_functions_worker.bindings.context': <module 'azure_functions_worker.bindings.context' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/context.py'>, 'google.protobuf': <module 'google.protobuf' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/__init__.py'>, 'google.protobuf.internal': <module 'google.protobuf.internal' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/__init__.py'>, 'google._upb': <module 'google._upb' (<_frozen_importlib_external.NamespaceLoader object at 0x7dda4df76290>)>, 'google.protobuf.message': <module 'google.protobuf.message' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/message.py'>, 'google.protobuf.internal.enum_type_wrapper': <module 'google.protobuf.internal.enum_type_wrapper' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/enum_type_wrapper.py'>, 'google._upb._message': <module 'google._upb._message' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/_upb/_message.abi3.so'>, 'google.protobuf.internal.api_implementation': <module 'google.protobuf.internal.api_implementation' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/api_implementation.py'>, 'google.protobuf.descriptor': <module 'google.protobuf.descriptor' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/descriptor.py'>, 'google.protobuf.descriptor_database': <module 'google.protobuf.descriptor_database' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/descriptor_database.py'>, 'google.protobuf.text_encoding': <module 'google.protobuf.text_encoding' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/text_encoding.py'>, 'google.protobuf.internal.python_edition_defaults': <module 'google.protobuf.internal.python_edition_defaults' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/python_edition_defaults.py'>, 'encodings.raw_unicode_escape': <module 'encodings.raw_unicode_escape' from '/usr/local/lib/python3.11/encodings/raw_unicode_escape.py'>, 'encodings.unicode_escape': <module 'encodings.unicode_escape' from '/usr/local/lib/python3.11/encodings/unicode_escape.py'>, 'google.protobuf.internal.containers': <module 'google.protobuf.internal.containers' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/containers.py'>, 'google.protobuf.internal.wire_format': <module 'google.protobuf.internal.wire_format' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/wire_format.py'>, 'google.protobuf.internal.encoder': <module 'google.protobuf.internal.encoder' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/encoder.py'>, 'google.protobuf.internal.decoder': <module 'google.protobuf.internal.decoder' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/decoder.py'>, 'numbers': <module 'numbers' from '/usr/local/lib/python3.11/numbers.py'>, 'google.protobuf.internal.type_checkers': <module 'google.protobuf.internal.type_checkers' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/type_checkers.py'>, 'google.protobuf.unknown_fields': <module 'google.protobuf.unknown_fields' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/unknown_fields.py'>, 'google.protobuf.text_format': <module 'google.protobuf.text_format' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/text_format.py'>, 'google.protobuf.internal.extension_dict': <module 'google.protobuf.internal.extension_dict' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/extension_dict.py'>, 'google.protobuf.internal.message_listener': <module 'google.protobuf.internal.message_listener' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/message_listener.py'>, 'calendar': <module 'calendar' from '/usr/local/lib/python3.11/calendar.py'>, 'google.protobuf.internal.field_mask': <module 'google.protobuf.internal.field_mask' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/field_mask.py'>, 'google.protobuf.internal.well_known_types': <module 'google.protobuf.internal.well_known_types' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/well_known_types.py'>, 'google.protobuf.internal.python_message': <module 'google.protobuf.internal.python_message' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/python_message.py'>, 'google.protobuf.descriptor_pool': <module 'google.protobuf.descriptor_pool' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/descriptor_pool.py'>, 'google.protobuf.runtime_version': <module 'google.protobuf.runtime_version' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/runtime_version.py'>, 'google.protobuf.pyext': <module 'google.protobuf.pyext' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/pyext/__init__.py'>, 'google.protobuf.pyext.cpp_message': <module 'google.protobuf.pyext.cpp_message' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/pyext/cpp_message.py'>, 'google.protobuf.message_factory': <module 'google.protobuf.message_factory' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/message_factory.py'>, 'google.protobuf.symbol_database': <module 'google.protobuf.symbol_database' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/symbol_database.py'>, 'google.protobuf.reflection': <module 'google.protobuf.reflection' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/reflection.py'>, 'google.protobuf.internal.builder': <module 'google.protobuf.internal.builder' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/internal/builder.py'>, 'google.protobuf.duration_pb2': <module 'google.protobuf.duration_pb2' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/duration_pb2.py'>, 'azure_functions_worker.protos.identity': <module 'azure_functions_worker.protos.identity' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/protos/identity/__init__.py'>, 'azure_functions_worker.protos.shared': <module 'azure_functions_worker.protos.shared' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/protos/shared/__init__.py'>, 'google.protobuf.timestamp_pb2': <module 'google.protobuf.timestamp_pb2' from '/azure-functions-host/workers/python/3.11/LINUX/X64/google/protobuf/timestamp_pb2.py'>, 'azure_functions_worker.protos.shared.NullableTypes_pb2': <module 'azure_functions_worker.protos.shared.NullableTypes_pb2' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/protos/shared/NullableTypes_pb2.py'>, 'azure_functions_worker.protos.identity.ClaimsIdentityRpc_pb2': <module 'azure_functions_worker.protos.identity.ClaimsIdentityRpc_pb2' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/protos/identity/ClaimsIdentityRpc_pb2.py'>, 'azure_functions_worker.protos.FunctionRpc_pb2': <module 'azure_functions_worker.protos.FunctionRpc_pb2' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/protos/FunctionRpc_pb2.py'>, 'grpc._utilities': <module 'grpc._utilities' from '/azure-functions-host/workers/python/3.11/LINUX/X64/grpc/_utilities.py'>, 'azure_functions_worker.protos.FunctionRpc_pb2_grpc': <module 'azure_functions_worker.protos.FunctionRpc_pb2_grpc' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/protos/FunctionRpc_pb2_grpc.py'>, 'azure_functions_worker.protos': <module 'azure_functions_worker.protos' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/protos/__init__.py'>, 'azure_functions_worker.http_v2': <module 'azure_functions_worker.http_v2' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/http_v2.py'>, '_json': <module '_json' from '/usr/local/lib/python3.11/lib-dynload/_json.cpython-311-x86_64-linux-gnu.so'>, 'json.scanner': <module 'json.scanner' from '/usr/local/lib/python3.11/json/scanner.py'>, 'json.decoder': <module 'json.decoder' from '/usr/local/lib/python3.11/json/decoder.py'>, 'json.encoder': <module 'json.encoder' from '/usr/local/lib/python3.11/json/encoder.py'>, 'json': <module 'json' from '/usr/local/lib/python3.11/json/__init__.py'>, 'http': <module 'http' from '/usr/local/lib/python3.11/http/__init__.py'>, 'http.cookies': <module 'http.cookies' from '/usr/local/lib/python3.11/http/cookies.py'>, 'dateutil._version': <module 'dateutil._version' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/_version.py'>, 'dateutil': <module 'dateutil' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/__init__.py'>, 'six': <module 'six' from '/azure-functions-host/workers/python/3.11/LINUX/X64/six.py'>, '_decimal': <module '_decimal' from '/usr/local/lib/python3.11/lib-dynload/_decimal.cpython-311-x86_64-linux-gnu.so'>, 'decimal': <module 'decimal' from '/usr/local/lib/python3.11/decimal.py'>, 'dateutil._common': <module 'dateutil._common' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/_common.py'>, 'dateutil.relativedelta': <module 'dateutil.relativedelta' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/relativedelta.py'>, '_bisect': <module '_bisect' from '/usr/local/lib/python3.11/lib-dynload/_bisect.cpython-311-x86_64-linux-gnu.so'>, 'bisect': <module 'bisect' from '/usr/local/lib/python3.11/bisect.py'>, 'six.moves': <module 'six.moves' (<six._SixMetaPathImporter object at 0x7dda4dd49a10>)>, 'dateutil.tz._common': <module 'dateutil.tz._common' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/tz/_common.py'>, 'dateutil.tz._factories': <module 'dateutil.tz._factories' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/tz/_factories.py'>, 'dateutil.tz.tz': <module 'dateutil.tz.tz' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/tz/tz.py'>, 'dateutil.tz': <module 'dateutil.tz' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/tz/__init__.py'>, 'dateutil.parser._parser': <module 'dateutil.parser._parser' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/parser/_parser.py'>, 'dateutil.parser.isoparser': <module 'dateutil.parser.isoparser' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/parser/isoparser.py'>, 'dateutil.parser': <module 'dateutil.parser' from '/azure-functions-host/workers/python/3.11/LINUX/X64/dateutil/parser/__init__.py'>, 'azure_functions_worker.bindings.nullable_converters': <module 'azure_functions_worker.bindings.nullable_converters' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/nullable_converters.py'>, 'azure_functions_worker.bindings.datumdef': <module 'azure_functions_worker.bindings.datumdef' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/datumdef.py'>, 'azure_functions_worker.bindings.generic': <module 'azure_functions_worker.bindings.generic' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/generic.py'>, 'mmap': <module 'mmap' from '/usr/local/lib/python3.11/lib-dynload/mmap.cpython-311-x86_64-linux-gnu.so'>, 'azure_functions_worker.bindings.shared_memory_data_transfer.shared_memory_constants': <module 'azure_functions_worker.bindings.shared_memory_data_transfer.shared_memory_constants' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/shared_memory_data_transfer/shared_memory_constants.py'>, 'azure_functions_worker.bindings.shared_memory_data_transfer.file_accessor': <module 'azure_functions_worker.bindings.shared_memory_data_transfer.file_accessor' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/shared_memory_data_transfer/file_accessor.py'>, 'azure_functions_worker.bindings.shared_memory_data_transfer.shared_memory_exception': <module 'azure_functions_worker.bindings.shared_memory_data_transfer.shared_memory_exception' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/shared_memory_data_transfer/shared_memory_exception.py'>, 'azure_functions_worker.bindings.shared_memory_data_transfer.file_accessor_unix': <module 'azure_functions_worker.bindings.shared_memory_data_transfer.file_accessor_unix' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/shared_memory_data_transfer/file_accessor_unix.py'>, 'azure_functions_worker.bindings.shared_memory_data_transfer.file_accessor_windows': <module 'azure_functions_worker.bindings.shared_memory_data_transfer.file_accessor_windows' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/shared_memory_data_transfer/file_accessor_windows.py'>, 'azure_functions_worker.bindings.shared_memory_data_transfer.file_accessor_factory': <module 'azure_functions_worker.bindings.shared_memory_data_transfer.file_accessor_factory' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/shared_memory_data_transfer/file_accessor_factory.py'>, '_uuid': <module '_uuid' from '/usr/local/lib/python3.11/lib-dynload/_uuid.cpython-311-x86_64-linux-gnu.so'>, 'uuid': <module 'uuid' from '/usr/local/lib/python3.11/uuid.py'>, 'azure_functions_worker.bindings.shared_memory_data_transfer.shared_memory_map': <module 'azure_functions_worker.bindings.shared_memory_data_transfer.shared_memory_map' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/shared_memory_data_transfer/shared_memory_map.py'>, 'azure_functions_worker.bindings.shared_memory_data_transfer.shared_memory_metadata': <module 'azure_functions_worker.bindings.shared_memory_data_transfer.shared_memory_metadata' from '/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/bindings/shared_memory_data_transfer/shared_memory_me",3
+"2026-08-23T10:30:10.3773437Z","ERROR: Error: No module named 'src', Cannot find module. Please check the requirements.txt file for the missing module. For more info, please refer the troubleshooting guide: https://aka.ms/functions-modulenotfound. Current sys.path: ['/tmp/functions/standby/wwwroot', '/home/site/wwwroot/.python_packages/lib/site-packages', '/azure-functions-host/workers/python/3.11/LINUX/X64', '/usr/local/lib/python311.zip', '/usr/local/lib/python3.11', '/usr/local/lib/python3.11/lib-dynload', '/usr/local/lib/python3.11/site-packages']",3
+"2026-08-23T10:30:10.3770186Z","Job host started",1
+"2026-08-23T10:30:10.3769905Z","Host started (3ms)",1
+"2026-08-23T10:30:10.3769077Z","Host initialized (3ms)",1
+"2026-08-23T10:30:10.3768449Z","Initializing function HTTP routes
+No HTTP routes mapped",1
+"2026-08-23T10:30:10.3768322Z","HttpOptions
+{
+  ""DynamicThrottlesEnabled"": false,
+  ""EnableChunkedRequestBinding"": false,
+  ""MaxConcurrentRequests"": -1,
+  ""MaxOutstandingRequests"": -1,
+  ""RoutePrefix"": ""api""
+}",1
+"2026-08-23T10:30:10.3765336Z","No job functions found. Try making your job classes and methods public. If you're using binding extensions (e.g. Azure Storage, ServiceBus, Timers, etc.) make sure you've called the registration method for the extension(s) in your startup code (e.g. builder.AddAzureStorage(), builder.AddServiceBus(), builder.AddTimers(), etc.).",2
+"2026-08-23T10:30:10.3757077Z","Generating 0 job function(s)",1
+"2026-08-23T10:30:10.3747828Z","0 functions loaded",1
+"2026-08-23T10:30:10.3747111Z","0 functions found (Custom)",1
+"2026-08-23T10:30:10.3744331Z","Reading functions metadata (Custom)",1
+"2026-08-23T10:30:10.3740357Z","Loading functions metadata",1
+"2026-08-23T10:30:10.3736575Z","Starting Host (HostId=c2f1928ffdfd22c4b9de42c35286a490, InstanceId=4ec26911-7fd7-4124-bc86-4ae2907d9602, Version=4.1053.200.26403, ProcessId=44, AppDomainId=1, InDebugMode=True, InDiagnosticMode=False, FunctionsExtensionVersion=~4)",1
+"2026-08-23T10:30:10.3732747Z","Starting JobHost",1
+"2026-08-23T10:30:10.3731937Z","ScaleOptions
+{
+  ""ScaleMetricsMaxAge"": ""00:02:00"",
+  ""ScaleMetricsSampleInterval"": ""00:00:10"",
+  ""MetricsPurgeEnabled"": true,
+  ""IsTargetScalingEnabled"": true,
+  ""IsRuntimeScalingEnabled"": false
+}",1
+"2026-08-23T10:30:10.373152Z","TimerTriggerPlatformOptions
+{
+  ""NonCronScheduleBehavior"": ""Error""
+}",1
+"2026-08-23T10:30:10.3731257Z","SingletonOptions
+{
+  ""LockPeriod"": ""00:00:15"",
+  ""ListenerLockPeriod"": ""00:01:00"",
+  ""LockAcquisitionTimeout"": ""10675199.02:48:05.4775807"",
+  ""LockAcquisitionPollingInterval"": ""00:00:05"",
+  ""ListenerLockRecoveryPollingInterval"": ""00:01:00""
+}",1
+"2026-08-23T10:30:10.3730992Z","ConcurrencyOptions
+{
+  ""DynamicConcurrencyEnabled"": false,
+  ""MaximumFunctionConcurrency"": 500,
+  ""CPUThreshold"": 0.8,
+  ""SnapshotPersistenceEnabled"": true
+}",1
+"2026-08-23T10:30:10.3730737Z","FunctionResultAggregatorOptions
+{
+  ""BatchSize"": 1000,
+  ""FlushTimeout"": ""00:00:30"",
+  ""IsEnabled"": true
+}",1
+"2026-08-23T10:30:10.3730452Z","ScriptJobHostOptions
+{
+  ""FileWatchingEnabled"": false,
+  ""FileLoggingMode"": ""DebugOnly"",
+  ""FunctionTimeout"": ""00:10:00"",
+  ""TelemetryMode"": ""ApplicationInsights""
+}",1
+"2026-08-23T10:30:10.3729804Z","HttpWorkerOptions
+{
+  ""Type"": 0,
+  ""Description"": null,
+  ""Arguments"": null,
+  ""Port"": 36877,
+  ""IsPortManuallySet"": false,
+  ""EnableForwardingHttpRequest"": false,
+  ""EnableProxyingHttpRequest"": false,
+  ""InitializationTimeout"": ""00:00:30"",
+  ""CustomRoutesEnabled"": false,
+  ""Http"": null
+}",1
+"2026-08-23T10:30:10.3729385Z","LoggerFilterOptions
+{
+  ""MinLevel"": ""None"",
+  ""Rules"": [
+    {
+      ""ProviderName"": null,
+      ""CategoryName"": null,
+      ""LogLevel"": null,
+      ""Filter"": ""<AddFilter>b__0""
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.WebHostSystemLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": ""None"",
+      ""Filter"": null
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.WebHostSystemLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": null,
+      ""Filter"": ""<AddFilter>b__0""
+    },
+    {
+      ""ProviderName"": null,
+      ""CategoryName"": null,
+      ""LogLevel"": null,
+      ""Filter"": ""<AddFilter>b__0""
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": ""None"",
+      ""Filter"": null
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": null,
+      ""Filter"": ""<AddFilter>b__0""
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Logging.ApplicationInsights.ApplicationInsightsLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": ""Trace"",
+      ""Filter"": null
+    }
+  ]
+}",1
+"2026-08-23T10:30:10.3728755Z","LoggerFilterOptions
+{
+  ""MinLevel"": ""None"",
+  ""Rules"": [
+    {
+      ""ProviderName"": null,
+      ""CategoryName"": null,
+      ""LogLevel"": null,
+      ""Filter"": ""<AddFilter>b__0""
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.WebHostSystemLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": ""None"",
+      ""Filter"": null
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.WebHostSystemLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": null,
+      ""Filter"": ""<AddFilter>b__0""
+    },
+    {
+      ""ProviderName"": null,
+      ""CategoryName"": null,
+      ""LogLevel"": null,
+      ""Filter"": ""<AddFilter>b__0""
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": ""None"",
+      ""Filter"": null
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": null,
+      ""Filter"": ""<AddFilter>b__0""
+    },
+    {
+      ""ProviderName"": ""Microsoft.Azure.WebJobs.Logging.ApplicationInsights.ApplicationInsightsLoggerProvider"",
+      ""CategoryName"": null,
+      ""LogLevel"": ""Trace"",
+      ""Filter"": null
+    }
+  ]
+}",1
+"2026-08-23T10:30:10.3728379Z","ApplicationInsightsLoggerOptions
+{
+  ""SamplingSettings"": {
+    ""EvaluationInterval"": ""00:00:15"",
+    ""InitialSamplingPercentage"": 100.0,
+    ""MaxSamplingPercentage"": 100.0,
+    ""MaxTelemetryItemsPerSecond"": 20.0,
+    ""MinSamplingPercentage"": 0.1,
+    ""MovingAverageRatio"": 0.25,
+    ""SamplingPercentageDecreaseTimeout"": ""00:02:00"",
+    ""SamplingPercentageIncreaseTimeout"": ""00:15:00""
+  },
+  ""SamplingExcludedTypes"": ""Request"",
+  ""SamplingIncludedTypes"": null,
+  ""SnapshotConfiguration"": null,
+  ""EnablePerformanceCountersCollection"": true,
+  ""HttpAutoCollectionOptions"": {
+    ""EnableHttpTriggerExtendedInfoCollection"": true,
+    ""EnableW3CDistributedTracing"": true,
+    ""EnableResponseHeaderInjection"": true
+  },
+  ""LiveMetricsInitializationDelay"": ""00:00:15"",
+  ""EnableLiveMetrics"": true,
+  ""EnableLiveMetricsFilters"": false,
+  ""EnableQueryStringTracing"": false,
+  ""EnableDependencyTracking"": true,
+  ""DependencyTrackingOptions"": null,
+  ""TokenCredentialOptions"": null,
+  ""DiagnosticsEventListenerLogLevel"": null,
+  ""EnableAutocollectedMetricsExtractor"": false,
+  ""EnableMetricsCustomDimensionOptimization"": false,
+  ""EnableAdaptiveSamplingDelay"": true,
+  ""AdaptiveSamplingInitializationDelay"": ""00:00:15""
+}",1
+"2026-08-23T10:30:10.3727515Z","ScriptJobHostOptions
+{
+  ""FileWatchingEnabled"": false,
+  ""FileLoggingMode"": ""DebugOnly"",
+  ""FunctionTimeout"": ""00:10:00"",
+  ""TelemetryMode"": ""ApplicationInsights""
+}",1
+"2026-08-23T10:30:10.3726662Z","ModuleNotFoundError: No module named 'src'",3
+"2026-08-23T10:30:10.3726554Z","from src.modules import cleanup_cycles as cleanup_cycles_module",1
+"2026-08-23T10:30:10.3726441Z","File ""/home/site/wwwroot/function_app.py"", line 6, in <module>",1
+"2026-08-23T10:30:10.3726336Z","File ""<frozen importlib._bootstrap>"", line 241, in _call_with_frames_removed",1
+"2026-08-23T10:30:10.3726222Z","File ""<frozen importlib._bootstrap_external>"", line 940, in exec_module",1
+"2026-08-23T10:30:10.3726116Z","File ""<frozen importlib._bootstrap>"", line 690, in _load_unlocked",1
+"2026-08-23T10:30:10.3726002Z","File ""<frozen importlib._bootstrap>"", line 1147, in _find_and_load_unlocked",1
+"2026-08-23T10:30:10.3725896Z","File ""<frozen importlib._bootstrap>"", line 1176, in _find_and_load",1
+"2026-08-23T10:30:10.3725768Z","File ""<frozen importlib._bootstrap>"", line 1204, in _gcd_import",1
+"2026-08-23T10:30:10.3725649Z","^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",1
+"2026-08-23T10:30:10.3725544Z","return _bootstrap._gcd_import(name[level:], package, level)",1
+"2026-08-23T10:30:10.3725429Z","File ""/usr/local/lib/python3.11/importlib/__init__.py"", line 126, in import_module",1
+"2026-08-23T10:30:10.3725322Z","^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",1
+"2026-08-23T10:30:10.3725202Z","imported_module = importlib.import_module(module_name)",1
+"2026-08-23T10:30:10.3725089Z","File ""/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/loader.py"", line 251, in index_function_app",1
+"2026-08-23T10:30:10.3724971Z","^^^^^^^^^^^^^^^^^^^^^",1
+"2026-08-23T10:30:10.372486Z","return func(*args, **kwargs)",1
+"2026-08-23T10:30:10.3724734Z","File ""/azure-functions-host/workers/python/3.11/LINUX/X64/azure_functions_worker/utils/wrappers.py"", line 44, in call",1
+"2026-08-23T10:30:10.3724215Z","Traceback (most recent call last):",1
+"2026-08-23T10:30:10.3674096Z","Host initialization: ConsecutiveErrors=0, StartupCount=3, OperationId=127b1fea-a58d-466c-ae70-a20d3a76739c",1
+"2026-08-23T10:30:10.3672816Z","Initializing Host. OperationId: '127b1fea-a58d-466c-ae70-a20d3a76739c'.",1
+"2026-08-23T10:30:10.3055195Z","Initializing Warmup Extension.",1
+"2026-08-23T10:30:09.2592317Z","Finished deployment pipeline.",1
+"2026-08-23T10:30:09.2585674Z","[Kudu-CleanUpStep] completed.",1
+"2026-08-23T10:30:09.1134438Z","[Kudu-CleanUpStep] starting.",1
+"2026-08-23T10:29:09.1100722Z","[Kudu-SyncTriggerStep] starting.",1
+"2026-08-23T10:29:09.1084978Z","[Kudu-RemoveWorkersStep] completed.",1
+"2026-08-23T10:29:08.9609834Z","[Kudu-RemoveWorkersStep] starting.",1
+"2026-08-23T10:29:08.9470959Z","[Kudu-UploadPackageStep] completed. Uploaded package to storage successfully.",1
+"2026-08-23T10:29:08.5733753Z","[Kudu-UploadPackageStep] starting.",1
+"2026-08-23T10:29:08.571503Z","[Kudu-PackageZipStep] completed.",1
+"2026-08-23T10:29:07.751498Z","[Kudu-PackageZipStep] starting.",1
+"2026-08-23T10:29:07.7457968Z","[Kudu-PostBuildValidationStep] completed.",1
+"2026-08-23T10:29:07.7448767Z","[Kudu-PostBuildValidationStep] starting.",1
+"2026-08-23T10:29:07.7426609Z","[Kudu-OryxBuildStep] completed.",1
+"2026-08-23T10:28:47.2872825Z","[Kudu-OryxBuildStep] starting.",1
+"2026-08-23T10:28:47.2861936Z","[Kudu-PreBuildValidationStep] completed.",1
+"2026-08-23T10:28:47.28485Z","[Kudu-PreBuildValidationStep] starting.",1
+"2026-08-23T10:28:47.2836489Z","[Kudu-ContentValidationStep] completed.",1
+"2026-08-23T10:28:47.2832419Z","[Kudu-ContentValidationStep] starting.",1
+"2026-08-23T10:28:47.2816528Z","[Kudu-ExtractZipStep] completed.",1
+"2026-08-23T10:28:47.260311Z","[Kudu-ExtractZipStep] starting.",1
+"2026-08-23T10:28:47.2584951Z","[Kudu-ValidationStep] completed.",1
+"2026-08-23T10:28:47.2394169Z","[Kudu-ValidationStep] starting.",1
+"2026-08-23T10:28:47.2376231Z","[Kudu-SourcePackageUriDownloadStep] Skipping download. Zip package is present at /tmp/zipdeploy/f4553f9d-88c6-47b8-b461-a484ebcbfbcc.zip",1
+"2026-08-23T10:28:47.2227854Z","Starting deployment pipeline.",1

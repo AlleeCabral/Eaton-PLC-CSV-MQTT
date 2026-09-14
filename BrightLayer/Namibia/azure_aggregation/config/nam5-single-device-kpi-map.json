@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "purpose": "Three-device dry-run characterization; expand to all Namibia PLCs after discovery",
+    "gatewayDeviceId": "cb118f9e-3a25-4e1f-8f37-f9a37c48c1cb",
+    "gatewayDeviceName": "165_Evale",
+    "childDeviceName": "Nam5; Nam1; 164_Oluundje",
+    "childDeviceId": "multiple; see KPI sources",
+    "addressingStatus": "child-device-confirmed"
+  },
+  "kpis": [
+    { "name": "production_total", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549449" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549449" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549449" }], "unit": "kWh", "precision": 2 },
+    { "name": "production_today", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549440" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549440" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549440" }], "unit": "kWh", "precision": 2 },
+    { "name": "production_last_month", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549447" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549447" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549447" }], "unit": "kWh", "precision": 2 },
+    { "name": "solar_total", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549432" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549432" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549432" }], "unit": "kWh", "precision": 2 },
+    { "name": "solar_today", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549437" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549437" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549437" }], "unit": "kWh", "precision": 2 },
+    { "name": "solar_last_month", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549438" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549438" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549438" }], "unit": "kWh", "precision": 2 },
+    { "name": "grid_total", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549444" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549444" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549444" }], "unit": "kWh", "precision": 2 },
+    { "name": "grid_today", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549442" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549442" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549442" }], "unit": "kWh", "precision": 2 },
+    { "name": "grid_last_month", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549446" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549446" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549446" }], "unit": "kWh", "precision": 2 },
+    { "name": "co2_total", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549389" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549389" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549389" }], "unit": "m3", "precision": 2 },
+    { "name": "co2_today", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549387" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549387" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549387" }], "unit": "m3", "precision": 2 },
+    { "name": "co2_last_month", "operation": "sum", "sources": [{ "deviceId": "8a7f416d-a452-2b11-0800-1e0d06362200", "traitId": "10549382" }, { "deviceId": "c627a6ba-a832-2b11-0800-4ea999779100", "traitId": "10549382" }, { "deviceId": "f8a20915-6672-2b11-0800-2f5623d56800", "traitId": "10549382" }], "unit": "m3", "precision": 2 }
+  ]
+}

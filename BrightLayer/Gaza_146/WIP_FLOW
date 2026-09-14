@@ -1,0 +1,2833 @@
+[
+    {
+        "id": "9673efa7.e20b2",
+        "type": "tab",
+        "label": "To U-link",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8fd11a7f.a729d",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "SENSORS_ALARM_QS_ECVALUE",
+        "name": "Sensor_Alarm_qs_ecvalue",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "7c365881.f07308"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "120e5574.4eb583",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "SENSORS_ALARM_QS_PRESSUREVALUE",
+        "name": "Sensor_Alarm_qs_pressurevalue",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "c1c45ece.3b2a2"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "41160549.f8c8d4",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "uvin_workhours",
+        "func": "uvin_workhours = parseFloat(msg.payload.value);\nglobal.set(\"uvin_workhours\", uvin_workhours);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f3cdf54a.2308c8",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "UVLIFE_UVIN_WORKHOURS",
+        "name": "uvlife_uvin_workhours",
+        "pollInterval": "600000",
+        "pollIntervalBase": "s",
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "847e796c.1bc86"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1dc175bd.41c12a",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "P1CTRL_FREQ_P1",
+        "name": "p1ctrl_freq_p1",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1750,
+        "y": 400,
+        "wires": [
+            [
+                "c2243403.9acd1"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "c2243403.9acd1",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "freq_drv1",
+        "func": "freq_drv1 = parseInt(msg.payload.value)\nglobal.set(\"freq_drv1\", freq_drv1);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1960,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43ac4d7d.f01c34",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "P2CTRL_FREQ_P2",
+        "name": "p2ctrl_freq_p2",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1750,
+        "y": 460,
+        "wires": [
+            [
+                "782b4b3e.88e4dc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "782b4b3e.88e4dc",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "freq_drv2",
+        "func": "freq_drv2 = parseInt(msg.payload.value)\nglobal.set(\"freq_drv2\", freq_drv2);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1960,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74bbe27c.407efc",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "P3CTRL_FREQ_P3",
+        "name": "Frequenz_Inv3",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1760,
+        "y": 520,
+        "wires": [
+            [
+                "5d831b9b.1d13cc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5d831b9b.1d13cc",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "freq_drv3",
+        "func": "freq_drv3 = parseInt(msg.payload.value)\nglobal.set(\"freq_drv3\", freq_drv3);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1960,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "abd72f93.98c198",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "WATERCOUNTER_ULINK_IN",
+        "name": "watercounter_ulink_in",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 740,
+        "y": 40,
+        "wires": [
+            [
+                "3443461.1311d3a"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "100fc481.d0b2bb",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "totalwater_in",
+        "func": "totalwater_in =parseFloat(msg.payload.value)\nglobal.set(\"totalwater_in\", totalwater_in);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1170,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9c492ebc.bfc398",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "WATERCOUNTER_ULINK_PRO",
+        "name": "watercounter_ulink_pro",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 740,
+        "y": 100,
+        "wires": [
+            [
+                "dd724768.c994d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4cc76175.39afa8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "totalwater_pro",
+        "func": "totalwater_pro = parseFloat(msg.payload.value)\nglobal.set(\"totalwater_pro\", totalwater_pro);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1160,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12bc5ed3.3b06b1",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "WATERCOUNTER_ULINK_SOLD",
+        "name": "watercounter_ulink_sold",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 750,
+        "y": 160,
+        "wires": [
+            [
+                "28e95b1d.dae814"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fccaceb3.efed9",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "totalwater_sold",
+        "func": "totalwater_sold = parseFloat(msg.payload.value)\nglobal.set(\"totalwater_sold\", totalwater_sold);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1160,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "805dc24e.30b08",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "pressure",
+        "func": "pressure = parseFloat(msg.payload.value)\nglobal.set(\"pressure\", pressure);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a43c96d.620dae",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "ec_value",
+        "func": "ec_value = parseFloat(msg.payload.value)\nglobal.set(\"ec_value\", ec_value);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "701c1024.3d5d6",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "WATERCOUNTER_TODAY_IN",
+        "name": "watercounter_today_in",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 820,
+        "y": 240,
+        "wires": [
+            [
+                "f9017b9.10ad408"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f9017b9.10ad408",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "watertoday_in",
+        "func": "watertoday_in = parseInt(msg.payload.value)\nglobal.set(\"watertoday_in\", watertoday_in);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1040,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af9a551b.6efbb",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "WATERCOUNTER_TODAY_PRO",
+        "name": "watercounter_today_pro",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 830,
+        "y": 300,
+        "wires": [
+            [
+                "65df2cd3.9d517c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "65df2cd3.9d517c",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "watertoday_pro",
+        "func": "watertoday_pro = parseInt(msg.payload.value)\nglobal.set(\"watertoday_pro\", watertoday_pro);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1040,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "460cc42b.37aa04",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "WATERCOUNTER_TODAY_SOLD",
+        "name": "watercounter_today_sold",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 830,
+        "y": 360,
+        "wires": [
+            [
+                "d8931d4.d2b2de"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d8931d4.d2b2de",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "watertoday_sold",
+        "func": "watertoday_sold = parseInt(msg.payload.value)\nglobal.set(\"watertoday_sold\", watertoday_sold);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1040,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d11d5013.648288",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "uvo_workhours",
+        "func": "uvo_workhours = parseFloat(msg.payload.value);\nglobal.set(\"uvo_workhours\", uvo_workhours);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d9b03105.e07838",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "UVLIFE_UVOUT_WORKHOURS",
+        "name": "uvlife_uvout_workhours",
+        "pollInterval": "600000",
+        "pollIntervalBase": "s",
+        "x": 120,
+        "y": 340,
+        "wires": [
+            [
+                "656a0308.b1fffc"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "113a696d.ff5177",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "QX_WATERMETER_ULINK_RECOV",
+        "name": "watercounter_ulink_rec",
+        "pollInterval": "5000",
+        "pollIntervalBase": "s",
+        "x": 820,
+        "y": 460,
+        "wires": [
+            [
+                "b830a4e9.7e67d8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b830a4e9.7e67d8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "totalwater_rec",
+        "func": "totalwater_rec = parseFloat(msg.payload.value)\nglobal.set(\"totalwater_rec\", 1.1);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1040,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51abfd73.8bf1f4",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "QX_WATERMETER_TODAY_RECOV",
+        "name": "watercounter_today_rec",
+        "pollInterval": "5000",
+        "pollIntervalBase": "s",
+        "x": 830,
+        "y": 520,
+        "wires": [
+            [
+                "ddfcfa9.9cdbd88"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ddfcfa9.9cdbd88",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "watertoday_rec",
+        "func": "watertoday_rec = parseInt(msg.payload.value)\nglobal.set(\"watertoday_rec\", 1);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1040,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7dcc9040.800678",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "uvi_switching",
+        "func": "uvi_switching = parseInt(msg.payload.value);\nglobal.set(\"uvi_switching\", uvi_switching);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "969d3d27.265fd8",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "UVLIFE_UVIN_SWITCHING",
+        "name": "uvlife_unvin_switching",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "7dcc9040.800678"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f77f9bcd.c3f9",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "uvo_switching",
+        "func": "uvo_switching = parseInt(msg.payload.value);\nglobal.set(\"uvo_switching\", uvo_switching);\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 320,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ed270389.1004f8",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "UVLIFE_UVO_SWITCHING",
+        "name": "uvlife_uvo_switching",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "f77f9bcd.c3f9"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "62b9fc21.425604",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "BACKWASH_DATE",
+        "name": "ON",
+        "pollInterval": "1000",
+        "pollIntervalBase": "s",
+        "x": 110,
+        "y": 1140,
+        "wires": [
+            [
+                "e8eb5f18.aa4598"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e8eb5f18.aa4598",
+        "type": "switch",
+        "z": "9673efa7.e20b2",
+        "name": "",
+        "property": "payload.value",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 130,
+        "y": 1200,
+        "wires": [
+            [],
+            [
+                "a1320b30.63bd58",
+                "6c067592.200514",
+                "6439b687.efb21"
+            ]
+        ]
+    },
+    {
+        "id": "a1320b30.63bd58",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "year",
+        "func": "var d = new Date();\nvar options = { year: 'numeric'};\nvar _resultDate = d.toLocaleDateString('de-DE', options);\nmsg.payload.value = _resultDate;\n\na=msg.payload.value;\nglobal.set (\"O_BACKWASH_CONTROL_DISPLAY_YEAR\",a);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 150,
+        "y": 1260,
+        "wires": [
+            [
+                "b3b6b952.d41d28"
+            ]
+        ]
+    },
+    {
+        "id": "6c067592.200514",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "month",
+        "func": "var d = new Date();\nvar options = { month: '2-digit'};\nvar _resultDate = d.toLocaleDateString('de-DE', options);\nmsg.payload.value = _resultDate;\n\na=msg.payload.value;\nglobal.set (\"O_BACKWASH_CONTROL_DISPLAY_MONTH\",a);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 150,
+        "y": 1320,
+        "wires": [
+            [
+                "951f01cb.7295a8"
+            ]
+        ]
+    },
+    {
+        "id": "6439b687.efb21",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "day",
+        "func": "var d = new Date();\nvar options = { day: '2-digit'};\nvar _resultDate = d.toLocaleDateString('de-DE', options);\nmsg.payload.value = _resultDate;\n\na=msg.payload.value;\nglobal.set (\"O_BACKWASH_CONTROL_DISPLAY_DAY\",a);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 150,
+        "y": 1380,
+        "wires": [
+            [
+                "9a92b7e8.d132d"
+            ]
+        ]
+    },
+    {
+        "id": "b3b6b952.d41d28",
+        "type": "uc-iodataOut",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variableId": "b6d57eb4-bd64-4f47-abda-d5b0b55443da",
+        "variableName": "NODE_YEAR",
+        "name": "year",
+        "x": 330,
+        "y": 1260,
+        "wires": [
+            [
+                "f0633d89.9b14e8"
+            ]
+        ]
+    },
+    {
+        "id": "951f01cb.7295a8",
+        "type": "uc-iodataOut",
+        "z": "9673efa7.e20b2",
+        "variableId": "891bb0b4-2bb6-4f23-a840-78e94c290c40",
+        "variableName": "NODE_MONTH",
+        "name": "month",
+        "x": 330,
+        "y": 1320,
+        "wires": [
+            [
+                "f0633d89.9b14e8"
+            ]
+        ]
+    },
+    {
+        "id": "9a92b7e8.d132d",
+        "type": "uc-iodataOut",
+        "z": "9673efa7.e20b2",
+        "variableId": "87e4701c-e806-481d-b15e-8ae171a9463c",
+        "variableName": "NODE_DAY",
+        "name": "day",
+        "x": 330,
+        "y": 1380,
+        "wires": [
+            [
+                "f0633d89.9b14e8"
+            ]
+        ]
+    },
+    {
+        "id": "f0633d89.9b14e8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "last_backwash",
+        "func": "last_backwash = msg.payload.value;\nglobal.set (\"last_backwash\", last_backwash); \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 510,
+        "y": 1320,
+        "wires": [
+            [
+                "65096568.3de7bc"
+            ]
+        ]
+    },
+    {
+        "id": "65096568.3de7bc",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Store_Year",
+        "func": "a=global.get(\"Last_Backwash\");\n\ndate = new Date();\nyear = date.getYear()-100+2000;\nmonth = date.getMonth()+1;\nday = date.getDate();\nvar Logbackwash = {\n    backwash : a,\n    day,month,year,\n}\n\nmsg.payload = Logbackwash;\n//msg.payload = Tag;\n//msg.payload = Minute;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 190,
+        "y": 1460,
+        "wires": [
+            [
+                "2a9e618a.b16d7e"
+            ]
+        ]
+    },
+    {
+        "id": "2a9e618a.b16d7e",
+        "type": "file",
+        "z": "9673efa7.e20b2",
+        "name": "",
+        "filename": "/media/card/Back_wash.TXT",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 440,
+        "y": 1460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e7862.f6754fa",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_FEED_BUSVOLTAGE",
+        "name": "iv_feed_busvoltage",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1770,
+        "y": 100,
+        "wires": [
+            [
+                "176833e2.04563c"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "10113d33.14640b",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "voltage_drv1",
+        "func": "voltage_drv1 = parseInt(msg.payload.value)\nglobal.set(\"voltage_drv1\", voltage_drv1);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1970,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bc716463.6b7bb8",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_BOOSTER_BUSVOLTAGE",
+        "name": "iv_booster_busvoltage",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1780,
+        "y": 160,
+        "wires": [
+            [
+                "a6698ab9.93d68"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "176833e2.04563c",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "voltage_drv2",
+        "func": "voltage_drv2 = parseInt(msg.payload.value)\nglobal.set(\"voltage_drv2\", voltage_drv2);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1970,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a6698ab9.93d68",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "voltage_drv3",
+        "func": "voltage_drv3 =parseInt(msg.payload.value)\nglobal.set(\"voltage_drv3\", voltage_drv3);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1970,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7dcfa426.ed97e4",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_BOREHOLE_BUSVOLTAGE",
+        "name": "iv_borehole_busvoltage",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1780,
+        "y": 40,
+        "wires": [
+            [
+                "10113d33.14640b"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7ccc1a5e.0b23a4",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX02_P1_MANUAL",
+        "name": "ix_p1_manual",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1350,
+        "y": 100,
+        "wires": [
+            [
+                "8a1ffb61.1a1b2"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d22742a9.468fb8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "switch_auto",
+        "func": "switch_auto = parseInt(msg.payload.value)\nglobal.set(\"switch_auto\", switch_auto);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1570,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "41ed220.00d7f6",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX03_P2_MANUAL",
+        "name": "ix_p2_manual",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1350,
+        "y": 160,
+        "wires": [
+            [
+                "be16b90f.254fa8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8a1ffb61.1a1b2",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "switch_p1",
+        "func": "switch_p1 = parseInt(msg.payload.value)\nglobal.set(\"switch_p1\", switch_p1);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1520,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97039144.96da4",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX04_P3_MANUAL",
+        "name": "ix_p3_manual",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1350,
+        "y": 220,
+        "wires": [
+            [
+                "8968945e.718f5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "be16b90f.254fa8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "switch_p2",
+        "func": "switch_p2 = parseInt(msg.payload.value)\nglobal.set(\"switch_p2\", switch_p2);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1520,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8968945e.718f5",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "switch_p3",
+        "func": "switch_p3 = parseInt(msg.payload.value)\nglobal.set(\"switch_p3\", switch_p3);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1520,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "539cde82.1bc9",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX01_AUTOMTIK_SWITCH",
+        "name": "ix_automatic_switch",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1370,
+        "y": 40,
+        "wires": [
+            [
+                "d22742a9.468fb8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "fa604470.3d0268",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "switch_cip",
+        "func": "switch_cip = parseInt(msg.payload.value)\nglobal.set(\"switch_cip\", switch_cip);\nreturn msg;\n\n ",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1530,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ad46c7a.7fa5dc",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX10_CIP_SWITCH",
+        "name": "ix_cip_switch",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1350,
+        "y": 460,
+        "wires": [
+            [
+                "fa604470.3d0268"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "27bffa93.117ab6",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_FEED_LASTRUN_HR",
+        "name": "iv_feed_lastrun_hr",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2190,
+        "y": 100,
+        "wires": [
+            [
+                "523972a9.1f46ac"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ffcf3bfb.e20ed",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "feed_lastrunhr",
+        "func": "feed_lastrun = parseFloat(msg.payload.value)\nglobal.set(\"feed_lastrun\", feed_lastrun); // time in Hr\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2600,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c45a9b4.fd2308",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_BOREHOLE_LASTRUN_HR",
+        "name": "iv_borehole_lastrun_hr",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2200,
+        "y": 40,
+        "wires": [
+            [
+                "329976f5.4680d2"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8cc7ef68.13b478",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "bore_lastrunhr",
+        "func": "bore_lastrun = parseFloat(msg.payload.value)\nglobal.set(\"bore_lastrun\", bore_lastrun); // time in Hr\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2620,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1b7e766a.9290fa",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_BOOSTER_LASTRUN_HR",
+        "name": "iv_boost_lastrun_hr",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2190,
+        "y": 160,
+        "wires": [
+            [
+                "9a7e4494.271428"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d434fd81.afaa88",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "boost_lastrunhr",
+        "func": "boost_lastrun = parseFloat(msg.payload.value)\nglobal.set(\"boost_lastrun\", boost_lastrun); // time in Hr\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2600,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eeda16d9.58dcb",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_BOOSTER_TEMPERATURE",
+        "name": "iv_booster_temperature",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1780,
+        "y": 340,
+        "wires": [
+            [
+                "af31287b.0a1a68"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "59e8c3d2.070cec",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "temp_drv1",
+        "func": "temp_drv1 = parseInt(msg.payload.value)\nglobal.set(\"temp_drv1\", temp_drv1);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1990,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f915166.8ebeb",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_BOREHOLE_TEMPERATURE",
+        "name": "iv_borehole_temperature",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1790,
+        "y": 220,
+        "wires": [
+            [
+                "59e8c3d2.070cec"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "8e99709c.b2ea08",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "temp_drv2",
+        "func": "temp_drv2 = parseInt(msg.payload.value)\nglobal.set(\"temp_drv2\", temp_drv2);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1990,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af31287b.0a1a68",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "temp_drv3",
+        "func": "temp_drv3 = parseInt(msg.payload.value)\nglobal.set(\"temp_drv3\", temp_drv3);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1990,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "72b089f7.01da38",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_FEED_TEMPERATURE",
+        "name": "iv_feed_temperature",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1770,
+        "y": 280,
+        "wires": [
+            [
+                "8e99709c.b2ea08"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7e038c20.e2b8d4",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX09_ANTI_TANK",
+        "name": "ix_anti_tank",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1350,
+        "y": 400,
+        "wires": [
+            [
+                "100b47cd.b77ee8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "100b47cd.b77ee8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "antitank_empty",
+        "func": "antitank_empty = parseInt(msg.payload.value)\nglobal.set(\"antitank_empty\", antitank_empty);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1560,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a000ee32.b6177",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX11_UVIN_CTRL",
+        "name": "ix_uvin_ctrl",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1340,
+        "y": 520,
+        "wires": [
+            [
+                "eaa49b19.5ca2d8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "eaa49b19.5ca2d8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "uvin_ctrl",
+        "func": "uvin_ctrl = parseInt(msg.payload.value)\nglobal.set(\"uvin_ctrl\", uvin_ctrl);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1540,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "621ebc63.0ef914",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX12_UVOUT_CTRL",
+        "name": "ix_uvout_ctrl",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1350,
+        "y": 580,
+        "wires": [
+            [
+                "f281d35d.3e4e8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f281d35d.3e4e8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "uvo_ctrl",
+        "func": "uvo_ctrl = parseInt(msg.payload.value)\nglobal.set(\"uvo_ctrl\", uvo_ctrl);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1540,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "818d14fc.f59968",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "switch_uvo",
+        "func": "switch_uvo = parseInt(msg.payload.value)\nglobal.set(\"switch_uvo\", switch_uvo);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1550,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1850dc3.3fd628",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX13_UVOUT_SW",
+        "name": "ix_uvout_sw",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1350,
+        "y": 640,
+        "wires": [
+            [
+                "818d14fc.f59968"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e5359aae.945f6",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "MODBUS_M_BOREHOLE_LOWLVL",
+        "name": "modbus_m_borehole_lowlvl",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2820,
+        "y": 40,
+        "wires": [
+            [
+                "e6e0232a.4401f8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e6e0232a.4401f8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "borehole_lvl",
+        "func": "borehole_lvl = parseInt(msg.payload.value)\nglobal.set(\"borehole_lvl\", borehole_lvl);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3030,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "286b8081.21708",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "rawtank_lowlvl",
+        "func": "rawtank_lowlvl = parseInt(msg.payload.value)\nglobal.set(\"rawtank_lowlvl\", rawtank_lowlvl);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3040,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8d61096.c724d8",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "MODBUS_M_RAWTANK_LOWLVL",
+        "name": "modbus_m_rawtan_lowlvl",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2810,
+        "y": 100,
+        "wires": [
+            [
+                "286b8081.21708"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7073ccab.d2b554",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "rawtank_toplvl",
+        "func": "rawtank_toplvl = parseInt(msg.payload.value)\nglobal.set(\"rawtank_toplvl\", rawtank_toplvl);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3040,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd64ff7c.c38ec",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "MODBUS_M_RAWTANK_TOPLVL",
+        "name": "modbus_m_rawtank_toplvl",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2810,
+        "y": 160,
+        "wires": [
+            [
+                "7073ccab.d2b554"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d8f12ebd.191fa",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "MODBUS_M_PERMTANK_TOPLVL",
+        "name": "modbus_m_permtank_toplvl",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2820,
+        "y": 220,
+        "wires": [
+            [
+                "3a0e7008.18785"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3a0e7008.18785",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "permtank_toplvl",
+        "func": "permtank_toplvl = parseInt(msg.payload.value)\nglobal.set(\"permtank_toplvl\", permtank_toplvl);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3040,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43a92ca0.94456c",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "MODDRIVESTATUS_MAINSON",
+        "name": "Mains_ON",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2760,
+        "y": 280,
+        "wires": [
+            [
+                "ee37a67c.a05cc8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ee37a67c.a05cc8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "mains_on",
+        "func": "mains_on = parseInt(msg.payload.value)\nglobal.set(\"mains_on\", mains_on);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2960,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7c3491e0.58e49",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "PUMPENSTEUERUNG_M_ANTI_RUNNING",
+        "name": "Pumpsteuerung_m_anti_running",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 150,
+        "y": 160,
+        "wires": [
+            [
+                "4c357a8b.0d7ee4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "4c357a8b.0d7ee4",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "antipump",
+        "func": "anti_pump = parseInt(msg.payload.value)\nglobal.set(\"anti_pump\", anti_pump);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c20a76d1.6c2848",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "UVOCTRL_M_WATERSENSOR",
+        "name": "UVoctrl_m_watersensor",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "b04e1858.ad86f8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b04e1858.ad86f8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "uvo_watersensor",
+        "func": "uvo_watersensor = parseInt(msg.payload.value)\nglobal.set(\"uvo_watersensor\", uvo_watersensor);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 330,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ca6efe.64c729",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_BOREHOLE_TOTALRUN_HR",
+        "name": "iv_bore_totalrun_hr",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2190,
+        "y": 220,
+        "wires": [
+            [
+                "ac0e7ecb.bc0a4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "7c59d2ca.2a8e54",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "bore_totalrunhr",
+        "func": "bore_totalrun = parseFloat(msg.payload.value)\nglobal.set(\"bore_totalrun\", bore_totalrun); // time in hr\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2600,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5e513bf.0dad9",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_BOOSTER_TOTALRUN_HR",
+        "name": "iv_boost_totalrun_hr",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2190,
+        "y": 340,
+        "wires": [
+            [
+                "998fc6af.83a988"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e2bc707d.a6302",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "boost_totalrunhr",
+        "func": "boost_totalrun = parseFloat(msg.payload.value)\nglobal.set(\"boost_totalrun\", boost_totalrun); // time in hr\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2590,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ce290e6f.9a12f8",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_FEED_TOTALRUN_HR",
+        "name": "iv_feed_totalrun_hr",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2190,
+        "y": 280,
+        "wires": [
+            [
+                "6b7bd71e.af9598"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "27b7bc91.fc0414",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "feed_totalrunhr",
+        "func": "feed_totalrun = parseFloat(msg.payload.value)\nglobal.set(\"feed_totalrun\", feed_totalrun); // time in hr\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2600,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "97a154e3.a7bf6",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_TOTAL_CURRENT",
+        "name": "iv_total_current",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2180,
+        "y": 400,
+        "wires": [
+            [
+                "b58e021c.99a4"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "9af5b27b.33a9e8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "total_current",
+        "func": "total_current = parseFloat(msg.payload.value)\nglobal.set(\"total_current\", total_current); // \nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2590,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c224431.fcaf3c",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "feed_kwh",
+        "func": "feed_kwh = parseFloat(msg.payload.value)\nglobal.set(\"feed_kwh\", feed_kwh); // \nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2580,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "725df48a.906aac",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_FEED_KWHOUT",
+        "name": "iv_feed_Kwh",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2170,
+        "y": 500,
+        "wires": [
+            [
+                "f536b985.d92eb8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3013b6a.68e38ca",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "cip_full",
+        "func": "cip_full = parseInt(msg.payload.value)\nglobal.set(\"cip_full\", cip_full);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1540,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "568f8c8e.5acc24",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX07_CIP_TANK_FULL",
+        "name": "ix_cip_tank_full",
+        "pollInterval": "10000",
+        "pollIntervalBase": "s",
+        "x": 1360,
+        "y": 280,
+        "wires": [
+            [
+                "3013b6a.68e38ca"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ff5f689f.5e7188",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "cip_empty",
+        "func": "cip_empty = parseInt(msg.payload.value)\nglobal.set(\"cip_empty\", cip_empty);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1550,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62948c6d.0d1f24",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX08_CIP_TANK_EMTPY",
+        "name": "ix_cip_tank_empty",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1370,
+        "y": 340,
+        "wires": [
+            [
+                "ff5f689f.5e7188"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3145dfca.dddf58",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX14_SCBW_SW",
+        "name": "ix_scbw_sw",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1350,
+        "y": 700,
+        "wires": [
+            [
+                "d0ba7745.114a38"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "5d1ddf3.d75ac2",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "scbw_v1ctrl",
+        "func": "scbw_v1ctrl = parseInt(msg.payload.value)\nglobal.set(\"scbw_v1ctrl\", scbw_v1ctrl);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1550,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef7285fb.6071d",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX15_SCBW_V1CTRL",
+        "name": "ix_scbw_v1ctrl",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1360,
+        "y": 760,
+        "wires": [
+            [
+                "5d1ddf3.d75ac2"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d0ba7745.114a38",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "scbw_sw",
+        "func": "scbw_sw = parseInt(msg.payload.value)\nglobal.set(\"scbw_sw\", scbw_sw);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1540,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e6502395.27022",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IX16_SCBW_V2CTRL",
+        "name": "ix_scbw_v2ctrl",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 1360,
+        "y": 820,
+        "wires": [
+            [
+                "b53f03cd.c4e498"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "b53f03cd.c4e498",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "scbw_v2ctrl",
+        "func": "scbw_v2ctrl = parseInt(msg.payload.value)\nglobal.set(\"scbw_v2ctrl\", scbw_v2ctrl);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1550,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8616d220.ac349",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "scbw2_done",
+        "func": "scbw2_done = parseInt(msg.payload.value)\nglobal.set(\"scbw2_done\", scbw2_done);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1610,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bcc7912e.7e6088",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "SCBWCTRL_M_SCBW2_DONE",
+        "name": "scbwctrl_m_scbw2_done",
+        "pollInterval": "30000",
+        "pollIntervalBase": "s",
+        "x": 1390,
+        "y": 940,
+        "wires": [
+            [
+                "8616d220.ac349"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "257371da.a4c13e",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "SCBWCTRL_M_SCBW_DONE",
+        "name": "scbwctrl_m_scbw_done",
+        "pollInterval": "30000",
+        "pollIntervalBase": "s",
+        "x": 1380,
+        "y": 880,
+        "wires": [
+            [
+                "d5784.7d44087c8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "d5784.7d44087c8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "scbw1_done",
+        "func": "scbw1_done = parseInt(msg.payload.value)\nglobal.set(\"scbw1_done\", scbw1_done);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1610,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ee213a09.c90e8",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "VALVEPOSITION_M_FLUSH",
+        "name": "valveposition_m_flush",
+        "pollInterval": "10000",
+        "pollIntervalBase": "s",
+        "x": 120,
+        "y": 580,
+        "wires": [
+            [
+                "2168359f.c0bb82"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "acdb9774.5f5b5",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "valves_pro",
+        "func": "valves_pro = parseInt(msg.payload.value)\nglobal.set(\"valves_pro\", valves_pro);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c4a3f3ff.1852b",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "VALVEPOSITION_M_FILLING",
+        "name": "valveposition_m_filling",
+        "pollInterval": "30000",
+        "pollIntervalBase": "s",
+        "x": 120,
+        "y": 640,
+        "wires": [
+            [
+                "c3482f2d.26bbd"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dfaaa1ba.421518",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "VALVEPOSITION_M_CIP",
+        "name": "valveposition_m_cip",
+        "pollInterval": "30000",
+        "pollIntervalBase": "s",
+        "x": 110,
+        "y": 700,
+        "wires": [
+            [
+                "5193f59f.4815ac"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1cba3781.7e87d8",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "VALVEPOSITION_M_PRO",
+        "name": "valveposition_m_pro",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "acdb9774.5f5b5"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "2168359f.c0bb82",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "valves_flush",
+        "func": "valves_flush = parseInt(msg.payload.value)\nglobal.set(\"valves_flush\", valves_flush);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3482f2d.26bbd",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "valves_filling",
+        "func": "valves_filling = parseInt(msg.payload.value)\nglobal.set(\"valves_filling\", valves_filling);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5193f59f.4815ac",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "valves_cip",
+        "func": "valves_cip = parseInt(msg.payload.value)\nglobal.set(\"valves_cip\", valves_cip);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "137de048.a49bb8",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "MODDRIVESTATUS_Q_ERRORDRV1",
+        "name": "moddrivestatus_q_errordrv2",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2820,
+        "y": 340,
+        "wires": [
+            [
+                "f059284f.a386d"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "f059284f.a386d",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "errordrive_drv1",
+        "func": "errordrive_drv1 = parseInt(msg.payload.value)\nglobal.set(\"errordrive_drv1\", errordrive_drv1);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3060,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3cdc6e7.d7ae08",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "MODDRIVESTATUS_Q_ERRORDRV2",
+        "name": "moddrivestatus_q_errordrv2",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2820,
+        "y": 400,
+        "wires": [
+            [
+                "1abb3c83.6c21ab"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "1abb3c83.6c21ab",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "errordrive_drv2",
+        "func": "errordrive_drv2 = parseInt(msg.payload.value)\nglobal.set(\"errordrive_drv2\", errordrive_drv2);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3060,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0f9611a.6990e8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "errordrive_drv3",
+        "func": "errordrive_drv3 = parseInt(msg.payload.value)\nglobal.set(\"errordrive_drv3\", errordrive_drv3);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 3060,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e9a6054a.5db028",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "MODDRIVESTATUS_Q_ERRORDRV3",
+        "name": "moddrivestatus_q_errordrv3",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2820,
+        "y": 460,
+        "wires": [
+            [
+                "c0f9611a.6990e8"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "dc31eb14.c67038",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "waterflowing",
+        "func": "waterflowing = parseInt(msg.payload.value)\nglobal.set(\"waterflowing\", waterflowing);\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 390,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "56e96fa8.d8b2b",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "PUMPENSTEUERUNG_M_WATERFLOWING",
+        "name": "pumpensteurung_m_waterflowing",
+        "pollInterval": "15000",
+        "pollIntervalBase": "s",
+        "x": 150,
+        "y": 760,
+        "wires": [
+            [
+                "dc31eb14.c67038"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3443461.1311d3a",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 40,
+        "wires": [
+            [
+                "100fc481.d0b2bb"
+            ]
+        ]
+    },
+    {
+        "id": "dd724768.c994d",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 100,
+        "wires": [
+            [
+                "4cc76175.39afa8"
+            ]
+        ]
+    },
+    {
+        "id": "28e95b1d.dae814",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 160,
+        "wires": [
+            [
+                "fccaceb3.efed9"
+            ]
+        ]
+    },
+    {
+        "id": "7c365881.f07308",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 40,
+        "wires": [
+            [
+                "2a43c96d.620dae"
+            ]
+        ]
+    },
+    {
+        "id": "c1c45ece.3b2a2",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 400,
+        "y": 100,
+        "wires": [
+            [
+                "805dc24e.30b08"
+            ]
+        ]
+    },
+    {
+        "id": "847e796c.1bc86",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 320,
+        "y": 280,
+        "wires": [
+            [
+                "41160549.f8c8d4"
+            ]
+        ]
+    },
+    {
+        "id": "656a0308.b1fffc",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "d11d5013.648288"
+            ]
+        ]
+    },
+    {
+        "id": "329976f5.4680d2",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2420,
+        "y": 40,
+        "wires": [
+            [
+                "8cc7ef68.13b478"
+            ]
+        ]
+    },
+    {
+        "id": "523972a9.1f46ac",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2400,
+        "y": 100,
+        "wires": [
+            [
+                "ffcf3bfb.e20ed"
+            ]
+        ]
+    },
+    {
+        "id": "9a7e4494.271428",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2400,
+        "y": 160,
+        "wires": [
+            [
+                "d434fd81.afaa88"
+            ]
+        ]
+    },
+    {
+        "id": "ac0e7ecb.bc0a4",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2400,
+        "y": 220,
+        "wires": [
+            [
+                "7c59d2ca.2a8e54"
+            ]
+        ]
+    },
+    {
+        "id": "6b7bd71e.af9598",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2400,
+        "y": 280,
+        "wires": [
+            [
+                "27b7bc91.fc0414"
+            ]
+        ]
+    },
+    {
+        "id": "998fc6af.83a988",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2400,
+        "y": 340,
+        "wires": [
+            [
+                "e2bc707d.a6302"
+            ]
+        ]
+    },
+    {
+        "id": "b58e021c.99a4",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2400,
+        "y": 400,
+        "wires": [
+            [
+                "9af5b27b.33a9e8"
+            ]
+        ]
+    },
+    {
+        "id": "f536b985.d92eb8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2360,
+        "y": 500,
+        "wires": [
+            [
+                "4c224431.fcaf3c"
+            ]
+        ]
+    },
+    {
+        "id": "504d456e.84a5fc",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "feed_Po",
+        "func": "feed_Po = parseFloat(msg.payload.value)\nglobal.set(\"feed_Po\", feed_Po); // \nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2580,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a867e3d.0b263a",
+        "type": "uc-iodataIn",
+        "z": "9673efa7.e20b2",
+        "mode": "wi_single_variable",
+        "variable": "IV_FEED_POWEROUT",
+        "name": "iv_feed_Pout",
+        "pollInterval": "60000",
+        "pollIntervalBase": "s",
+        "x": 2170,
+        "y": 560,
+        "wires": [
+            [
+                "a29ac3f8.2a75"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a29ac3f8.2a75",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Limit dec points",
+        "func": "// Extract the parsed variable\nvar parsedVariable = msg.payload.value;\n\n// Convert parsedVariable to a number with 2 decimal points\nvar roundedValue = parseFloat(parsedVariable).toFixed(2);\n\n// Update the payload with the rounded value\nmsg.payload.value = roundedValue;\n\n// Return the modified message object\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2360,
+        "y": 560,
+        "wires": [
+            [
+                "504d456e.84a5fc"
+            ]
+        ]
+    },
+    {
+        "id": "58d32029.3e6dd",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Device Tree V2",
+        "func": "const now = Date.now();\n\n//Add GUIDs and Ontology profile here:\nconst gwId = '8ca7868b-5b9a-44e3-9a35-8410be960ce9'; // generated for Brightlayer device creation\nconst ontology = 'c87d6209-ed36-41ab-8ae5-0b4004ea2da6'; // ontology GUID, defined by Eaton (find it in ontology list)\nglobal.set(\"second_gwId\", \"7080342c-aba0-44d8-870e-36ed24499761\"); // second GUID to be generated. only \n//---//---//--- End of edition area ---//---//---\n\nmsg = {\n    'topic': 'telemetry',\n    'payload':  {\"d\":{\n    \"d\": gwId,         // required, represents the device instance UUID. You should persist this UUID on the device. It should never change.\n    \"profile\":\"99cef6da-e5de-490a-b886-3caca5e426cf\",   // required, represents the device profile UUID. You must register this device profile in advance.\n    \"name\": \"148_Peru\",                             // required, represents the display name of this device.                                 // optional, free text                         // optional, free text\n    \"ds\":[                                              // Optional, represents the child devices.\n      {\n        \"d\":global.get(\"second_gwId\"),\n        \"profile\":ontology,\n        \"name\": \"Complete_Machine\"\n      }\n    ]\n  }\n},\n    'properties': [\n        {\n        'key': 'a', 'value': 'DeviceTree'},\n        {\n          'key': 'p', 'value': gwId\n        }\n    ]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 620,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6aa14466.f6d994",
+        "type": "inject",
+        "z": "9673efa7.e20b2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 940,
+        "wires": [
+            [
+                "58d32029.3e6dd"
+            ]
+        ]
+    },
+    {
+        "id": "ca45d9be.eb2e68",
+        "type": "debug",
+        "z": "9673efa7.e20b2",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1510,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "e60c9ed.edf196",
+        "type": "inject",
+        "z": "9673efa7.e20b2",
+        "name": "Trigger telemetry",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 1040,
+        "wires": [
+            [
+                "ed651fe6.e1aee8"
+            ]
+        ]
+    },
+    {
+        "id": "4dd6754f.47e8a4",
+        "type": "debug",
+        "z": "9673efa7.e20b2",
+        "name": "→ BrightLayer  READABLE",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1160,
+        "wires": []
+    },
+    {
+        "id": "839de9f8.b087e",
+        "type": "debug",
+        "z": "9673efa7.e20b2",
+        "name": "→ BrightLayer  ARRAYS",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1240,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "8ed16925.70933",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Used Trends (Array)²  [SIM]",
+        "func": "// Name, TagID and Value are published in alphabetical order\n// Arrays within array\nconst trendNames = {\n    \"10472631\": \"Alarm_Anti_Pump\",\n    \"10472617\": \"Alarm_AntiScalant_Tank\",\n    \"10472616\": \"Alarm_Borehole_empty\",\n    \"10472604\": \"Alarm_Comp\",\n    \"10473768\": \"Alarm_Dosing_Pump\",\n    \"10472609\": \"Alarm_DPS\",\n    \"10472608\": \"Alarm_Drain_Valve\",\n    \"10472603\": \"Alarm_Evap_Motor\",\n    \"10472601\": \"Alarm_Fan_1\",\n    \"10472620\": \"Alarm_Flowmeter\",\n    \"10472607\": \"Alarm_Inlet_Valve\",\n    \"10472613\": \"Alarm_Inverter1\",\n    \"10472614\": \"Alarm_Inverter2\",\n    \"10472615\": \"Alarm_Inverter3\",\n    \"10472606\": \"Alarm_Lid\",\n    \"10473782\": \"Alarm_Ph\",\n    \"10472612\": \"Alarm_Pressure\",\n    \"10472622\": \"Alarm_Raw_Tank\",\n    \"10472611\": \"Alarm_Tank\",\n    \"10472621\": \"Alarm_TDS\",\n    \"10472598\": \"Alarm_Temp_Inverter\",\n    \"10472610\": \"Alarm_Temp_Inverter1\",\n    \"10472619\": \"Alarm_Temp_Inverter2\",\n    \"10472618\": \"Alarm_Temp_Inverter3\",\n    \"10472623\": \"Alarm_Unstable_Volt\",\n    \"10472600\": \"Alarm_UV_Lamp\",\n    \"10472624\": \"Alarm_UVIn_Lamp\",\n    \"10472625\": \"Alarm_UVOut_Lamp\",\n    \"10472626\": \"Alarm_Valve1\",\n    \"10472627\": \"Alarm_Valve2\",\n    \"10472628\": \"Alarm_Valve3\",\n    \"10472629\": \"Alarm_Valve4\",\n    \"10472630\": \"Alarm_Valve5\",\n    \"10472602\": \"Alarm_Watermeter\",\n    \"10472589\": \"Auto_Manual_Switch\",\n    \"10472632\": \"Backwash_Switch\",\n    \"10472633\": \"Backwash_Switch\",\n    \"10473793\": \"Booster_Pump_Switch\",\n    \"10466958\": \"Booster_Pump_Total_Run\",\n    \"10472595\": \"Borehole_empty\",\n    \"10472593\": \"Borehole_Float_Switch\",\n    \"10466803\": \"Borehole_Pump_Current\",\n    \"10466793\": \"Borehole_Pump_Power\",\n    \"10473791\": \"Borehole_Pump_Switch\",\n    \"10472636\": \"CIP_Switch\",\n    \"10472637\": \"CIP_Switch\",\n    \"10472634\": \"CIP_Tank_Empty\",\n    \"10472635\": \"CIP_Tank_Full\",\n    \"10466790\": \"Comp_Power\",\n    \"10472596\": \"Comp_Run\",\n    \"10466934\": \"Current_Booster_Pump\",\n    \"10466822\": \"Current_Comp\",\n    \"10466820\": \"Current_Evap\",\n    \"10466935\": \"Current_Feed_Pump\",\n    \"10472640\": \"Date_Backwash_Done\",\n    \"10472641\": \"Date_CIP_Done\",\n    \"10466799\": \"DC_Voltage\",\n    \"10466943\": \"DC_Voltage_Booster\",\n    \"10466945\": \"DC_Voltage_Borehole\",\n    \"10466806\": \"DC_Voltage_Borehole_Pump\",\n    \"10466804\": \"DC_Voltage_Comp\",\n    \"10466802\": \"DC_Voltage_Evap\",\n    \"10466944\": \"DC_Voltage_Feed\",\n    \"10473769\": \"DriveError_Drv1\",\n    \"10473770\": \"DriveError_Drv2\",\n    \"10473771\": \"DriveError_Drv3\",\n    \"10466950\": \"EC_Value\",\n    \"10472590\": \"Eco\",\n    \"10472591\": \"Eco_control\",\n    \"10473794\": \"Elevating_Pump_Switch\",\n    \"10466788\": \"Evap_Power\",\n    \"10472597\": \"Evap_Run\",\n    \"10466957\": \"Feed_Kwh\",\n    \"10473792\": \"Feed_Pump_Switch\",\n    \"10472592\": \"Float_Switch\",\n    \"10466816\": \"Frequency_Comp\",\n    \"10462379\": \"Frequency_Drv1\",\n    \"10462380\": \"Frequency_Drv2\",\n    \"10462381\": \"Frequency_Drv3\",\n    \"10466974\": \"Frequency_Drv4\",\n    \"10466814\": \"Frequency_Evap\",\n    \"10466786\": \"Grid_Power\",\n    \"10466815\": \"Grid_Power_KWh_This_Hour\",\n    \"10466819\": \"Grid_Power_KWh_This_Month\",\n    \"10466817\": \"Grid_Power_KWh_This_Today\",\n    \"10466812\": \"Grid_Power_Total\",\n    \"10472594\": \"Grid_Switch\",\n    \"10473772\": \"IceMachine_On\",\n    \"10466791\": \"Machine_Capacity\",\n    \"10466792\": \"Machine_Grid_Percentage\",\n    \"10473773\": \"Machine_Mode_Backwash\",\n    \"10473774\": \"Machine_Mode_Borehole\",\n    \"10473775\": \"Machine_Mode_CIP\",\n    \"10473776\": \"Machine_Mode_Filling\",\n    \"10473777\": \"Machine_Mode_Flush\",\n    \"10473778\": \"Machine_Mode_Pro\",\n    \"10473779\": \"Machine_Run\",\n    \"10466795\": \"Machine_Solar_Percentage\",\n    \"10473780\": \"Main_ON\",\n    \"10473783\": \"Permeate_Tank_has_water\",\n    \"10467008\": \"Ph_Tank1\",\n    \"10467009\": \"Ph_Tank2\",\n    \"10467015\": \"Pressure\",\n    \"10474987\": \"Pressure2\",\n    \"10467017\": \"Pump_Current\",\n    \"10466789\": \"Pump_Power\",\n    \"10472599\": \"Pump_Run\",\n    \"10473786\": \"SCBW_1st_Ctrl\",\n    \"10473789\": \"SCBW_1st_Done\",\n    \"10473787\": \"SCBW_2nd_Ctrl\",\n    \"10473790\": \"SCBW_2nd_Done\",\n    \"10473788\": \"SCBW_Switch\",\n    \"10466785\": \"Solar_Power\",\n    \"10466807\": \"Solar_Power_KWh_This_Hour\",\n    \"10466810\": \"Solar_Power_KWh_This_Month\",\n    \"10466808\": \"Solar_Power_KWh_Today\",\n    \"10467037\": \"Solar_Power_KWh_Total\",\n    \"10472605\": \"Tank_High_Level\",\n    \"10473785\": \"Tank_Raw_High_Level\",\n    \"10473784\": \"Tank_Raw_Low_Level\",\n    \"10473781\": \"Tank_Water_Clean_High_Level\",\n    \"10466811\": \"Temp_Comp\",\n    \"10467049\": \"Temp_Drv1\",\n    \"10467050\": \"Temp_Drv2\",\n    \"10467051\": \"Temp_Drv3\",\n    \"10466809\": \"Temp_Evap\",\n    \"10467055\": \"Temp_Inverter_Booster\",\n    \"10467052\": \"Temp_Inverter_Comp\",\n    \"10467053\": \"Temp_Inverter_Evap\",\n    \"10467056\": \"Temp_Inverter_Feed\",\n    \"10467054\": \"Temp_Inverter_Pump\",\n    \"10466801\": \"Total_Current\",\n    \"10466787\": \"Total_Power\",\n    \"10466907\": \"Total_Power_Booster\",\n    \"10466959\": \"Total_Power_Feed\",\n    \"10466823\": \"Total_Power_KWh_This_Hour\",\n    \"10466826\": \"Total_Power_KWh_This_Month\",\n    \"10466825\": \"Total_Power_KWh_This_Today\",\n    \"10466837\": \"Total_Run_Time\",\n    \"10462372\": \"Totalwater_Clean\",\n    \"10462371\": \"TotalWater_Raw\",\n    \"10472638\": \"UV_In_Ctrl\",\n    \"10467065\": \"UV_In_Lifetime\",\n    \"10467066\": \"UV_In_Switch\",\n    \"10467071\": \"UV_In_Workhours\",\n    \"10467067\": \"UV_Lamp_Run_Time\",\n    \"10472639\": \"UV_Out_Ctrl\",\n    \"10467068\": \"UV_Out_Lifetime\",\n    \"10467077\": \"UV_Out_Switch\",\n    \"10473795\": \"UV_Out_Water_Sensor\",\n    \"10467079\": \"UV_Out_Workhours\",\n    \"10466839\": \"UV_workhours\",\n    \"10473797\": \"Valves_CIP\",\n    \"10473799\": \"Valves_Filling\",\n    \"10473801\": \"Valves_Flush\",\n    \"10473796\": \"Valves_Position_BW\",\n    \"10473798\": \"Valves_Position_CIP\",\n    \"10473800\": \"Valves_Position_Filling\",\n    \"10473802\": \"Valves_Position_Flush\",\n    \"10473803\": \"Valves_Position_Pro\",\n    \"10467095\": \"Voltage_Drv1\",\n    \"10467096\": \"Voltage_Drv2\",\n    \"10467097\": \"Voltage_Drv3\",\n    \"10467098\": \"Voltage_Drv4\",\n    \"10473804\": \"Water_flowing\",\n    \"10466843\": \"Water_This_Hour\",\n    \"10467011\": \"Water_This_Hour_Clean\",\n    \"10467105\": \"Water_This_Hour_Pro\",\n    \"10467022\": \"Water_This_Hour_Raw\",\n    \"10466847\": \"Water_This_Month\",\n    \"10467012\": \"Water_This_Month_Clean\",\n    \"10467104\": \"Water_This_Month_Pro\",\n    \"10467023\": \"Water_This_Month_Raw\",\n    \"10466845\": \"Water_Today\",\n    \"10467013\": \"Water_Today_Clean\",\n    \"10467024\": \"Water_Today_Raw\",\n    \"10467120\": \"Water_Today_Recovery\",\n    \"10467113\": \"Water_Today_Sold\",\n    \"10466841\": \"Water_Total\",\n    \"10467005\": \"Water_Total_Clean\",\n    \"10467100\": \"Water_Total_Pro\",\n    \"10467025\": \"Water_Total_Raw\",\n    \"10467063\": \"Water_Total_Recovery\",\n    \"10467064\": \"Water_Total_Sold\"\n};\n\nconst trends = (((msg || {}).payload || {}).trends) || [];\n\nmsg = {\n    topic: \"used-trends-debug\",\n    payload: trends\n        .filter(function (trend) {\n            const v = trend.v;\n            return v !== null && v !== undefined && v !== \"\" && !Number.isNaN(v);\n        })\n        .map(function (trend) {\n            return [trendNames[trend.c] || \"UNKNOWN\", trend.c, trend.v];\n        })\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 980,
+        "y": 1240,
+        "wires": [
+            [
+                "839de9f8.b087e"
+            ]
+        ]
+    },
+    {
+        "id": "91fa2b7.b3b60d8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Used Trends Debug  [SIM]",
+        "func": "const trendNames = {\n    \"10472631\": \"Alarm_Anti_Pump\",\n    \"10472617\": \"Alarm_AntiScalant_Tank\",\n    \"10472616\": \"Alarm_Borehole_empty\",\n    \"10472604\": \"Alarm_Comp\",\n    \"10473768\": \"Alarm_Dosing_Pump\",\n    \"10472609\": \"Alarm_DPS\",\n    \"10472608\": \"Alarm_Drain_Valve\",\n    \"10472603\": \"Alarm_Evap_Motor\",\n    \"10472601\": \"Alarm_Fan_1\",\n    \"10472620\": \"Alarm_Flowmeter\",\n    \"10472607\": \"Alarm_Inlet_Valve\",\n    \"10472613\": \"Alarm_Inverter1\",\n    \"10472614\": \"Alarm_Inverter2\",\n    \"10472615\": \"Alarm_Inverter3\",\n    \"10472606\": \"Alarm_Lid\",\n    \"10473782\": \"Alarm_Ph\",\n    \"10472612\": \"Alarm_Pressure\",\n    \"10472622\": \"Alarm_Raw_Tank\",\n    \"10472611\": \"Alarm_Tank\",\n    \"10472621\": \"Alarm_TDS\",\n    \"10472598\": \"Alarm_Temp_Inverter\",\n    \"10472610\": \"Alarm_Temp_Inverter1\",\n    \"10472619\": \"Alarm_Temp_Inverter2\",\n    \"10472618\": \"Alarm_Temp_Inverter3\",\n    \"10472623\": \"Alarm_Unstable_Volt\",\n    \"10472600\": \"Alarm_UV_Lamp\",\n    \"10472624\": \"Alarm_UVIn_Lamp\",\n    \"10472625\": \"Alarm_UVOut_Lamp\",\n    \"10472626\": \"Alarm_Valve1\",\n    \"10472627\": \"Alarm_Valve2\",\n    \"10472628\": \"Alarm_Valve3\",\n    \"10472629\": \"Alarm_Valve4\",\n    \"10472630\": \"Alarm_Valve5\",\n    \"10472602\": \"Alarm_Watermeter\",\n    \"10472589\": \"Auto_Manual_Switch\",\n    \"10472632\": \"Backwash_Switch\",\n    \"10472633\": \"Backwash_Switch\",\n    \"10473793\": \"Booster_Pump_Switch\",\n    \"10466958\": \"Booster_Pump_Total_Run\",\n    \"10472595\": \"Borehole_empty\",\n    \"10472593\": \"Borehole_Float_Switch\",\n    \"10466803\": \"Borehole_Pump_Current\",\n    \"10466793\": \"Borehole_Pump_Power\",\n    \"10473791\": \"Borehole_Pump_Switch\",\n    \"10472636\": \"CIP_Switch\",\n    \"10472637\": \"CIP_Switch\",\n    \"10472634\": \"CIP_Tank_Empty\",\n    \"10472635\": \"CIP_Tank_Full\",\n    \"10466790\": \"Comp_Power\",\n    \"10472596\": \"Comp_Run\",\n    \"10466934\": \"Current_Booster_Pump\",\n    \"10466822\": \"Current_Comp\",\n    \"10466820\": \"Current_Evap\",\n    \"10466935\": \"Current_Feed_Pump\",\n    \"10472640\": \"Date_Backwash_Done\",\n    \"10472641\": \"Date_CIP_Done\",\n    \"10466799\": \"DC_Voltage\",\n    \"10466943\": \"DC_Voltage_Booster\",\n    \"10466945\": \"DC_Voltage_Borehole\",\n    \"10466806\": \"DC_Voltage_Borehole_Pump\",\n    \"10466804\": \"DC_Voltage_Comp\",\n    \"10466802\": \"DC_Voltage_Evap\",\n    \"10466944\": \"DC_Voltage_Feed\",\n    \"10473769\": \"DriveError_Drv1\",\n    \"10473770\": \"DriveError_Drv2\",\n    \"10473771\": \"DriveError_Drv3\",\n    \"10466950\": \"EC_Value\",\n    \"10472590\": \"Eco\",\n    \"10472591\": \"Eco_control\",\n    \"10473794\": \"Elevating_Pump_Switch\",\n    \"10466788\": \"Evap_Power\",\n    \"10472597\": \"Evap_Run\",\n    \"10466957\": \"Feed_Kwh\",\n    \"10473792\": \"Feed_Pump_Switch\",\n    \"10472592\": \"Float_Switch\",\n    \"10466816\": \"Frequency_Comp\",\n    \"10462379\": \"Frequency_Drv1\",\n    \"10462380\": \"Frequency_Drv2\",\n    \"10462381\": \"Frequency_Drv3\",\n    \"10466974\": \"Frequency_Drv4\",\n    \"10466814\": \"Frequency_Evap\",\n    \"10466786\": \"Grid_Power\",\n    \"10466815\": \"Grid_Power_KWh_This_Hour\",\n    \"10466819\": \"Grid_Power_KWh_This_Month\",\n    \"10466817\": \"Grid_Power_KWh_This_Today\",\n    \"10466812\": \"Grid_Power_Total\",\n    \"10472594\": \"Grid_Switch\",\n    \"10473772\": \"IceMachine_On\",\n    \"10466791\": \"Machine_Capacity\",\n    \"10466792\": \"Machine_Grid_Percentage\",\n    \"10473773\": \"Machine_Mode_Backwash\",\n    \"10473774\": \"Machine_Mode_Borehole\",\n    \"10473775\": \"Machine_Mode_CIP\",\n    \"10473776\": \"Machine_Mode_Filling\",\n    \"10473777\": \"Machine_Mode_Flush\",\n    \"10473778\": \"Machine_Mode_Pro\",\n    \"10473779\": \"Machine_Run\",\n    \"10466795\": \"Machine_Solar_Percentage\",\n    \"10473780\": \"Main_ON\",\n    \"10473783\": \"Permeate_Tank_has_water\",\n    \"10467008\": \"Ph_Tank1\",\n    \"10467009\": \"Ph_Tank2\",\n    \"10467015\": \"Pressure\",\n    \"10474987\": \"Pressure2\",\n    \"10467017\": \"Pump_Current\",\n    \"10466789\": \"Pump_Power\",\n    \"10472599\": \"Pump_Run\",\n    \"10473786\": \"SCBW_1st_Ctrl\",\n    \"10473789\": \"SCBW_1st_Done\",\n    \"10473787\": \"SCBW_2nd_Ctrl\",\n    \"10473790\": \"SCBW_2nd_Done\",\n    \"10473788\": \"SCBW_Switch\",\n    \"10466785\": \"Solar_Power\",\n    \"10466807\": \"Solar_Power_KWh_This_Hour\",\n    \"10466810\": \"Solar_Power_KWh_This_Month\",\n    \"10466808\": \"Solar_Power_KWh_Today\",\n    \"10467037\": \"Solar_Power_KWh_Total\",\n    \"10472605\": \"Tank_High_Level\",\n    \"10473785\": \"Tank_Raw_High_Level\",\n    \"10473784\": \"Tank_Raw_Low_Level\",\n    \"10473781\": \"Tank_Water_Clean_High_Level\",\n    \"10466811\": \"Temp_Comp\",\n    \"10467049\": \"Temp_Drv1\",\n    \"10467050\": \"Temp_Drv2\",\n    \"10467051\": \"Temp_Drv3\",\n    \"10466809\": \"Temp_Evap\",\n    \"10467055\": \"Temp_Inverter_Booster\",\n    \"10467052\": \"Temp_Inverter_Comp\",\n    \"10467053\": \"Temp_Inverter_Evap\",\n    \"10467056\": \"Temp_Inverter_Feed\",\n    \"10467054\": \"Temp_Inverter_Pump\",\n    \"10466801\": \"Total_Current\",\n    \"10466787\": \"Total_Power\",\n    \"10466907\": \"Total_Power_Booster\",\n    \"10466959\": \"Total_Power_Feed\",\n    \"10466823\": \"Total_Power_KWh_This_Hour\",\n    \"10466826\": \"Total_Power_KWh_This_Month\",\n    \"10466825\": \"Total_Power_KWh_This_Today\",\n    \"10466837\": \"Total_Run_Time\",\n    \"10462372\": \"Totalwater_Clean\",\n    \"10462371\": \"TotalWater_Raw\",\n    \"10472638\": \"UV_In_Ctrl\",\n    \"10467065\": \"UV_In_Lifetime\",\n    \"10467066\": \"UV_In_Switch\",\n    \"10467071\": \"UV_In_Workhours\",\n    \"10467067\": \"UV_Lamp_Run_Time\",\n    \"10472639\": \"UV_Out_Ctrl\",\n    \"10467068\": \"UV_Out_Lifetime\",\n    \"10467077\": \"UV_Out_Switch\",\n    \"10473795\": \"UV_Out_Water_Sensor\",\n    \"10467079\": \"UV_Out_Workhours\",\n    \"10466839\": \"UV_workhours\",\n    \"10473797\": \"Valves_CIP\",\n    \"10473799\": \"Valves_Filling\",\n    \"10473801\": \"Valves_Flush\",\n    \"10473796\": \"Valves_Position_BW\",\n    \"10473798\": \"Valves_Position_CIP\",\n    \"10473800\": \"Valves_Position_Filling\",\n    \"10473802\": \"Valves_Position_Flush\",\n    \"10473803\": \"Valves_Position_Pro\",\n    \"10467095\": \"Voltage_Drv1\",\n    \"10467096\": \"Voltage_Drv2\",\n    \"10467097\": \"Voltage_Drv3\",\n    \"10467098\": \"Voltage_Drv4\",\n    \"10473804\": \"Water_flowing\",\n    \"10466843\": \"Water_This_Hour\",\n    \"10467011\": \"Water_This_Hour_Clean\",\n    \"10467105\": \"Water_This_Hour_Pro\",\n    \"10467022\": \"Water_This_Hour_Raw\",\n    \"10466847\": \"Water_This_Month\",\n    \"10467012\": \"Water_This_Month_Clean\",\n    \"10467104\": \"Water_This_Month_Pro\",\n    \"10467023\": \"Water_This_Month_Raw\",\n    \"10466845\": \"Water_Today\",\n    \"10467013\": \"Water_Today_Clean\",\n    \"10467024\": \"Water_Today_Raw\",\n    \"10467120\": \"Water_Today_Recovery\",\n    \"10467113\": \"Water_Today_Sold\",\n    \"10466841\": \"Water_Total\",\n    \"10467005\": \"Water_Total_Clean\",\n    \"10467100\": \"Water_Total_Pro\",\n    \"10467025\": \"Water_Total_Raw\",\n    \"10467063\": \"Water_Total_Recovery\",\n    \"10467064\": \"Water_Total_Sold\"\n};\n\nconst trends = (((msg || {}).payload || {}).trends) || [];\n\nmsg = {\n    topic: \"used-trends-debug\",\n    payload: trends\n        .filter(function (trend) {\n            const v = trend.v;\n            return v !== null && v !== undefined && v !== \"\" && !Number.isNaN(v);\n        })\n        .reduce(function (obj, trend) {\n            const name = trendNames[trend.c] || \"UNKNOWN_\" + trend.c;\n            obj[name] = trend.v;\n            return obj;\n        }, {})\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 980,
+        "y": 1160,
+        "wires": [
+            [
+                "4dd6754f.47e8a4"
+            ]
+        ]
+    },
+    {
+        "id": "ed651fe6.e1aee8",
+        "type": "function",
+        "z": "9673efa7.e20b2",
+        "name": "Trends_filtration_V3  [SIM – read-only copy]",
+        "func": "const now = Math.floor(Date.now() / 1000);\n\nvar globalKeyLookup = null;\n\nfunction buildGlobalKeyLookup() {\n  var lookup = {};\n\n  if (typeof global.keys !== \"function\") {\n    return lookup;\n  }\n\n  var keys = global.keys();\n\n  for (var i = 0; i < keys.length; i++) {\n    var key = keys[i];\n    var normalizedKey = key.toLowerCase();\n\n    if (lookup[normalizedKey] === undefined) {\n      lookup[normalizedKey] = key;\n    }\n  }\n\n  return lookup;\n}\n\nfunction getGlobalValue(key) {\n  var value = global.get(key);\n\n  if (value !== undefined && value !== null) {\n    return value;\n  }\n\n  if (typeof key !== \"string\") {\n    return null;\n  }\n\n  if (globalKeyLookup === null) {\n    globalKeyLookup = buildGlobalKeyLookup();\n  }\n\n  var matchingKey = globalKeyLookup[key.toLowerCase()];\n\n  if (matchingKey === undefined) {\n    return null;\n  }\n\n  value = global.get(matchingKey);\n  return value !== undefined && value !== null ? value : null;\n}\n\nfunction getFirst() {\n  for (var i = 0; i < arguments.length; i++) {\n    var v = getGlobalValue(arguments[i]);\n    if (v !== undefined && v !== null) return v;\n  }\n  return null;\n}\n\nmsg = {\n    'topic': 'telemetry',\n    'payload': { \"trends\": [\n{ \"c\": \"10472631\", \"t\": now, \"v\": getFirst(\"_Anti_pump\", \"Anti_pump\", \"_118_Anti_Pump\") }, // Alarm_Anti_Pump\n{ \"c\": \"10472617\", \"t\": now, \"v\": getFirst(\"_AlarmAntiScalant\", \"AlarmAntiScalant\", \"Anti_Tank\", \"Anti_Tankk\", \"Anti_Tankkk\", \"AntiScalantTank\", \"AntiTank\", \"AntiTank_empty\", \"AntiTankkk\", \"_111_Antitank_Empty\", \"_21_Anti_Scalant_Tank\", \"_38_Alarm_Anti_Scalant_Alarm\") }, // Alarm_AntiScalant_Tank\n{ \"c\": \"10472616\", \"t\": now, \"v\": getFirst(\"_Alarm_Well_Level\", \"Alarm_Well_Level\", \"Alarm_Well_Water\", \"AlarmWellLevel\", \"_40_Alarm_Well_Level\", \"_27_Alarm_Well_Level_Alarm\") }, // Alarm_Borehole_empty\n{ \"c\": \"10472604\", \"t\": now, \"v\": getFirst(\"_23__Comp_Alarm\", \"_23_Comp_Alarm\", \"_35_Alarm_Comp\", \"Alarm_Comp\", \"Comp_Alarm\") }, // Alarm_Comp\n{ \"c\": \"10473768\", \"t\": now, \"v\": getFirst(\"Dosing_Pump_Alarm\", \"_105_Dosing_Pump_Alarm\") }, // Alarm_Dosing_Pump\n{ \"c\": \"10472609\", \"t\": now, \"v\": getFirst(\"_31__Alarm_DPS\", \"_31_Alarm_DPS\", \"Alarm_DPSe\") }, // Alarm_DPS\n{ \"c\": \"10472608\", \"t\": now, \"v\": getFirst(\"_30__Alarm_Drain_Valve\", \"_30_Alarm_Drain_Valve\", \"Alarm_Drain_Valve\") }, // Alarm_Drain_Valve\n{ \"c\": \"10472603\", \"t\": now, \"v\": getFirst(\"_22__Evap_Motor_Alarm\", \"_22_Evap_Motor_Alarm\", \"_34_Alarm_Evap\", \"_41_Alarm_Evap_Rotation\", \"Alarm_Evap\", \"Alarm_Evap_Rotation\", \"Evap_Motor_Alarm\") }, // Alarm_Evap_Motor\n{ \"c\": \"10472601\", \"t\": now, \"v\": getFirst(\"_20__Fan_1_Alarm\", \"_20_Fan_1_Alarm\", \"_32_Alarm_Fan_1\", \"Alarm_Fan_1\", \"Fan_1_Alarm\", \"_21_Fan_2_Alarm\", \"Alarm_Fan_2\", \"Fan_2_Alarm\", \"_33_Alarm_Fan_2\") }, // Alarm_Fan_1\n{ \"c\": \"10472620\", \"t\": now, \"v\": getFirst(\"_AlarmFlowMeter\", \"AlarmFlowMeter\", \"_39_Alarm_Flow_Meter_Alarm\") }, // Alarm_Flowmeter\n{ \"c\": \"10472607\", \"t\": now, \"v\": getFirst(\"_29__Alarm_Inlet_Valve_Water\", \"_29_Alarm_Inlet_Valve_Water\", \"Alarm_Inlet_Valve_Water\") }, // Alarm_Inlet_Valve\n{ \"c\": \"10472613\", \"t\": now, \"v\": getFirst(\"_Alarm_Inverter_A\", \"Alarm_Inverter_A\", \"AlarmBohrholeInverterStatus\", \"_30_Alarm_Bohrhole_Inverter_Status_Alarm\") }, // Alarm_Inverter1\n{ \"c\": \"10472614\", \"t\": now, \"v\": getFirst(\"_Alarm_Inverter_B\", \"Alarm_Inverter_B\", \"AlarmFeedInverterStatus\", \"_28_Alarm_Feed_Inverter_Status_Alarm\") }, // Alarm_Inverter2\n{ \"c\": \"10472615\", \"t\": now, \"v\": getFirst(\"_Alarm_Inverter_C\", \"Alarm_Inverter_C\", \"AlarmBoosterInverterStatus\", \"_29_Alarm_Booster_Inverter_Status_Alarm\") }, // Alarm_Inverter3\n{ \"c\": \"10472606\", \"t\": now, \"v\": getFirst(\"_28__Alarm_Lid\", \"_28_Alarm_Lid\", \"Alarm_Lid\", \"_12_Lid_Alarm\") }, // Alarm_Lid\n{ \"c\": \"10473782\", \"t\": now, \"v\": global.get(\"Ph_Alarm\") }, // Alarm_Ph\n{ \"c\": \"10472612\", \"t\": now, \"v\": getFirst(\"_Alarm_High_Pressure\", \"Alarm_High_Pressure\", \"Pressurre_Alarm\", \"_15_Pressurre_Alarm\", \"_17_Alarm_High_Pressure\", \"AlarmHighPressure\", \"_31_Alarm_High_Pressure_Alarm\") }, // Alarm_Pressure\n{ \"c\": \"10472622\", \"t\": now, \"v\": getFirst(\"_AlarmRaw_Tank_Alarm\", \"AlarmRaw_Tank_Alarm\", \"_41_AlarmRaw_Tank_Alarm\") }, // Alarm_Raw_Tank\n{ \"c\": \"10472611\", \"t\": now, \"v\": getFirst(\"_39__Alarm_Tank\", \"_39_Alarm_Tank\") }, // Alarm_Tank\n{ \"c\": \"10472621\", \"t\": now, \"v\": getFirst(\"_AlarmHighTDS\", \"AlarmHighTDS\", \"_32_Alarm_High_TDS_Alarm\") }, // Alarm_TDS\n{ \"c\": \"10472598\", \"t\": now, \"v\": getFirst(\"_18__Alarm_Inverter\", \"_18_Alarm_Inverter\", \"_19_Alarm_Temperature_Inverter\", \"Alarm_Inverter\", \"Alarm_Temperature_Inverter\") }, // Alarm_Temp_Inverter\n{ \"c\": \"10472610\", \"t\": now, \"v\": getFirst(\"_36__Alarm_Inverter_A\", \"_36_Alarm_Inverter_A\", \"_42_Alarm_Inverter_1_Over_Temperature\", \"Alarm_Inverter_1_Over_Temperature\", \"AlarmBohrholeInverterTemperature\", \"_35_Alarm_Bohrhole_Inverter_Temperature_Alarm\") }, // Alarm_Temp_Inverter1\n{ \"c\": \"10472619\", \"t\": now, \"v\": getFirst(\"_AlarmFeedInverterTemperature\", \"AlarmFeedInverterTemperature\", \"_37_Alarm_Inverter_B\", \"_43_Alarm_Inverter_2_Over_Temperature\", \"Alarm_Inverter_2_Over_Temperature\", \"_33_Alarm_Feed_Inverter_Temperature_Alarm\") }, // Alarm_Temp_Inverter2\n{ \"c\": \"10472618\", \"t\": now, \"v\": getFirst(\"_AlarmBoosterInverterTemperature\", \"AlarmBoosterInverterTemperature\", \"_38_Alarm_Inverter_C\", \"_44_Alarm_Inverter_3_Over_Temperature\", \"_34_Alarm_Booster_Inverter_Temperature_Alarm\") }, // Alarm_Temp_Inverter3\n{ \"c\": \"10472623\", \"t\": now, \"v\": getFirst(\"_AlarmUnstableVoltage\", \"AlarmUnstableVoltage\", \"_40_Alarm_Unstable_Voltage_Alarm\") }, // Alarm_Unstable_Volt\n{ \"c\": \"10472600\", \"t\": now, \"v\": getFirst(\"_20__Alarm_UV_Lamp\", \"_20_Alarm_UV_Lamp\", \"Alarm_UV_Lamp\") }, // Alarm_UV_Lamp\n{ \"c\": \"10472624\", \"t\": now, \"v\": getFirst(\"_AlarmUVInLamp\", \"AlarmUVInLamp\", \"_36_Alarm_UV_In_Lamp_Alarm\") }, // Alarm_UVIn_Lamp\n{ \"c\": \"10472625\", \"t\": now, \"v\": getFirst(\"_AlarmUVOutLamp\", \"AlarmUVOutLamp\", \"_37_Alarm_UV_Out_Lamp_Alarm\") }, // Alarm_UVOut_Lamp\n{ \"c\": \"10472626\", \"t\": now, \"v\": getFirst(\"_AlarmValve1\", \"AlarmValve1\", \"_42_Alarm_Valve_1_Alarm\") }, // Alarm_Valve1\n{ \"c\": \"10472627\", \"t\": now, \"v\": getFirst(\"_AlarmValve2\", \"AlarmValve2\", \"_43_Alarm_Valve_2_Alarm\") }, // Alarm_Valve2\n{ \"c\": \"10472628\", \"t\": now, \"v\": getFirst(\"_AlarmValve3\", \"AlarmValve3\", \"_44_Alarm_Valve_3_Alarm\") }, // Alarm_Valve3\n{ \"c\": \"10472629\", \"t\": now, \"v\": getFirst(\"_AlarmValve4\", \"AlarmValve4\", \"_45_Alarm_Valve_4_Alarm\") }, // Alarm_Valve4\n{ \"c\": \"10472630\", \"t\": now, \"v\": getFirst(\"_AlarmValve5\", \"AlarmValve5\", \"_46_Alarm_Valve_5_Alarm\") }, // Alarm_Valve5\n{ \"c\": \"10472602\", \"t\": now, \"v\": getFirst(\"_21__Alarm_6_Water_Meter\", \"_21_Alarm_6_Water_Meter\", \"Alarm_6_Water_Meter\") }, // Alarm_Watermeter\n{ \"c\": \"10472589\", \"t\": now, \"v\": getFirst(\"_11__Auto_Manual\", \"_11_Auto_Manual\", \"_12_Auto_Manual\", \"Auto_Manual\", \"Switch_Auto\") }, // Auto_Manual_Switch\n{ \"c\": \"10472632\", \"t\": now, \"v\": getFirst(\"_BackwashSwitch\", \"BackwashSwitch\", \"_15_Back_Wash_Switch\") }, // Backwash_Switch\n{ \"c\": \"10472633\", \"t\": now, \"v\": getFirst(\"_BackwashSwitchC\", \"BackwashSwitch\") }, // Backwash_Switch_C\n{ \"c\": \"10473793\", \"t\": now, \"v\": getFirst(\"Switch_P3_BoosterSwitch\", \"Switch_P3\", \"BoosterSwitch\", \"_14_Booster_Switch\") }, // Booster_Pump_Switch\n{ \"c\": \"10466958\", \"t\": now, \"v\": getFirst(\"_120_Boost_Total_Run\", \"Feed_TotalRUN\") }, // Booster_Pump_Total_Run\n{ \"c\": \"10472595\", \"t\": now, \"v\": getFirst(\"_16__Alarm_Well_Water\", \"_16_Alarm_Well_Water\") }, // Borehole_empty\n{ \"c\": \"10472593\", \"t\": now, \"v\": getFirst(\"_14__Borhole_Float_Switch\", \"_14_Borhole_Float_Switch\", \"_24_Borhole_Float_Switch\", \"Borhole_Float_Switch\", \"BorholeFloatSwitch\", \"Borehole_lvl\") }, // Borehole_Float_Switch\n{ \"c\": \"10466803\", \"t\": now, \"v\": getFirst(\"_61_Pump_Current\", \"Current_Inverter_Pump\", \"_72_Current_Inverter_Pump\") }, // Borehole_Pump_Current\n{ \"c\": \"10466793\", \"t\": now, \"v\": global.get(\"_55_Pump_Power\") }, // Borehole_Pump_Power\n{ \"c\": \"10473791\", \"t\": now, \"v\": getFirst(\"Switch_P1_BohrholeSwitch\", \"Switch_P1\", \"BohrholeSwitch\", \"_16_Bohrhole_Switch\") }, // Borehole_Pump_Switch\n{ \"c\": \"10472636\", \"t\": now, \"v\": getFirst(\"_CIPSwitch\", \"CIPSwitch\", \"Switch_CIP\", \"_12_CIP_Switch\") }, // CIP_Switch\n{ \"c\": \"10472637\", \"t\": now, \"v\": getFirst(\"_CIPSwitchC\", \"CIPSwitch\", \"Switch_CIP\") }, // CIP_Switch_C\n{ \"c\": \"10472634\", \"t\": now, \"v\": getFirst(\"_CIP_tankempty\", \"CIP_tankempty\", \"CIPtank_empty\", \"_20_CIPtank_Low\", \"_123_CIP_Empty\") }, // CIP_Tank_Empty\n{ \"c\": \"10472635\", \"t\": now, \"v\": getFirst(\"_CIP_tankfull\", \"CIP_tankfull\", \"CIPtankHigh\", \"CIPtank_full\", \"CIPtankLow\", \"_19_CIPtank_High\", \"_122_CIP_Full\") }, // CIP_Tank_Full\n{ \"c\": \"10466790\", \"t\": now, \"v\": getFirst(\"_54_Comp_Power\", \"Comp_Power\") }, // Comp_Power\n{ \"c\": \"10472596\", \"t\": now, \"v\": getFirst(\"_16__Comp_Run\", \"_16_Comp_Run\", \"Comp_Run\") }, // Comp_Run\n{ \"c\": \"10466934\", \"t\": now, \"v\": getFirst(\"CurrentInverterBooster\", \"_71_Current_Inverter_Booster\") }, // Current_Booster_Pump\n{ \"c\": \"10466822\", \"t\": now, \"v\": getFirst(\"_71_Current_Inverter_Comp\", \"Current_Inverter_Comp\") }, // Current_Comp\n{ \"c\": \"10466820\", \"t\": now, \"v\": getFirst(\"_70_Current_Inverter_Evap\", \"Current_Inverter_Evap\") }, // Current_Evap\n{ \"c\": \"10466935\", \"t\": now, \"v\": getFirst(\"CurrentInverterFeed\", \"_70_Current_Inverter_Feed\") }, // Current_Feed_Pump\n{ \"c\": \"10472640\", \"t\": now, \"v\": getFirst(\"_Datum_Backwash_Done\", \"Datum_Backwash_Done\", \"Last_Backwash\", \"_103_Datum_Backwash_Done\") }, // Date_Backwash_Done\n{ \"c\": \"10472641\", \"t\": now, \"v\": getFirst(\"_Datum_CIP_Done\", \"Datum_CIP_Done\", \"_104_Datum_CIP_Done\") }, // Date_CIP_Done\n{ \"c\": \"10466799\", \"t\": now, \"v\": getFirst(\"_59_DC_Voltage\", \"DC_Voltage\") }, // DC_Voltage\n{ \"c\": \"10466943\", \"t\": now, \"v\": getFirst(\"DCVoltageBooster\", \"_62_DC_Voltage_Booster\") }, // DC_Voltage_Booster\n{ \"c\": \"10466945\", \"t\": now, \"v\": getFirst(\"_63_DC_Voltage_Pump\", \"DCVoltagePump\") }, // DC_Voltage_Borehole\n{ \"c\": \"10466806\", \"t\": now, \"v\": getFirst(\"_63_DC_Voltage_Pump\", \"DC_Voltage_Pump\") }, // DC_Voltage_Borehole_Pump\n{ \"c\": \"10466804\", \"t\": now, \"v\": getFirst(\"_62_DC_Voltage_Comp\", \"DC_Voltage_Comp\") }, // DC_Voltage_Comp\n{ \"c\": \"10466802\", \"t\": now, \"v\": getFirst(\"_61_DC_Voltage_Evap\", \"DC_Voltage_Evap\") }, // DC_Voltage_Evap\n{ \"c\": \"10466944\", \"t\": now, \"v\": getFirst(\"DCVoltageFeed\", \"_61_DC_Voltage_Feed\") }, // DC_Voltage_Feed\n{ \"c\": \"10473769\", \"t\": now, \"v\": global.get(\"DriveError_Drv1\") }, // DriveError_Drv1\n{ \"c\": \"10473770\", \"t\": now, \"v\": global.get(\"DriveError_Drv2\") }, // DriveError_Drv2\n{ \"c\": \"10473771\", \"t\": now, \"v\": global.get(\"DriveError_Drv3\") }, // DriveError_Drv3\n{ \"c\": \"10466950\", \"t\": now, \"v\": getFirst(\"ec_value\", \"_14_Conductivity_Switch\", \"Conductivity_Switch\", \"EC_Value\", \"Leitfaehigkeit\", \"_106_EC_Value\") }, // EC_Value\n{ \"c\": \"10472590\", \"t\": now, \"v\": getFirst(\"_12__Eco\", \"_12_Eco\", \"_13_Eco\", \"Eco\") }, // Eco\n{ \"c\": \"10472591\", \"t\": now, \"v\": global.get(\"_12C_Eco\") }, // Eco_control\n{ \"c\": \"10473794\", \"t\": now, \"v\": global.get(\"Switch_P4\") }, // Elevating_Pump_Switch\n{ \"c\": \"10466788\", \"t\": now, \"v\": getFirst(\"_53_Evap_Power\", \"Evap_Power\") }, // Evap_Power\n{ \"c\": \"10472597\", \"t\": now, \"v\": getFirst(\"_17__Evap_Run\", \"_17_Evap_Run\", \"Evap_Run\") }, // Evap_Run\n{ \"c\": \"10466957\", \"t\": now, \"v\": global.get(\"Feed_Kwh\") }, // Feed_Kwh\n{ \"c\": \"10473792\", \"t\": now, \"v\": getFirst(\"Switch_P2_FeedSwitch\", \"Switch_P2\", \"FeedSwitch\", \"_13_Feed_Switch\") }, // Feed_Pump_Switch\n{ \"c\": \"10472592\", \"t\": now, \"v\": getFirst(\"_13__Float_Switch\", \"_13_Float_Switch\", \"Float_Switch\") }, // Float_Switch\n{ \"c\": \"10466816\", \"t\": now, \"v\": global.get(\"Frequency_Inverter_Comp\") }, // Frequency_Comp (no matching var on this site)\n{ \"c\": \"10462379\", \"t\": now, \"v\": getFirst(\"_69_Frequency_Inverter_Pump\", \"freq_drv1\", \"Frequency_Drv\", \"Frequency_Inverter_Pump\", \"FrequencyInverterPump\", \"Frequenz_Inv1\") }, // Frequency_Drv1\n{ \"c\": \"10462380\", \"t\": now, \"v\": getFirst(\"_67_Frequency_Inverter_Feed\", \"freq_drv2\", \"Frequency_Drv2\", \"FrequencyInverterFeed\", \"Frequenz_Inv2\") }, // Frequency_Drv2\n{ \"c\": \"10462381\", \"t\": now, \"v\": getFirst(\"_68_Frequency_Inverter_Booster\", \"freq_drv3\", \"Frequency_Drv3\", \"FrequencyInverterBooster\", \"Frequenz_Inv3\") }, // Frequency_Drv3\n{ \"c\": \"10466974\", \"t\": now, \"v\": global.get(\"Frequenz_Inv4\") }, // Frequency_Drv4\n{ \"c\": \"10466814\", \"t\": now, \"v\": global.get(\"Frequency_Inverter_Evap\") }, // Frequency_Evap (no matching var on this site)\n{ \"c\": \"10466786\", \"t\": now, \"v\": getFirst(\"_51_Grid_Power\", \"Grid_Power\") }, // Grid_Power\n{ \"c\": \"10466815\", \"t\": now, \"v\": getFirst(\"_67_Grid_Power_KWh_This_Hour\", \"_78_Grid_Power_KWh_This_Hour\", \"Grid_Power_KWh_This_Hour\") }, // Grid_Power_KWh_This_Hour\n{ \"c\": \"10466819\", \"t\": now, \"v\": getFirst(\"_69_Grid_Power_KWh_This_Month\", \"_80_Grid_Power_KWh_This_Month\", \"Grid_Power_KWh_This_Month\") }, // Grid_Power_KWh_This_Month\n{ \"c\": \"10466817\", \"t\": now, \"v\": getFirst(\"_68_Grid_Power_KWh_Today\", \"_79_Grid_Power_KWh_Today\", \"Grid_Power_KWh_Today\") }, // Grid_Power_KWh_This_Today\n{ \"c\": \"10466812\", \"t\": now, \"v\": getFirst(\"_66_Grid_Power_KWh_Total\", \"_77_Grid_Power_KWh_Total\", \"Grid_Power_KWh_Total\") }, // Grid_Power_Total\n{ \"c\": \"10472594\", \"t\": now, \"v\": getFirst(\"_15__Grid_is_On\", \"_15_Grid_is_On\", \"_27_Grid_is_ON\", \"Grid_is_ON\", \"Grid_is_On\", \"GridisON\", \"_26_Grid_is_ON\") }, // Grid_Switch\n{ \"c\": \"10473772\", \"t\": now, \"v\": getFirst(\"IceMachine_Run\", \"_19_IceMachine_Run\") }, // IceMachine_On\n{ \"c\": \"10466791\", \"t\": now, \"v\": getFirst(\"_54_Machine_Capacity\", \"_56_Machine_Capacity\", \"Machine_Capacity\", \"MachineCapacity\") }, // Machine_Capacity\n{ \"c\": \"10466792\", \"t\": now, \"v\": getFirst(\"_55_Machine_Grid_Percentage\", \"_57_Machine_Grid_Percentage\", \"Machine_Grid_Percentage\", \"MachineGridPercentage\") }, // Machine_Grid_Percentage\n{ \"c\": \"10473773\", \"t\": now, \"v\": getFirst(\"Machine_Mode_Backwash\", \"_101_Machine_Mode_Backwash\") }, // Machine_Mode_Backwash\n{ \"c\": \"10473774\", \"t\": now, \"v\": getFirst(\"Machine_Mode_Bohrhole\", \"_102_Machine_Mode_Bohrhole\") }, // Machine_Mode_Borehole\n{ \"c\": \"10473775\", \"t\": now, \"v\": getFirst(\"Machine_Mode_CIP\", \"_98_Machine_Mode_CIP\") }, // Machine_Mode_CIP\n{ \"c\": \"10473776\", \"t\": now, \"v\": getFirst(\"Machine_Mode_Filling\", \"_99_Machine_Mode_Filling\") }, // Machine_Mode_Filling\n{ \"c\": \"10473777\", \"t\": now, \"v\": getFirst(\"Machine_Mode_Flush\", \"_100_Machine_Mode_Flush\") }, // Machine_Mode_Flush\n{ \"c\": \"10473778\", \"t\": now, \"v\": getFirst(\"Machine_Mode_Pro\", \"_97_Machine_Mode_Pro\") }, // Machine_Mode_Pro\n{ \"c\": \"10473779\", \"t\": now, \"v\": getFirst(\"MachineRun\", \"_18_Machine_Run\") }, // Machine_Run\n{ \"c\": \"10466795\", \"t\": now, \"v\": getFirst(\"_56_Machine_Solar_Percentage\", \"_58_Machine_Solar_Percentage\", \"Machine_Solar_Percentage\", \"MachineSolarPercentage\") }, // Machine_Solar_Percentage\n{ \"c\": \"10473780\", \"t\": now, \"v\": getFirst(\"_117_Mains_On\", \"mains_on\", \"_11_Start\", \"Mains_ON\", \"Mains_OON\") }, // Main_ON\n{ \"c\": \"10473783\", \"t\": now, \"v\": getFirst(\"PremeateTank\", \"_25_Premeate_Tank\") }, // Permeate_Tank_has_water\n{ \"c\": \"10467008\", \"t\": now, \"v\": global.get(\"Ph_Tank1\") }, // Ph_Tank1\n{ \"c\": \"10467009\", \"t\": now, \"v\": global.get(\"Ph_Tank2\") }, // Ph_Tank2\n{ \"c\": \"10467015\", \"t\": now, \"v\": getFirst(\"pressure\", \"_57_Actual_Pressure\", \"Actual_Pressure\", \"Pressure\", \"Systemdruck\", \"_107_Pressure_Value\") }, // Pressure\n{ \"c\": \"10474987\", \"t\": now, \"v\": getFirst(\"_126_Pipe_Pressure\", \"Pressure2\") }, // Pressure2\n{ \"c\": \"10467017\", \"t\": now, \"v\": global.get(\"Pump_Current\") }, // Pump_Current\n{ \"c\": \"10466789\", \"t\": now, \"v\": getFirst(\"_53_Pump_Power\", \"Pump_Power\") }, // Pump_Power\n{ \"c\": \"10472599\", \"t\": now, \"v\": getFirst(\"_18__Pump_Run\", \"_18_Pump_Run\", \"Pump_Run\") }, // Pump_Run\n{ \"c\": \"10473786\", \"t\": now, \"v\": getFirst(\"SC_ctrl1\", \"_124_SCBW_V1_Ctrl\") }, // SCBW_1st_Ctrl\n{ \"c\": \"10473789\", \"t\": now, \"v\": global.get(\"SCBW1_ok\") }, // SCBW_1st_Done\n{ \"c\": \"10473787\", \"t\": now, \"v\": global.get(\"SC_ctrl2\") }, // SCBW_2nd_Ctrl\n{ \"c\": \"10473790\", \"t\": now, \"v\": global.get(\"SCBW2_ok\") }, // SCBW_2nd_Done\n{ \"c\": \"10473788\", \"t\": now, \"v\": global.get(\"SC_Sw\") }, // SCBW_Switch\n{ \"c\": \"10466785\", \"t\": now, \"v\": getFirst(\"_50_Solar_Power\", \"_62_Solar_Power_KWh_Total\", \"_73_Solar_Power_KWh_Total\", \"Solar_Power\") }, // Solar_Power\n{ \"c\": \"10466807\", \"t\": now, \"v\": getFirst(\"_63_Solar_Power_KWh_This_Hour\", \"_74_Solar_Power_KWh_This_Hour\", \"Solar_Power_KWh_This_Hour\") }, // Solar_Power_KWh_This_Hour\n{ \"c\": \"10466810\", \"t\": now, \"v\": getFirst(\"_65_Solar_Power_KWh_This_Month\", \"_76_Solar_Power_KWh_This_Month\", \"Solar_Power_KWh_This_Month\") }, // Solar_Power_KWh_This_Month\n{ \"c\": \"10466808\", \"t\": now, \"v\": getFirst(\"_64_Solar_Power_KWh_Today\", \"_75_Solar_Power_KWh_Today\", \"Solar_Power_KWh_Today\") }, // Solar_Power_KWh_Today\n{ \"c\": \"10467037\", \"t\": now, \"v\": getFirst(\"Solar_Power_KWh_Total\", \"_73_Solar_Power_KWh_Total\") }, // Solar_Power_KWh_Total\n{ \"c\": \"10472605\", \"t\": now, \"v\": getFirst(\"_25__Tank_High_Level\", \"_25_Tank_High_Level\", \"Tank_High_Level\", \"_26_Tank_Low_Level\", \"Tank_Low_Level\") }, // Tank_High_Level\n{ \"c\": \"10473785\", \"t\": now, \"v\": getFirst(\"Rawtank_toplvl\", \"RawWaterTankHigh\", \"_22_Raw_Water_Tank_High\", \"_115_Rawtank_Top_Lvl\") }, // Tank_Raw_High_Level\n{ \"c\": \"10473784\", \"t\": now, \"v\": getFirst(\"Rawtank_lowlvl\", \"RawWaterTankLow\", \"_23_Raw_Water_Tank_Low\", \"_114_Rawtank_Low_Lvl\") }, // Tank_Raw_Low_Level\n{ \"c\": \"10473781\", \"t\": now, \"v\": getFirst(\"Permtank_toplvl\", \"_116_Premtank_Top_Lvl\") }, // Tank_Water_Clean_High_Level\n{ \"c\": \"10466811\", \"t\": now, \"v\": global.get(\"_65_Temperature_Inverte_Comp\") }, // Temp_Comp\n{ \"c\": \"10467049\", \"t\": now, \"v\": getFirst(\"temp_drv1\", \"_60_Inverter_Temperature\", \"_66_Temperature_Inverter_Pump\", \"Inverter_Temperature\", \"Temp_Drv1\") }, // Temp_Drv1\n{ \"c\": \"10467050\", \"t\": now, \"v\": getFirst(\"_64_Temperature_Inverter_Feed\", \"temp_drv2\", \"Temp_Drv2\") }, // Temp_Drv2\n{ \"c\": \"10467051\", \"t\": now, \"v\": getFirst(\"_65_Temperature_Inverter_Booster\", \"temp_drv3\", \"Temp_Drv3\") }, // Temp_Drv3\n{ \"c\": \"10466809\", \"t\": now, \"v\": global.get(\"_64_Temperature_Inverter_Evap\") }, // Temp_Evap\n{ \"c\": \"10467055\", \"t\": now, \"v\": getFirst(\"TemperatureInverterBooster\", \"_65_Temperature_Inverter_Booster\") }, // Temp_Inverter_Booster\n{ \"c\": \"10467052\", \"t\": now, \"v\": global.get(\"Temperature_Inverter_Comp\") }, // Temp_Inverter_Comp\n{ \"c\": \"10467053\", \"t\": now, \"v\": global.get(\"Temperature_Inverter_Evap\") }, // Temp_Inverter_Evap\n{ \"c\": \"10467056\", \"t\": now, \"v\": getFirst(\"TemperatureInverterFeed\", \"_64_Temperature_Inverter_Feed\") }, // Temp_Inverter_Feed\n{ \"c\": \"10467054\", \"t\": now, \"v\": getFirst(\"Temperature_Inverter_Pump\", \"TemperatureInverterPump\", \"_66_Temperature_Inverter_Pump\") }, // Temp_Inverter_Pump\n{ \"c\": \"10466801\", \"t\": now, \"v\": getFirst(\"_60_Total_Current\", \"system_current\", \"Total_Current\") }, // Total_Current\n{ \"c\": \"10466787\", \"t\": now, \"v\": getFirst(\"_52_Total_Power\", \"_70_Output_Power_KWh_Total\", \"_81_Output_Power_KWh_Total\", \"Output_Power_KWh_Total\", \"Total_Power\") }, // Total_Power\n{ \"c\": \"10466907\", \"t\": now, \"v\": getFirst(\"BoosterPower\", \"_54_Booster_Power\") }, // Total_Power_Booster\n{ \"c\": \"10466959\", \"t\": now, \"v\": getFirst(\"FeedPower\", \"_53_Feed_Power\") }, // Total_Power_Feed\n{ \"c\": \"10466823\", \"t\": now, \"v\": getFirst(\"_71_Output_Power_KWh_This_Hour\", \"_82_Output_Power_KWh_This_Hour\", \"Output_Power_KWh_This_Hour\") }, // Total_Power_KWh_This_Hour\n{ \"c\": \"10466826\", \"t\": now, \"v\": getFirst(\"_73_Output_Power_KWh_This_Month\", \"_84_Output_Power_KWh_This_Month\", \"Output_Power_KWh_This_Month\") }, // Total_Power_KWh_This_Month\n{ \"c\": \"10466825\", \"t\": now, \"v\": getFirst(\"_72_Output_Power_KWh_Today\", \"_83_Output_Power_KWh_Today\", \"Output_Power_KWh_Today\") }, // Total_Power_KWh_This_Today\n{ \"c\": \"10466837\", \"t\": now, \"v\": getFirst(\"_78_Total_Run_Time\", \"Total_Run_Time\") }, // Total_Run_Time\n{ \"c\": \"10462372\", \"t\": now, \"v\": global.get(\"totalwater_pro\") }, // Totalwater_Clean\n{ \"c\": \"10462371\", \"t\": now, \"v\": global.get(\"totalwater_in\") }, // TotalWater_Raw\n{ \"c\": \"10472638\", \"t\": now, \"v\": getFirst(\"_Ctrl_Uvin\", \"Ctrl_Uvin\", \"UVin2_ctrl\", \"UVin_ctrl\", \"UVin_ctrll\", \"_112_UV_In_Ctrl\") }, // UV_In_Ctrl\n{ \"c\": \"10467065\", \"t\": now, \"v\": getFirst(\"UV_inside_lifetime\", \"UVin_lifetime\") }, // UV_In_Lifetime\n{ \"c\": \"10467066\", \"t\": now, \"v\": getFirst(\"UV_inside_switching_operations\", \"UVin_switching\", \"uvi_switching\", \"_110_UV_In_Switching\") }, // UV_In_Switch\n{ \"c\": \"10467071\", \"t\": now, \"v\": getFirst(\"UVin_Betriebsstunden\", \"UVin_workhours\", \"uvin_workhours\", \"_108_UV_In_Work_Hours\") }, // UV_In_Workhours\n{ \"c\": \"10467067\", \"t\": now, \"v\": global.get(\"UV_Lamp_Run_Time\") }, // UV_Lamp_Run_Time\n{ \"c\": \"10472639\", \"t\": now, \"v\": getFirst(\"_ctrl_Uvout\", \"ctrl_UVout\", \"UV_outside_switching_operations\", \"UVout2_ctrl\", \"UVout_ctrl\", \"UVout_ctrll\", \"_113_UV_Out_Ctrl\") }, // UV_Out_Ctrl\n{ \"c\": \"10467068\", \"t\": now, \"v\": getFirst(\"UV_outside_lifetime\", \"UVout_lifetime\") }, // UV_Out_Lifetime\n{ \"c\": \"10467077\", \"t\": now, \"v\": getFirst(\"UVo_switching\", \"uvo_switching\", \"UvOutSwitch\", \"_17_Uv_Out_Switch\") }, // UV_Out_Switch\n{ \"c\": \"10473795\", \"t\": now, \"v\": global.get(\"UVo_Watersensor\") }, // UV_Out_Water_Sensor\n{ \"c\": \"10467079\", \"t\": now, \"v\": getFirst(\"UVo_workhours\", \"uvo_workhours\", \"_109_UV_Out_Work_Hours\") }, // UV_Out_Workhours\n{ \"c\": \"10466839\", \"t\": now, \"v\": global.get(\"_79_UV_Lamp_Run_Time\") }, // UV_workhours\n{ \"c\": \"10473797\", \"t\": now, \"v\": global.get(\"valves_cip\") }, // Valves_CIP\n{ \"c\": \"10473799\", \"t\": now, \"v\": global.get(\"valves_filling\") }, // Valves_Filling\n{ \"c\": \"10473801\", \"t\": now, \"v\": global.get(\"valves_flush\") }, // Valves_Flush\n{ \"c\": \"10473796\", \"t\": now, \"v\": getFirst(\"Valves_bw\", \"_124_SCBW_V1_Ctrl\") }, // Valves_Position_BW\n{ \"c\": \"10473798\", \"t\": now, \"v\": getFirst(\"Valves_CIP_position\", \"Valves_Position_cip\") }, // Valves_Position_CIP\n{ \"c\": \"10473800\", \"t\": now, \"v\": getFirst(\"Valves_Filling_position\", \"Valves_Position_fillingcip\") }, // Valves_Position_Filling\n{ \"c\": \"10473802\", \"t\": now, \"v\": getFirst(\"Valves_Flush_position\", \"Valves_Position_flush\") }, // Valves_Position_Flush\n{ \"c\": \"10473803\", \"t\": now, \"v\": getFirst(\"Valves_Position_pro\", \"Valves_Pro\", \"valves_pro\") }, // Valves_Position_Pro\n{ \"c\": \"10467095\", \"t\": now, \"v\": getFirst(\"voltage_drv1\", \"Voltage_Drv1\") }, // Voltage_Drv1\n{ \"c\": \"10467096\", \"t\": now, \"v\": getFirst(\"voltage_drv2\", \"Voltage_Drv2\") }, // Voltage_Drv2\n{ \"c\": \"10467097\", \"t\": now, \"v\": getFirst(\"voltage_drv3\", \"Voltage_Drv3\") }, // Voltage_Drv3\n{ \"c\": \"10467098\", \"t\": now, \"v\": global.get(\"Voltage_Drv4\") }, // Voltage_Drv4\n{ \"c\": \"10473804\", \"t\": now, \"v\": getFirst(\"Waterflowing\", \"_125_Water_Flowing\") }, // Water_flowing\n{ \"c\": \"10466843\", \"t\": now, \"v\": global.get(\"_81_Water_M3_This_Hour\") }, // Water_This_Hour\n{ \"c\": \"10467011\", \"t\": now, \"v\": getFirst(\"PremeateWaterM3ThisHour\", \"_90_Premeate_Water_M3_This_Hour\") }, // Water_This_Hour_Clean\n{ \"c\": \"10467105\", \"t\": now, \"v\": global.get(\"Water_M3_This_Hour\") }, // Water_This_Hour_Pro\n{ \"c\": \"10467022\", \"t\": now, \"v\": getFirst(\"RawWaterM3ThisHour\", \"_86_Raw_Water_M3_This_Hour\") }, // Water_This_Hour_Raw\n{ \"c\": \"10466847\", \"t\": now, \"v\": global.get(\"_83_Water_M3_Per_This_Month\") }, // Water_This_Month\n{ \"c\": \"10467012\", \"t\": now, \"v\": getFirst(\"PremeateWaterM3ThisMonth\", \"_92_Premeate_Water_M3_This_Month\") }, // Water_This_Month_Clean\n{ \"c\": \"10467104\", \"t\": now, \"v\": getFirst(\"Water_M3_Per_This_Month\", \"Water_M3_This_Month\") }, // Water_This_Month_Pro\n{ \"c\": \"10467023\", \"t\": now, \"v\": getFirst(\"RawWaterM3ThisMonth\", \"_88_Raw_Water_M3_This_Month\") }, // Water_This_Month_Raw\n{ \"c\": \"10466845\", \"t\": now, \"v\": global.get(\"_82_Water_M3_Today\") }, // Water_Today\n{ \"c\": \"10467013\", \"t\": now, \"v\": getFirst(\"_91_Premeate_Water_M3_Today\", \"PremeateWaterM3Today\", \"Water_Today_prod\", \"WaterToday_Clean\", \"WaterToday_pro\", \"WaterToday_prod\", \"Water_M3_Today\") }, // Water_Today_Clean\n{ \"c\": \"10467024\", \"t\": now, \"v\": getFirst(\"RawWaterM3Today\", \"Water_Today_in\", \"WaterToday_in\", \"WaterToday_Raw\", \"_87_Raw_Water_M3_Today\") }, // Water_Today_Raw\n{ \"c\": \"10467120\", \"t\": now, \"v\": getFirst(\"WaterToday_recov\", \"WaterToday_Recovery\") }, // Water_Today_Recovery\n{ \"c\": \"10467113\", \"t\": now, \"v\": getFirst(\"Water_Today_sold\", \"WaterToday_sold\") }, // Water_Today_Sold\n{ \"c\": \"10466841\", \"t\": now, \"v\": global.get(\"_80_Water_M3_Total\") }, // Water_Total\n{ \"c\": \"10467005\", \"t\": now, \"v\": getFirst(\"Permeat\", \"PremeateWaterM3Total\", \"Totalwater_Clean\", \"Water_produced\", \"WaterTotal_pro\", \"_89_Premeate_Water_M3_Total\") }, // Water_Total_Clean\n{ \"c\": \"10467100\", \"t\": now, \"v\": getFirst(\"Wasser_permeat\", \"Water_M3_Total\") }, // Water_Total_Pro\n{ \"c\": \"10467025\", \"t\": now, \"v\": getFirst(\"RawWaterM3Total\", \"TotalWater_Raw\", \"Wasser_eingang\", \"Wassereingang\", \"Water_in\", \"WaterTotal_in\", \"_85_Raw_Water_M3_Total\") }, // Water_Total_Raw\n{ \"c\": \"10467063\", \"t\": now, \"v\": getFirst(\"TotalWater_Recovery\", \"WaterTotal_recovery\") }, // Water_Total_Recovery\n{ \"c\": \"10467064\", \"t\": now, \"v\": getFirst(\"TotalWater_Sold\", \"Verkauftes_Wasser\", \"Wasser_verkauft\", \"Water_sold\", \"WaterTotal_sold\") }, // Water_Total_Sold\n]},\n    'properties': [\n        {\n        'key': 'a', 'value': 'Trends'},\n        {\n            'key': 'p', 'value': global.get(\"second_gwId\")\n        }\n    ]\n}\n//This is the line to save data! Filters only trends that are neither \"null\" nor \"undefined\"\nmsg.payload.trends = msg.payload.trends.filter(t => t.v !== null && t.v !== undefined);\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 650,
+        "y": 1040,
+        "wires": [
+            [
+                "91fa2b7.b3b60d8",
+                "8ed16925.70933",
+                "8d0ac173.c6e82"
+            ]
+        ]
+    },
+    {
+        "id": "8d0ac173.c6e82",
+        "type": "debug",
+        "z": "9673efa7.e20b2",
+        "name": "→ BrightLayer  RAW JSON",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1320,
+        "wires": []
+    }
+]

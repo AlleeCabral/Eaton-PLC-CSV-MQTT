@@ -1,0 +1,492 @@
+[
+    {
+        "id": "3e6719ce.f90996",
+        "type": "tab",
+        "label": "EAGAIN diagnostics",
+        "disabled": false,
+        "info": "Exec-node diagnostics for routing, DNS, and HTTPS connectivity to Azure IoT host."
+    },
+    {
+        "id": "cd141017.a8fd98",
+        "type": "inject",
+        "z": "3e6719ce.f90996",
+        "name": "Run all tests",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "run",
+        "payloadType": "str",
+        "x": 500,
+        "y": 200,
+        "wires": [
+            [
+                "ba3c6e68.a764f",
+                "dbfd176b.15761",
+                "227432f9.e60816",
+                "157f6bfc.ef83d4",
+                "7b14d41a.9c6d84",
+                "e979c779.ac024"
+            ]
+        ]
+    },
+    {
+        "id": "ba3c6e68.a764f",
+        "type": "exec",
+        "z": "3e6719ce.f90996",
+        "command": "ip addr show",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "120",
+        "oldrc": false,
+        "name": "ip addr show",
+        "x": 750,
+        "y": 200,
+        "wires": [
+            [
+                "70d52708.29b338"
+            ],
+            [
+                "caece3cb.ddc24"
+            ],
+            [
+                "1361d18e.595266"
+            ]
+        ]
+    },
+    {
+        "id": "70d52708.29b338",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ip addr show | stdout",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "caece3cb.ddc24",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ip addr show | stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1361d18e.595266",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ip addr show | return code",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1085,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "dbfd176b.15761",
+        "type": "exec",
+        "z": "3e6719ce.f90996",
+        "command": "ip route show",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "120",
+        "oldrc": false,
+        "name": "ip route show",
+        "x": 750,
+        "y": 280,
+        "wires": [
+            [
+                "d9d7c84c.9d7468"
+            ],
+            [
+                "8e9f48dd.e83298"
+            ],
+            [
+                "d977942.526ea68"
+            ]
+        ]
+    },
+    {
+        "id": "d9d7c84c.9d7468",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ip route show | stdout",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "8e9f48dd.e83298",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ip route show | stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "d977942.526ea68",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ip route show | return code",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1085,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "227432f9.e60816",
+        "type": "exec",
+        "z": "3e6719ce.f90996",
+        "command": "cat /etc/resolv.conf",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "120",
+        "oldrc": false,
+        "name": "cat /etc/resolv.conf",
+        "x": 750,
+        "y": 360,
+        "wires": [
+            [
+                "4bd03176.dd48c8"
+            ],
+            [
+                "bb7f5ac8.bd1de8"
+            ],
+            [
+                "cf003e41.929528"
+            ]
+        ]
+    },
+    {
+        "id": "4bd03176.dd48c8",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "cat /etc/resolv.conf | stdout",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "bb7f5ac8.bd1de8",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "cat /etc/resolv.conf | stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "cf003e41.929528",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "cat /etc/resolv.conf | return code",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1085,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "157f6bfc.ef83d4",
+        "type": "exec",
+        "z": "3e6719ce.f90996",
+        "command": "ping -c 3 192.168.1.110",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "120",
+        "oldrc": false,
+        "name": "ping router 192.168.1.110",
+        "x": 750,
+        "y": 440,
+        "wires": [
+            [
+                "b2a708ea.1d5be8"
+            ],
+            [
+                "5cea9f7e.28f6e"
+            ],
+            [
+                "75361ba.187cfe4"
+            ]
+        ]
+    },
+    {
+        "id": "b2a708ea.1d5be8",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ping router 192.168.1.110 | stdout",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5cea9f7e.28f6e",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ping router 192.168.1.110 | stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "75361ba.187cfe4",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ping router 192.168.1.110 | return code",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1085,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "7b14d41a.9c6d84",
+        "type": "exec",
+        "z": "3e6719ce.f90996",
+        "command": "ping -c 3 1.1.1.1",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "120",
+        "oldrc": false,
+        "name": "ping 1.1.1.1",
+        "x": 750,
+        "y": 520,
+        "wires": [
+            [
+                "c5aae093.58e8d"
+            ],
+            [
+                "b5220487.0419d"
+            ],
+            [
+                "e378a168.2192c8"
+            ]
+        ]
+    },
+    {
+        "id": "c5aae093.58e8d",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ping 1.1.1.1 | stdout",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b5220487.0419d",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ping 1.1.1.1 | stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "e378a168.2192c8",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "ping 1.1.1.1 | return code",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1085,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "e979c779.ac024",
+        "type": "exec",
+        "z": "3e6719ce.f90996",
+        "command": "nslookup iot-etnblc-rm-ext-prd-weu-p01.azure-devices.net",
+        "addpay": false,
+        "append": "",
+        "useSpawn": "false",
+        "timer": "120",
+        "oldrc": false,
+        "name": "nslookup iot-etnblc-rm-ext-prd-weu-p01.azure-devices.net",
+        "x": 550,
+        "y": 600,
+        "wires": [
+            [
+                "5150a298.0d9c34"
+            ],
+            [
+                "ccf77ece.74317"
+            ],
+            [
+                "dce016c1.910f98"
+            ]
+        ]
+    },
+    {
+        "id": "5150a298.0d9c34",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "nslookup iot-etnblc-rm-ext-prd-weu-p01.azure-devices.net | stdout",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "ccf77ece.74317",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "nslookup iot-etnblc-rm-ext-prd-weu-p01.azure-devices.net | stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "dce016c1.910f98",
+        "type": "debug",
+        "z": "3e6719ce.f90996",
+        "name": "nslookup iot-etnblc-rm-ext-prd-weu-p01.azure-devices.net | return code",
+        "active": true,
+        "x": 1060,
+        "y": 700,
+        "wires": []
+    }
+]

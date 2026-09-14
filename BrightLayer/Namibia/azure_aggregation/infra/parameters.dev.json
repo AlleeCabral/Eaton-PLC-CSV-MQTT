@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "northeurope"
+    },
+    "storageAccountName": {
+      "value": "rgbrightlayerdevb112"
+    },
+    "keyVaultName": {
+      "value": "brightlayerkvdev001"
+    },
+    "appInsightsName": {
+      "value": "brightlayer-func-dev-001"
+    },
+    "functionAppName": {
+      "value": "brightlayer-func-dev-001"
+    },
+    "planName": {
+      "value": "ASP-rgbrightlayerdev-be6c"
+    }
+  }
+}

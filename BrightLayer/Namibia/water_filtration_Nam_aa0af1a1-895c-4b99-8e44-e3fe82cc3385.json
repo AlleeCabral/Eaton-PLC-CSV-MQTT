@@ -1,0 +1,5027 @@
+{
+  "ontologyVersion": 1,
+  "device": {
+    "vendor": "Boreal",
+    "category": "Machine",
+    "name": "water_filtration_Nam",
+    "model": "water_filtration_Nam",
+    "modelSeries": "",
+    "styleNumber": "",
+    "catalogNumber": "",
+    "skuNumber": "",
+    "serialNumber": "",
+    "cloudEnabled": true,
+    "updateChild": false,
+    "segment": [
+      "Industrial"
+    ],
+    "manageDevice": [
+      "Create"
+    ],
+    "qrCode": false,
+    "info": {
+      "provision": {
+        "method": "CONNSTR",
+        "subMethod": "SYM_KEY",
+        "guidSource": "RANDOM",
+        "requiresOntoUpdate": false
+      },
+      "firmware": null
+    }
+  },
+  "profile": {
+    "adopterId": "861a306d-05d1-4963-fd52-bd55f143766f",
+    "ontProfileId": "aa0af1a1-895c-4b99-8e44-e3fe82cc3385",
+    "profileName": "water_filtration_Nam",
+    "description": "New machine type for Namibia",
+    "deviceId": "",
+    "created": "2026-08-13T12:13:04.607",
+    "modified": null,
+    "insProfileId": "00000000-0000-0000-0000-000000000000",
+    "applicationId": "00000000-0000-0000-0000-000000000000",
+    "siteId": null,
+    "connectType": [
+      "Child"
+    ],
+    "isLegacy": false,
+    "isVirtual": false
+  },
+  "hardware": {
+    "cpu": "",
+    "memory": "",
+    "version": "1.0.1",
+    "nfc": {
+      "type": "",
+      "parameters": {
+        "mfg": "",
+        "part": "",
+        "protocol": "",
+        "mapping": "",
+        "revision": ""
+      }
+    }
+  },
+  "firmware": [
+    {
+      "version": "1.0.1",
+      "date": "2026-08-06",
+      "protocol": {
+        "northBound": [],
+        "southBound": []
+      },
+      "parameters": [
+        {
+          "status": null,
+          "description": "Solar Power",
+          "name": "_50_Solar_Power",
+          "displayName": "Solar_Power",
+          "dataType": "FLOAT",
+          "unit": "Kw",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10466785,
+          "alarmBlock": {
+            "severity": "",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "Machine",
+          "configuration": false,
+          "conversion": {
+            "format": null,
+            "unit": null,
+            "scalingFactor": null,
+            "formatting": null
+          },
+          "key": "25bb47a9-1446-45e6-8aa3-7e7a61019a65",
+          "keyValue": "_50_Solar_Power",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": null,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Grid Power",
+          "name": "_51_Grid_Power",
+          "displayName": "Grid_Power",
+          "dataType": "FLOAT",
+          "unit": "Kw",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10466786,
+          "alarmBlock": {
+            "severity": "",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "Machine",
+          "configuration": false,
+          "conversion": {
+            "format": null,
+            "unit": null,
+            "scalingFactor": null,
+            "formatting": null
+          },
+          "key": "9783ffa4-1c3b-4771-955c-6d45c121d5bf",
+          "keyValue": "_51_Grid_Power",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": null,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total Power",
+          "name": "_52_Total_Power",
+          "displayName": "Total_Power",
+          "dataType": "FLOAT",
+          "unit": "Kw",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10466787,
+          "alarmBlock": {
+            "severity": "",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "Machine",
+          "configuration": false,
+          "conversion": {
+            "format": null,
+            "unit": null,
+            "scalingFactor": null,
+            "formatting": null
+          },
+          "key": "e9e0052e-b16e-4279-ba24-cbef28e9f488",
+          "keyValue": "_52_Total_Power",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": null,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Power of the Borehole pump",
+          "name": "_55_Pump_Power",
+          "displayName": "Borehole_Pump_Power",
+          "dataType": "FLOAT",
+          "unit": "Kw",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10466793,
+          "alarmBlock": {
+            "severity": "",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "Machine",
+          "configuration": false,
+          "conversion": {
+            "format": null,
+            "unit": null,
+            "scalingFactor": null,
+            "formatting": null
+          },
+          "key": "f5016621-3b05-4b42-aa8f-a8760de321e7",
+          "keyValue": "_55_Pump_Power",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": null,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total Current",
+          "name": "_60_Total_Current",
+          "displayName": "Total_Current",
+          "dataType": "FLOAT",
+          "unit": "A",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10466801,
+          "alarmBlock": {
+            "severity": "",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "Machine",
+          "configuration": false,
+          "conversion": {
+            "format": null,
+            "unit": null,
+            "scalingFactor": null,
+            "formatting": null
+          },
+          "key": "b00e6f72-a8c0-412d-879c-69159317b81a",
+          "keyValue": "_60_Total_Current",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": null,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "DC voltage in Borehole pump",
+          "name": "_63_DC_Voltage_Pump",
+          "displayName": "DC_Voltage_Borehole_Pump",
+          "dataType": "FLOAT",
+          "unit": "V",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10466806,
+          "alarmBlock": {
+            "severity": "",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "Machine",
+          "configuration": false,
+          "conversion": {
+            "format": null,
+            "unit": null,
+            "scalingFactor": null,
+            "formatting": null
+          },
+          "key": "b9a392b6-1032-4125-b671-bce8d8215c3b",
+          "keyValue": "_63_DC_Voltage_Pump",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": null,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Pressure value",
+          "name": "_107_Pressure_Value",
+          "displayName": "Pressure 1",
+          "dataType": "FLOAT",
+          "unit": "bar",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549349,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "92d3ffc1-2c27-4c10-996c-9ef52c6beb1d",
+          "keyValue": "_107_Pressure_Value",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Sum of how many hours has the inside UV lamp run",
+          "name": "_108_UV_In_Work_Hours",
+          "displayName": "UV In Workhours",
+          "dataType": "FLOAT",
+          "unit": "hours",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549348,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "f43a565a-4009-4d06-ae34-c64b47e9cc36",
+          "keyValue": "_108_UV_In_Work_Hours",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Machine Mode Bohrhole",
+          "name": "_102_Machine_Mode_Bohrhole",
+          "displayName": "Machine Mode Borehole",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549343,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "8655b6ce-9491-4ded-838d-1388902aac89",
+          "keyValue": "_102_Machine_Mode_Bohrhole",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Electric conductivity value",
+          "name": "_106_EC_Value",
+          "displayName": "EC Value",
+          "dataType": "FLOAT",
+          "unit": "µS/cm",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549345,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "37f26605-0a4a-4896-ac3b-6392543326ab",
+          "keyValue": "_106_EC_Value",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Dosing Pump not working",
+          "name": "_105_Dosing_Pump_Alarm",
+          "displayName": "Alarm Dosing Pump",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549347,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "E1F69S"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "e3bd1981-3235-4765-bdcc-9500d42d531e",
+          "keyValue": "_105_Dosing_Pump_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Date when last CIP was done",
+          "name": "_104_Datum_CIP_Done",
+          "displayName": "Date - CIP Done",
+          "dataType": "STRING",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549346,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "3663519a-66fb-477d-b091-c47f457eb399",
+          "keyValue": "_104_Datum_CIP_Done",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": null,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Date when last Backwash was done",
+          "name": "_103_Datum_Backwash_Done",
+          "displayName": "Date - Backwash Done",
+          "dataType": "STRING",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549341,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "615e9c6b-53ca-43c5-b50d-5794d8867d57",
+          "keyValue": "_103_Datum_Backwash_Done",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": null,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Machine Mode Flush",
+          "name": "_100_Machine_Mode_Flush",
+          "displayName": "Machine Mode Flush",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549342,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "740b79ec-1c5e-45f4-b83f-cf6a331406b4",
+          "keyValue": "_100_Machine_Mode_Flush",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Sum of how many hours has the outside UV lamp run",
+          "name": "_109_UV_Out_Work_Hours",
+          "displayName": "UV Out Workhours",
+          "dataType": "FLOAT",
+          "unit": "hours",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549344,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "0a6f60a4-784b-42b7-9c74-3cede38a1e3d",
+          "keyValue": "_109_UV_Out_Work_Hours",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Machine Mode Backwash",
+          "name": "_101_Machine_Mode_Backwash",
+          "displayName": "Machine Mode Backwash",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549340,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "5c29f8e6-e7e4-41b6-893c-1f568c46da9e",
+          "keyValue": "_101_Machine_Mode_Backwash",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "System is on of not",
+          "name": "_117_Mains_On",
+          "displayName": "Main ON",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549359,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "c4c9c60f-c2c1-4885-ab44-c4cd2c945849",
+          "keyValue": "_117_Mains_On",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Top level of permeate tank reached",
+          "name": "_116_Premtank_Top_Lvl",
+          "displayName": "Permeate Tank - High Level",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549356,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "6fbb2758-6cec-45e3-9f9b-74a6ed945c66",
+          "keyValue": "_116_Premtank_Top_Lvl",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Raw water tank high level sensor",
+          "name": "_115_Rawtank_Top_Lvl",
+          "displayName": "Raw Tank - High Level",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549358,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "f387d0d4-dad4-4b35-96a0-3668341f9ba9",
+          "keyValue": "_115_Rawtank_Top_Lvl",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Control feedback signal (24V) - on when inside UV light is on",
+          "name": "_112_UV_In_Ctrl",
+          "displayName": "UV In Ctrl",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549354,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "9bd5def7-05af-42f2-95c4-652c555aa1f2",
+          "keyValue": "_112_UV_In_Ctrl",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Control feedback signal (24V) - on when outside UV light is on",
+          "name": "_113_UV_Out_Ctrl",
+          "displayName": "UV Out Ctrl",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549355,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "bbaf47a8-d8bd-46a0-b894-49c376a65baf",
+          "keyValue": "_113_UV_Out_Ctrl",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "How many times UV lamp inside was switched on",
+          "name": "_110_UV_In_Switching",
+          "displayName": "UV In Switch",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549351,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "30ca97a5-ee10-42e8-9d3a-e29f571df571",
+          "keyValue": "_110_UV_In_Switching",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "AntiScalant Tank is empty",
+          "name": "_111_Antitank_Empty",
+          "displayName": "Alarm AntiScalant Tank",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549353,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "E8K1EZ"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "2dcb4bad-2503-4c8c-90c4-f98a4887f573",
+          "keyValue": "_111_Antitank_Empty",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Raw water tank low level sensor",
+          "name": "_114_Rawtank_Low_Lvl",
+          "displayName": "Raw Tank - Low Level",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549357,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "af9394f8-40c7-4a44-9838-8d9720c27965",
+          "keyValue": "_114_Rawtank_Low_Lvl",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Borehole Pump Total Run",
+          "name": "_119_Borehole_Total_Run",
+          "displayName": "Borehole Total Run",
+          "dataType": "INT8",
+          "unit": "hours",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549352,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "c9d5d5a0-7b70-4406-b63b-7bf591d1b2d5",
+          "keyValue": "_119_Borehole_Total_Run",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Control feedback signal (24V)",
+          "name": "_118_Anti_Pump",
+          "displayName": "Alarm Anti Pump",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549350,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EGBHFM"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "fc354465-70de-473a-beac-a4d41f0c36af",
+          "keyValue": "_118_Anti_Pump",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "2nd pressure value",
+          "name": "_126_Pressure_2",
+          "displayName": "Pressure 2",
+          "dataType": "FLOAT",
+          "unit": "bar",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549366,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "126bc0f7-fa97-48c1-9f02-df19be81291c",
+          "keyValue": "_126_Pressure_2",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Ph output value",
+          "name": "_128_pH_Output",
+          "displayName": "pH Output",
+          "dataType": "FLOAT",
+          "unit": "",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549365,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "94a1a23f-7b4a-4b6f-bd96-342369828d2b",
+          "keyValue": "_128_pH_Output",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "1st Sand-carbon backwash control (feedback) signal",
+          "name": "_124_SCBW_V1_Ctrl",
+          "displayName": "SCBW 1st Ctrl",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549362,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "122ea336-f436-4f25-b377-8b0db446d95a",
+          "keyValue": "_124_SCBW_V1_Ctrl",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Sensor to measure if water is flowing",
+          "name": "_125_Water_Flowing",
+          "displayName": "Water flowing",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549367,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "4284c7a2-66fc-4d70-9165-1ecc981255ab",
+          "keyValue": "_125_Water_Flowing",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Ph input value",
+          "name": "_127_pH_Input",
+          "displayName": "pH Input",
+          "dataType": "FLOAT",
+          "unit": "",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549363,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "bdba3840-32a3-4ad6-ad88-f28eca8dc507",
+          "keyValue": "_127_pH_Input",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Feed Pump Total Run",
+          "name": "_121_Feed_Total_Run",
+          "displayName": "Feed Pump Total Run",
+          "dataType": "INT8",
+          "unit": "hours",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549361,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "b08f6cc6-e3c4-4f1d-929e-b39a9879b662",
+          "keyValue": "_121_Feed_Total_Run",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Turn on the machine on Auto mode or Manual Mode",
+          "name": "_11_Auto_Manual",
+          "displayName": "Auto Manual Switch",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549368,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "3e76a836-2aa9-4655-8865-5f3d5658335f",
+          "keyValue": "_11_Auto_Manual",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Booster Pump Total Run",
+          "name": "_120_Boost_Total_Run",
+          "displayName": "Booster Pump Total Run",
+          "dataType": "INT8",
+          "unit": "hours",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549360,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "e14655d6-0457-4efb-b0ed-9df2068eb320",
+          "keyValue": "_120_Boost_Total_Run",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "CIP Tank full",
+          "name": "_122_CIP_Full",
+          "displayName": "CIP Tank Full",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549369,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "833ff283-dd1d-4a2a-83a9-b59d8a6281ff",
+          "keyValue": "_122_CIP_Full",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "CIP Tank empty",
+          "name": "_123_CIP_Empty",
+          "displayName": "CIP Tank Empty",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549364,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "9e48099a-8d15-4852-8863-e4ee40252421",
+          "keyValue": "_123_CIP_Empty",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Blower inverter power",
+          "name": "_135_Blower_Power",
+          "displayName": "Blower Power",
+          "dataType": "FLOAT",
+          "unit": "Kw",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549375,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "42299867-2a2c-4f7c-82ad-6ae8fbcffc46",
+          "keyValue": "_135_Blower_Power",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Check Blower inverter for further details",
+          "name": "_137_Alarm_Blower_Inverter_Status_Alarm",
+          "displayName": "Alarm Blower Inverter Status",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549378,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EQVSTC"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "d19a9ffa-4248-49ba-acb8-e485f6a49e21",
+          "keyValue": "_137_Alarm_Blower_Inverter_Status_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Blower pump Voltage",
+          "name": "_131_DC_Voltage_Blower",
+          "displayName": "DC Voltage Blower",
+          "dataType": "FLOAT",
+          "unit": "V",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549373,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "1463ba58-caea-4689-9d94-223071530eb3",
+          "keyValue": "_131_DC_Voltage_Blower",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Blower inverter frequency",
+          "name": "_133_Frequency_Inverter_Blower",
+          "displayName": "Frequency Inverter Blower",
+          "dataType": "FLOAT",
+          "unit": "Hz",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549376,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "dda4a9c2-d779-4688-850c-47e52c285872",
+          "keyValue": "_133_Frequency_Inverter_Blower",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Temperature measurement for blower inverter",
+          "name": "_132_Temperature_Inverter_Blower",
+          "displayName": "Temperature Inverter Blower",
+          "dataType": "FLOAT",
+          "unit": "°C",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549374,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "48d87e13-51a8-45d9-8dcd-7142cefa7590",
+          "keyValue": "_132_Temperature_Inverter_Blower",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Blower inverter current",
+          "name": "_134_Current_Inverter_Blower",
+          "displayName": "Current Inverter Blower",
+          "dataType": "FLOAT",
+          "unit": "A",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549372,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "3c0c8dd8-59d5-48d6-b7db-9d64dfdf1da5",
+          "keyValue": "_134_Current_Inverter_Blower",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Water temperature",
+          "name": "_130_Temperature_Water",
+          "displayName": "Temperature Water",
+          "dataType": "FLOAT",
+          "unit": "°C",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549371,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "f598271f-8c4b-41c9-b225-43d115cba9d7",
+          "keyValue": "_130_Temperature_Water",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "When Temperature of Blower inverter is high",
+          "name": "_136_Alarm_Blower_Inverter_Temperature_Alarm",
+          "displayName": "Alarm Blower Inverter Temperature",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549377,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EG7M26"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "4154ad87-2bf9-4d40-9197-cd7e9592d53b",
+          "keyValue": "_136_Alarm_Blower_Inverter_Temperature_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "CIP Switch",
+          "name": "_12_CIP_Switch",
+          "displayName": "CIP Switch",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549370,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "b83d6ab3-0579-41ab-ac40-d93bd64624f8",
+          "keyValue": "_12_CIP_Switch",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "TDS input value",
+          "name": "_129_TDS_Input",
+          "displayName": "TDS Input",
+          "dataType": "FLOAT",
+          "unit": "ppm",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549379,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "b586cc9f-62a0-49ee-bd5a-23bc453f5ae3",
+          "keyValue": "_129_TDS_Input",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total CO2 savings",
+          "name": "_142_CO2_Saving_Total",
+          "displayName": "CO2 Saving Total",
+          "dataType": "FLOAT",
+          "unit": "m³",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549389,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "5397f3d6-1379-448f-b240-c6332de790f9",
+          "keyValue": "_142_CO2_Saving_Total",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "CO2 savings for this hour",
+          "name": "_143_CO2_Saving_This_Hour",
+          "displayName": "CO2 Saving This Hour",
+          "dataType": "FLOAT",
+          "unit": "m³",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549381,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "acaa2800-f54f-4d6a-bae4-259325d4e800",
+          "keyValue": "_143_CO2_Saving_This_Hour",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Blower pump total run",
+          "name": "_141_Blower_Total_Run",
+          "displayName": "Blower Total Run",
+          "dataType": "INT8",
+          "unit": "hours",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549388,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "ba6ffc3d-d23f-49d6-bf9e-1ecbace34c22",
+          "keyValue": "_141_Blower_Total_Run",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Voltage from Grid L1",
+          "name": "_146_Grid_Voltage_L1",
+          "displayName": "Grid Voltage L1",
+          "dataType": "FLOAT",
+          "unit": "v",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549385,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "9bdb3dae-8b2b-4b70-87cd-b510ae7d80c6",
+          "keyValue": "_146_Grid_Voltage_L1",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "CO2 savings for today",
+          "name": "_144_CO2_Saving_Today",
+          "displayName": "CO2 Saving Today",
+          "dataType": "FLOAT",
+          "unit": "m³",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549387,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "ce2ef1cc-eb62-4e85-a5cb-b160fedd4470",
+          "keyValue": "_144_CO2_Saving_Today",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Differential pressure Pressure 1 , Pressure 2",
+          "name": "_139_Diff_Pressure",
+          "displayName": "Differential Pressure",
+          "dataType": "FLOAT",
+          "unit": "bar",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549386,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "1a59bdfb-0693-4747-ba62-d1a5582f8477",
+          "keyValue": "_139_Diff_Pressure",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "2nd Sand-carbon backwash control (feedback)",
+          "name": "_140_SCBW_V2_Ctrl",
+          "displayName": "SCBW 2nd Ctrl",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549383,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "5b23eb6f-2bba-40e2-88c5-212bd44bb347",
+          "keyValue": "_140_SCBW_V2_Ctrl",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "CO2 savings for this month",
+          "name": "_145_CO2_Saving_This_Month",
+          "displayName": "CO2 Saving This Month",
+          "dataType": "FLOAT",
+          "unit": "m³",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549382,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "f27d8ecb-2b05-4cac-ac23-87636e6935ae",
+          "keyValue": "_145_CO2_Saving_This_Month",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Alarm or fault related to Valve6",
+          "name": "_138_Alarm_Valve_6_Alarm",
+          "displayName": "Alarm Valve 6",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549384,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EYJ6YV"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "e624b1db-6c9b-4518-b7c9-88abf79f93cf",
+          "keyValue": "_138_Alarm_Valve_6_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Status of Feed pump switch",
+          "name": "_13_Feed_Switch",
+          "displayName": "Feed Pump Switch",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549380,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "2c7af1e4-2a0a-4135-9ddf-9801215ba594",
+          "keyValue": "_13_Feed_Switch",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Status of Borehole pump switch",
+          "name": "_16_Bohrhole_Switch",
+          "displayName": "Borehole Pump Switch",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549390,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "dd17ba8a-2ffd-49bc-880c-76c416cb39d0",
+          "keyValue": "_16_Bohrhole_Switch",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Borehole has water or not",
+          "name": "_24_Borhole_Float_Switch",
+          "displayName": "Borehole Float Switch",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549398,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "67b12eec-272c-4162-ba32-48b784c38954",
+          "keyValue": "_24_Borhole_Float_Switch",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "It represents a state: machine running",
+          "name": "_18_Machine_Run",
+          "displayName": "Machine Run",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549397,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "e6a6b71f-adf5-4873-810a-5b1de4f953a7",
+          "keyValue": "_18_Machine_Run",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Status of Backwash Switch",
+          "name": "_15_Back_Wash_Switch",
+          "displayName": "Backwash Switch",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549399,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "7213f1fe-d4dc-4ad1-81c4-d1391c2bfeeb",
+          "keyValue": "_15_Back_Wash_Switch",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Machine working on grid",
+          "name": "_26_Grid_is_ON",
+          "displayName": "Grid is ON",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549395,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "563675bd-2bed-472b-aced-f4aa076423c7",
+          "keyValue": "_26_Grid_is_ON",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "If there is water or not in the Permeate tank",
+          "name": "_25_Premeate_Tank",
+          "displayName": "Permeate Tank has water",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549391,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "66481ac9-e65f-4471-be30-ce875ff85701",
+          "keyValue": "_25_Premeate_Tank",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Status of Booster pump switch",
+          "name": "_14_Booster_Switch",
+          "displayName": "Booster Pump Switch",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549396,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "2fc4853c-f50a-41b1-8cad-70dc7ca15cc6",
+          "keyValue": "_14_Booster_Switch",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Voltage from Grid L2",
+          "name": "_147_Grid_Voltage_L2",
+          "displayName": "Grid Voltage L2",
+          "dataType": "FLOAT",
+          "unit": "v",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549393,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "a88ced1a-cd8e-4b42-b58b-517a10e35eeb",
+          "keyValue": "_147_Grid_Voltage_L2",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "How many times UV lamp outside was switched on",
+          "name": "_17_Uv_Out_Switch",
+          "displayName": "UV Out Switch",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549392,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "0979f047-be59-48d2-92ed-b28481c3a54a",
+          "keyValue": "_17_Uv_Out_Switch",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Voltage from Grid L3",
+          "name": "_148_Grid_Voltage_L3",
+          "displayName": "Grid Voltage L3",
+          "dataType": "FLOAT",
+          "unit": "v",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549394,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "66485369-7775-41e1-9292-3cbc54810999",
+          "keyValue": "_148_Grid_Voltage_L3",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Check Borehole inverter for further details",
+          "name": "_30_Alarm_Bohrhole_Inverter_Status_Alarm",
+          "displayName": "Alarm Borehole Inverter",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549409,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EK3V9C"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "b67a50ef-53ff-4fdc-8141-16244f4adf9c",
+          "keyValue": "_30_Alarm_Bohrhole_Inverter_Status_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Borehole has no water",
+          "name": "_27_Alarm_Well_Level_Alarm",
+          "displayName": "Alarm Borehole empty",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549403,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EYUOVR"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "0711b37d-0ba3-4ea3-88b3-de24bd13c449",
+          "keyValue": "_27_Alarm_Well_Level_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Check Feed inverter for further details",
+          "name": "_28_Alarm_Feed_Inverter_Status_Alarm",
+          "displayName": "Alarm Feed Inverter",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549402,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "ENOB0K"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "995dc515-033b-4d3f-8882-d6cea47c2bee",
+          "keyValue": "_28_Alarm_Feed_Inverter_Status_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "When Temperature of Borehole inverter is high",
+          "name": "_35_Alarm_Bohrhole_Inverter_Temperature_Alarm",
+          "displayName": "Alarm Temp Inverter1",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549401,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EIC4Z5"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "08a02bde-cef4-4bb1-b392-8ad8a1ac096f",
+          "keyValue": "_35_Alarm_Bohrhole_Inverter_Temperature_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "UV in lamp Damaged",
+          "name": "_36_Alarm_UV_In_Lamp_Alarm",
+          "displayName": "Alarm UVIn Lamp",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549407,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "E9CO9E"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "93e33949-131f-4603-90fa-b588d0678dca",
+          "keyValue": "_36_Alarm_UV_In_Lamp_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Gives Alarm when pressure high",
+          "name": "_31_Alarm_High_Pressure_Alarm",
+          "displayName": "Alarm Pressure",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549406,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "E7GIX4"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "e85aea38-5b0c-4545-9b8e-cb0d94324f56",
+          "keyValue": "_31_Alarm_High_Pressure_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Check Booster inverter for further details",
+          "name": "_29_Alarm_Booster_Inverter_Status_Alarm",
+          "displayName": "Alarm Booster Inverter",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549408,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EHOFWF"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "1894f7c2-3bcd-4e5d-b7c3-c83513e6cf0d",
+          "keyValue": "_29_Alarm_Booster_Inverter_Status_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Alarm when TDS is high",
+          "name": "_32_Alarm_High_TDS_Alarm",
+          "displayName": "Alarm TDS",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549404,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "E7MSKM"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "ce483efa-2fff-4def-a93f-5af19dafa33a",
+          "keyValue": "_32_Alarm_High_TDS_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "When Temperature of Booster inverter is high",
+          "name": "_34_Alarm_Booster_Inverter_Temperature_Alarm",
+          "displayName": "Alarm Temp Inverter3",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549405,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EAVAL5"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "f75a6be6-5092-4be6-8c33-97ee4d0f62d8",
+          "keyValue": "_34_Alarm_Booster_Inverter_Temperature_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "When Temperature of Feed inverter is high",
+          "name": "_33_Alarm_Feed_Inverter_Temperature_Alarm",
+          "displayName": "Alarm Temp Inverter2",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549400,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EQJOE2"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "c0be6561-5df2-443f-85fe-541e57f7fecf",
+          "keyValue": "_33_Alarm_Feed_Inverter_Temperature_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Alarm or fault related to Valve4",
+          "name": "_45_Alarm_Valve_4_Alarm",
+          "displayName": "Alarm Valve4",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549419,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "ET116A"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "0e935ea9-4353-42ad-b730-ed93ab76d248",
+          "keyValue": "_45_Alarm_Valve_4_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Alarm or fault related to Valve2",
+          "name": "_43_Alarm_Valve_2_Alarm",
+          "displayName": "Alarm Valve2",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549416,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "ES1IFE"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "58b36b90-949f-492a-a973-a87a43b9104b",
+          "keyValue": "_43_Alarm_Valve_2_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Alarm or fault related to Valve1",
+          "name": "_42_Alarm_Valve_1_Alarm",
+          "displayName": "Alarm Valve1",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549414,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EIGYJJ"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "83f810ce-ae31-4c1d-be44-94392181c495",
+          "keyValue": "_42_Alarm_Valve_1_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "UV out lamp Damaged",
+          "name": "_37_Alarm_UV_Out_Lamp_Alarm",
+          "displayName": "Alarm UVOut Lamp",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549413,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "E09VBK"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "cb903087-2f70-4c0a-8b19-24f0e3cf8425",
+          "keyValue": "_37_Alarm_UV_Out_Lamp_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Indicates whether the voltage is outside stable operating limits",
+          "name": "_40_Alarm_Unstable_Voltage_Alarm",
+          "displayName": "Alarm Unstable Volt",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549418,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "E03A3Q"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "7eb0a632-3694-4949-a3d1-fb47528cdf44",
+          "keyValue": "_40_Alarm_Unstable_Voltage_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Alarm or fault related to Valve5",
+          "name": "_46_Alarm_Valve_5_Alarm",
+          "displayName": "Alarm Valve5",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549417,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EL64PS"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "cce6898a-0125-4a0f-bfd7-7357731b9105",
+          "keyValue": "_46_Alarm_Valve_5_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "No water flowing out from UV out flowmeter",
+          "name": "_39_Alarm_Flow_Meter_Alarm",
+          "displayName": "Alarm Flowmeter",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549412,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EU5NI4"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "aeb1a63f-4cb7-40da-a408-73a186865fb1",
+          "keyValue": "_39_Alarm_Flow_Meter_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Raw water Tank empty",
+          "name": "_41_AlarmRaw_Tank_Alarm",
+          "displayName": "Alarm Raw Tank",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549415,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "E2V405"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "f1547383-bfc5-477c-9ac5-58b81b8ec343",
+          "keyValue": "_41_AlarmRaw_Tank_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Alarm or fault related to Valve3",
+          "name": "_44_Alarm_Valve_3_Alarm",
+          "displayName": "Alarm Valve3",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549411,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EXSVPG"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "0f2e673b-642e-455d-a3d1-bfb889d549f9",
+          "keyValue": "_44_Alarm_Valve_3_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "AntiScalant Tank is empty",
+          "name": "_38_Alarm_Anti_Scalant_Alarm",
+          "displayName": "Alarm AntiScalant Tank",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Alarm",
+            "Trend"
+          ],
+          "tagId": 10549410,
+          "alarmBlock": {
+            "severity": "Warning",
+            "eventCode": "EID8UU"
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "63582986-7003-4f31-bfc5-d9aa556b4bb8",
+          "keyValue": "_38_Alarm_Anti_Scalant_Alarm",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Temperature measurement for Feed inverter",
+          "name": "_64_Temperature_Inverter_Feed",
+          "displayName": "Temp Feed Inverter",
+          "dataType": "FLOAT",
+          "unit": "°C",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549427,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "e5d4a66f-bac6-4cf3-a4db-b24e530d051f",
+          "keyValue": "_64_Temperature_Inverter_Feed",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Precentage of operating capacity of the machine from solar",
+          "name": "_58_Machine_Solar_Percentage",
+          "displayName": "Machine Solar Percentage",
+          "dataType": "FLOAT",
+          "unit": "%",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549423,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "f7cc6672-1e5f-4f58-9b4a-9037c9926a46",
+          "keyValue": "_58_Machine_Solar_Percentage",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Operating capacity of the machine",
+          "name": "_56_Machine_Capacity",
+          "displayName": "Machine Capacity",
+          "dataType": "FLOAT",
+          "unit": "Kw",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549420,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "0c6da7f9-af8f-49d6-9293-b00b4b96416a",
+          "keyValue": "_56_Machine_Capacity",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "FeedPump Power",
+          "name": "_53_Feed_Power",
+          "displayName": "Total Power Feed",
+          "dataType": "FLOAT",
+          "unit": "Kw",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549424,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "c039dc74-6097-48ee-b242-723410f857be",
+          "keyValue": "_53_Feed_Power",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Booster pump Voltage",
+          "name": "_62_DC_Voltage_Booster",
+          "displayName": "DC Voltage Booster",
+          "dataType": "FLOAT",
+          "unit": "V",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549425,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "b5489444-07ad-4a1b-b3fc-b98c3ed1ff53",
+          "keyValue": "_62_DC_Voltage_Booster",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Booster Pump Power",
+          "name": "_54_Booster_Power",
+          "displayName": "Total Power Booster",
+          "dataType": "FLOAT",
+          "unit": "Kw",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549422,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "7c6e5ced-dfc1-407b-b660-0009f1a56960",
+          "keyValue": "_54_Booster_Power",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Temperature from raw water tank pump",
+          "name": "_66_Temperature_Inverter_Pump",
+          "displayName": "Temperature Drv1",
+          "dataType": "FLOAT",
+          "unit": "°C",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549426,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "a140789e-863d-437d-9f49-13d93454e934",
+          "keyValue": "_66_Temperature_Inverter_Pump",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Feed pump Voltage",
+          "name": "_61_DC_Voltage_Feed",
+          "displayName": "DC Voltage Feed",
+          "dataType": "FLOAT",
+          "unit": "V",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549421,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "b725d4c8-642a-4a3c-8952-6230dd873dc0",
+          "keyValue": "_61_DC_Voltage_Feed",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Temperature measurement for Booster inverter",
+          "name": "_65_Temperature_Inverter_Booster",
+          "displayName": "Temp Booster Inverter",
+          "dataType": "FLOAT",
+          "unit": "°C",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549429,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "51d5698f-42aa-4d23-aded-361c7d349073",
+          "keyValue": "_65_Temperature_Inverter_Booster",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Precentage of operating capacity of the machine from grid",
+          "name": "_57_Machine_Grid_Percentage",
+          "displayName": "Machine Grid Percentage",
+          "dataType": "FLOAT",
+          "unit": "%",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549428,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "08b85b7c-69d3-40a4-aa3b-38643ae86c9e",
+          "keyValue": "_57_Machine_Grid_Percentage",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Frequency from feed pump",
+          "name": "_67_Frequency_Inverter_Feed",
+          "displayName": "Freq Feed Inverter",
+          "dataType": "FLOAT",
+          "unit": "Hz",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549434,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "6811d9f0-3b3a-4ab0-b63f-f12d0d425f29",
+          "keyValue": "_67_Frequency_Inverter_Feed",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total generated solar power",
+          "name": "_73_Solar_Power_KWh_Total",
+          "displayName": "Solar Power KWh Total",
+          "dataType": "INT8",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549432,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "5e8222b8-d328-41a9-b6ff-74e6150818b7",
+          "keyValue": "_73_Solar_Power_KWh_Total",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Solar Power for this hour",
+          "name": "_74_Solar_Power_KWh_This_Hour",
+          "displayName": "Solar Power KWh This Hour",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549435,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "8c2e804e-fd8e-4d3b-a506-83079fbffe80",
+          "keyValue": "_74_Solar_Power_KWh_This_Hour",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Solar Power of the day",
+          "name": "_75_Solar_Power_KWh_Today",
+          "displayName": "Solar Power KWh Today",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549437,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "005bb81d-9e5e-46e8-ad09-b2f903249c83",
+          "keyValue": "_75_Solar_Power_KWh_Today",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Current of booster pump",
+          "name": "_71_Current_Inverter_Booster",
+          "displayName": "Current Booster Inverter",
+          "dataType": "FLOAT",
+          "unit": "A",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549430,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "6ef3342a-e2f7-4fa8-a576-003e8b92eff5",
+          "keyValue": "_71_Current_Inverter_Booster",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Frequency from booster pump",
+          "name": "_68_Frequency_Inverter_Booster",
+          "displayName": "Freq Booster Inverter",
+          "dataType": "FLOAT",
+          "unit": "Hz",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549431,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "448cb0b4-e388-4f44-b55b-da72296c6cf7",
+          "keyValue": "_68_Frequency_Inverter_Booster",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Solar Power for this month",
+          "name": "_76_Solar_Power_KWh_This_Month",
+          "displayName": "Solar Power KWh This Month",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549438,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "8ae97a66-3763-43f9-ba76-9a9379a5c30c",
+          "keyValue": "_76_Solar_Power_KWh_This_Month",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Frequency of pump inverter",
+          "name": "_69_Frequency_Inverter_Pump",
+          "displayName": "Frequency Drv1",
+          "dataType": "FLOAT",
+          "unit": "Hz",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549436,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "c77640d2-6784-4f14-af4e-efafa6e8f08a",
+          "keyValue": "_69_Frequency_Inverter_Pump",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Current of Feed pump",
+          "name": "_70_Current_Inverter_Feed",
+          "displayName": "Current Feed Inverter",
+          "dataType": "FLOAT",
+          "unit": "A",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549439,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "31512ad6-90fb-47ea-8078-7d2abbd13bfb",
+          "keyValue": "_70_Current_Inverter_Feed",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Borehole Pump Current",
+          "name": "_72_Current_Inverter_Pump",
+          "displayName": "Borehole Pump Current",
+          "dataType": "FLOAT",
+          "unit": "A",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549433,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "5612ac5f-55f7-45b5-a642-8358725bb0a5",
+          "keyValue": "_72_Current_Inverter_Pump",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Grid Power for this month",
+          "name": "_80_Grid_Power_KWh_This_Month",
+          "displayName": "Grid Power KWh This Month",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549446,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "20fc649d-146c-4e61-9387-c4de4a6a4556",
+          "keyValue": "_80_Grid_Power_KWh_This_Month",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total Power for this hour",
+          "name": "_82_Output_Power_KWh_This_Hour",
+          "displayName": "Total Power KWh This Hour",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549443,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "74fb7ca9-931c-424b-8fc5-a4e6c82b4955",
+          "keyValue": "_82_Output_Power_KWh_This_Hour",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total Power for today",
+          "name": "_83_Output_Power_KWh_Today",
+          "displayName": "Total Power KWh Today",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549440,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "459d7ac7-98c7-4f10-be04-f2a5296cbd76",
+          "keyValue": "_83_Output_Power_KWh_Today",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Raw water intake at current hour",
+          "name": "_86_Raw_Water_M3_This_Hour",
+          "displayName": "Raw water this hour",
+          "dataType": "FLOAT",
+          "unit": "m³",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549441,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "79208ec9-6b16-4eb9-abbe-87087563aff1",
+          "keyValue": "_86_Raw_Water_M3_This_Hour",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Grid Power for this hour",
+          "name": "_78_Grid_Power_KWh_This_Hour",
+          "displayName": "Grid Power KWh This Hour",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549445,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "714f084a-918b-461b-a9b0-a1e708a0aa4b",
+          "keyValue": "_78_Grid_Power_KWh_This_Hour",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total Power for this month",
+          "name": "_84_Output_Power_KWh_This_Month",
+          "displayName": "Total Power KWh This Month",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549447,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "1db95730-a4a1-40e0-a779-0b28d82e6abe",
+          "keyValue": "_84_Output_Power_KWh_This_Month",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total Grid Power",
+          "name": "_77_Grid_Power_KWh_Total",
+          "displayName": "Grid Power Total",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549444,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "bc5f9df0-2095-43ea-a912-d6ebde9a5404",
+          "keyValue": "_77_Grid_Power_KWh_Total",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total KWh consumed by the system",
+          "name": "_81_Output_Power_KWh_Total",
+          "displayName": "Output Power KWh Total",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549449,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "362b3283-b4b4-451f-8df4-dde10561e5af",
+          "keyValue": "_81_Output_Power_KWh_Total",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": null,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total raw water intake so far",
+          "name": "_85_Raw_Water_M3_Total",
+          "displayName": "Total raw water",
+          "dataType": "FLOAT",
+          "unit": "L",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549448,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "1a56015c-d493-41b6-9303-4a7cd0d0f8f0",
+          "keyValue": "_85_Raw_Water_M3_Total",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Grid Power for the day",
+          "name": "_79_Grid_Power_KWh_Today",
+          "displayName": "Grid Power KWh Today",
+          "dataType": "FLOAT",
+          "unit": "Kwh",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549442,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "dcf20756-b063-44be-b61c-8247caef0a04",
+          "keyValue": "_79_Grid_Power_KWh_Today",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Machine Mode Pro",
+          "name": "_97_Machine_Mode_Pro",
+          "displayName": "Machine Mode Pro",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549453,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "9b55579e-7df4-469e-9b40-af67da3a1242",
+          "keyValue": "_97_Machine_Mode_Pro",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Raw water intake at current month",
+          "name": "_88_Raw_Water_M3_This_Month",
+          "displayName": "Raw water this month",
+          "dataType": "FLOAT",
+          "unit": "m³",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549457,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "4cddd529-6647-4aeb-aced-19da781edb9b",
+          "keyValue": "_88_Raw_Water_M3_This_Month",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Raw water intake at current day",
+          "name": "_87_Raw_Water_M3_Today",
+          "displayName": "Raw water today",
+          "dataType": "FLOAT",
+          "unit": "L",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549455,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "5df1f175-fb14-476c-beaf-abdf8e7513f7",
+          "keyValue": "_87_Raw_Water_M3_Today",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Water produced in current day",
+          "name": "_91_Premeate_Water_M3_Today",
+          "displayName": "Clean water today",
+          "dataType": "FLOAT",
+          "unit": "m³",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549458,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "76f3f850-0986-4e64-aaae-37f8d46ba731",
+          "keyValue": "_91_Premeate_Water_M3_Today",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Total amount of Permeate water produced",
+          "name": "_89_Premeate_Water_M3_Total",
+          "displayName": "Total clean water",
+          "dataType": "FLOAT",
+          "unit": "L",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549454,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "1996f5cf-d24f-4ab1-b441-3cc9b8826ad3",
+          "keyValue": "_89_Premeate_Water_M3_Total",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Water produced in current month",
+          "name": "_92_Premeate_Water_M3_This_Month",
+          "displayName": "Clean water this month",
+          "dataType": "FLOAT",
+          "unit": "m³",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549456,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "f9f78d02-9a18-4a5f-a61a-90f818683b7d",
+          "keyValue": "_92_Premeate_Water_M3_This_Month",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Machine Mode Filling",
+          "name": "_99_Machine_Mode_Filling",
+          "displayName": "Machine Mode Filling",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549451,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "19c048c8-a228-4aa7-965b-a107d7b312d2",
+          "keyValue": "_99_Machine_Mode_Filling",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Water produced in current hour",
+          "name": "_90_Premeate_Water_M3_This_Hour",
+          "displayName": "Clean water this hour",
+          "dataType": "FLOAT",
+          "unit": "m³",
+          "category": "Input",
+          "type": [
+            "Trend"
+          ],
+          "tagId": 10549450,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "46650466-9d98-4ff0-b315-f61aa230f841",
+          "keyValue": "_90_Premeate_Water_M3_This_Hour",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RO",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": null,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        },
+        {
+          "status": null,
+          "description": "Machine Mode CIP",
+          "name": "_98_Machine_Mode_CIP",
+          "displayName": "Machine Mode CIP",
+          "dataType": "INT8",
+          "unit": "-",
+          "category": "Input",
+          "type": [
+            "Control",
+            "Trend"
+          ],
+          "tagId": 10549452,
+          "alarmBlock": {
+            "severity": "Information",
+            "eventCode": ""
+          },
+          "levelName": "CATEGORY",
+          "mandatory": true,
+          "levelEntityName": "water_filtration",
+          "configuration": false,
+          "conversion": null,
+          "key": "be629d22-5fc0-4979-b4d1-a522f59ab92c",
+          "keyValue": "_98_Machine_Mode_CIP",
+          "bitBlock": [],
+          "enumBlock": [],
+          "access": "RW",
+          "defaultVisible": true,
+          "supported": true,
+          "availability": {
+            "key": "",
+            "value": ""
+          },
+          "groups": [],
+          "min": 0,
+          "max": 1,
+          "default": null,
+          "moduleId": null,
+          "protocolBlock": []
+        }
+      ],
+      "components": []
+    }
+  ],
+  "status": "Ready to Publish",
+  "remarks": "",
+  "ontologyId": "aa0af1a1-895c-4b99-8e44-e3fe82cc3385",
+  "assemblies": null,
+  "isPublished": true,
+  "isUsedAssembly": false
+}

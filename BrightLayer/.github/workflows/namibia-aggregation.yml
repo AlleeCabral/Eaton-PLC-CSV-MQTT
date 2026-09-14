@@ -1,0 +1,92 @@
+name: Namibia aggregation
+
+on:
+  pull_request:
+    paths:
+      - "Namibia/azure_aggregation/**"
+      - ".github/workflows/namibia-aggregation.yml"
+  push:
+    branches: [main]
+    paths:
+      - "Namibia/azure_aggregation/**"
+      - ".github/workflows/namibia-aggregation.yml"
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: Deploy the tested artifact to the development Function App
+        required: true
+        default: false
+        type: boolean
+      azure_client_id:
+        description: Client ID of the GitHub OIDC federated application
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: Namibia/azure_aggregation/src/requirements.txt
+
+      - name: Install test dependencies
+        run: python -m pip install -r Namibia/azure_aggregation/src/requirements.txt pytest==8.3.2
+
+      - name: Run tests
+        run: python -m pytest Namibia/azure_aggregation/tests -q
+
+      - name: Build and inspect deployment artifact
+        shell: pwsh
+        run: ./Namibia/azure_aggregation/scripts/build_function_package.ps1 -PythonPath python
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: namibia-aggregation-function
+          path: Namibia/azure_aggregation/artifacts/namibia-aggregation.zip
+          if-no-files-found: error
+          retention-days: 14
+
+  deploy-development:
+    if: github.event_name == 'workflow_dispatch' && inputs.deploy
+    needs: test-and-build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: namibia-aggregation-function
+          path: artifact
+
+      - uses: azure/login@v2
+        with:
+          client-id: ${{ inputs.azure_client_id }}
+          tenant-id: 8e41dec4-b90a-42f3-9f3c-7cc6f613a473
+          subscription-id: 47b9cfe5-6ca3-4ad4-a4ca-d870926688b0
+
+      - name: Deploy exact tested artifact
+        run: >-
+          az functionapp deployment source config-zip
+          --resource-group rg-brightlayer-dev
+          --name brightlayer-func-dev-001
+          --src artifact/namibia-aggregation.zip
+
+      - name: Verify indexed functions
+        shell: bash
+        run: |
+          functions=$(az functionapp function list \
+            --resource-group rg-brightlayer-dev \
+            --name brightlayer-func-dev-001 \
+            --query "[].name" -o tsv)
+          grep -q "cycle_planner_timer" <<< "$functions"
+          grep -q "aggregation_cycle_worker" <<< "$functions"
+          grep -q "cleanup_cycles" <<< "$functions"

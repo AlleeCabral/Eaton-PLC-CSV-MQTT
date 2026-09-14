@@ -1,0 +1,26 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "EXPECTED_PLC_COUNT": "15",
+    "CYCLE_INTERVAL_MINUTES": "5",
+    "CYCLE_SCHEDULE": "0 */5 * * * *",
+    "CYCLE_QUEUE_NAME": "aggregation-cycles",
+    "CYCLE_GRACE_SECONDS": "90",
+    "FETCH_OVERLAP_MINUTES": "15",
+    "AGGREGATION_MODE": "permissive",
+    "WRITEBACK_MODE": "dry_run",
+    "LAST_KNOWN_VALUE_POLICY": "carry_forward",
+    "ZERO_FILL_DISABLED": "true",
+    "PLC_STALE_TIMEOUT_SECONDS": "300",
+    "PLC_OFFLINE_TIMEOUT_SECONDS": "600",
+    "MAX_RETRIES": "3",
+    "RETRY_BASE_SECONDS": "10",
+    "CYCLE_TABLE_STATUS": "CycleStatus",
+    "CYCLE_TABLE_SNAPSHOT": "CycleDataSnapshot",
+    "CYCLE_TABLE_AUDIT": "CycleAudit",
+    "RETENTION_HOURS": "48",
+    "KEYVAULT_URI": "https://<your-kv>.vault.azure.net/"
+  }
+}

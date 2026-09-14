@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "apiPrefix": "https://portal.machinery-monitoring.com",
+  "timestampRule": "Convert website timestamps with offsets to UTC Z timestamps before API requests.",
+  "serviceAccountId": "d6faf7fc-2ffb-4247-b1db-67349b3424d9",
+  "organizations": [
+    {
+      "organizationId": "8427fc24-b752-436a-8ac9-0c9318992fc3",
+      "organizationCode": "C95FF99D-421B-47D9-AD28-654B4760D7B3",
+      "devices": [
+        {
+          "gatewayId": "cb118f9e-3a25-4e1f-8f37-f9a37c48c1cb",
+          "gatewayName": "165_Evale",
+          "childDeviceName": "Nam5",
+          "childDeviceId": "8a7f416d-a452-2b11-0800-1e0d06362200",
+          "ontologyProfileId": "aa0af1a1-895c-4b99-8e44-e3fe82cc3385",
+          "adopterId": "861a306d-05d1-4963-fd52-bd55f143766f",
+          "traits": [
+            {
+              "tagId": "10549363",
+              "name": "_127_pH_Input",
+              "displayName": "pH Input",
+              "queryMode": "timeseries"
+            },
+            {
+              "tagId": "10549365",
+              "name": "_128_pH_Output",
+              "displayName": "pH Output",
+              "queryMode": "timeseries"
+            },
+            {
+              "tagId": "10549432",
+              "name": "_73_Solar_Power_KWh_Total",
+              "displayName": "Solar Power KWh Total",
+              "queryMode": "timeseries"
+            }
+          ]
+        }
+      ,
+        {
+          "gatewayId": "60281652-1407-4816-841c-5a9a123ee191",
+          "gatewayName": "161_Omahahi_Oshikunde",
+          "childDeviceName": "Nam1",
+          "childDeviceId": "c627a6ba-a832-2b11-0800-4ea999779100",
+          "addressingStatus": "child-device-confirmed",
+          "traits": [
+            { "tagId": "10549449", "name": "_81_Output_Power_KWh_Total", "displayName": "Production Total", "queryMode": "timeseries" },
+            { "tagId": "10549440", "name": "_83_Output_Power_KWh_Today", "displayName": "Production Today", "queryMode": "timeseries" },
+            { "tagId": "10549447", "name": "_84_Output_Power_KWh_This_Month", "displayName": "Production This Month", "queryMode": "timeseries" },
+            { "tagId": "10549432", "name": "_73_Solar_Power_KWh_Total", "displayName": "Solar Total", "queryMode": "timeseries" },
+            { "tagId": "10549437", "name": "_75_Solar_Power_KWh_Today", "displayName": "Solar Today", "queryMode": "timeseries" },
+            { "tagId": "10549438", "name": "_76_Solar_Power_KWh_This_Month", "displayName": "Solar This Month", "queryMode": "timeseries" },
+            { "tagId": "10549444", "name": "_77_Grid_Power_KWh_Total", "displayName": "Grid Total", "queryMode": "timeseries" },
+            { "tagId": "10549442", "name": "_79_Grid_Power_KWh_Today", "displayName": "Grid Today", "queryMode": "timeseries" },
+            { "tagId": "10549446", "name": "_80_Grid_Power_KWh_This_Month", "displayName": "Grid This Month", "queryMode": "timeseries" },
+            { "tagId": "10549389", "name": "_142_CO2_Saving_Total", "displayName": "CO2 Total", "queryMode": "timeseries" },
+            { "tagId": "10549387", "name": "_144_CO2_Saving_Today", "displayName": "CO2 Today", "queryMode": "timeseries" },
+            { "tagId": "10549382", "name": "_145_CO2_Saving_This_Month", "displayName": "CO2 This Month", "queryMode": "timeseries" }
+          ]
+        },
+        {
+          "gatewayId": "23a9919d-1531-44a8-999a-bc4b6b06cfa5",
+          "gatewayName": "164_Oluundje",
+          "childDeviceName": "164_Oluundje",
+          "childDeviceId": "f8a20915-6672-2b11-0800-2f5623d56800",
+          "addressingStatus": "child-device-confirmed",
+          "traits": [
+            { "tagId": "10549449", "name": "_81_Output_Power_KWh_Total", "displayName": "Production Total", "queryMode": "timeseries" },
+            { "tagId": "10549440", "name": "_83_Output_Power_KWh_Today", "displayName": "Production Today", "queryMode": "timeseries" },
+            { "tagId": "10549447", "name": "_84_Output_Power_KWh_This_Month", "displayName": "Production This Month", "queryMode": "timeseries" },
+            { "tagId": "10549432", "name": "_73_Solar_Power_KWh_Total", "displayName": "Solar Total", "queryMode": "timeseries" },
+            { "tagId": "10549437", "name": "_75_Solar_Power_KWh_Today", "displayName": "Solar Today", "queryMode": "timeseries" },
+            { "tagId": "10549438", "name": "_76_Solar_Power_KWh_This_Month", "displayName": "Solar This Month", "queryMode": "timeseries" },
+            { "tagId": "10549444", "name": "_77_Grid_Power_KWh_Total", "displayName": "Grid Total", "queryMode": "timeseries" },
+            { "tagId": "10549442", "name": "_79_Grid_Power_KWh_Today", "displayName": "Grid Today", "queryMode": "timeseries" },
+            { "tagId": "10549446", "name": "_80_Grid_Power_KWh_This_Month", "displayName": "Grid This Month", "queryMode": "timeseries" },
+            { "tagId": "10549389", "name": "_142_CO2_Saving_Total", "displayName": "CO2 Total", "queryMode": "timeseries" },
+            { "tagId": "10549387", "name": "_144_CO2_Saving_Today", "displayName": "CO2 Today", "queryMode": "timeseries" },
+            { "tagId": "10549382", "name": "_145_CO2_Saving_This_Month", "displayName": "CO2 This Month", "queryMode": "timeseries" }
+          ]
+        }
+      ]
+    }
+  ]
+}

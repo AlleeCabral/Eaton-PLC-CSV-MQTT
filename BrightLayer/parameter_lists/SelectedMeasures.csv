@@ -1,0 +1,17 @@
+Name;Data Type;MeasureList
+EC_Value;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+Mains_ON;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Pressure;Borehole.csv: float | NewFlow.csv: string | NewFlow2.csv: float;Borehole, NewFlow, NewFlow2
+Temp_Drv1;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Temp_Drv2;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Temp_Drv3;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+UVin_workhours;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+UVo_switching;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+UVo_workhours;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+Valves_CIP;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Valves_Filling;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Valves_Flush;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Valves_Pro;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Voltage_Drv1;CodesysRO.csv: integer | NewFlow.csv: float | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Voltage_Drv2;CodesysRO.csv: integer | NewFlow.csv: float | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Voltage_Drv3;CodesysRO.csv: integer | NewFlow.csv: float | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2

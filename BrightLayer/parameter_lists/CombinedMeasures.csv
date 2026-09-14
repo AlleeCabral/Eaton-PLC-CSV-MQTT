@@ -1,0 +1,422 @@
+Name;Data Type;MeasureList
+_11_Auto_Manual;integer;Ice_Measures
+_11_Start;integer;Ice_Measures
+_12_Auto_Manual;integer;Ice_Measures
+_12_Eco;integer;Ice_Measures
+_12_Lid_Alarm;boolean;Ice_Measures
+_13_Eco;integer;Ice_Measures
+_13_Float_Switch;boolean;Ice_Measures
+_14_Borhole_Float_Switch;integer;Ice_Measures
+_14_Conductivity_Switch;integer;Ice_Measures
+_15_Grid_is_On;integer;Ice_Measures
+_15_Pressurre_Alarm;integer;Ice_Measures
+_16_Alarm_Well_Water;integer;Ice_Measures
+_16_Comp_Run;integer;Ice_Measures
+_17_Alarm_High_Pressure;integer;Ice_Measures
+_17_Evap_Run;integer;Ice_Measures
+_18_Alarm_Inverter;integer;Ice_Measures
+_18_Pump_Run;integer;Ice_Measures
+_19_Alarm_Temperature_Inverter;integer;Ice_Measures
+_19_IceMachine_Run;integer;Ice_Measures
+_20_Alarm_UV_Lamp;integer;Ice_Measures
+_20_Fan_1_Alarm;integer;Ice_Measures
+_21_Alarm_6_Water_Meter;integer;Ice_Measures
+_21_Fan_2_Alarm;integer;Ice_Measures
+_22_Evap_Motor_Alarm;integer;Ice_Measures
+_23_Comp_Alarm;integer;Ice_Measures
+_24_Borhole_Float_Switch;integer;Ice_Measures
+_25_Tank_High_Level;integer;Ice_Measures
+_26_Tank_Low_Level;integer;Ice_Measures
+_27_Grid_is_ON;integer;Ice_Measures
+_28_Alarm_Lid;integer;Ice_Measures
+_29_Alarm_Inlet_Valve_Water;integer;Ice_Measures
+_30_Alarm_Drain_Valve;integer;Ice_Measures
+_31_Alarm_DPS;integer;Ice_Measures
+_32_Alarm_Fan_1;integer;Ice_Measures
+_33_Alarm_Fan_2;integer;Ice_Measures
+_34_Alarm_Evap;integer;Ice_Measures
+_35_Alarm_Comp;integer;Ice_Measures
+_36_Alarm_Inverter_A;integer;Ice_Measures
+_37_Alarm_Inverter_B;integer;Ice_Measures
+_38_Alarm_Inverter_C;integer;Ice_Measures
+_39_Alarm_Tank;integer;Ice_Measures
+_40_Alarm_Well_Level;integer;Ice_Measures
+_41_Alarm_Evap_Rotation;integer;Ice_Measures
+_42_Alarm_Inverter_1_Over_Temperature;integer;Ice_Measures
+_43_Alarm_Inverter_2_Over_Temperature;integer;Ice_Measures
+_44_Alarm_Inverter_3_Over_Temperature;integer;Ice_Measures
+_50_Solar_Power;integer;Ice_Measures
+_51_Grid_Power;integer;Ice_Measures
+_52_Total_Power;integer;Ice_Measures
+_53_Evap_Power;integer;Ice_Measures
+_53_Pump_Power;integer;Ice_Measures
+_54_Comp_Power;integer;Ice_Measures
+_54_Machine_Capacity;integer;Ice_Measures
+_55_Machine_Grid_Percentage;integer;Ice_Measures
+_55_Pump_Power;integer;Ice_Measures
+_56_Machine_Capacity;integer;Ice_Measures
+_56_Machine_Solar_Percentage;integer;Ice_Measures
+_57_Actual_Pressure;integer;Ice_Measures
+_57_Machine_Grid_Percentage;integer;Ice_Measures
+_58_Alarm;integer;Ice_Measures
+_58_Machine_Solar_Percentage;integer;Ice_Measures
+_59_Alarm;integer;Ice_Measures
+_59_DC_Voltage;integer;Ice_Measures
+_60_Inverter_Temperature;integer;Ice_Measures
+_60_Total_Current;integer;Ice_Measures
+_61_DC_Voltage_Evap;integer;Ice_Measures
+_61_Pump_Current;integer;Ice_Measures
+_62_DC_Voltage_Comp;integer;Ice_Measures
+_62_Solar_Power_KWh_Total;integer;Ice_Measures
+_63_DC_Voltage_Pump;integer;Ice_Measures
+_63_Solar_Power_KWh_This_Hour;integer;Ice_Measures
+_64_Solar_Power_KWh_Today;integer;Ice_Measures
+_64_Temperature_Inverter_Evap;integer;Ice_Measures
+_65_Solar_Power_KWh_This_Month;integer;Ice_Measures
+_65_Temperature_Inverte_Comp;integer;Ice_Measures
+_66_Grid_Power_KWh_Total;integer;Ice_Measures
+_66_Temperature_Inverter_Pump;integer;Ice_Measures
+_67_Frequency_Inverter_Evap;integer;Ice_Measures
+_67_Grid_Power_KWh_This_Hour;integer;Ice_Measures
+_68_Frequency_Inverter_Comp;integer;Ice_Measures
+_68_Grid_Power_KWh_Today;integer;Ice_Measures
+_69_Frequency_Inverter_Pump;integer;Ice_Measures
+_69_Grid_Power_KWh_This_Month;integer;Ice_Measures
+_70_Current_Inverter_Evap;integer;Ice_Measures
+_70_Output_Power_KWh_Total;integer;Ice_Measures
+_71_Current_Inverter_Comp;integer;Ice_Measures
+_71_Output_Power_KWh_This_Hour;integer;Ice_Measures
+_72_Current_Inverter_Pump;integer;Ice_Measures
+_72_Output_Power_KWh_Today;integer;Ice_Measures
+_73_Output_Power_KWh_This_Month;integer;Ice_Measures
+_73_Solar_Power_KWh_Total;integer;Ice_Measures
+_74_Current_Hour;integer;Ice_Measures
+_74_Solar_Power_KWh_This_Hour;integer;Ice_Measures
+_75_Current_Day;integer;Ice_Measures
+_75_Solar_Power_KWh_Today;integer;Ice_Measures
+_76_Current_Month;integer;Ice_Measures
+_76_Solar_Power_KWh_This_Month;integer;Ice_Measures
+_77_Current_Year;integer;Ice_Measures
+_77_Grid_Power_KWh_Total;integer;Ice_Measures
+_78_Grid_Power_KWh_This_Hour;integer;Ice_Measures
+_78_Total_Run_Time;integer;Ice_Measures
+_79_Grid_Power_KWh_Today;integer;Ice_Measures
+_79_UV_Lamp_Run_Time;integer;Ice_Measures
+_80_Grid_Power_KWh_This_Month;integer;Ice_Measures
+_80_Water_M3_Total;integer;Ice_Measures
+_81_Output_Power_KWh_Total;integer;Ice_Measures
+_81_Water_M3_This_Hour;integer;Ice_Measures
+_82_Output_Power_KWh_This_Hour;integer;Ice_Measures
+_82_Water_M3_Today;integer;Ice_Measures
+_83_Output_Power_KWh_Today;integer;Ice_Measures
+_83_Water_M3_Per_This_Month;integer;Ice_Measures
+_84_Output_Power_KWh_This_Month;integer;Ice_Measures
+_85_Current_Hour;integer;Ice_Measures
+_86_Current_Day;integer;Ice_Measures
+_87_Current_Month;integer;Ice_Measures
+_88_Current_Year;integer;Ice_Measures
+Actual_Pressure;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: float;Borehole, Ice_Measures, NewFlow2
+Alarm;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_6_Water_Meter;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Alarm_Comp;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_DPSe;integer;Ice_Measures
+Alarm_Drain_Valve;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Evap;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Evap_Rotation;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Fan_1;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Fan_2;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_High_Pressure;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Alarm_Inlet_Valve_Water;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Inverter;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Alarm_Inverter_1_Over_Temperature;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Inverter_2_Over_Temperature;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Inverter_3_Over_Temperature;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Inverter_A;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Inverter_B;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Inverter_C;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Lid;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Tankr;integer;Ice_Measures
+Alarm_Temperature_Inverter;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Alarm_UV_Lamp;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Alarm_Well_Level;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Alarm_Well_Water;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+AlarmAntiScalant;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmBohrholeInverterStatus;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmBohrholeInverterTemperature;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmBoosterInverterStatus;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmBoosterInverterTemperature;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmFeedInverterStatus;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmFeedInverterTemperature;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmFlowMeter;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmHighPressure;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmHighTDS;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmRaw_Tank_Alarm;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmUnstableVoltage;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmUVInLamp;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmUVOutLamp;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmValve1;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmValve2;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmValve3;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmValve4;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmValve5;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+AlarmWellLevel;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+Alex_mood;string;NewFlow2
+Anti_pump;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+Anti_Tank;string;NewFlow
+Anti_Tankk;float;NewFlow
+Anti_Tankkk;integer;NewFlow
+AntiScalantTank;integer;CodesysRO
+AntiTank;string;NewFlow
+AntiTank_empty;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+AntiTankkk;integer;NewFlow
+Auto_Manual;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+BackwashSwitch;integer;CodesysRO
+BohrholeSwitch;integer;CodesysRO
+Boost_LastEnHr;float;NewFlow
+Boost_LastEnMin;float;NewFlow
+Boost_LastRUN;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+Boost_LastRunHr;string;NewFlow
+Boost_PwrOut_parse;string;NewFlow
+Boost_TotalRUN;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+BoosterPower;CodesysRO.csv: string | NewFlow2.csv: string;CodesysRO, NewFlow2
+BoosterSwitch;integer;CodesysRO
+Bore_LastEnHr;float;NewFlow
+Bore_LastEnMin;float;NewFlow
+Bore_LastRUN;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+Bore_LastRunHr;string;NewFlow
+Bore_PwrOut_parse;string;NewFlow
+Bore_TotalRUN;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+Borehole_lvl;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Borhole_Float_Switch;Borehole.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+BorholeFloatSwitch;integer;CodesysRO
+CIP_tankempty;integer;NewFlow
+CIP_tankfull;integer;NewFlow
+CIPSwitch;integer;CodesysRO
+CIPtank_empty;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+CIPtank_full;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+CIPtankHigh;integer;CodesysRO
+CIPtankLow;integer;CodesysRO
+Comp_Alarm;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Comp_Power;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Comp_Run;Ice_Measures.csv: boolean | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Conductivity_Switch;Ice_Measures.csv: boolean | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Control_ON;integer;NewFlow2
+Ctrl_UVin;integer;NewFlow
+ctrl_UVout;integer;NewFlow
+Current_Day;Borehole.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+Current_Hour;Borehole.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+Current_Inverter_Comp;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Current_Inverter_Evap;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Current_Inverter_Pump;CodesysRO.csv: float | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Current_Month;Borehole.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+Current_Year;Borehole.csv: integer | CodesysRO.csv: string | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: string;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+CurrentDay;CodesysRO.csv: string | NewFlow2.csv: string;CodesysRO, NewFlow2
+CurrentHour;CodesysRO.csv: string | NewFlow2.csv: string;CodesysRO, NewFlow2
+CurrentInverterBooster;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+CurrentInverterFeed;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+CurrentMonth;CodesysRO.csv: string | NewFlow2.csv: string;CodesysRO, NewFlow2
+Datum_Backwash_Done;CodesysRO.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow2
+Datum_CIP_Done;CodesysRO.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow2
+DC_Voltage;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+DC_Voltage_Comp;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+DC_Voltage_Evap;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+DC_Voltage_Pump;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+DCVoltageBooster;integer;CodesysRO
+DCVoltageFeed;integer;CodesysRO
+DCVoltagePump;integer;CodesysRO
+Dosing_Pump_Alarm;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+DriveError_Drv1;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+DriveError_Drv2;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+DriveError_Drv3;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+EC_Value;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+Eco;Borehole.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+Evap_Motor_Alarm;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Evap_Power;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Evap_Run;Ice_Measures.csv: boolean | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Fan_1_Alarm;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Fan_2_Alarm;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Feed_Kwh;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+Feed_KWhout_f;float;NewFlow
+Feed_KWhout_parse;integer;NewFlow
+Feed_LastEnHr;float;NewFlow
+Feed_LastEnMin;float;NewFlow
+Feed_LastRUN;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+Feed_LastRunHr;string;NewFlow
+Feed_Po;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: float;CodesysRO, NewFlow, NewFlow2
+Feed_PwrOut;integer;NewFlow
+Feed_PwrOut_parse;float;NewFlow
+Feed_TotalRUN;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+FeedPower;integer;CodesysRO
+FeedSwitch;integer;CodesysRO
+Float_Switch;Ice_Measures.csv: boolean | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Frequency_Drv1;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Frequency_Drv2;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Frequency_Drv3;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Frequency_Inverter_Comp;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Frequency_Inverter_Evap;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Frequency_Inverter_Pump;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+FrequencyInverterBooster;integer;CodesysRO
+FrequencyInverterFeed;integer;CodesysRO
+FrequencyInverterPump;integer;CodesysRO
+Frequenz_Inv1;Devices.csv: integer | NewFlow.csv: float;Devices, NewFlow
+Frequenz_Inv2;Devices.csv: integer | NewFlow.csv: float;Devices, NewFlow
+Frequenz_Inv3;Devices.csv: integer | NewFlow.csv: float;Devices, NewFlow
+Frequenz_Inv4;float;NewFlow
+Grid_is_ON;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Grid_is_On;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Grid_Power;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Grid_Power_KWh_This_Hour;Borehole.csv: integer | CodesysRO.csv: float | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Grid_Power_KWh_This_Month;Borehole.csv: float | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Grid_Power_KWh_Today;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: float;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Grid_Power_KWh_Total;Borehole.csv: float | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+GridisON;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+IceMachine_Run;Ice_Measures.csv: boolean | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Inverter_Temperature;Borehole.csv: float | Ice_Measures.csv: integer | NewFlow2.csv: float;Borehole, Ice_Measures, NewFlow2
+Last_Backwash;string;NewFlow
+led_nouvo;integer;NewFlow
+Leitfaehigkeit;Devices.csv: float | NewFlow.csv: float;Devices, NewFlow
+Machine_Capacity;Borehole.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+Machine_Grid_Percentage;Borehole.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+Machine_Mode_Backwash;integer;CodesysRO
+Machine_Mode_Bohrhole;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+Machine_Mode_CIP;integer;CodesysRO
+Machine_Mode_Filling;integer;CodesysRO
+Machine_Mode_Flush;integer;CodesysRO
+Machine_Mode_Pro;integer;CodesysRO
+Machine_Solar_Percentage;Borehole.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+MachineCapacity;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+MachineGridPercentage;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+MachineRun;integer;CodesysRO
+MachineSolarPercentage;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+Mains_ON;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Mains_OON;integer;NewFlow
+Output_Power_KWh_This_Hour;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Output_Power_KWh_This_Month;Borehole.csv: float | CodesysRO.csv: string | Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Output_Power_KWh_Today;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Output_Power_KWh_Total;Borehole.csv: float | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Permeat;float;Devices
+Permtank_toplvl;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Ph_Alarm;integer;NewFlow2
+Ph_Tank1;integer;NewFlow2
+Ph_Tank2;integer;NewFlow2
+PremeateTank;integer;CodesysRO
+PremeateWaterM3ThisHour;CodesysRO.csv: string | NewFlow2.csv: string;CodesysRO, NewFlow2
+PremeateWaterM3ThisMonth;CodesysRO.csv: string | NewFlow2.csv: string;CodesysRO, NewFlow2
+PremeateWaterM3Today;string;CodesysRO
+PremeateWaterM3Total;string;CodesysRO
+Pressure;Borehole.csv: float | NewFlow.csv: string | NewFlow2.csv: float;Borehole, NewFlow, NewFlow2
+Pressurre_Alarm;Ice_Measures.csv: boolean | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Pump_Current;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Pump_Power;Borehole.csv: integer | CodesysRO.csv: string | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: string;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Pump_Run;Ice_Measures.csv: boolean | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+qs_led_nouvo;integer;NewFlow
+Rawtank_lowlvl;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Rawtank_toplvl;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+RawWaterM3ThisHour;CodesysRO.csv: string | NewFlow2.csv: string;CodesysRO, NewFlow2
+RawWaterM3ThisMonth;CodesysRO.csv: string | NewFlow2.csv: string;CodesysRO, NewFlow2
+RawWaterM3Today;string;CodesysRO
+RawWaterM3Total;string;CodesysRO
+RawWaterTankHigh;integer;CodesysRO
+RawWaterTankLow;integer;CodesysRO
+SC_ctrl1;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+SC_ctrl2;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+SC_Sw;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+SCBW1_ok;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+SCBW2_ok;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+Solar_Power;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Solar_Power_KWh_This_Hour;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Solar_Power_KWh_This_Month;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Solar_Power_KWh_Today;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Solar_Power_KWh_Total;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: float;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Start;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Switch_Auto;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Switch_CIP;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Switch_P1;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Switch_P2;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Switch_P3;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Switch_P4;integer;NewFlow
+Switch_UVout;NewFlow.csv: integer | NewFlow2.csv: integer;NewFlow, NewFlow2
+Switch_Vertical;integer;NewFlow
+system_current;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: float;CodesysRO, NewFlow, NewFlow2
+Systemdruck;Devices.csv: float | NewFlow.csv: float;Devices, NewFlow
+Tank_High_Level;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Tank_Low_Level;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Temp_Drv1;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Temp_Drv2;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Temp_Drv3;CodesysRO.csv: integer | NewFlow.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Temperature_Inverter_Comp;Ice_Measures2.csv: float | NewFlow2.csv: float;Ice_Measures2, NewFlow2
+Temperature_Inverter_Evap;Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Temperature_Inverter_Pump;Ice_Measures.csv: integer | Ice_Measures2.csv: float | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+TemperatureInverterBooster;integer;CodesysRO
+TemperatureInverterFeed;integer;CodesysRO
+TemperatureInverterPump;integer;CodesysRO
+Total_Current;CodesysRO.csv: string | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Total_Power;Borehole.csv: integer | CodesysRO.csv: integer | Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, CodesysRO, Ice_Measures, Ice_Measures2, NewFlow2
+Total_Run_Time;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Totalwater_Clean;CodesysRO.csv: string | NewFlow.csv: string | NewFlow2.csv: float;CodesysRO, NewFlow, NewFlow2
+TotalWater_Raw;CodesysRO.csv: string | NewFlow.csv: string | NewFlow2.csv: float;CodesysRO, NewFlow, NewFlow2
+TotalWater_Recovery;NewFlow.csv: float | NewFlow2.csv: float;NewFlow, NewFlow2
+TotalWater_Sold;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+UV_inside_lifetime;float;NewFlow
+UV_inside_switching_operations;integer;NewFlow
+UV_Lamp_Run_Time;Borehole.csv: integer | Ice_Measures.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+UV_outside_lifetime;float;NewFlow
+UV_outside_switching_operations;integer;NewFlow
+UVin2_ctrl;integer;NewFlow2
+UVin_Betriebsstunden;float;Devices
+UVin_ctrl;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+UVin_ctrll;NewFlow.csv: integer | NewFlow2.csv: integer;NewFlow, NewFlow2
+UVin_lifetime;string;NewFlow
+UVin_switching;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+UVin_workhours;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+UVo_switching;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+UVo_Watersensor;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+UVo_workhours;NewFlow.csv: string | NewFlow2.csv: float;NewFlow, NewFlow2
+UVout2_ctrl;integer;NewFlow2
+UVout_ctrl;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+UVout_ctrll;NewFlow.csv: integer | NewFlow2.csv: integer;NewFlow, NewFlow2
+UVout_lifetime;string;NewFlow
+UvOutSwitch;integer;CodesysRO
+value1;integer;CodesysRO
+Valves_bw;CodesysRO.csv: integer | NewFlow2.csv: integer;CodesysRO, NewFlow2
+Valves_CIP;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Valves_Filling;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Valves_Flush;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Valves_Position_cip;integer;NewFlow
+Valves_Position_fillingcip;integer;NewFlow
+Valves_Position_flush;integer;NewFlow
+Valves_Position_pro;integer;NewFlow
+Valves_Pro;CodesysRO.csv: integer | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Verkauftes_Wasser;integer;Devices
+Voltage_Drv1;CodesysRO.csv: integer | NewFlow.csv: float | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Voltage_Drv2;CodesysRO.csv: integer | NewFlow.csv: float | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Voltage_Drv3;CodesysRO.csv: integer | NewFlow.csv: float | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+Voltage_Drv4;float;NewFlow
+Wasser_eingang;float;Devices
+Wasser_permeat;float;Devices
+Wasser_verkauft;integer;Devices
+Wassereingang;float;Devices
+Water_in;float;Devices
+Water_M3_Per_This_Month;Borehole.csv: integer | Ice_Measures.csv: float | NewFlow2.csv: integer;Borehole, Ice_Measures, NewFlow2
+Water_M3_This_Hour;Borehole.csv: integer | Ice_Measures.csv: float | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+Water_M3_This_Month;Ice_Measures.csv: integer | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Ice_Measures, Ice_Measures2, NewFlow2
+Water_M3_Today;Borehole.csv: integer | Ice_Measures.csv: float | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+Water_M3_Total;Borehole.csv: integer | Ice_Measures.csv: float | Ice_Measures2.csv: integer | NewFlow2.csv: integer;Borehole, Ice_Measures, Ice_Measures2, NewFlow2
+Water_produced;float;Devices
+Water_sold;float;Devices
+Water_Today_in;integer;Devices
+Water_Today_prod;integer;Devices
+Water_Today_sold;integer;Devices
+Waterflowing;NewFlow.csv: string | NewFlow2.csv: integer;NewFlow, NewFlow2
+WaterToday_Clean;CodesysRO.csv: string | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+WaterToday_in;Devices.csv: float | NewFlow.csv: integer;Devices, NewFlow
+WaterToday_pro;integer;NewFlow
+WaterToday_prod;float;Devices
+WaterToday_Raw;CodesysRO.csv: string | NewFlow.csv: string | NewFlow2.csv: integer;CodesysRO, NewFlow, NewFlow2
+WaterToday_recov;integer;NewFlow
+WaterToday_Recovery;NewFlow.csv: integer | NewFlow2.csv: integer;NewFlow, NewFlow2
+WaterToday_sold;Devices.csv: float | NewFlow.csv: integer | NewFlow2.csv: integer;Devices, NewFlow, NewFlow2
+WaterTotal_in;float;NewFlow
+WaterTotal_pro;float;NewFlow
+WaterTotal_recovery;float;NewFlow
+WaterTotal_sold;float;NewFlow

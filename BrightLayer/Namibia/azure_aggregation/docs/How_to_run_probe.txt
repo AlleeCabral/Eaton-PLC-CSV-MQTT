@@ -1,0 +1,6 @@
+.\Namibia\azure_aggregation\scripts\run_brightlayer_probe.ps1 `
+  -DeviceId '8a7f416d-a452-2b11-0800-1e0d06362200' `
+  -TraitIds '10549363' `
+  -StartLocal '2026-09-01T14:00:00+02:00' `
+  -EndLocal '2026-09-01T15:10:00+02:00' `
+  -OutputPath '.\Namibia\azure_aggregation\reports\nam5-ph-input.json'

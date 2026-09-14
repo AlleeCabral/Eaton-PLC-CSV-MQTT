@@ -1,0 +1,5 @@
+artifacts/
+src/.venv/
+**/__pycache__/
+*.pyc
+src/local.settings.json

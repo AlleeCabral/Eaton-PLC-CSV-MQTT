@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westeurope"
+    },
+    "storageAccountName": {
+      "value": "namibiaaggprodsa001"
+    },
+    "keyVaultName": {
+      "value": "kv-namibia-agg-prod-001"
+    },
+    "appInsightsName": {
+      "value": "appi-namibia-agg-prod-001"
+    },
+    "functionAppName": {
+      "value": "func-namibia-agg-prod-001"
+    },
+    "planName": {
+      "value": "asp-namibia-agg-prod-001"
+    }
+  }
+}
