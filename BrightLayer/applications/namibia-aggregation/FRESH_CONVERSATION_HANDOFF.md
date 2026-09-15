@@ -2,7 +2,7 @@
 
 **Updated:** 2026-09-03  
 **Workspace:** `C:\Users\AlexandraCabral\Documents\Eaton_PLC\BrightLayer`  
-**Project:** `Namibia/azure_aggregation`  
+**Project:** `applications/namibia-aggregation/azure_aggregation`
 **Azure subscription:** `Boreal Light` (`47b9cfe5-6ca3-4ad4-a4ca-d870926688b0`)  
 **Resource group:** `rg-brightlayer-dev`  
 **Function App:** `brightlayer-func-dev-001`  
@@ -129,7 +129,7 @@ A service-account secret was exposed in a chat screenshot during testing. Treat 
 ## Suggested First Prompt
 
 ```text
-Read Namibia/FRESH_CONVERSATION_HANDOFF.md, Namibia/azure_aggregation/README.md, and Namibia/azure_aggregation/config/brightlayer-test-devices.json. Continue the Brightlayer API integration from the recorded state. Preserve the UTC conversion rule, use child device IDs for telemetry, do not reintroduce an undocumented request-pair limit, and do not expose secrets.
+Read `applications/namibia-aggregation/FRESH_CONVERSATION_HANDOFF.md`, `applications/namibia-aggregation/azure_aggregation/README.md`, and `applications/namibia-aggregation/azure_aggregation/config/brightlayer-test-devices.json`. Continue the Brightlayer API integration from the recorded state. Preserve the UTC conversion rule, use child device IDs for telemetry, do not reintroduce an undocumented request-pair limit, and do not expose secrets.
 ```
 
 Expected JSON contracts:

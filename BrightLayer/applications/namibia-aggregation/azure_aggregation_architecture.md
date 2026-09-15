@@ -102,5 +102,5 @@ The existing Node-RED function resolves each channel's value via a `getFirst(can
 
 ## Known infra gaps (from Function App setup work)
 
-- `Namibia/azure_aggregation/infra/main.bicep` models a classic Y1/Dynamic Consumption plan, but the live Function App is Flex Consumption (FC1) — Bicep is not currently the source of truth for the deployed resource. Reconciling this is a pending decision.
+- `applications/namibia-aggregation/azure_aggregation/infra/main.bicep` models a classic Y1/Dynamic Consumption plan, but the live Function App is Flex Consumption (FC1) — Bicep is not currently the source of truth for the deployed resource. Reconciling this is a pending decision.
 - Bicep enables Key Vault RBAC auth but does not assign the Function App's managed identity the "Key Vault Secrets User" role — needs verification/fix.

@@ -19,9 +19,9 @@ VAR_OUTPUT
 END_VAR
 VAR
     // MQTT client structure and handler instances
-    mqttInOut     : SD_MQTT.MQTT_IN_OUT;   // Shared MQTT data structure
-    fbMQTTClient  : SD_MQTT.MqttClient;    // Main MQTT client FB
-    fbMQTTPublish : SD_MQTT.MqttPublish;   // Publish helper FB
+    mqttInOut     : MQTT.MQTT_IN_OUT;   // Shared MQTT data structure
+    fbMQTTClient  : MQTT.MqttClient;    // Main MQTT client FB
+    fbMQTTPublish : MQTT.MqttPublish;   // Publish helper FB
 
     // Connection / publish state machine
     eState        : (IDLE, CONNECTING, READY, PUBLISHING, ERROR) := IDLE;
@@ -47,7 +47,8 @@ VAR
     byClientError : BYTE;
 
     // Default QoS (0 = at most once)
-    eDefaultQoS   : SD_MQTT.QoS := 0;
+    eDefaultQoS : MQTT.QoS := MQTT.QoS.AtMostOnce;
+    
 END_VAR
 VAR CONSTANT
     c_tClientTimeout : TIME := T#5S;

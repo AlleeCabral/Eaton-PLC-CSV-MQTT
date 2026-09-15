@@ -1,0 +1,201 @@
+[
+    {
+        "id": "6f87eca404ec1ee9",
+        "type": "udp in",
+        "z": "498d07fbe965d3ff",
+        "name": "",
+        "iface": "",
+        "port": "1202",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "buffer",
+        "x": 480,
+        "y": 320,
+        "wires": [
+            [
+                "296820cd3f3bc28c",
+                "06089f9bf4f831e0"
+            ]
+        ]
+    },
+    {
+        "id": "296820cd3f3bc28c",
+        "type": "debug",
+        "z": "498d07fbe965d3ff",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "06089f9bf4f831e0",
+        "type": "netvar-receiver",
+        "z": "498d07fbe965d3ff",
+        "index": "1",
+        "vars": "_11_Start:BOOL;_12_Auto_Manual:BOOL;_13_Eco:BOOL;_14_Borhole_Float_Switch:BOOL;_15_Grid_is_On:BOOL;_16_Alarm_Well_Water:BOOL;_17_Alarm_High_Pressure:BOOL;_18_Alarm_Inverter:BOOL;_19_Alarm_Temperature_Inverter:BOOL;_20_Alarm_UV_Lamp:BOOL;_21_Alarm_6_Water_Meter:BOOL;_50_Solar_Power:REAL;_51_Grid_Power:REAL;_52_Total_Power:REAL;_53_Pump_Power:REAL;_54_Machine_Capacity:REAL;_55_Machine_Grid_Percentage:REAL;_56_Machine_Solar_Percentage:REAL;_57_Actual_Pressure:REAL;_58_Alarm:DWORD;_59_DC_Voltage:INT;_60_Inverter_Temperature:REAL;_61_Pump_Current:REAL;_62_Solar_Power_KWh_Total:REAL;_63_Solar_Power_KWh_This_Hour:REAL;_64_Solar_Power_KWh_Today:REAL;_65_Solar_Power_KWh_This_Month:REAL;_66_Grid_Power_KWh_Total:REAL;_67_Grid_Power_KWh_This_Hour:REAL;_68_Grid_Power_KWh_Today:REAL;_69_Grid_Power_KWh_This_Month:REAL;_70_Output_Power_KWh_Total:REAL;_71_Output_Power_KWh_This_Hour:REAL;_72_Output_Power_KWh_Today:REAL;_73_Output_Power_KWh_This_Month:REAL;_74_Current_Hour:INT;_75_Current_Day:INT;_76_Current_Month:INT;_77_Current_Year:INT;_78_Total_Run_Time:REAL;_79_UV_Lamp_Run_Time:REAL;_80_Water_M3_Total:REAL;_81_Water_M3_This_Hour:REAL;_82_Water_M3_Today:REAL;_83_Water_M3_Per_This_Month:REAL;_84_Actual_Pressure_1:REAL;FrequencyInverterPump:REAL;",
+        "x": 760,
+        "y": 320,
+        "wires": [
+            [
+                "be35a310c15dca04",
+                "cdc0098a5915b501",
+                "b1754ed744369e3b",
+                "6249ddc167843dea"
+            ]
+        ]
+    },
+    {
+        "id": "be35a310c15dca04",
+        "type": "debug",
+        "z": "498d07fbe965d3ff",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cdc0098a5915b501",
+        "type": "function",
+        "z": "498d07fbe965d3ff",
+        "name": "size",
+        "func": "// NetVar spec size calculator (per message / iteration)\n// Place after your netvar-receiver node (payload is {\"0\":[name,type,value], \"1\":[...], ...})\n\n// Toggle this if your publisher uses 4-byte packing/alignment\nconst PACK_4BYTE = false;         // true => align INTs to 4-byte boundaries\n\nfunction align4(n){ return PACK_4BYTE ? ((n + 3) & ~3) : n; }\n\nconst src = msg.payload;          // the triplets object\nif (typeof src !== \"object\" || src === null) {\n  node.warn(\"Expected triplet object from netvar-receiver\");\n  return msg;\n}\n\n// sizes\nconst SZ = { BOOL:1, INT:2, UDINT:4, DWORD:4, REAL:4 };\n\n// iterate in numeric order of indices\nconst keys = Object.keys(src).sort((a,b)=> Number(a)-Number(b));\n\nlet expected = 0;\nlet padding  = 0;\nconst counts = { BOOL:0, INT:0, UDINT:0, DWORD:0, REAL:0, OTHER:0 };\n\nfor (const k of keys) {\n  const triplet = src[k];\n  if (!Array.isArray(triplet) || triplet.length < 2) continue;\n  const name = triplet[0];\n  const type = (triplet[1] || \"\").toUpperCase().trim();\n\n  // align if needed (our observed pack rule: pad AFTER previous field when next is 2-byte INT)\n  if (PACK_4BYTE && type === \"INT\") {\n    const aligned = align4(expected);\n    if (aligned !== expected) {\n      padding += (aligned - expected);\n      expected  = aligned;\n    }\n  }\n\n  const sz = SZ[type] ?? null;\n  if (sz == null) {\n    counts.OTHER++;\n    node.warn(`Unknown type for ${name}: ${type} (counting as 0)`);\n    continue;\n  }\n\n  expected += sz;\n  if (counts[type] !== undefined) counts[type]++; else counts.OTHER++;\n}\n\n// decorate message for Debug\nmsg.netvar_spec = {\n  pack_4byte: PACK_4BYTE,\n  bytes: expected,\n  bits: expected * 8,\n  padding_bytes: padding,\n  counts\n};\n\n// nice one-liners for Debug node\nmsg.spec_len_bytes = expected;\nmsg.spec_len_bits  = expected * 8;\nmsg.spec_breakdown = `${counts.BOOL}xBOOL, ${counts.INT}xINT, ${counts.UDINT+counts.DWORD}xDWORD/UDINT, ${counts.REAL}xREAL, padding=${padding}B, pack4=${PACK_4BYTE}`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 240,
+        "y": 420,
+        "wires": [
+            [
+                "125edbb0a8106db0"
+            ]
+        ]
+    },
+    {
+        "id": "b1754ed744369e3b",
+        "type": "function",
+        "z": "498d07fbe965d3ff",
+        "name": "Parse NetVar triplets",
+        "func": "// Parse NetVar triplets -> one object keyed by the tag names.\n// Works with BOOL / INT / UDINT / DWORD / REAL; ignores order.\n\nconst toType = (v, t) => {\n  if (v === undefined || v === null) return undefined;\n  if (t === \"REAL\") return parseFloat(v);\n  // Treat BOOL/INT/UDINT/DWORD as integers (0/1 for BOOL)\n  if (t === \"BOOL\" || t === \"INT\" || t === \"UDINT\" || t === \"DWORD\") return parseInt(v, 10);\n  return v; // default passthrough\n};\n\nconst plc = {};\nconst src = msg.payload; // { \"0\":[name,type,value], \"1\":[...], ... }\nfor (const k in src) {\n  const triplet = src[k];\n  if (!Array.isArray(triplet) || triplet.length < 3) continue;\n  const [name, type, value] = triplet;\n  const cast = toType(value, type);\n  if (cast !== undefined && !Number.isNaN(cast)) plc[name] = cast;\n}\n\n// store and forward\nconst merged = Object.assign(global.get(\"plc\") || {}, plc);\nglobal.set(\"plc\", merged);\n// also write each key individually so Trends can read them directly\nfor (const [k, v] of Object.entries(plc)) {\n    global.set(k, v);\n}\nmsg.payload = plc;   // handy for debug\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 260,
+        "wires": [
+            [
+                "7e5eaf63556afcf6",
+                "5382db82362912f1"
+            ]
+        ]
+    },
+    {
+        "id": "6249ddc167843dea",
+        "type": "function",
+        "z": "498d07fbe965d3ff",
+        "name": "(OLD) Parse NetVar triplets",
+        "func": "// Parse NetVar triplets -> one object keyed by the tag names.\n// Works with BOOL / INT / UDINT / DWORD / REAL; ignores order.\n\nconst toType = (v, t) => {\n  if (v === undefined || v === null) return undefined;\n  if (t === \"REAL\") return parseFloat(v);\n  // Treat BOOL/INT/UDINT/DWORD as integers (0/1 for BOOL)\n  if (t === \"BOOL\" || t === \"INT\" || t === \"UDINT\" || t === \"DWORD\") return parseInt(v, 10);\n  return v; // default passthrough\n};\n\nconst plc = {};\nconst src = msg.payload; // { \"0\":[name,type,value], \"1\":[...], ... }\nfor (const k in src) {\n  const triplet = src[k];\n  if (!Array.isArray(triplet) || triplet.length < 3) continue;\n  const [name, type, value] = triplet;\n  const cast = toType(value, type);\n  if (cast !== undefined && !Number.isNaN(cast)) plc[name] = cast;\n}\n\n// store and forward\nglobal.set(\"plc\", Object.assign(global.get(\"plc\") || {}, plc));\nmsg.payload = plc;   // handy for debug\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 400,
+        "wires": [
+            [
+                "02732d732b46e33b"
+            ]
+        ]
+    },
+    {
+        "id": "125edbb0a8106db0",
+        "type": "debug",
+        "z": "498d07fbe965d3ff",
+        "name": "debug 18",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7e5eaf63556afcf6",
+        "type": "split",
+        "z": "498d07fbe965d3ff",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload",
+        "x": 1270,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5382db82362912f1",
+        "type": "debug",
+        "z": "498d07fbe965d3ff",
+        "name": "debug 17",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "02732d732b46e33b",
+        "type": "debug",
+        "z": "498d07fbe965d3ff",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 420,
+        "wires": []
+    }
+]

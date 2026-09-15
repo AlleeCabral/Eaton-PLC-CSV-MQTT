@@ -12,9 +12,9 @@ Use these sources first:
 
 1. `.azure/deployment-plan.md`
 2. `Namibia/FRESH_CONVERSATION_HANDOFF.md`
-3. `Namibia/azure_aggregation/README.md`
-4. `Namibia/azure_aggregation/config/brightlayer-test-devices.json`
-5. `Namibia/azure_aggregation/config/nam5-single-device-kpi-map.json`
+3. `applications/namibia-aggregation/azure_aggregation/README.md`
+4. `applications/namibia-aggregation/azure_aggregation/config/brightlayer-test-devices.json`
+5. `applications/namibia-aggregation/azure_aggregation/config/nam5-single-device-kpi-map.json`
 
 Include:
 

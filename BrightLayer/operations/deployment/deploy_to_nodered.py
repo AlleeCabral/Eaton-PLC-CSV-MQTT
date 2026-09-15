@@ -4,8 +4,8 @@ import json
 import urllib.request
 import urllib.error
 
-FULL_PROG = r'peru_148/full_program_nodered'
-SIM_FILE  = r'Simulation/Simulation_RO.json'
+FULL_PROG = r'applications/regional-node-red/peru-148/full_program_nodered'
+SIM_FILE  = r'development/simulation/Simulation/Simulation_RO.json'
 NR_URL    = 'http://127.0.0.1:1880'
 
 with open(FULL_PROG, 'r', encoding='utf-8') as f:

@@ -3,7 +3,7 @@
 FUNCTION_BLOCK FB_CSVReader
 VAR_INPUT
     xEnable   : BOOL;   // TRUE = start/continue reading, FALSE = stop and reset
-    sFilePath : STRING; // File path to the CSV file (e.g., '/usr/data.csv')
+    sFilePath : STRING := '/139Data/139_last6M_241025.csv'; // File path to the CSV file (e.g., '/usr/data.csv')
 END_VAR
 VAR_OUTPUT
     RowOut    : ST_CSVRow; // Output: One parsed row with 13 columns of data

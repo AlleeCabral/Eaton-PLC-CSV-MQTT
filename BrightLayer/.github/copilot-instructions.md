@@ -2,7 +2,7 @@
 
 ## Scope
 
-These instructions apply to the BrightLayer workspace, especially the Namibia aggregation project in `Namibia/azure_aggregation`.
+These instructions apply to the BrightLayer workspace, especially the Namibia aggregation project in `applications/namibia-aggregation/azure_aggregation`.
 
 ## Safety
 
@@ -22,10 +22,10 @@ These instructions apply to the BrightLayer workspace, especially the Namibia ag
 
 ## Current Namibia State
 
-- Project root: `Namibia/azure_aggregation`.
+- Project root: `applications/namibia-aggregation/azure_aggregation`.
 - Deployment plan: `.azure/deployment-plan.md`.
 - Current known child devices: Nam5, Nam1, and 164_Oluundje.
-- Current characterization map: `Namibia/azure_aggregation/config/nam5-single-device-kpi-map.json`.
+- Current characterization map: `applications/namibia-aggregation/azure_aggregation/config/nam5-single-device-kpi-map.json`.
 - Current expected characterization shape: 12 KPIs and 36 unique device/tag source pairs.
 - Production target: 15 machines and 180 unique source pairs.
 - Five-minute cycles use `FETCH_OVERLAP_MINUTES=15` for delayed Brightlayer updates.
@@ -47,9 +47,9 @@ These instructions apply to the BrightLayer workspace, especially the Namibia ag
 Before deployment-related changes, prefer these checks from the workspace root:
 
 ```powershell
-c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe -m pytest Namibia/azure_aggregation/tests -q
-az bicep build --file Namibia/azure_aggregation/infra/main.bicep --stdout
-./Namibia/azure_aggregation/scripts/build_function_package.ps1 -PythonPath c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe
+c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe -m pytest applications/namibia-aggregation/azure_aggregation/tests -q
+az bicep build --file applications/namibia-aggregation/azure_aggregation/infra/main.bicep --stdout
+./applications/namibia-aggregation/azure_aggregation/scripts/build_function_package.ps1 -PythonPath c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe
 ```
 
 After Azure deployment, verify function indexing, safety settings, queue/table resources, and one dry-run cycle before any scheduler or writeback enablement.

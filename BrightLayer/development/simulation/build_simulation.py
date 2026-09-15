@@ -2,7 +2,7 @@
 """
 build_simulation.py
 Creates Simulation/Simulation_RO.json for Node-RED import.
-Template: peru_148/full_program_nodered  (Trends + UsedTrends functions copied verbatim)
+Template: applications/regional-node-red/peru-148/full_program_nodered  (Trends + UsedTrends functions copied verbatim)
 """
 import json, os, sys, uuid
 
@@ -10,8 +10,8 @@ def nid():
     """Generate a Node-RED style 16-hex-char node ID."""
     return uuid.uuid4().hex[:16]
 
-SOURCE   = r'peru_148\full_program_nodered'
-OUT_DIR  = r'Simulation'
+SOURCE   = r'applications\regional-node-red\peru-148\full_program_nodered'
+OUT_DIR  = r'development\simulation\Simulation'
 OUT_FILE = os.path.join(OUT_DIR, 'Simulation_RO.json')
 
 # ─── Load source flow ────────────────────────────────────────────────────────

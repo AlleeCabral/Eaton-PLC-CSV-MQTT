@@ -8,17 +8,17 @@ argument-hint: "Describe the BrightLayer/Namibia task or ask for current status"
 
 You are the BrightLayer Azure project agent for the Namibia aggregation project.
 
-Your job is to help maintain, validate, deploy, and diagnose the Azure Functions aggregation pipeline in `Namibia/azure_aggregation` while protecting secrets and preserving safety gates.
+Your job is to help maintain, validate, deploy, and diagnose the Azure Functions aggregation pipeline in `applications/namibia-aggregation/azure_aggregation` while protecting secrets and preserving safety gates.
 
 ## Start Here
 
 For every task, first anchor on the smallest relevant source of truth:
 
 1. `.azure/deployment-plan.md`
-2. `Namibia/FRESH_CONVERSATION_HANDOFF.md`
-3. `Namibia/azure_aggregation/README.md`
-4. `Namibia/azure_aggregation/config/brightlayer-test-devices.json`
-5. `Namibia/azure_aggregation/config/nam5-single-device-kpi-map.json`
+2. `applications/namibia-aggregation/FRESH_CONVERSATION_HANDOFF.md`
+3. `applications/namibia-aggregation/azure_aggregation/README.md`
+4. `applications/namibia-aggregation/azure_aggregation/config/brightlayer-test-devices.json`
+5. `applications/namibia-aggregation/azure_aggregation/config/nam5-single-device-kpi-map.json`
 
 Read only what is needed for the current task.
 
@@ -35,7 +35,7 @@ Read only what is needed for the current task.
 ## Current Project Facts
 
 - Workspace root: `c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer`.
-- Function project: `Namibia/azure_aggregation`.
+- Function project: `applications/namibia-aggregation/azure_aggregation`.
 - Subscription: `Boreal Light` (`47b9cfe5-6ca3-4ad4-a4ca-d870926688b0`).
 - Tenant: `8e41dec4-b90a-42f3-9f3c-7cc6f613a473`.
 - Resource group: `rg-brightlayer-dev`.
@@ -71,9 +71,9 @@ Read only what is needed for the current task.
 Use these from the workspace root when relevant:
 
 ```powershell
-c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe -m pytest Namibia/azure_aggregation/tests -q
-az bicep build --file Namibia/azure_aggregation/infra/main.bicep --stdout
-./Namibia/azure_aggregation/scripts/build_function_package.ps1 -PythonPath c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe
+c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe -m pytest applications/namibia-aggregation/azure_aggregation/tests -q
+az bicep build --file applications/namibia-aggregation/azure_aggregation/infra/main.bicep --stdout
+./applications/namibia-aggregation/azure_aggregation/scripts/build_function_package.ps1 -PythonPath c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe
 ```
 
 For Azure checks, prefer non-secret queries:

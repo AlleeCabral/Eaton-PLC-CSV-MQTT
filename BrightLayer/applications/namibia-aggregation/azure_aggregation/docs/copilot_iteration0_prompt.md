@@ -22,7 +22,7 @@ Important references to follow:
 
 Create the following folder and file structure inside the workspace under:
 
-Namibia/azure_aggregation/
+applications/namibia-aggregation/azure_aggregation/
 
 Structure:
 
@@ -225,7 +225,7 @@ Please generate the following:
 
 Also create a concise project README in:
 
-Namibia/azure_aggregation/README.md
+applications/namibia-aggregation/azure_aggregation/README.md
 
 The README should include:
 - purpose of the project
@@ -239,7 +239,7 @@ The README should include:
 
 Finally, produce a short gate report markdown file in:
 
-Namibia/azure_aggregation/gate_iteration_0.md
+applications/namibia-aggregation/azure_aggregation/gate_iteration_0.md
 
 The gate report should include:
 - Iteration: 0

@@ -92,7 +92,7 @@ Set credentials directly in your local terminal process; do not put them in file
 ```powershell
 $env:BRIGHTLAYER_SERVICE_ACCOUNT_ID = Read-Host "Brightlayer service account ID"
 $env:BRIGHTLAYER_SERVICE_ACCOUNT_SECRET = Read-Host "Brightlayer service account secret"
-c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe Namibia/azure_aggregation/scripts/probe_brightlayer_device.py
+c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe applications/namibia-aggregation/azure_aggregation/scripts/probe_brightlayer_device.py
 Remove-Item Env:BRIGHTLAYER_SERVICE_ACCOUNT_ID, Env:BRIGHTLAYER_SERVICE_ACCOUNT_SECRET
 ```
 
@@ -107,7 +107,7 @@ $env:BRIGHTLAYER_PROBE_DEVICE_ID = "8a7f416d-a452-2b11-0800-1e0d06362200"
 $env:BRIGHTLAYER_PROBE_TRAIT_IDS = "10549363,10549365"
 $env:BRIGHTLAYER_PROBE_START_UTC = "2026-09-01T00:00:00Z"
 $env:BRIGHTLAYER_PROBE_END_UTC = "2026-09-01T12:00:00Z"
-c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe Namibia/azure_aggregation/scripts/probe_brightlayer_device.py
+c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe applications/namibia-aggregation/azure_aggregation/scripts/probe_brightlayer_device.py
 Remove-Item Env:BRIGHTLAYER_PROBE_DEVICE_ID, Env:BRIGHTLAYER_PROBE_TRAIT_IDS, Env:BRIGHTLAYER_PROBE_START_UTC, Env:BRIGHTLAYER_PROBE_END_UTC
 ```
 
@@ -118,9 +118,9 @@ Remove-Item Env:BRIGHTLAYER_PROBE_DEVICE_ID, Env:BRIGHTLAYER_PROBE_TRAIT_IDS, En
 From the workspace root:
 
 ```powershell
-c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe -m pytest Namibia/azure_aggregation/tests -q
-az bicep build --file Namibia/azure_aggregation/infra/main.bicep --stdout
-./Namibia/azure_aggregation/scripts/build_function_package.ps1 -PythonPath c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe
+c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe -m pytest applications/namibia-aggregation/azure_aggregation/tests -q
+az bicep build --file applications/namibia-aggregation/azure_aggregation/infra/main.bicep --stdout
+./applications/namibia-aggregation/azure_aggregation/scripts/build_function_package.ps1 -PythonPath c:/Users/AlexandraCabral/Documents/Eaton_PLC/BrightLayer/.venv/Scripts/python.exe
 ```
 
 ## Deployment

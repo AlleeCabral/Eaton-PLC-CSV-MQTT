@@ -23,12 +23,12 @@ Deploy the existing Namibia Brightlayer aggregation Function App to Azure. The a
 
 This is a MODIFY deployment. The application and infrastructure already exist in the repository.
 
-- Infrastructure: `Namibia/azure_aggregation/infra/main.bicep`
-- Development parameters: `Namibia/azure_aggregation/infra/parameters.dev.json`
-- Function source: `Namibia/azure_aggregation/src/`
-- Package builder: `Namibia/azure_aggregation/scripts/build_function_package.ps1`
+- Infrastructure: `applications/namibia-aggregation/azure_aggregation/infra/main.bicep`
+- Development parameters: `applications/namibia-aggregation/azure_aggregation/infra/parameters.dev.json`
+- Function source: `applications/namibia-aggregation/azure_aggregation/src/`
+- Package builder: `applications/namibia-aggregation/azure_aggregation/scripts/build_function_package.ps1`
 - CI/CD: `.github/workflows/namibia-aggregation.yml`
-- Local tests: `Namibia/azure_aggregation/tests/`
+- Local tests: `applications/namibia-aggregation/azure_aggregation/tests/`
 
 The application contains:
 
@@ -81,7 +81,7 @@ The current characterization map contains 12 KPI definitions for three known chi
 
 Gateway IDs are relationship metadata only. Timeseries requests use child device IDs. The complete production map still requires the remaining 12 Namibia PLC child IDs.
 
-Source map: `Namibia/azure_aggregation/config/nam5-single-device-kpi-map.json`
+Source map: `applications/namibia-aggregation/azure_aggregation/config/nam5-single-device-kpi-map.json`
 
 ## 7. Required Key Vault Secrets
 
@@ -166,8 +166,8 @@ Before enabling writeback:
 
 ## 9F. Validation Proof
 
-- `pytest Namibia/azure_aggregation/tests -q`: **PASS**, 91 tests passed.
-- `az bicep build --file Namibia/azure_aggregation/infra/main.bicep --stdout`: **PASS**.
+- `pytest applications/namibia-aggregation/azure_aggregation/tests -q`: **PASS**, 91 tests passed.
+- `az bicep build --file applications/namibia-aggregation/azure_aggregation/infra/main.bicep --stdout`: **PASS**.
 - `build_function_package.ps1` with the project Python 3.11 environment: **PASS**, deterministic package created and inspected.
 - `az account show --subscription 47b9cfe5-6ca3-4ad4-a4ca-d870926688b0`: **PASS**, authenticated as `Cabral@winture.de` in subscription `Boreal Light`.
 - `az deployment group validate` against `rg-brightlayer-dev` and `parameters.dev.json`: **PASS**, no template validation error.

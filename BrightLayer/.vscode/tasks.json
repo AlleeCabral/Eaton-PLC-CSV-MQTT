@@ -9,7 +9,7 @@
 			"isBackground": true,
 			"dependsOn": "pip install (functions)",
 			"options": {
-				"cwd": "${workspaceFolder}/Namibia\\azure_aggregation\\src"
+				"cwd": "${workspaceFolder}/applications\\namibia-aggregation\\azure_aggregation\\src"
 			}
 		},
 		{
@@ -26,7 +26,7 @@
 			},
 			"problemMatcher": [],
 			"options": {
-				"cwd": "${workspaceFolder}/Namibia\\azure_aggregation\\src"
+				"cwd": "${workspaceFolder}/applications\\namibia-aggregation\\azure_aggregation\\src"
 			}
 		}
 	]
